@@ -27,7 +27,7 @@
 	    
 	    <li><a href="../publications_fr.html" accesskey="p"><em>P</em>ublications</a></li>
 
-	    <li><a href="../university_fr.html" accesskey="u"  class="active"><em>U</em>niversité</a></li>
+	    <li><a href="../university_fr.html" accesskey="u"  class="active"><em>U</em>niversitÃ©</a></li>
 
 	    <li><a href="../links_fr.html" accesskey="l"><em>L</em>iens</a></li>
 	    
@@ -38,75 +38,75 @@
 	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Guido_van_Rossum_OSCON_2006.jpg/200px-Guido_van_Rossum_OSCON_2006.jpg" align="right" height="50%">
 	  <h1>Python</h1>
 
-	  <p> Python a été développé par Guido van Rossum, un développeur néerlandais en 1989. Le nom Python n'a rien à voir avec les reptiles vient de la série télévisée britanique <i>Monty Python</i>. En 2005, Guido fut engagé par Google dans le but de maintenir et d'améliorer Python. </p>
+	  <p> Python a Ã©tÃ© dÃ©veloppÃ© par Guido van Rossum, un dÃ©veloppeur nÃ©erlandais en 1989. Le nom Python n'a rien Ã  voir avec les reptiles vient de la sÃ©rie tÃ©lÃ©visÃ©e britanique <i>Monty Python</i>. En 2005, Guido fut engagÃ© par Google dans le but de maintenir et d'amÃ©liorer Python. </p>
 
-	  <p>Ce tutoriel Python, rédigé par <a href="http://pages.usherbrooke.ca/mcote5/accueil.html">Marc-Alexandre
-	  Côté</a> et Hugo Larochelle, donne un aperçu des aspects
+	  <p>Ce tutoriel Python, rÃ©digÃ© par <a href="http://pages.usherbrooke.ca/mcote5/accueil.html">Marc-Alexandre
+	  CÃ´tÃ©</a> et Hugo Larochelle, donne un aperÃ§u des aspects
 	  de base les plus importants de Python. Il correspond
-	  essentiellement à une traduction de certaines sections des
+	  essentiellement Ã  une traduction de certaines sections des
 	  tutoriels <a href="http://docs.python.org/tutorial/">http://docs.python.org/tutorial/</a>
 	  et <a href="http://www.scipy.org/Tentative_NumPy_Tutorial">http://www.scipy.org/Tentative_NumPy_Tutorial</a>,
 	  avec ajouts mineurs. </p>
 
-	  <h2>Table des matières</h2>
+	  <h2>Table des matiÃ¨res</h2>
 	  <div id="tablecontent">
 	  <ul>
-	    <li ><a href="#carac">Caractéristiques générales</a></li>
+	    <li ><a href="#carac">CaractÃ©ristiques gÃ©nÃ©rales</a></li>
 	    <li ><a href="#syntaxe">Syntaxe</a></li>
-	    <li ><a href="#interp">Interpréteur</a></li>
+	    <li ><a href="#interp">InterprÃ©teur</a></li>
 	    <li ><a href="#types">Types de base</a></li>
-	    <li ><a href="#controle">Structures de contrôle</a></li>
-	    <li ><a href="#fonctions">Définition des fonctions</a></li>
-	    <li ><a href="#struct">Structures de données</a></li>
+	    <li ><a href="#controle">Structures de contrÃ´le</a></li>
+	    <li ><a href="#fonctions">DÃ©finition des fonctions</a></li>
+	    <li ><a href="#struct">Structures de donnÃ©es</a></li>
 	    <li ><a href="#modules">Modules</a></li>
-	    <li ><a href="#io">Lecture et écriture de fichiers</a></li>
+	    <li ><a href="#io">Lecture et Ã©criture de fichiers</a></li>
 	    <li ><a href="#classes">Classes</a></li>
 	    <li ><a href="#numpy">Numpy</a></li>
-	    <li ><a href="#debugger">Débogueur</a></li>
+	    <li ><a href="#debugger">DÃ©bogueur</a></li>
 	  </ul>
 	  </div>
 
-	  <a name="carac"><h2>Caractéristiques générales</h2></a>
+	  <a name="carac"><h2>CaractÃ©ristiques gÃ©nÃ©rales</h2></a>
 	  <ul>
-            <li>Langage interprété</li>
+            <li>Langage interprÃ©tÃ©</li>
             <li>Machine virtuelle</li>
             <li>Portable (Unix, Windows, Mac)</li>
-            <li>Peut être utilisé comme <i>Scripting language</i></li>
+            <li>Peut Ãªtre utilisÃ© comme <i>Scripting language</i></li>
             <li>Typage dynamique (JavaScript, PHP, Ruby, ...)</li>
             <li>Supporte plusieurs paradigmes de programmation:</li>
             <ul>
-              <li>Orientée-objet (Java, C++, ...)</li>
-              <li>Impérative/Procédurale (FORTRAN, Pascal, C, ...)</li>
+              <li>OrientÃ©e-objet (Java, C++, ...)</li>
+              <li>ImpÃ©rative/ProcÃ©durale (FORTRAN, Pascal, C, ...)</li>
               <li>Fonctionnelle (Haskell, Scheme, ...)</li>
             </ul>
             
 	  </ul>
 	  <a name="syntaxe"><h2>Syntaxe</h2></a>
 
-	  <p>Python a été conçu pour être un langage lisible. Il vise
-	    à être visuellement épuré. Il utilise des mots anglais
-	    fréquemment là où d'autres langages utilisent de la
-	    ponctuation, et possède également moins de constructions
-	    syntaxiques que de nombreux langages structurés tels que C,
-	    Perl, ou Pascal. Les commentaires sont indiqués par le
-	    caractère '#'.</p>
+	  <p>Python a Ã©tÃ© conÃ§u pour Ãªtre un langage lisible. Il vise
+	    Ã  Ãªtre visuellement Ã©purÃ©. Il utilise des mots anglais
+	    frÃ©quemment lÃ  oÃ¹ d'autres langages utilisent de la
+	    ponctuation, et possÃ¨de Ã©galement moins de constructions
+	    syntaxiques que de nombreux langages structurÃ©s tels que C,
+	    Perl, ou Pascal. Les commentaires sont indiquÃ©s par le
+	    caractÃ¨re '#'.</p>
 
-	  Les blocs sont identifiés par l'<b>indentation</b>, au lieu
+	  Les blocs sont identifiÃ©s par l'<b>indentation</b>, au lieu
 	  d'accolades comme en C ou C++ ou de begin ... end comme en
-	  Pascal. Une augmentation de l'indentation marque le début
-	  d'un bloc, et une réduction de l'indentation marque la fin
+	  Pascal. Une augmentation de l'indentation marque le dÃ©but
+	  d'un bloc, et une rÃ©duction de l'indentation marque la fin
 	  du bloc courant.
 	  
-	  <a name="interp"><h2>Interpréteur</h2> </a>
+	  <a name="interp"><h2>InterprÃ©teur</h2> </a>
 
-	  <p>Python peut être utilisé en mode interpréteur (très
+	  <p>Python peut Ãªtre utilisÃ© en mode interprÃ©teur (trÃ¨s
 	    pratique pour tester des lignes de code rapidement). Pour
-	    démarrer l'interpréteur Python, il suffit de tappez dans
+	    dÃ©marrer l'interprÃ©teur Python, il suffit de tappez dans
 	    une console Unix (ou DOS) la commande</p>
 
 	  <pre>python </pre>
 	  
-	  <p>Pour quitter, il faut tapper un caractère de fin de
+	  <p>Pour quitter, il faut tapper un caractÃ¨re de fin de
 	    fichier (soit <tt class="docutils
 	    literal"><span class="pre">Control-D</span></tt> sous
 	    Unix, <tt class="docutils
@@ -115,9 +115,9 @@
 	    commande <tt class="docutils
 	    literal"><span class="pre">quit()</span></tt>.</p>
 	  
-	  <p>Il existe également une version plus riche de
-	    l'interpréteur, IPython, qui permet entre autre
-	    de faire de la complétion d'expression (en appuyant sur la
+	  <p>Il existe Ã©galement une version plus riche de
+	    l'interprÃ©teur, IPython, qui permet entre autre
+	    de faire de la complÃ©tion d'expression (en appuyant sur la
 	    touche de tabulation ou <i>tab</i>). Pour l'invoquer,
 	    suffit de taper la commande</p>
 
@@ -130,22 +130,22 @@
 	  
 	  <p>La commande <tt class="docutils
 	    literal"><span class="pre">python</span></tt> peut
-	    également lancer l'exécution de code dans des fichiers ou
-	    scripts. Lorsqu'ils sont spécifiés à l'interpréteur, le
-	    nom du script et les arguments supplémentaires sont
-	    transformés en une liste de chaînes et affectés à la
+	    Ã©galement lancer l'exÃ©cution de code dans des fichiers ou
+	    scripts. Lorsqu'ils sont spÃ©cifiÃ©s Ã  l'interprÃ©teur, le
+	    nom du script et les arguments supplÃ©mentaires sont
+	    transformÃ©s en une liste de chaÃ®nes et affectÃ©s Ã  la
 	    variable <tt class="docutils
 	    literal"><span class="pre"><span class="pre">argv</span></span></tt>
 	    du module <tt class="docutils
 	    literal"><span class="pre"><span class="pre">sys</span></span></tt>. Vous
-	    pouvez accéder à cette liste en
-	    exécutant <tt class="docutils
+	    pouvez accÃ©der Ã  cette liste en
+	    exÃ©cutant <tt class="docutils
 	    literal"><span class="pre"><span class="pre">import
 	    sys</span></span></tt>. La longueur de la liste est au
 	    moins un. Lorsqu'aucun script ou arguments ne sont
-	    donnés, <tt class="docutils
+	    donnÃ©s, <tt class="docutils
 	    literal"><span class="pre">sys.argv[0]</span></tt>
-	    est une chaîne vide.</p>
+	    est une chaÃ®ne vide.</p>
 
 <!--
 	  <h3>Mode interactif</h3>
@@ -161,19 +161,19 @@
           <a name="types"><h2>Types de base</h2></a>
 	  <h3>Nombres</h3>
 
-	  <p>L'interpréteur peut servir de calculatrice: vous pouvez
-	  y tapper une expression et il écrira la résultat. La syntaxe
+	  <p>L'interprÃ©teur peut servir de calculatrice: vous pouvez
+	  y tapper une expression et il Ã©crira la rÃ©sultat. La syntaxe
 	  des expressions est simple: les
-	  opérateurs <tt class="docutils
+	  opÃ©rateurs <tt class="docutils
 	  literal"><span class="pre">+</span></tt>, <tt class="docutils
 	  literal"><span class="pre">-</span></tt>, <tt class="docutils
 	  literal"><span class="pre">*</span></tt>
 	  et <tt class="docutils
 	  literal"><span class="pre">/</span></tt> fonctionnent
 	  exactement comme dans la plupart des autres langages
-	  (ex. Pascal ou C). S'ajoute également l'opérateur
+	  (ex. Pascal ou C). S'ajoute Ã©galement l'opÃ©rateur
 	  <tt class="docutils literal"><span class="pre">**</span></tt> 
-	  pour les puissances. Les parenthèses peuvent être utilisées
+	  pour les puissances. Les parenthÃ¨ses peuvent Ãªtre utilisÃ©es
 	  pour grouper les expressions. Par exemple :</p>
 
 	  <pre>
@@ -182,11 +182,11 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="c"># Ceci est un commentaire</span>
 <span class="gp">... </span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span>
 <span class="go">4</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span>  <span class="c"># et un commentaire sur une même ligne de code</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span>  <span class="c"># et un commentaire sur une mÃªme ligne de code</span>
 <span class="go">4</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">50</span><span class="o">-</span><span class="mi">5</span><span class="o">*</span><span class="mi">6</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span>
 <span class="go">5</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># Division entière retourne la valeur tronquée (<i>floor</i>) :</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Division entiÃ¨re retourne la valeur tronquÃ©e (<i>floor</i>) :</span>
 <span class="gp">... </span><span class="mi">7</span><span class="o">/</span><span class="mi">3</span>
 <span class="go">2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="mi">7</span><span class="o">/-</span><span class="mi">3</span>
@@ -194,10 +194,10 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">**</span><span class="mi">4</span>
 <span class="go">16</span> </pre>
 
-	  <p>Le symbole égal (<tt class="docutils
-	  literal"><span class="pre">'='</span></tt>) est utilisé pour
-	  assigner une valeur à une variable. L'affectation ne cause
-	  aucun affichage de résultat avant la prochaine invite de
+	  <p>Le symbole Ã©gal (<tt class="docutils
+	  literal"><span class="pre">'='</span></tt>) est utilisÃ© pour
+	  assigner une valeur Ã  une variable. L'affectation ne cause
+	  aucun affichage de rÃ©sultat avant la prochaine invite de
 	  commande :</p>
 
 	  <pre>
@@ -206,11 +206,11 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="n">largeur</span> <span class="o">*</span> <span class="n">hauteur</span>
 <span class="go">900</span> </pre>
 
-	  <p>Une valeur peut être assignée simultanément à plusieurs
+	  <p>Une valeur peut Ãªtre assignÃ©e simultanÃ©ment Ã  plusieurs
 	  variables :</p>
 
 	  <pre>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">y</span> <span class="o">=</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c"># Zéro x, y et z</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">y</span> <span class="o">=</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c"># ZÃ©ro x, y et z</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span>
 <span class="go">0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span>
@@ -218,8 +218,8 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="n">z</span>
 <span class="go">0</span> </pre>
 
-	  <p>Les variables doivent être "définies" (c.-à-d. une valeur leur a été
-	  assignée) avant de pouvoir s'en servir, sinon cela cause une
+	  <p>Les variables doivent Ãªtre "dÃ©finies" (c.-Ã -d. une valeur leur a Ã©tÃ©
+	  assignÃ©e) avant de pouvoir s'en servir, sinon cela cause une
 	  erreur:</p>
 
 	  <pre>
@@ -229,8 +229,8 @@
   File </span><span class="nb">"&lt;stdin&gt;"</span><span>, line </span><span class="m">1</span><span>, in </span><span class="n-Identifier">&lt;module&gt;</span>
 <span class="nc">NameError</span><span>: </span><span class="n-Identifier">name 'n' is not defined</span> </pre>
 
-	  <p>Python supporte entièrement les nombres à points
-	  flottants; les opérateurs convertissent les entiers en réels
+	  <p>Python supporte entiÃ¨rement les nombres Ã  points
+	  flottants; les opÃ©rateurs convertissent les entiers en rÃ©els
 	  au besoin:</p>
 
 	  <pre>
@@ -239,18 +239,18 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="mf">7.0</span> <span class="o">/</span> <span class="mi">2</span>
 <span class="go">3.5</span> </pre>
 
-<!--	  <p>Les nombres complexes sont également supportés; les
+<!--	  <p>Les nombres complexes sont Ã©galement supportÃ©s; les
 	  nombres imaginaires se servent d'un suffixe:
 	    <tt class="docutils
 	    literal"><span class="pre">j</span></tt>
 	    ou <tt class="docutils
 	    literal"><span class="pre">J</span></tt>.  Les nombres
-	    complexes possédant une partie réel non nulle sont écrits
-	    de cette façon:
+	    complexes possÃ©dant une partie rÃ©el non nulle sont Ã©crits
+	    de cette faÃ§on:
 	    
 	    <tt class="docutils
 	    literal"><span class="pre">(real+imagj)</span></tt>, ou
-	    peuvent être créés avec la fonction <tt class="docutils
+	    peuvent Ãªtre crÃ©Ã©s avec la fonction <tt class="docutils
 	    literal"><span class="pre">complex(real,</span> <span class="pre">imag)</span></tt>
 	    .</p>
 
@@ -267,8 +267,8 @@
 
 <span class="go">(1.5+0.5j)</span> </pre>
 
-	  <p>Les nombres complexes sont toujours représentés comme
-	  deux nombres à virgule flottante, la partie réelle et la
+	  <p>Les nombres complexes sont toujours reprÃ©sentÃ©s comme
+	  deux nombres Ã  virgule flottante, la partie rÃ©elle et la
 	  partie imaginaire. Pour extraire ces parties d'un nombre
 	  complexe, on utilise
 	    <tt class="docutils
@@ -296,12 +296,12 @@
 	    docutils
 	    literal"><span class="pre">long()</span></tt></a>) ne
 	    fonctionnent pas avec les nombres complexes - il n'existe
-	    aucune méthode qui convertit correctement un nombre
-	    complexe en nombre réel. Utilisez <tt class="docutils
+	    aucune mÃ©thode qui convertit correctement un nombre
+	    complexe en nombre rÃ©el. Utilisez <tt class="docutils
 	    literal"><span class="pre">abs(z)</span></tt> pour obtenir
-	    sa magnitude (en réel) ou <tt class="docutils
+	    sa magnitude (en rÃ©el) ou <tt class="docutils
 	    literal"><span class="pre">z.real</span></tt> pour obtenir
-	    sa partie réelle.</p>
+	    sa partie rÃ©elle.</p>
 
 	  <pre>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">=</span><span class="mf">3.0</span><span class="o">+</span><span class="mf">4.0</span><span class="n">j</span>
@@ -317,12 +317,12 @@
 <span class="go">5.0</span> </pre>
 -->
 
-	  <p>Dans la console intéractive, la dernière expression
-	  calculée est assignée à la variable
+	  <p>Dans la console intÃ©ractive, la derniÃ¨re expression
+	  calculÃ©e est assignÃ©e Ã  la variable
 	    <tt class="docutils
 	    literal"><span class="pre">_</span></tt>.  Ce qui veut
 	    dire que lorsque vous utilisez Python comme calculatrice,
-	    il peut être parfois utile, par exemple:</p>
+	    il peut Ãªtre parfois utile, par exemple:</p>
 
 	  <pre>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">taxe</span> <span class="o">=</span> <span class="mf">12.5</span> <span class="o">/</span> <span class="mi">100</span>
@@ -334,15 +334,15 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 <span class="go">113.06</span> </pre>
 
-	  <p>Cette variable devrait toujours être traité comme une
+	  <p>Cette variable devrait toujours Ãªtre traitÃ© comme une
 	  variable en lecture seule. N'assignez jamais explicitement
-	  une valeur à cette variable.</p>
+	  une valeur Ã  cette variable.</p>
 	  
 	  <h3>String</h3>
 
 	  <p>En plus des nombres, Python peut aussi manipuler les
-	  chaînes de caractères, qui peuvent être exprimées de
-	  plusieurs façons. Elles peuvent être entourés par des
+	  chaÃ®nes de caractÃ¨res, qui peuvent Ãªtre exprimÃ©es de
+	  plusieurs faÃ§ons. Elles peuvent Ãªtre entourÃ©s par des
 	  apostrophes ou des guillemets:</p>
 
 	  <pre>
@@ -359,51 +359,51 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="s">'"Isn</span><span class="se">\'</span><span class="s">t," she said.'</span>
 <span class="go">'"Isn\'t," she said.'</span> </pre>
 
-	  <p>L'interpréteur affiche le résultat des opérations de
-	  chaîne de la même manière qu'ils ont été saisies. La chaîne
-	  est entre guillemets si la chaîne contient un apostrophe et
+	  <p>L'interprÃ©teur affiche le rÃ©sultat des opÃ©rations de
+	  chaÃ®ne de la mÃªme maniÃ¨re qu'ils ont Ã©tÃ© saisies. La chaÃ®ne
+	  est entre guillemets si la chaÃ®ne contient un apostrophe et
 	  aucun guillemet, sinon c'est entre apostrophe. La
 	  fonction <a class="reference external"
 	  href="../reference/simple_stmts.html#print"><tt class="xref
 	  docutils literal"><span class="pre">print</span></tt></a>
 	  produit un affichage plus lisible.</p>
 
-	  <p>Les continuations de lignes peuvent être utilisés avec
+	  <p>Les continuations de lignes peuvent Ãªtre utilisÃ©s avec
 	  un <i>backslash</i> en fin de ligne qui permet d'indiquer
 	  que la prochaine ligne est la suite logique de la ligne
 	  courante:</p>
 	  
 	  <div style="position: relative;" class="highlight-python"><div class="highlight">
 	      <pre>
-<span class="n">hello</span> <span class="o">=</span> <span class="s">"Ceci est plutôt une longue châine contenant</span><span class="se">\n\</span>
+<span class="n">hello</span> <span class="o">=</span> <span class="s">"Ceci est plutÃ´t une longue chÃ¢ine contenant</span><span class="se">\n\</span>
 <span class="s">plusieurs lignes de texte comme on peut le faire en C.</span><span class="se">\n\</span>
-<span class="s">    Notez que les espaces au début de la ligne sont </span><span class="se">\</span>
+<span class="s">    Notez que les espaces au dÃ©but de la ligne sont </span><span class="se">\</span>
 <span class="s"> prises en compte."</span>
 <span class="k">print</span> <span class="n">hello</span> </pre></div>
 	  </div>
 
-	  <p>Notez que les sauts de lignes ont toujours besoin d'être
-	  spécifiés dans la chaîne par le
-	  caractère <tt class="docutils
+	  <p>Notez que les sauts de lignes ont toujours besoin d'Ãªtre
+	  spÃ©cifiÃ©s dans la chaÃ®ne par le
+	  caractÃ¨re <tt class="docutils
 	  literal"><span class="pre">\n</span></tt> - le saut de ligne
 	  suivant le <i>backslash</i> de continuation n'est pas tenu
 	  en compte. Cet exemple affichera:</p>
 
 	  <div class="highlight-text"><div class="highlight">
 	      <pre>
-Ceci est plutôt une longue châine contenant
+Ceci est plutÃ´t une longue chÃ¢ine contenant
 plusieurs lignes de texte comme on peut le faire en C.
-    Notez que les espaces au début de la ligne sont prises en compte.  </pre></div>
+    Notez que les espaces au dÃ©but de la ligne sont prises en compte.  </pre></div>
 	  </div>
 
-	  <p>Par contre, les chaînes de caractères peuvent être
-	  placées entre une paire de triple-guillements: <tt class="docutils
+	  <p>Par contre, les chaÃ®nes de caractÃ¨res peuvent Ãªtre
+	  placÃ©es entre une paire de triple-guillements: <tt class="docutils
 	  literal"><span class="pre">"""</span></tt> ou de
 	  triple-apostrophes:
 	    
 	    <tt class="docutils
 	    literal"><span class="pre">'''</span></tt>.  Il n'est pas
-	    nécessaire d'utiliser le caractère de continuation dans ce
+	    nÃ©cessaire d'utiliser le caractÃ¨re de continuation dans ce
 	    cas. Les saut de lignes seront pris en compte.</p>
 	  <div style="position: relative;" class="highlight-python"><div class="highlight">
 	      <pre>
@@ -422,9 +422,9 @@ Usage: thingy [OPTIONS]
      -H hostname               Hostname to connect   </pre></div>
 	  </div>
 
-	  <p>Les chaînes peuvent être concaténées avec
-	  l'opérateur <tt class="docutils
-	  literal"><span class="pre">+</span></tt>, et répétées
+	  <p>Les chaÃ®nes peuvent Ãªtre concatÃ©nÃ©es avec
+	  l'opÃ©rateur <tt class="docutils
+	  literal"><span class="pre">+</span></tt>, et rÃ©pÃ©tÃ©es
 	  avec <tt class="docutils
 	  literal"><span class="pre">*</span></tt>:</p>
 	  
@@ -435,11 +435,11 @@ Usage: thingy [OPTIONS]
 <span class="gp">&gt;&gt;&gt; </span><span class="s">'&lt;'</span> <span class="o">+</span> <span class="n">word</span><span class="o">*</span><span class="mi">5</span> <span class="o">+</span> <span class="s">'&gt;'</span>
 <span class="go">'&lt;HelpAHelpAHelpAHelpAHelpA&gt;'</span></pre>
 	  
-	  <p>Les chaînes peuvent être indexées; comme en C, le premier
-	  caractère d'une chaîne est à l'indice 0. Un caractère est
-	  simplement une chaîne de longueur un. Comme en Icon, les
-	  sous-chaînes peuvent être obtenues par l'utilisation de la
-	    <em>slice notation</em> (tranche): deux indices séparés
+	  <p>Les chaÃ®nes peuvent Ãªtre indexÃ©es; comme en C, le premier
+	  caractÃ¨re d'une chaÃ®ne est Ã  l'indice 0. Un caractÃ¨re est
+	  simplement une chaÃ®ne de longueur un. Comme en Icon, les
+	  sous-chaÃ®nes peuvent Ãªtre obtenues par l'utilisation de la
+	    <em>slice notation</em> (tranche): deux indices sÃ©parÃ©s
 	    par un deux-points <tt class="docutils
 	    literal"><span class="pre">:</span></tt>.</p>
 	  
@@ -452,21 +452,21 @@ Usage: thingy [OPTIONS]
 
 <span class="go">'lp'</span> </pre>
 
-	  <p>Les indices définissant la tranche possèdent des valeurs
-	  par défaut très pratiques; l'omission du premier indice
-	  équivaut à l'indice zéro, l'omission du deuxième équivaut à la
-	  longueur de la chaîne originale.</p>
+	  <p>Les indices dÃ©finissant la tranche possÃ¨dent des valeurs
+	  par dÃ©faut trÃ¨s pratiques; l'omission du premier indice
+	  Ã©quivaut Ã  l'indice zÃ©ro, l'omission du deuxiÃ¨me Ã©quivaut Ã  la
+	  longueur de la chaÃ®ne originale.</p>
 
 	  <pre>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span><span class="c"># Les deux premiers caractères </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span><span class="c"># Les deux premiers caractÃ¨res </span>
 <span class="go">'He'</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span><span class="c"># Tous les caractères sauf les deux premiers</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span><span class="c"># Tous les caractÃ¨res sauf les deux premiers</span>
 
 <span class="go">'lpA'</span> </pre>
 
-	  <p>Contrairement aux chaînes de caractères en C, celles en
-	  Python ne peuvent pas être modifiées. L'assignation à une
-	  position donnée dans la chaîne cause une erreur:</p>
+	  <p>Contrairement aux chaÃ®nes de caractÃ¨res en C, celles en
+	  Python ne peuvent pas Ãªtre modifiÃ©es. L'assignation Ã  une
+	  position donnÃ©e dans la chaÃ®ne cause une erreur:</p>
 
 	  <pre>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s">'x'</span>
@@ -478,8 +478,8 @@ Usage: thingy [OPTIONS]
   File </span><span class="nb">"&lt;stdin&gt;"</span><span>, line </span><span class="m">1</span><span>, in </span><span class="n-Identifier">?</span>
 <span class="nc">TypeError</span><span>: </span><span class="n-Identifier">object does not support slice assignment</span></pre>
 	  
-	  <p>Par contre, créer une nouvelle chaîne en combinant les
-	  différentes tranches est simple et efficace:</p>
+	  <p>Par contre, crÃ©er une nouvelle chaÃ®ne en combinant les
+	  diffÃ©rentes tranches est simple et efficace:</p>
 
 	  <pre>
 <span class="gp">&gt;&gt;&gt; </span><span class="s">'x'</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
@@ -488,29 +488,29 @@ Usage: thingy [OPTIONS]
 
 <span class="go">'SplatA'</span></pre>
 	  
-	  <p>Les indices peuvent être négatifs, permettant de compter
-	  à partir de la droite. Par exemple:</p>
+	  <p>Les indices peuvent Ãªtre nÃ©gatifs, permettant de compter
+	  Ã  partir de la droite. Par exemple:</p>
 	  
 	  <pre>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c"># Le dernier caractère</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c"># Le dernier caractÃ¨re</span>
 <span class="go">'A'</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="c"># L'avant dernier caractère</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="c"># L'avant dernier caractÃ¨re</span>
 <span class="go">'p'</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span><span class="c"># Les deux derniers caractères</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span><span class="c"># Les deux derniers caractÃ¨res</span>
 <span class="go">'pA'</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="c"># Tous les caractères sauf les deux derniers</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="c"># Tous les caractÃ¨res sauf les deux derniers</span>
 <span class="go">'Hel'</span> </pre>
 
-	  <p>Notez que -0 est équivalent à 0, donc il ne compte pas à
+	  <p>Notez que -0 est Ã©quivalent Ã  0, donc il ne compte pas Ã 
 	  partir de la droite!</p>
 	  
 	  <pre>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">]</span> <span class="c"># (puisque -0 égale 0)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">]</span> <span class="c"># (puisque -0 Ã©gale 0)</span>
 <span class="go">'H'</span> </pre>
 	  
-	  <p>Une façon de se souvenir du fonctionnement du <i>slicing</i>
+	  <p>Une faÃ§on de se souvenir du fonctionnement du <i>slicing</i>
 	    est d'imaginer que les indices pointent
-	    <em>entre</em> les caractères, et la gauche du premier caractère est indexée à 0. Par exemple:</p>
+	    <em>entre</em> les caractÃ¨res, et la gauche du premier caractÃ¨re est indexÃ©e Ã  0. Par exemple:</p>
 
 	  <div class="highlight-python">
 <pre style="word-spacing:0px">
@@ -521,9 +521,9 @@ Usage: thingy [OPTIONS]
 -5  -4  -3  -2  -1</pre>
 	  </div>
 	  
-	  <p>La fonction intégrée (<i>built-in</i>) <tt class="docutils
+	  <p>La fonction intÃ©grÃ©e (<i>built-in</i>) <tt class="docutils
 	  literal"><span class="pre">len()</span></tt> retourne la
-	  longeur de la chaîne:</p>
+	  longeur de la chaÃ®ne:</p>
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="s">&#39;supercalifragilisticexpialidocious&#39;</span>
@@ -534,12 +534,12 @@ Usage: thingy [OPTIONS]
 
 	  <h3>Listes</h3>
 
-	  <p>En Python, il existe plusieurs structures de données. 
+	  <p>En Python, il existe plusieurs structures de donnÃ©es. 
 	    La plus versatile est
-	  la liste (<em>list</em>), qui peut être créée en écrivant une suite
-	  de valeurs séparées par des virgules, le tout entre
-	  crochet. Les items d'une liste peuvent être de type
-	  différent:</p>
+	  la liste (<em>list</em>), qui peut Ãªtre crÃ©Ã©e en Ã©crivant une suite
+	  de valeurs sÃ©parÃ©es par des virgules, le tout entre
+	  crochet. Les items d'une liste peuvent Ãªtre de type
+	  diffÃ©rent:</p>
 	  
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -548,9 +548,9 @@ Usage: thingy [OPTIONS]
 <span class="go">[&#39;spam&#39;, &#39;eggs&#39;, 100, 1234]</span> </pre></div>
 	  </div>
 
-	  <p>Comme pour les chaînes de caractères, le premier item
-	  d'une liste est à l'indice 0, et les listes supportent
-	  le <em>slicing</em>, la concaténation, etc:</p>
+	  <p>Comme pour les chaÃ®nes de caractÃ¨res, le premier item
+	  d'une liste est Ã  l'indice 0, et les listes supportent
+	  le <em>slicing</em>, la concatÃ©nation, etc:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -568,11 +568,11 @@ Usage: thingy [OPTIONS]
 <span class="go">[&#39;spam&#39;, &#39;eggs&#39;, 100, &#39;spam&#39;, &#39;eggs&#39;, 100, &#39;spam&#39;, &#39;eggs&#39;, 100, &#39;Boo!&#39;]</span> </pre></div>
 	  </div>
 
-	  <p>Toute opération de <em>slicing</em> retourne une nouvelle
-	  liste contenant les éléments demandés. De ce fait, la 
+	  <p>Toute opÃ©ration de <em>slicing</em> retourne une nouvelle
+	  liste contenant les Ã©lÃ©ments demandÃ©s. De ce fait, la 
 	  tranche suivante est une copie superficielle (<em>shallow
-	  copy</em>) de la liste <em>a</em>, c.-à-d. que
-	  les éléments de la tranche ne sont pas des copies indépendantes des éléments
+	  copy</em>) de la liste <em>a</em>, c.-Ã -d. que
+	  les Ã©lÃ©ments de la tranche ne sont pas des copies indÃ©pendantes des Ã©lÃ©ments
 	  de la liste <em>a</em>:</p>
 
 	  <div class="highlight-python"><div class="highlight">
@@ -581,9 +581,9 @@ Usage: thingy [OPTIONS]
 <span class="go">[&#39;spam&#39;, &#39;eggs&#39;, 100, 1234]</span></pre></div>
 	  </div>
 	  
-	  <p>Contrairement aux chaînes de caractères, qui
+	  <p>Contrairement aux chaÃ®nes de caractÃ¨res, qui
 	  sont immuables (<em>immutable</em>), il est possible de modifier
-	  individuellement les éléments d'une liste:</p>
+	  individuellement les Ã©lÃ©ments d'une liste:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -594,9 +594,9 @@ Usage: thingy [OPTIONS]
 <span class="go">[&#39;spam&#39;, &#39;eggs&#39;, 123, 1234]</span> </pre></div>
 	  </div>
 
-	  <p>Il est également possible d'assigner des valeurs à des
+	  <p>Il est Ã©galement possible d'assigner des valeurs Ã  des
 	  tranches, ce qui peut causer un changement de taille de la
-	  liste, voir même la vider complètement:</p>
+	  liste, voir mÃªme la vider complÃ¨tement:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -604,15 +604,15 @@ Usage: thingy [OPTIONS]
 <span class="gp">... </span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
 <span class="go">[1, 12, 123, 1234]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># Enlève quelques items:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># EnlÃ¨ve quelques items:</span>
 <span class="gp">... </span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
 <span class="go">[123, 1234]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># Insère quelques items:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># InsÃ¨re quelques items:</span>
 <span class="gp">... </span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;bletch&#39;</span><span class="p">,</span> <span class="s">&#39;xyzzy&#39;</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
 <span class="go">[123, &#39;bletch&#39;, &#39;xyzzy&#39;, 1234]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># Insère (une copie de) lui-même au début de la liste</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># InsÃ¨re (une copie de) lui-mÃªme au dÃ©but de la liste</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">[:</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
 <span class="go">[123, &#39;bletch&#39;, &#39;xyzzy&#39;, 1234, 123, &#39;bletch&#39;, &#39;xyzzy&#39;, 1234]</span>
@@ -622,9 +622,9 @@ Usage: thingy [OPTIONS]
 <span class="go">[]</span> </pre></div>
 	  </div>
 
-	  <p>La fonction intégrée <tt class="xref docutils
+	  <p>La fonction intÃ©grÃ©e <tt class="xref docutils
 	  literal"><span class="pre">len()</span></tt> s'applique
-	  également au listes:</p>
+	  Ã©galement au listes:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -633,7 +633,7 @@ Usage: thingy [OPTIONS]
 <span class="go">4</span></pre></div>
 	  </div>
 
-	  <p>Il est possible d'imbriquer des listes (créer de listes
+	  <p>Il est possible d'imbriquer des listes (crÃ©er de listes
 	  qui contiennent d'autres listes), par exemple:</p>
 
 	  <div class="highlight-python"><div class="highlight">
@@ -653,23 +653,23 @@ Usage: thingy [OPTIONS]
 <span class="go">[2, 3, &#39;xtra&#39;]</span></pre></div>
 	  </div>
 
-	  <p>Notez que l'exemple précédent, <tt class="docutils
+	  <p>Notez que l'exemple prÃ©cÃ©dent, <tt class="docutils
 	  literal"><span class="pre">p[1]</span></tt>
 	  et <tt class="docutils
-	  literal"><span class="pre">q</span></tt> réfèrent au même
+	  literal"><span class="pre">q</span></tt> rÃ©fÃ¨rent au mÃªme
 	  objet!</p>
 
 
 	  <h3>Petit exemple</h3>
 
-	  <p>Bien sûr, on peut utiliser Python pour autre chose qu'une
+	  <p>Bien sÃ»r, on peut utiliser Python pour autre chose qu'une
 	  simple calculatrice de poche! Par exemple, on peut calculer
 	  les premiers termes de la suite de <em>Fibonacci</em> comme
 	  suit:</p>
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
 <span class="gp">&gt;&gt;&gt; </span><span class="c"># Suite de Fibonacci:</span>
-<span class="gp">... </span><span class="c"># la somme des deux derniers éléments de la suite définit le prochain</span>
+<span class="gp">... </span><span class="c"># la somme des deux derniers Ã©lÃ©ments de la suite dÃ©finit le prochain</span>
 <span class="gp">... </span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="k">print</span> <span class="n">b</span>
@@ -683,63 +683,63 @@ Usage: thingy [OPTIONS]
 <span class="go">8</span> </pre></div>
 	  </div>
 
-	  <p>Cet exemple introduit plusieurs fonctionnalités de
+	  <p>Cet exemple introduit plusieurs fonctionnalitÃ©s de
 	  Python.</p>
 
 	  <ul>
-	    <li><p class="first">La première ligne contient
+	    <li><p class="first">La premiÃ¨re ligne contient
 		un <em>affectation multiple</em>: respectivement les
 		variables <tt class="docutils
 		literal"><span class="pre">a</span></tt>
 		et <tt class="docutils
 		literal"><span class="pre">b</span></tt> obtiennent
-		simultanément les valeurs 0 et 1. Le même principe est
-		réutilisé à la dernière ligne montrant cette fois-ci
-		que l'évaluation de la partie droite de l'expression
-		est faite en premier (c.-à-d. avant l'affectation).</p>
+		simultanÃ©ment les valeurs 0 et 1. Le mÃªme principe est
+		rÃ©utilisÃ© Ã  la derniÃ¨re ligne montrant cette fois-ci
+		que l'Ã©valuation de la partie droite de l'expression
+		est faite en premier (c.-Ã -d. avant l'affectation).</p>
 	    </li>
 	    <li><p class="first">La boucle <tt class="xref docutils
-		literal"><span class="pre">while</span></tt> s'exécute
+		literal"><span class="pre">while</span></tt> s'exÃ©cute
 		tant que la condition (ici: <tt class="docutils
 		literal"><span class="pre">b</span> <span class="pre">&lt;</span> <span class="pre">10</span></tt>)
 		demeure vrai. En Python, comme en C, n'importe quel
-		entier non nul est évalué à vrai; zéro est faux. La
-		condition peut également être une chaîne de caractères
-		ou une liste, de façon plus générale n'importe quelle
-		séquence. Si la taille est non nulle, alors
-		l'évaluation sera vraie, sinon la séquence est vide et
-		donc l'évaluation sera fausse. Le test utilisé dans
-		l'exemple est une simple comparaison. Les opérateurs
-		standards de comparaison s'écrivent comme en C: <tt class="docutils
+		entier non nul est Ã©valuÃ© Ã  vrai; zÃ©ro est faux. La
+		condition peut Ã©galement Ãªtre une chaÃ®ne de caractÃ¨res
+		ou une liste, de faÃ§on plus gÃ©nÃ©rale n'importe quelle
+		sÃ©quence. Si la taille est non nulle, alors
+		l'Ã©valuation sera vraie, sinon la sÃ©quence est vide et
+		donc l'Ã©valuation sera fausse. Le test utilisÃ© dans
+		l'exemple est une simple comparaison. Les opÃ©rateurs
+		standards de comparaison s'Ã©crivent comme en C: <tt class="docutils
 		literal"><span class="pre">&lt;</span></tt> (plus
 		petit que), <tt class="docutils
 		literal"><span class="pre">&gt;</span></tt> (plus
 		grand que), <tt class="docutils
 		literal"><span class="pre">==</span></tt> (egal
-		à), <tt class="docutils
+		Ã ), <tt class="docutils
 		literal"><span class="pre">&lt;=</span></tt> (plus
-		petit ou égal à), <tt class="docutils
+		petit ou Ã©gal Ã ), <tt class="docutils
 		literal"><span class="pre">&gt;=</span></tt> (plus
-		grand ou égal à) and <tt class="docutils
-		literal"><span class="pre">!=</span></tt> (différent
+		grand ou Ã©gal Ã ) and <tt class="docutils
+		literal"><span class="pre">!=</span></tt> (diffÃ©rent
 		de).</p>
 	    </li>
 	    <li><p class="first">Le <b>corps</b> de la boucle
-	    est <b>indenté</b>: l'indentation est la technique
+	    est <b>indentÃ©</b>: l'indentation est la technique
 	    Pythonienne de grouper les blocs d'expressions. Notez que
-	    chaque ligne d'un bloc doit avoir la même
+	    chaque ligne d'un bloc doit avoir la mÃªme
 	    indentation.</p>
 
 	    </li>
 	  </ul>
 
-	  <a name="controle"><h2>Structures de contrôle</h2></a>
+	  <a name="controle"><h2>Structures de contrÃ´le</h2></a>
 
-	  <p>Mise à part la boucle <tt class="xref docutils
-	  literal"><span class="pre">while</span></tt>, Python possède
-	  également les structures de contrôle que l'on retrouve dans
+	  <p>Mise Ã  part la boucle <tt class="xref docutils
+	  literal"><span class="pre">while</span></tt>, Python possÃ¨de
+	  Ã©galement les structures de contrÃ´le que l'on retrouve dans
 	  les autres langages de programmation, mais avec quelques
-	  particularités.</p>
+	  particularitÃ©s.</p>
 	  
 	  <h3>if</h3>
 	  <br>
@@ -750,9 +750,9 @@ Usage: thingy [OPTIONS]
 <span class="go">Veuillez entrer un entier: 42</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
 <span class="gp">... </span>     <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="gp">... </span>     <span class="k">print</span> <span class="s">&#39;Negatif changé pour zéro&#39;</span>
+<span class="gp">... </span>     <span class="k">print</span> <span class="s">&#39;Negatif changÃ© pour zÃ©ro&#39;</span>
 <span class="gp">... </span><span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<span class="gp">... </span>     <span class="k">print</span> <span class="s">&#39;Zéro&#39;</span>
+<span class="gp">... </span>     <span class="k">print</span> <span class="s">&#39;ZÃ©ro&#39;</span>
 <span class="gp">... </span><span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
 <span class="gp">... </span>     <span class="k">print</span> <span class="s">&#39;Un&#39;</span>
 <span class="gp">... </span><span class="k">else</span><span class="p">:</span>
@@ -765,7 +765,7 @@ Usage: thingy [OPTIONS]
 	  literal"><span class="pre">elif</span></tt>, et
 	  le <tt class="docutils
 	  literal"><span class="pre">else</span></tt> est optionel. Le
-	  mot-clé &#8216;<tt class="docutils
+	  mot-clÃ© &#8216;<tt class="docutils
 	  literal"><span class="pre">elif</span></tt>&#8216; est la
 	  contraction de &#8216;else if&#8217;</p>
 
@@ -778,16 +778,16 @@ Usage: thingy [OPTIONS]
 
 	  <p id="index-1117">La boucle <tt class="docutils
 	  literal"><span class="pre">for</span></tt> en Python est
-	  légèrement différente de celle en C ou en Pascal. Plutôt que
-	  d'itérer sur une suite arithmétique de nombres,
+	  lÃ©gÃ¨rement diffÃ©rente de celle en C ou en Pascal. PlutÃ´t que
+	  d'itÃ©rer sur une suite arithmÃ©tique de nombres,
 	  le <tt class="docutils
-	  literal"><span class="pre">for</span></tt> en Python itère
-	  sur les éléments d'une séquence (ex. liste ou une chaîne de
-	  caractères) dans l'ordre qu'ils apparaîssent. Par exemple:</p>
+	  literal"><span class="pre">for</span></tt> en Python itÃ¨re
+	  sur les Ã©lÃ©ments d'une sÃ©quence (ex. liste ou une chaÃ®ne de
+	  caractÃ¨res) dans l'ordre qu'ils apparaÃ®ssent. Par exemple:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># Mesure quelques chaînes:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Mesure quelques chaÃ®nes:</span>
 <span class="gp">... </span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;cat&#39;</span><span class="p">,</span> <span class="s">&#39;window&#39;</span><span class="p">,</span> <span class="s">&#39;defenestrate&#39;</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -797,15 +797,15 @@ Usage: thingy [OPTIONS]
 <span class="go">defenestrate 12</span> </pre></div>
 	  </div>
 
-	  <p>Il n'est pas sécuritaire de modifier une séquence
+	  <p>Il n'est pas sÃ©curitaire de modifier une sÃ©quence
 	  (ex. une liste puisqu'elle est mutable) pendant
-	  l'itération. Il est plutôt préférable d'itérer sur une copie
+	  l'itÃ©ration. Il est plutÃ´t prÃ©fÃ©rable d'itÃ©rer sur une copie
 	  de la liste. Pour y arriver, on peut recourir
 	  au <em>slicing</em>:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">a</span><span class="p">[:]:</span> <span class="c"># crée une tranche: copie entière de la liste</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">a</span><span class="p">[:]:</span> <span class="c"># crÃ©e une tranche: copie entiÃ¨re de la liste</span>
 <span class="gp">... </span>   <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">6</span><span class="p">:</span> <span class="n">a</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
@@ -815,11 +815,11 @@ Usage: thingy [OPTIONS]
 	  <br>
 	  <h3>La function <em>range()</em></h3>
 
-	  <p>Si vous avez besoin d'itérer parmi une séquence de
-	  nombres, la fonction intégrée <tt class="docutils
-	  literal"><span class="pre">range()</span></tt> est très
-	  pratique. Elle génère une liste contenant un suite
-	  arithmétique:</p>
+	  <p>Si vous avez besoin d'itÃ©rer parmi une sÃ©quence de
+	  nombres, la fonction intÃ©grÃ©e <tt class="docutils
+	  literal"><span class="pre">range()</span></tt> est trÃ¨s
+	  pratique. Elle gÃ©nÃ¨re une liste contenant un suite
+	  arithmÃ©tique:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -827,11 +827,11 @@ Usage: thingy [OPTIONS]
 <span class="go">[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span> </pre></div>
 	  </div>
 
-	  <p>L'élément de fin n'est jamais inclus dans la
+	  <p>L'Ã©lÃ©ment de fin n'est jamais inclus dans la
 	  liste; <tt class="docutils
-	  literal"><span class="pre">range(10)</span></tt> genère une
-	  liste de 10 valeurs. Il est possible de spécifier le début
-	  de la suite, ou bien de modifier l'incrément (même négatif):</p>
+	  literal"><span class="pre">range(10)</span></tt> genÃ¨re une
+	  liste de 10 valeurs. Il est possible de spÃ©cifier le dÃ©but
+	  de la suite, ou bien de modifier l'incrÃ©ment (mÃªme nÃ©gatif):</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -843,7 +843,7 @@ Usage: thingy [OPTIONS]
 <span class="go">[-10, -40, -70]</span></pre></div>
 	  </div>
 
-	  <p>Pour itérer parmi les indices possibles d'une séquence,
+	  <p>Pour itÃ©rer parmi les indices possibles d'une sÃ©quence,
 	  on combine <tt class="docutils
 	  literal"><span class="pre">range()</span></tt>
 	  et <tt class="docutils
@@ -864,51 +864,51 @@ Usage: thingy [OPTIONS]
 	  <br>
 	  <h3><em>break</em> et <em>continue</em></h3>
 
-	  <p>Le mot-clé <tt class="docutils
+	  <p>Le mot-clÃ© <tt class="docutils
 	  literal"><span class="pre">break</span></tt>, comme en C,
 	  termine la boucle courante: <tt class="docutils
 	  literal"><span class="pre">for</span></tt>
 	  ou <tt class="docutils
 	  literal"><span class="pre">while</span></tt>.</p>
 
-	  <p>Le mot-clé <tt class="docutils
+	  <p>Le mot-clÃ© <tt class="docutils
 	  literal"><span class="pre">continue</span></tt>, se comporte
-	  également comme en C et permet de continuer avec la
-	  prochaine itération de la boucle.</p>
+	  Ã©galement comme en C et permet de continuer avec la
+	  prochaine itÃ©ration de la boucle.</p>
 
-	  <a name="fonctions"><h2>Définition des fonctions</h2></a>
+	  <a name="fonctions"><h2>DÃ©finition des fonctions</h2></a>
 
-	  <p>On peut créer une fonction qui écrit la suite de
-	  Fibonacci jusqu'à un nombre donné comme suite:</p>
+	  <p>On peut crÃ©er une fonction qui Ã©crit la suite de
+	  Fibonacci jusqu'Ã  un nombre donnÃ© comme suite:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>    <span class="c"># écrit la suite Fibonacci jusqu'à n</span>
-<span class="gp">... </span>    <span class="sd">&quot;&quot;&quot;Affiche une suite Fibonacci jusqu'à n.&quot;&quot;&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>    <span class="c"># Ã©crit la suite Fibonacci jusqu'Ã  n</span>
+<span class="gp">... </span>    <span class="sd">&quot;&quot;&quot;Affiche une suite Fibonacci jusqu'Ã  n.&quot;&quot;&quot;</span>
 <span class="gp">... </span>    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
 <span class="gp">... </span>    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
 <span class="gp">... </span>        <span class="k">print</span> <span class="n">a</span><span class="p">,</span>
 <span class="gp">... </span>        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
 <span class="gp">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># Maintenant, on appelle la fonction qu'on vient de définir:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Maintenant, on appelle la fonction qu'on vient de dÃ©finir:</span>
 <span class="gp">... </span><span class="n">fib</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
 <span class="go">0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597</span></pre></div>
 	  </div>
 
-	  <p id="index-1118">Le mot-clé <tt class="docutils
+	  <p id="index-1118">Le mot-clÃ© <tt class="docutils
 	  literal"><span class="pre">def</span></tt> introduit la
-	  définition de la fonction.  Il est suivit du nom de la
-	  fonction et de la liste des paramètres entre
-	  parenthèse. Ensuite, à la ligne suivante se trouve le corps
-	  de la fonction, qui doit être indenté.</p>
+	  dÃ©finition de la fonction.  Il est suivit du nom de la
+	  fonction et de la liste des paramÃ¨tres entre
+	  parenthÃ¨se. Ensuite, Ã  la ligne suivante se trouve le corps
+	  de la fonction, qui doit Ãªtre indentÃ©.</p>
 
-	  <p>Il est simple d'écrire une fonction qui retourne la liste
+	  <p>Il est simple d'Ã©crire une fonction qui retourne la liste
 	  des nombres de Fibonacci au lieu de les afficher:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">fib2</span><span class="p">(</span><span class="n">n</span><span class="p">):</span> <span class="c"># retourne la suite de Fibonacci jusqu'à n</span>
-<span class="gp">... </span>    <span class="sd">&quot;&quot;&quot;Retourne une liste des nombres de Fibonacci jusqu'à n.&quot;&quot;&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">fib2</span><span class="p">(</span><span class="n">n</span><span class="p">):</span> <span class="c"># retourne la suite de Fibonacci jusqu'Ã  n</span>
+<span class="gp">... </span>    <span class="sd">&quot;&quot;&quot;Retourne une liste des nombres de Fibonacci jusqu'Ã  n.&quot;&quot;&quot;</span>
 <span class="gp">... </span>    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="gp">... </span>    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
 <span class="gp">... </span>    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
@@ -917,20 +917,20 @@ Usage: thingy [OPTIONS]
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">result</span>
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">f100</span> <span class="o">=</span> <span class="n">fib2</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>    <span class="c"># appel de la fonction</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">f100</span>                <span class="c"># affichage du résultat</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f100</span>                <span class="c"># affichage du rÃ©sultat</span>
 <span class="go">[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]</span> </pre></div>
 	  </div>
 
-	  <p>Dans cet exemple, le mot-clé <tt class="docutils
-	  literal"><span class="pre">return</span></tt> permet à la
+	  <p>Dans cet exemple, le mot-clÃ© <tt class="docutils
+	  literal"><span class="pre">return</span></tt> permet Ã  la
 	  fonction de retourner une valeur. Si la fonction ne retourne
-	  pas explicitement de valeur (par défaut), la fonction
+	  pas explicitement de valeur (par dÃ©faut), la fonction
 	  retournera <tt class="docutils
-	  literal"><span class="pre">None</span></tt> (peut être vu comme une sorte de pointeur nul).</p>
+	  literal"><span class="pre">None</span></tt> (peut Ãªtre vu comme une sorte de pointeur nul).</p>
 
-	  <h3>Arguments par défaut</h3>
+	  <h3>Arguments par dÃ©faut</h3>
 
-	  <p>Ceci permet de créer une fonction qui peut être appelée
+	  <p>Ceci permet de crÃ©er une fonction qui peut Ãªtre appelÃ©e
 	  avec moins d'arguments. Par exemple:</p>
 
 	  <div class="highlight-python"><div class="highlight">
@@ -948,28 +948,28 @@ Usage: thingy [OPTIONS]
         <span class="k">print</span> <span class="n">complaint</span></pre></div>
 	  </div>
 
-	  <p>La fonction peut être appelée de diverses façons:</p>
+	  <p>La fonction peut Ãªtre appelÃ©e de diverses faÃ§ons:</p>
 
 	  <ul class="simple">
-	    <li>en spécifiant seulement l'argument obligatoire:
+	    <li>en spÃ©cifiant seulement l'argument obligatoire:
 	      <tt class="docutils
 	      literal"><span class="pre">ask_ok('Do</span> <span class="pre">you</span> <span class="pre">really</span> <span class="pre">want</span> <span class="pre">to</span> <span class="pre">quit?')</span></tt></li>
-	    <li>en spécifiant un des arguments optionels:
+	    <li>en spÃ©cifiant un des arguments optionels:
 	      <tt class="docutils
 	      literal"><span class="pre">ask_ok('OK</span> <span class="pre">to</span> <span class="pre">overwrite</span> <span class="pre">the</span> <span class="pre">file?',</span> <span class="pre">2)</span></tt></li>
 
-	    <li>ou bien en spécifiant tous les arguments:
+	    <li>ou bien en spÃ©cifiant tous les arguments:
 	      <tt class="docutils
 	      literal"><span class="pre">ask_ok('OK</span> <span class="pre">to</span> <span class="pre">overwrite</span> <span class="pre">the</span> <span class="pre">file?',</span> <span class="pre">2,</span> <span class="pre">'Come</span> <span class="pre">on,</span> <span class="pre">only</span> <span class="pre">yes</span> <span class="pre">or</span> <span class="pre">no!')</span></tt></li>
 
 	  </ul>
-	  <p>Cet exemple introduit le mot-clé <tt class="docutils
+	  <p>Cet exemple introduit le mot-clÃ© <tt class="docutils
 	  literal"><span class="pre">in</span></tt>. Il test si une
-	  certaine valeur est contenue ou pas dans une séquence.</p>
+	  certaine valeur est contenue ou pas dans une sÃ©quence.</p>
 
-	  <h3>Arguments par mot-clés</h3>
+	  <h3>Arguments par mot-clÃ©s</h3>
 
-	  <p>Les fonctions peuvent également être appelées en utilisant
+	  <p>Les fonctions peuvent Ã©galement Ãªtre appelÃ©es en utilisant
 	  des <em>keyword arguments</em> de la
 	  forme <tt class="docutils
 	  literal"><span class="pre">kwarg=value</span></tt>. Par
@@ -984,47 +984,47 @@ Usage: thingy [OPTIONS]
     <span class="k">print</span> <span class="s">&quot;-- It&#39;s&quot;</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="s">&quot;!&quot;</span></pre></div>
 	  </div>
 
-	  <p>possède un argument obligatoire (<tt class="docutils
+	  <p>possÃ¨de un argument obligatoire (<tt class="docutils
 	  literal"><span class="pre">voltage</span></tt>) et trois
 	  arguments optionnels (<tt class="docutils
 	  literal"><span class="pre">state</span></tt>, <tt class="docutils
 	  literal"><span class="pre">action</span></tt>,
 	  et <tt class="docutils
 	  literal"><span class="pre">type</span></tt>). Cette fonction
-	  peut être appelée de ces différentes façons:</p>
+	  peut Ãªtre appelÃ©e de ces diffÃ©rentes faÃ§ons:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
 <span class="n">parrot</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>                                          <span class="c"># 1 argument positionel</span>
-<span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>                                  <span class="c"># 1 argument mot-clé</span>
-<span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mi">1000000</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s">&#39;VOOOOOM&#39;</span><span class="p">)</span>             <span class="c"># 2 argument mot-clé</span>
-<span class="n">parrot</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s">&#39;VOOOOOM&#39;</span><span class="p">,</span> <span class="n">voltage</span><span class="o">=</span><span class="mi">1000000</span><span class="p">)</span>             <span class="c"># 2 arguments mot-clé</span>
+<span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>                                  <span class="c"># 1 argument mot-clÃ©</span>
+<span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mi">1000000</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s">&#39;VOOOOOM&#39;</span><span class="p">)</span>             <span class="c"># 2 argument mot-clÃ©</span>
+<span class="n">parrot</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s">&#39;VOOOOOM&#39;</span><span class="p">,</span> <span class="n">voltage</span><span class="o">=</span><span class="mi">1000000</span><span class="p">)</span>             <span class="c"># 2 arguments mot-clÃ©</span>
 <span class="n">parrot</span><span class="p">(</span><span class="s">&#39;a million&#39;</span><span class="p">,</span> <span class="s">&#39;bereft of life&#39;</span><span class="p">,</span> <span class="s">&#39;jump&#39;</span><span class="p">)</span>         <span class="c"># 3 arguments positionnels</span>
-<span class="n">parrot</span><span class="p">(</span><span class="s">&#39;a thousand&#39;</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s">&#39;pushing up the daisies&#39;</span><span class="p">)</span>  <span class="c"># 1 argument positionnel, 1 argument mot-clé</span></pre></div>
+<span class="n">parrot</span><span class="p">(</span><span class="s">&#39;a thousand&#39;</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s">&#39;pushing up the daisies&#39;</span><span class="p">)</span>  <span class="c"># 1 argument positionnel, 1 argument mot-clÃ©</span></pre></div>
 	  </div>
 
 	  <p>mais les appels suivants sont invalides:</p>
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
-<span class="n">parrot</span><span class="p">()</span>                     <span class="c"># nécessite un argument manquant</span>
-<span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="s">&#39;dead&#39;</span><span class="p">)</span>  <span class="c"># aucun argument positionnel à la suite d'un argument mot-clé</span>
-<span class="n">parrot</span><span class="p">(</span><span class="mi">110</span><span class="p">,</span> <span class="n">voltage</span><span class="o">=</span><span class="mi">220</span><span class="p">)</span>     <span class="c"># affectation redondante pour un même argument</span>
-<span class="n">parrot</span><span class="p">(</span><span class="n">actor</span><span class="o">=</span><span class="s">&#39;John Cleese&#39;</span><span class="p">)</span>  <span class="c"># argument mot-clé inconnu</span> </pre></div>
+<span class="n">parrot</span><span class="p">()</span>                     <span class="c"># nÃ©cessite un argument manquant</span>
+<span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="s">&#39;dead&#39;</span><span class="p">)</span>  <span class="c"># aucun argument positionnel Ã  la suite d'un argument mot-clÃ©</span>
+<span class="n">parrot</span><span class="p">(</span><span class="mi">110</span><span class="p">,</span> <span class="n">voltage</span><span class="o">=</span><span class="mi">220</span><span class="p">)</span>     <span class="c"># affectation redondante pour un mÃªme argument</span>
+<span class="n">parrot</span><span class="p">(</span><span class="n">actor</span><span class="o">=</span><span class="s">&#39;John Cleese&#39;</span><span class="p">)</span>  <span class="c"># argument mot-clÃ© inconnu</span> </pre></div>
 	  </div>
 
-	  <p>Lors de l'appel d'une fonction les arguments mot-clé
-	  doivent se trouver à la suite des arguments
-	  positionnels. Tous les arguments mot-clé doivent
-	  correspondrent à un argument accepté par la fonction et leur ordre
+	  <p>Lors de l'appel d'une fonction les arguments mot-clÃ©
+	  doivent se trouver Ã  la suite des arguments
+	  positionnels. Tous les arguments mot-clÃ© doivent
+	  correspondrent Ã  un argument acceptÃ© par la fonction et leur ordre
 	  importe peu. Aucun argument ne peut recevoir plus d'une
 	  valeur.</p>
 
-	  <a name="struct"><h2>Structures de données</h2></a>
+	  <a name="struct"><h2>Structures de donnÃ©es</h2></a>
 
 	  <h3>list</h3>
 
 	  <p>Un exemple qui montre l'utilisation de la plupart
-	  des <a href="http://docs.python.org/tutorial/datastructures.html#more-on-lists">méthodes</a>
+	  des <a href="http://docs.python.org/tutorial/datastructures.html#more-on-lists">mÃ©thodes</a>
 	  de <tt class="docutils
 	  literal"><span class="pre">list</span></tt>:</p>
 	  <div class="highlight-python"><div class="highlight">
@@ -1052,8 +1052,8 @@ Usage: thingy [OPTIONS]
 	  <br>
 	  <h3>Outils de programmation fonctionnelle</h3>
 
-	  <p>Trois fonctions intégrées sont très utiles
-	  lorsque utilisées avec des listes: <tt class="docutils
+	  <p>Trois fonctions intÃ©grÃ©es sont trÃ¨s utiles
+	  lorsque utilisÃ©es avec des listes: <tt class="docutils
 	  literal"><span class="pre">filter()</span></tt>, <tt class="docutils
 	  literal"><span class="pre">map()</span></tt>,
 	  et <tt class="docutils
@@ -1061,16 +1061,16 @@ Usage: thingy [OPTIONS]
 
 	  <p><tt class="docutils
 	    literal"><span class="pre">filter(function,</span> <span class="pre">sequence)</span></tt>
-	    retourne une séquence composée des items
+	    retourne une sÃ©quence composÃ©e des items
 	    de <em>sequence</em> pour lesquels <tt class="docutils
 	    literal"><span class="pre">function(item)</span></tt> est
-	    vraie. Si <em>sequence</em> est une chaîne de caractères
+	    vraie. Si <em>sequence</em> est une chaÃ®ne de caractÃ¨res
 	    ou un <tt class="docutils
-	    literal"><span class="pre">tuple</span></tt>, le résultat
-	    sera du même type; sinon, ce sera toujours
+	    literal"><span class="pre">tuple</span></tt>, le rÃ©sultat
+	    sera du mÃªme type; sinon, ce sera toujours
 	    une <tt class="docutils
 	    literal"><span class="pre">liste</span></tt>. Par exemple,
-	    pour créer une séquence de nombres divisibles ni par 2, ni
+	    pour crÃ©er une sÃ©quence de nombres divisibles ni par 2, ni
 	    par 3:</p>
 
 	  <div class="highlight-python"><div class="highlight">
@@ -1096,8 +1096,8 @@ Usage: thingy [OPTIONS]
 <span class="go">[1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]</span>  </pre></div>
 	  </div>
 
-	  <p>Plus d'une séquence peut être spécifiée; la fonction doit
-	  alors avoir autant d'arguments que de séquences. Par
+	  <p>Plus d'une sÃ©quence peut Ãªtre spÃ©cifiÃ©e; la fonction doit
+	  alors avoir autant d'arguments que de sÃ©quences. Par
 	  exemple:</p>
 
 	  <div class="highlight-python"><div class="highlight">
@@ -1111,11 +1111,11 @@ Usage: thingy [OPTIONS]
 
 	  <p><tt class="docutils
 	  literal"><span class="pre">reduce(function,</span> <span class="pre">sequence)</span></tt>
-	  retourne une seule valeur créée en
+	  retourne une seule valeur crÃ©Ã©e en
 	  appelant <em>function</em> pour les deux premiers items
-	  de <em>sequence</em>. Ensuite <em>function</em> est appelée
-	  en lui passant le résultat et le prochain item de la
-	  séquence, et ainsi de suite. Par exemple, pour calculer la
+	  de <em>sequence</em>. Ensuite <em>function</em> est appelÃ©e
+	  en lui passant le rÃ©sultat et le prochain item de la
+	  sÃ©quence, et ainsi de suite. Par exemple, pour calculer la
 	  somme des 10 premiers nombres:</p>
 
 	  <div class="highlight-python"><div class="highlight">
@@ -1127,14 +1127,14 @@ Usage: thingy [OPTIONS]
 	  </div>
 
 	  <p>S'il n'y a qu'un seul item dans <em>sequence</em>, sa
-	  valeur est retournée; si <em>sequence</em> est vide, une
-	  exception est lancée.</p>
+	  valeur est retournÃ©e; si <em>sequence</em> est vide, une
+	  exception est lancÃ©e.</p>
 
-	  <p>Un troisième arguement peut être spécifié pour indiquer
-	  la valeur de départ. Dans ce cas, cette valeur de départ est
-	  retournée si <em>sequence</em> est vide, et la fonction est
-	  d'abord appliquée sur la valeur de départ et au premier item
-	  de <em>sequence</em>, ensuite sur le résultat et le prochain
+	  <p>Un troisiÃ¨me arguement peut Ãªtre spÃ©cifiÃ© pour indiquer
+	  la valeur de dÃ©part. Dans ce cas, cette valeur de dÃ©part est
+	  retournÃ©e si <em>sequence</em> est vide, et la fonction est
+	  d'abord appliquÃ©e sur la valeur de dÃ©part et au premier item
+	  de <em>sequence</em>, ensuite sur le rÃ©sultat et le prochain
 	  item, et ainsi de suite. Par exemple,</p>
 
 	  <div class="highlight-python"><div class="highlight">
@@ -1149,17 +1149,17 @@ Usage: thingy [OPTIONS]
 <span class="go">0</span></pre></div>
 
 	    <br>
-	    <h3>Liste en compréhension (<em>list comprehensions</em>)</h3>
+	    <h3>Liste en comprÃ©hension (<em>list comprehensions</em>)</h3>
 
-	    <p>La technique liste en compréhension apporte une façon
-	    concise de créer des listes. Parmi les applications
+	    <p>La technique liste en comprÃ©hension apporte une faÃ§on
+	    concise de crÃ©er des listes. Parmi les applications
 	    communes se trouve la confection de nouvelles listes
-	    pour lesquelles chaque élément est le résultat
-	    d'opérations effectuées sur chaque membre d'une autre
-	    séquence.</p>
+	    pour lesquelles chaque Ã©lÃ©ment est le rÃ©sultat
+	    d'opÃ©rations effectuÃ©es sur chaque membre d'une autre
+	    sÃ©quence.</p>
 	    
-	    <p>Par exemple, supposons qu'on désire créer une liste de
-	      carrés de nombre, telle:</p>
+	    <p>Par exemple, supposons qu'on dÃ©sire crÃ©er une liste de
+	      carrÃ©s de nombre, telle:</p>
 	    
 	    <div class="highlight-python"><div class="highlight">
 		<pre>
@@ -1171,15 +1171,15 @@ Usage: thingy [OPTIONS]
 <span class="go">[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]</span></pre></div>
 	    </div>
 
-	    <p>On peut obtenir le même résultat avec:</p>
+	    <p>On peut obtenir le mÃªme rÃ©sultat avec:</p>
 
 	    <div class="highlight-python"><div class="highlight">
 		<pre>
 <span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span> </pre></div>
 	    </div>
 
-	    <p>Les listes en compréhension peuvent contenir des
-	    expressions complexes et des fonctions imbriquées:</p>
+	    <p>Les listes en comprÃ©hension peuvent contenir des
+	    expressions complexes et des fonctions imbriquÃ©es:</p>
 	    <div class="highlight-python"><div class="highlight">
 		<pre>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span>
@@ -1188,16 +1188,16 @@ Usage: thingy [OPTIONS]
 	    </div>
 
 	    <br>
-	    <h3>Tuples et séquences</h3>
+	    <h3>Tuples et sÃ©quences</h3>
 
-	    <p>On voit que les listes et les chaînes de caractères ont
-	    plusieurs propriétés en commun, telles l'indexation et
+	    <p>On voit que les listes et les chaÃ®nes de caractÃ¨res ont
+	    plusieurs propriÃ©tÃ©s en commun, telles l'indexation et
 	    le <em>slicing</em>. Il y a aussi un autre type de
-	    séquence: le <tt class="docutils
+	    sÃ©quence: le <tt class="docutils
 	    literal"><span class="pre">tuple</span></tt>.</p>
 
 	    <p>Un tuple se compose d'un certain nombre de valeurs
-	    séparées par une virgule, par exemple:</p>
+	    sÃ©parÃ©es par une virgule, par exemple:</p>
 
 	    <div class="highlight-python"><div class="highlight">
 		<pre>
@@ -1206,22 +1206,22 @@ Usage: thingy [OPTIONS]
 <span class="go">12345</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">t</span>
 <span class="go">(12345, 54321, &#39;hello!&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># Les <em>tuples</em> peuvent être imbriqués:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Les <em>tuples</em> peuvent Ãªtre imbriquÃ©s:</span>
 <span class="gp">... </span><span class="n">u</span> <span class="o">=</span> <span class="n">t</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">u</span>
 <span class="go">((12345, 54321, &#39;hello!&#39;), (1, 2, 3, 4, 5))</span> </pre></div>
 	    </div>
 
-	    <p>Comme on le constate, à l'affichage, les tuples sont
-	    toujours entre parenthèses, afin que les tuples imbriqués
-	    soient reconnus correctement; par contre, ils peuvent être
-	    entrés avec ou sans parenthèses, malgré que les
-	    parenthèses sont souvent nécessaires malgré tout (si le
+	    <p>Comme on le constate, Ã  l'affichage, les tuples sont
+	    toujours entre parenthÃ¨ses, afin que les tuples imbriquÃ©s
+	    soient reconnus correctement; par contre, ils peuvent Ãªtre
+	    entrÃ©s avec ou sans parenthÃ¨ses, malgrÃ© que les
+	    parenthÃ¨ses sont souvent nÃ©cessaires malgrÃ© tout (si le
 	    tuple fait partie d'une grande expression).</p>
 
-	    <p>Les tuples, comme les chaînes de caractères, sont
-	    immuables: ce n'est pas possible de modifier les éléments
-	    d'un tuple. Il est possible de créer des tuples contenant
+	    <p>Les tuples, comme les chaÃ®nes de caractÃ¨res, sont
+	    immuables: ce n'est pas possible de modifier les Ã©lÃ©ments
+	    d'un tuple. Il est possible de crÃ©er des tuples contenant
 	    des objets muables, comme des listes.</p>
 
 	    <p>L'instruction <tt class="docutils
@@ -1232,7 +1232,7 @@ Usage: thingy [OPTIONS]
 	      literal"><span class="pre">54321</span></tt>
 	      et <tt class="docutils
 	      literal"><span class="pre">'hello!'</span></tt> sont
-	      combinées toutes les trois dans un tuple. L'opération
+	      combinÃ©es toutes les trois dans un tuple. L'opÃ©ration
 	      inverse est aussi possible:</p>
 
 	    <div class="highlight-python"><div class="highlight">
@@ -1240,26 +1240,26 @@ Usage: thingy [OPTIONS]
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">t</span></pre></div>
 	    </div>
 
-	    <p>Cela est appelé <em>sequence unpacking</em> ou déballement
-	      de séquence, et
-	    fonctionne pour toutes les séquence. Le <em>sequence
-	    unpacking</em> nécessite que la liste des variables à
-	    gauche possède le même nombre d'éléments que dans la
-	    séquence.</p>
+	    <p>Cela est appelÃ© <em>sequence unpacking</em> ou dÃ©ballement
+	      de sÃ©quence, et
+	    fonctionne pour toutes les sÃ©quence. Le <em>sequence
+	    unpacking</em> nÃ©cessite que la liste des variables Ã 
+	    gauche possÃ¨de le mÃªme nombre d'Ã©lÃ©ments que dans la
+	    sÃ©quence.</p>
 
 	    <h3>Ensembles (<em>Sets</em>)</h3>
 
-	    <p>Python inclus aussi un type de données pour les
+	    <p>Python inclus aussi un type de donnÃ©es pour les
 	    ensemble. Un <tt class="docutils
 	    literal"><span class="pre">set</span></tt> est une
-	    collection non-ordonnée composée uniquement d'éléments
-	    différents les uns des autres. Les usages de base
-	    comprennent les tests d'appartenance et l'élimination des
-	    doublons. Les ensembles supportent également les
-	    opérations mathématiques telles l'union, l'intersection,
-	    la différence et la différence symétrique.</p>
+	    collection non-ordonnÃ©e composÃ©e uniquement d'Ã©lÃ©ments
+	    diffÃ©rents les uns des autres. Les usages de base
+	    comprennent les tests d'appartenance et l'Ã©limination des
+	    doublons. Les ensembles supportent Ã©galement les
+	    opÃ©rations mathÃ©matiques telles l'union, l'intersection,
+	    la diffÃ©rence et la diffÃ©rence symÃ©trique.</p>
 
-	    <p>Voici une courte démonstration:</p>
+	    <p>Voici une courte dÃ©monstration:</p>
 
 	    <div class="highlight-python"><div class="highlight">
 		<pre>
@@ -1271,7 +1271,7 @@ Usage: thingy [OPTIONS]
 <span class="go">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;crabgrass&#39;</span> <span class="ow">in</span> <span class="n">fruit</span>
 <span class="go">False</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># Démontre les opérations des ensembles sur les lettres uniques de deux mots</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># DÃ©montre les opÃ©rations des ensembles sur les lettres uniques de deux mots</span>
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="s">&#39;abracadabra&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="s">&#39;alacazam&#39;</span><span class="p">)</span>
@@ -1291,44 +1291,44 @@ Usage: thingy [OPTIONS]
 	    <br>
 	    <h3>Dictionnaire</h3>
 
-	    <p>Un autre type de données construite dans Python est le
-	    dictionnaire. Contrairement aux séquences qui sont
-	      indexées par un nombre, les dictionnaires
-	      sont indexés par des clés, qui peuvent être n'importe
-	      quel type immuable. Les tuples peuvent être utilisés
-	      comme des clés s'ils contiennent seulement des chaînes de
-	      caractères, des nombres ou des tuples; si un tuple
+	    <p>Un autre type de donnÃ©es construite dans Python est le
+	    dictionnaire. Contrairement aux sÃ©quences qui sont
+	      indexÃ©es par un nombre, les dictionnaires
+	      sont indexÃ©s par des clÃ©s, qui peuvent Ãªtre n'importe
+	      quel type immuable. Les tuples peuvent Ãªtre utilisÃ©s
+	      comme des clÃ©s s'ils contiennent seulement des chaÃ®nes de
+	      caractÃ¨res, des nombres ou des tuples; si un tuple
 	      contient n'importe quel objet muable directement ou
-	      indirectement, il ne peut pas être utilisé comme
-	      clé. Vous ne pouvez pas utiliser les listes comme des
-	      clés puisqu'elles peuvent être modifiées sur place.</p>
+	      indirectement, il ne peut pas Ãªtre utilisÃ© comme
+	      clÃ©. Vous ne pouvez pas utiliser les listes comme des
+	      clÃ©s puisqu'elles peuvent Ãªtre modifiÃ©es sur place.</p>
 
-	    <p>Une paire d'accolades crée un
+	    <p>Une paire d'accolades crÃ©e un
 	    dictionnaire vide: <tt class="docutils
 	    literal"><span class="pre">{}</span></tt>. Placer une
-	    liste de paires de <em>key:value</em> séparées par une
+	    liste de paires de <em>key:value</em> sÃ©parÃ©es par une
 	    virgule entre accolades ajoute des paires
 	    de <em>key:value</em> initiales au dictionnaire; c'est
-	    également la façon dont le dictionnaire est affiché. </p>
+	    Ã©galement la faÃ§on dont le dictionnaire est affichÃ©. </p>
 
-	    <p>L'opération principale du dictionnaire est
-	    l'entreposage de valeurs à l'aide d'une clé et l'extraction
-	    de la valeur étant donnée sa clé. Il est également possible
-	    de supprimer une paire de <em>key:value</em> à l'aide de <tt class="docutils
+	    <p>L'opÃ©ration principale du dictionnaire est
+	    l'entreposage de valeurs Ã  l'aide d'une clÃ© et l'extraction
+	    de la valeur Ã©tant donnÃ©e sa clÃ©. Il est Ã©galement possible
+	    de supprimer une paire de <em>key:value</em> Ã  l'aide de <tt class="docutils
 	    literal"><span class="pre">del</span></tt>. Une assignation utilisant
-	    une clé existante écrasera la valeur
-	    associée précédente. Extraire une valeur à
-	    l'aide d'une clé inexistante cause une erreur.</p>
+	    une clÃ© existante Ã©crasera la valeur
+	    associÃ©e prÃ©cÃ©dente. Extraire une valeur Ã 
+	    l'aide d'une clÃ© inexistante cause une erreur.</p>
 
 	    <p>La fonction <tt class="xref docutils
 	    literal"><span class="pre">keys()</span></tt> du
-	    dictionnaire retourne une liste de toutes les clés
-	    utilisées dans le dictionnaire, selon un ordre arbitraire
+	    dictionnaire retourne une liste de toutes les clÃ©s
+	    utilisÃ©es dans le dictionnaire, selon un ordre arbitraire
 	    (si vous les voulez dans l'ordre, vous pouvez simplement
 	    appliquer la fonction <tt class="docutils
 	    literal"><span class="pre">sorted()</span></tt>). Pour
-	    vérifier qu'une clé est dans le dictionnaire, on utilise
-	    le mot-clé <tt class="docutils
+	    vÃ©rifier qu'une clÃ© est dans le dictionnaire, on utilise
+	    le mot-clÃ© <tt class="docutils
 	    literal"><span class="pre">in</span></tt>.</p>
 
 	    <p>Voici un petit exemple de l'utilisation d'un
@@ -1353,11 +1353,11 @@ Usage: thingy [OPTIONS]
 	    </div>
 
 	    <br>
-	    <h3>Techniques d'itération</h3>
+	    <h3>Techniques d'itÃ©ration</h3>
 
-	    <p>Lorsqu'on itère parmi les éléments d'un dictionnaire la
-	    clé et la valeur correspondante peuvent être retrouvées en
-	    même temps grâce à la méthode <tt class="xref docutils
+	    <p>Lorsqu'on itÃ¨re parmi les Ã©lÃ©ments d'un dictionnaire la
+	    clÃ© et la valeur correspondante peuvent Ãªtre retrouvÃ©es en
+	    mÃªme temps grÃ¢ce Ã  la mÃ©thode <tt class="xref docutils
 	    literal"><span class="pre">iteritems()</span></tt>.</p>
 
 	    <div class="highlight-python"><div class="highlight">
@@ -1370,9 +1370,9 @@ Usage: thingy [OPTIONS]
 <span class="go">robin the brave</span> </pre></div>
 	    </div>
 
-	    <p>Lorsqu'on itère parmi les éléments d'une séquence,
-	    l'indice et la valeur correspondante peuvent être
-	    retrouvés en même temps grâce à la
+	    <p>Lorsqu'on itÃ¨re parmi les Ã©lÃ©ments d'une sÃ©quence,
+	    l'indice et la valeur correspondante peuvent Ãªtre
+	    retrouvÃ©s en mÃªme temps grÃ¢ce Ã  la
 	    fonction <tt class="docutils
 	    literal"><span class="pre">enumerate()</span></tt>.</p>
 
@@ -1386,8 +1386,8 @@ Usage: thingy [OPTIONS]
 <span class="go">2 toe</span></pre></div>
 	    </div>
 
-	    <p>Pour itérer sur deux séquences ou plus en même temps,
-	    les éléments peuvent être combinés à l'aide de la
+	    <p>Pour itÃ©rer sur deux sÃ©quences ou plus en mÃªme temps,
+	    les Ã©lÃ©ments peuvent Ãªtre combinÃ©s Ã  l'aide de la
 	    fonction <tt class="docutils
 	    literal"><span class="pre">zip()</span></tt>.
 	      
@@ -1403,7 +1403,7 @@ Usage: thingy [OPTIONS]
 <span class="go">What is your favorite color?  It is blue.</span></pre></div>
 	      </div>
 
-	    <p>Pour itérer sur les éléments d'une séquence en sens
+	    <p>Pour itÃ©rer sur les Ã©lÃ©ments d'une sÃ©quence en sens
 	    inverse, appelez la fonction <tt class="docutils
 	    literal"><span class="pre">reversed()</span></tt>.</p>
 
@@ -1419,11 +1419,11 @@ Usage: thingy [OPTIONS]
 <span class="go">1</span></pre></div>
 	    </div>
 
-	    <p>Pour itérer sur les éléments d'une séquence ordonnée,
+	    <p>Pour itÃ©rer sur les Ã©lÃ©ments d'une sÃ©quence ordonnÃ©e,
 	    utilisez la fonction <tt class="docutils
 	    literal"><span class="pre">sorted()</span></tt> qui
-	    retournera une nouvelle liste ordonnée en laissant la
-	    liste originale non-alterée.</p>
+	    retournera une nouvelle liste ordonnÃ©e en laissant la
+	    liste originale non-alterÃ©e.</p>
 
 	    <div class="highlight-python"><div class="highlight">
 		<pre>
@@ -1440,29 +1440,29 @@ Usage: thingy [OPTIONS]
 
 	  <a name="modules"><h2>Modules</h2></a>
 
-	  <p>Une fois l'interpréteur fermé, les définitions qui ont
-	  été faites (fonctions et variables) sont
-	  perdues. Évidemment, si vous désirez écrire de plus long
-	  programme, il est préférable d'utiliser un éditeur texte
-	  pour écrire des scripts et par la suite, les exécuter. Vous
-	  pourriez vouloir séparer votre programme en plusieurs
-	  fichiers, ou bien réutiliser des fonctions que vous jugez
-	  pratiques sans avoir à les recopier dans chacun de vos
+	  <p>Une fois l'interprÃ©teur fermÃ©, les dÃ©finitions qui ont
+	  Ã©tÃ© faites (fonctions et variables) sont
+	  perdues. Ã‰videmment, si vous dÃ©sirez Ã©crire de plus long
+	  programme, il est prÃ©fÃ©rable d'utiliser un Ã©diteur texte
+	  pour Ã©crire des scripts et par la suite, les exÃ©cuter. Vous
+	  pourriez vouloir sÃ©parer votre programme en plusieurs
+	  fichiers, ou bien rÃ©utiliser des fonctions que vous jugez
+	  pratiques sans avoir Ã  les recopier dans chacun de vos
 	  programmes.</p>
 
-	  <p>Pour remédier à cela, Python permet de mettre les
-	  définitions dans un fichier et de les utiliser à partir
-	  d'autres scripts ou dans l'interpréteur. Ces fichiers se
-	  nomment <em>modules</em>; les définitions d'un module
-	  peuvent être importées dans d'autres modules.</p>
+	  <p>Pour remÃ©dier Ã  cela, Python permet de mettre les
+	  dÃ©finitions dans un fichier et de les utiliser Ã  partir
+	  d'autres scripts ou dans l'interprÃ©teur. Ces fichiers se
+	  nomment <em>modules</em>; les dÃ©finitions d'un module
+	  peuvent Ãªtre importÃ©es dans d'autres modules.</p>
 
 	  <p>Un module est un fichier contenant des expressions et des
-	  définitions en Python. Le nom du fichier est le nom du
+	  dÃ©finitions en Python. Le nom du fichier est le nom du
 	  module avec l'extension <tt class="docutils
 	  literal"><span class="pre">.py</span></tt>. Par exemple,
-	  utilisez un éditeur de texte pour créer un fichier
-	  nommé <tt class="docutils
-	  literal"><span class="pre">fibo.py</span></tt> et écrivez-y:</p>
+	  utilisez un Ã©diteur de texte pour crÃ©er un fichier
+	  nommÃ© <tt class="docutils
+	  literal"><span class="pre">fibo.py</span></tt> et Ã©crivez-y:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -1483,15 +1483,15 @@ Usage: thingy [OPTIONS]
     <span class="k">return</span> <span class="n">result</span></pre></div>
 	  </div>
 
-	  <p>Maintenant allez dans l'interpréteur intéractif de Python
-	  et importez ce module à l'aide de la commande suivante:</p>
+	  <p>Maintenant allez dans l'interprÃ©teur intÃ©ractif de Python
+	  et importez ce module Ã  l'aide de la commande suivante:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">fibo</span></pre></div>
 	  </div>
 
-	  <p>En utilisant le nom du module, on peut accéder aux
+	  <p>En utilisant le nom du module, on peut accÃ©der aux
 	  fonctions:</p>
 
 	  <div class="highlight-python"><div class="highlight">
@@ -1505,7 +1505,7 @@ Usage: thingy [OPTIONS]
 	  </div>
 
 	  <p>Si vous planifiez utiliser une fonction souvent, il est
-	  possible de l'assigner à une variable locale:</p>
+	  possible de l'assigner Ã  une variable locale:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -1515,22 +1515,22 @@ Usage: thingy [OPTIONS]
 	  </div>
 
 	  <br>
-	  <h3>Exécuter un module comme un script</h3>
+	  <h3>ExÃ©cuter un module comme un script</h3>
 
-	  <p>Lorsque vous exécutez un module Python avec </p>
+	  <p>Lorsque vous exÃ©cutez un module Python avec </p>
 
 	  <div class="highlight-python">
 	    <pre>
 python fibo.py &lt;arguments&gt;</pre>
 	  </div>
 
-	  <p>le code dans le module sera exécuté, exactement comme si
-	  vous l'aviez importé, mais avec la variable
+	  <p>le code dans le module sera exÃ©cutÃ©, exactement comme si
+	  vous l'aviez importÃ©, mais avec la variable
 	  globale <tt class="docutils
-	  literal"><span class="pre">__name__</span></tt> assignée
-	  à <tt class="docutils
+	  literal"><span class="pre">__name__</span></tt> assignÃ©e
+	  Ã  <tt class="docutils
 	  literal"><span class="pre">&quot;__main__&quot;</span></tt>. Ce
-	  qui implique qu'en ajoutant ce code à la fin du module:</p>
+	  qui implique qu'en ajoutant ce code Ã  la fin du module:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -1540,9 +1540,9 @@ python fibo.py &lt;arguments&gt;</pre>
 	  </div>
 
 	  <p>il est possible d'utiliser ce fichier en tant que 
-	  script ainsi qu'en tant que module, puisque le code accédant
-	  aux arguments du script ne sera exécuté que si le 
-	  module est utilisé comme un script:</p>
+	  script ainsi qu'en tant que module, puisque le code accÃ©dant
+	  aux arguments du script ne sera exÃ©cutÃ© que si le 
+	  module est utilisÃ© comme un script:</p>
 
 	  <div class="highlight-python">
 	    <pre>
@@ -1550,8 +1550,8 @@ $ python fibo.py 50
 1 1 2 3 5 8 13 21 34</pre>
 	  </div>
 	  
-	  <p>Si le module est importé, le code ne sera pas
-	  exécuté:</p>
+	  <p>Si le module est importÃ©, le code ne sera pas
+	  exÃ©cutÃ©:</p>
 	  
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -1560,18 +1560,18 @@ $ python fibo.py 50
 
 	    <br>
 
-	    <h3><em>scopes (portée)</em></h3>
+	    <h3><em>scopes (portÃ©e)</em></h3>
 	    
-	    <p>Python utilise un <em>lexical scope</em> (portée lexicale), c.-à-d. que
-	      la liste des noms accessibles à un moment de l'exécution est définie par
-	      le code source. Pour résoudre à quelle variable un nom fait référence,
+	    <p>Python utilise un <em>lexical scope</em> (portÃ©e lexicale), c.-Ã -d. que
+	      la liste des noms accessibles Ã  un moment de l'exÃ©cution est dÃ©finie par
+	      le code source. Pour rÃ©soudre Ã  quelle variable un nom fait rÃ©fÃ©rence,
 	      Python cherche:
 	      
 	      <ol>
 		<li> d'abord localement dans la fonction </li>
-		<li> puis dans les autres fonctions englobantes (de l'intérieur vers l'extérieur) </li>
-		<li> ensuite dans le module contenant la définition de la fonction </li>
-		<li> et finalement cherche parmi les noms intégrés (<i>built-in</i>) </li>
+		<li> puis dans les autres fonctions englobantes (de l'intÃ©rieur vers l'extÃ©rieur) </li>
+		<li> ensuite dans le module contenant la dÃ©finition de la fonction </li>
+		<li> et finalement cherche parmi les noms intÃ©grÃ©s (<i>built-in</i>) </li>
 	      </ol>
 	      <br>
 
@@ -1598,10 +1598,10 @@ In bla(): a = 1 b = 4 c = 6
 In global: a = 1 b = 2 c = 3</pre>
 
 	    <p>Il est important de noter qu'en Python, bien que la
-	      portée soit lexicale, l'évaluation de la valeur associée
-	      à un nom est faite de façon <b>dynamique</b>. Ainsi, un nom
+	      portÃ©e soit lexicale, l'Ã©valuation de la valeur associÃ©e
+	      Ã  un nom est faite de faÃ§on <b>dynamique</b>. Ainsi, un nom
 	      dans une fonction peut changer de valeur si la variable
-	      associée change:
+	      associÃ©e change:
 
 <pre>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">blu</span>():
@@ -1619,42 +1619,42 @@ In bla(): b = 5</pre>
 <br>
 	    <h3>L'espace de recherche des modules (<em>search path</em>)</h3>
 
-	    <p id="index-1131">Lorsqu'un module nommé <tt class="xref
+	    <p id="index-1131">Lorsqu'un module nommÃ© <tt class="xref
 	    docutils literal"><span class="pre">spam</span></tt> est
-	    importé, l'interpréteur cherche un fichier
-	    nommé <tt class="docutils
+	    importÃ©, l'interprÃ©teur cherche un fichier
+	    nommÃ© <tt class="docutils
 	    literal"><span class="pre">spam.py</span></tt> dans le
-	    répertoire contenant le script exécuté, puis ensuite dans la liste
-	    des répertoires spécifiés par la variable
+	    rÃ©pertoire contenant le script exÃ©cutÃ©, puis ensuite dans la liste
+	    des rÃ©pertoires spÃ©cifiÃ©s par la variable
 	    d'environnement <tt class="docutils
 	    literal"><span class="pre"><b>PYTHONPATH</b></span></tt>.</p>
 
 	  </div>
 
-	  <h3>Fichiers Python compilés</h3>
+	  <h3>Fichiers Python compilÃ©s</h3>
 
 	  <p>Une optimisation utile du temps de
-	  démarrage des programmes utilisant de nombreux modules est
-	  faite automatiquement par Python, via la création de
-	  versions compilés en <em>byte-code</em> de ces modules. 
-	  Si un fichier nommé <tt class="docutils
+	  dÃ©marrage des programmes utilisant de nombreux modules est
+	  faite automatiquement par Python, via la crÃ©ation de
+	  versions compilÃ©s en <em>byte-code</em> de ces modules. 
+	  Si un fichier nommÃ© <tt class="docutils
 	  literal"><span class="pre">spam.pyc</span></tt> existe dans
-	  le répertoire où <tt class="docutils
+	  le rÃ©pertoire oÃ¹ <tt class="docutils
 	  literal"><span class="pre">spam.py</span></tt> se situe,
-	  alors il est supposé que celui-ci correspond à sa version compliée. Cependant,
-	  si une modification à <tt class="docutils
-	  literal"><span class="pre">spam.py</span></tt> a été apportée
-	  depuis la création de <tt class="docutils
-	  literal"><span class="pre">spam.pyc</span></tt>, ce dernier sera ignoré.</p>
+	  alors il est supposÃ© que celui-ci correspond Ã  sa version compliÃ©e. Cependant,
+	  si une modification Ã  <tt class="docutils
+	  literal"><span class="pre">spam.py</span></tt> a Ã©tÃ© apportÃ©e
+	  depuis la crÃ©ation de <tt class="docutils
+	  literal"><span class="pre">spam.pyc</span></tt>, ce dernier sera ignorÃ©.</p>
 
 
 	  <h3>La fonction <em>dir()</em></h3>
 
-	  <p>La fonction intégrée <tt class="docutils
-	  literal"><span class="pre">dir()</span></tt> est utilisée
-	  pour connaître le nom des définitions qu'un module
-	  contient. Elle retourne une liste triée de chaînes de
-	  caractères:</p>
+	  <p>La fonction intÃ©grÃ©e <tt class="docutils
+	  literal"><span class="pre">dir()</span></tt> est utilisÃ©e
+	  pour connaÃ®tre le nom des dÃ©finitions qu'un module
+	  contient. Elle retourne une liste triÃ©e de chaÃ®nes de
+	  caractÃ¨res:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -1665,7 +1665,7 @@ In bla(): b = 5</pre>
 
 	  <p>Sans arguments, <tt class="docutils
 	  literal"><span class="pre">dir()</span></tt> liste les noms
-	  définis actuellement:</p>
+	  dÃ©finis actuellement:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -1676,26 +1676,26 @@ In bla(): b = 5</pre>
 <span class="go">[&#39;__builtins__&#39;, &#39;__doc__&#39;, &#39;__file__&#39;, &#39;__name__&#39;, &#39;a&#39;, &#39;fib&#39;, &#39;fibo&#39;, &#39;sys&#39;]</span> </pre></div>
 	  </div>
 
-	  <p>Notez qu'il énumère tous les types de noms: les
+	  <p>Notez qu'il Ã©numÃ¨re tous les types de noms: les
 	  variables, les modules, les fonctions, etc.</p>
 
 	  <h3>Packages</h3>
 
-	  <p>Les <em>packages</em> sont une façon pratique de
+	  <p>Les <em>packages</em> sont une faÃ§on pratique de
 	      structurer les modules en utilisant <em>&#8220;dotted
 	      module names&#8221;</em>. Par exemple, ce nom de
 	      module <tt class="xref docutils
-	      literal"><span class="pre">A.B</span></tt> désigne un
-	      sous-module nommé <tt class="docutils
+	      literal"><span class="pre">A.B</span></tt> dÃ©signe un
+	      sous-module nommÃ© <tt class="docutils
 	      literal"><span class="pre">B</span></tt> inclus dans
-	      le <em>package</em> nommé <tt class="docutils
+	      le <em>package</em> nommÃ© <tt class="docutils
 	      literal"><span class="pre">A</span></tt>. </p>
 
-	  <p>Supposons que l'on désire créer une collection de modules
+	  <p>Supposons que l'on dÃ©sire crÃ©er une collection de modules
 	  (un <em> &#8220;package&#8221;</em>) afin d'uniformiser la
 	  gestion de fichiers sonores. Une structure possible
-	  du <em>package</em> (exprimé en terme de structure de
-	  système de fichiers hierarchique) serait:</p>
+	  du <em>package</em> (exprimÃ© en terme de structure de
+	  systÃ¨me de fichiers hierarchique) serait:</p>
 	  <div class="highlight-python">
 <pre>
 sound/                          Top-level package
@@ -1723,22 +1723,22 @@ sound/                          Top-level package
               ...</pre>
 	  </div>
 
-	  <p>Lorsqu'un <em>package</em> est importé, Python cherche
-	  parmi les répertoires spécifiés par le <tt class="docutils
+	  <p>Lorsqu'un <em>package</em> est importÃ©, Python cherche
+	  parmi les rÃ©pertoires spÃ©cifiÃ©s par le <tt class="docutils
 	  literal"><span class="pre">sys.path</span></tt>, le
-	  sous-répertoire du <em>package</em>.</p>
+	  sous-rÃ©pertoire du <em>package</em>.</p>
 
 	  <p>Les fichiers <tt class="docutils
 	  literal"><span class="pre">__init__.py</span></tt> indiquent
-	  à Python que ces répertoires contiennent
+	  Ã  Python que ces rÃ©pertoires contiennent
 	  des <em>packages</em>. Dans le plus simple des
 	  cas, <tt class="docutils
-	  literal"><span class="pre">__init__.py</span></tt> peut être
-	  un fichier vide, mais il peut également exécuter du code
+	  literal"><span class="pre">__init__.py</span></tt> peut Ãªtre
+	  un fichier vide, mais il peut Ã©galement exÃ©cuter du code
 	  d'initialisation pour le <em>package</em>.</p>
 	  
 	  <p>Les utilisateurs des <em>packages</em> peuvent importer
-	  les modules individuellement à partir
+	  les modules individuellement Ã  partir
 	  d'un <em>package</em>. Par exemple:</p>
 	  
 	  <div class="highlight-python"><div class="highlight">
@@ -1748,7 +1748,7 @@ sound/                          Top-level package
 
 	  <p>Ceci charge le sous-module <tt class="xref docutils
 	  literal"><span class="pre">sound.effects.echo</span></tt>. Par
-	  la suite, il devra être référencé par son nom entier.</p>
+	  la suite, il devra Ãªtre rÃ©fÃ©rencÃ© par son nom entier.</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -1762,11 +1762,11 @@ sound/                          Top-level package
 <span class="kn">from</span> <span class="nn">sound.effects</span> <span class="kn">import</span> <span class="n">echo</span> </pre></div>
 	  </div>
 
-	  <p>Ceci charge également le sous-module <tt class="xref
+	  <p>Ceci charge Ã©galement le sous-module <tt class="xref
 	  docutils literal"><span class="pre">echo</span></tt>, mais
-	  il pourra être référencé sans spécifier le nom
-	  du <em>package</em> en préfix et pourra donc être utilisé de
-	  cette façon:</p>
+	  il pourra Ãªtre rÃ©fÃ©rencÃ© sans spÃ©cifier le nom
+	  du <em>package</em> en prÃ©fix et pourra donc Ãªtre utilisÃ© de
+	  cette faÃ§on:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -1774,7 +1774,7 @@ sound/                          Top-level package
 	  </div>
 
 	  <p>Une autre variation est d'importer directement la
-	  fonction ou la variable désirée:</p>
+	  fonction ou la variable dÃ©sirÃ©e:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -1795,19 +1795,19 @@ sound/                          Top-level package
 
 	    <h3>Librairie standard de Python</h3>
 
-	    <p>Python vient avec plusieurs modules intégrés (<i>built-in</i>), qui
+	    <p>Python vient avec plusieurs modules intÃ©grÃ©s (<i>built-in</i>), qui
 	      font partie de la librairie standard. La librairie standard inclue 
-	      également d'autres types, fonctions et structures de données qui ne sont pas
-	      décrites dans ce tutoriel.</p>
+	      Ã©galement d'autres types, fonctions et structures de donnÃ©es qui ne sont pas
+	      dÃ©crites dans ce tutoriel.</p>
 
-	    <p>La librairie standard se trouve à l'adresse
+	    <p>La librairie standard se trouve Ã  l'adresse
 	    suivante: <a href="http://docs.python.org/release/2.6.5/library/index.html">http://docs.python.org/release/2.6.5/library/index.html</a>. Il
-	    est <b>fortement</b> recommandé de la consulter avant
-	    d'implémenter soi-même toute fonction ou structure de données
-	    nécessaire, puisqu'elle pourrait déjà être présente dans la
+	    est <b>fortement</b> recommandÃ© de la consulter avant
+	    d'implÃ©menter soi-mÃªme toute fonction ou structure de donnÃ©es
+	    nÃ©cessaire, puisqu'elle pourrait dÃ©jÃ  Ãªtre prÃ©sente dans la
 	    librairie.</p>
 
-	  <a name="io"><h2>Lecture et écriture de fichiers</h2></a>
+	  <a name="io"><h2>Lecture et Ã©criture de fichiers</h2></a>
 	  
 	  <p> La fonction <tt class="docutils
 	  literal"><span class="pre">open()</span></tt> retourne un
@@ -1821,28 +1821,28 @@ sound/                          Top-level package
 <span class="go">&lt;open file &#39;/tmp/workfile&#39;, mode &#39;w&#39; at 80a0960&gt;</span>  </pre></div>
 	  </div>
 
-	  <p>Le premier argument est une chaîne de caractère
+	  <p>Le premier argument est une chaÃ®ne de caractÃ¨re
 	  contenant le nom du fichier. Le second argument est une
-	  autre chaîne contenant quelques caractères décrivant la
-	  façon dont le fichier sera utilisé. <em>mode</em> peut
-	  être <tt class="docutils
+	  autre chaÃ®ne contenant quelques caractÃ¨res dÃ©crivant la
+	  faÃ§on dont le fichier sera utilisÃ©. <em>mode</em> peut
+	  Ãªtre <tt class="docutils
 	  literal"><span class="pre">'r'</span></tt> afin d'ouvrir le
 	  fichier en lecture seule, <tt class="docutils
 	  literal"><span class="pre">'w'</span></tt> afin d'ouvrir le
-	  fichier pour écriture seulement (un fichier existant avec le
-	    même nom sera écrasé), ou <tt class="docutils
+	  fichier pour Ã©criture seulement (un fichier existant avec le
+	    mÃªme nom sera Ã©crasÃ©), ou <tt class="docutils
 	  literal"><span class="pre">'a'</span></tt> qui permet
-	  d'ouvrir le fichier pour y insérer des caractères à la fin. 
+	  d'ouvrir le fichier pour y insÃ©rer des caractÃ¨res Ã  la fin. 
 	    <tt class="docutils
 	  literal"><span class="pre">'r+'</span></tt> permet d'ouvrir
-	  le fichier en lecture et en écriture. L'argument
-	  <em>mode</em> est optionnel et par défaut le
+	  le fichier en lecture et en Ã©criture. L'argument
+	  <em>mode</em> est optionnel et par dÃ©faut le
 	  fichier est ouvert en lecture seule.</p>
 
-	  <h3>Méthodes des objets fichier</h3>
+	  <h3>MÃ©thodes des objets fichier</h3>
 
 	  <p>Tous les exemples de cette section suppose qu'un objet
-	  fichier nommé <tt class="docutils
+	  fichier nommÃ© <tt class="docutils
 	  literal"><span class="pre">f</span></tt> existe.</p>
 
 	  <p>Pour lire le contenu d'un fichier, on utilise une des
@@ -1877,8 +1877,8 @@ sound/                          Top-level package
 	  </div>
 
 	  <p>Une approche alternative est de lire les lignes en
-	  itérant l'objet fichier. Ceci est simple et performant tant
-	  en mémoire qu'en rapidité:</p>
+	  itÃ©rant l'objet fichier. Ceci est simple et performant tant
+	  en mÃ©moire qu'en rapiditÃ©:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 <pre>
@@ -1889,16 +1889,16 @@ sound/                          Top-level package
 	  </div>
 
 	  <p>La fonction <tt class="docutils
-	  literal"><span class="pre">f.write(string)</span></tt> écrit
-	  le contenu d'une chaîne de caractères dans le fichier.</p>
+	  literal"><span class="pre">f.write(string)</span></tt> Ã©crit
+	  le contenu d'une chaÃ®ne de caractÃ¨res dans le fichier.</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;This is a test</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span> </pre></div>
 	  </div>
 
-	  <p>Afin d'écrire d'autres types de données, il faut d'abord
-	  les convertir en chaîne de caractères:</p>
+	  <p>Afin d'Ã©crire d'autres types de donnÃ©es, il faut d'abord
+	  les convertir en chaÃ®ne de caractÃ¨res:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -1907,13 +1907,13 @@ sound/                          Top-level package
 <span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> </pre></div>
 	  </div>
 
-	  <p>Lorsque vous avez terminé avec un fichier, appelez la
+	  <p>Lorsque vous avez terminÃ© avec un fichier, appelez la
 	  fonction <tt class="docutils
 	  literal"><span class="pre">f.close()</span></tt> pour fermer
-	  le fichier et libérer les ressources système. Après
-	  avoir appelé <tt class="docutils
+	  le fichier et libÃ©rer les ressources systÃ¨me. AprÃ¨s
+	  avoir appelÃ© <tt class="docutils
 	  literal"><span class="pre">f.close()</span></tt>, toutes
-	  tentatives d'utiliser l'objet fichier échouera.</p>
+	  tentatives d'utiliser l'objet fichier Ã©chouera.</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -1927,26 +1927,26 @@ sound/                          Top-level package
 	  <br>
 	  <h3>Le module <em>pickle</em></h3>
 
-	  <p id="index-1125">Les chaînes de caractères peuvent être
-	  facilement écrites et lues à partir d'un fichier. En ce qui
-	  concerne les nombres, c'est un peu plus compliqué puisque la
-	  méthode <tt class="xref docutils
+	  <p id="index-1125">Les chaÃ®nes de caractÃ¨res peuvent Ãªtre
+	  facilement Ã©crites et lues Ã  partir d'un fichier. En ce qui
+	  concerne les nombres, c'est un peu plus compliquÃ© puisque la
+	  mÃ©thode <tt class="xref docutils
 	  literal"><span class="pre">read()</span></tt> retourne
-	  seulement des chaînes de caractères qui devront être passées
-	  à une fonction comme <tt class="docutils
+	  seulement des chaÃ®nes de caractÃ¨res qui devront Ãªtre passÃ©es
+	  Ã  une fonction comme <tt class="docutils
 	  literal"><span class="pre">int()</span></tt>, qui s'occupera
 	  de convertir, par exemple, <tt class="docutils
 	  literal"><span class="pre">'123'</span></tt> en valeur
-	  numérique 123. Par contre, lorsqu'on veut sauvegarder des
-	  types de données plus complexes comme des listes,
-	  dictionnaires, voir même des instances de classe, les choses
+	  numÃ©rique 123. Par contre, lorsqu'on veut sauvegarder des
+	  types de donnÃ©es plus complexes comme des listes,
+	  dictionnaires, voir mÃªme des instances de classe, les choses
 	  se compliquent.</p>
 
 	  <p>Si vous avez un objet <tt class="docutils
 	  literal"><span class="pre">x</span></tt>, et un objet
 	  fichier <tt class="docutils
-	  literal"><span class="pre">f</span></tt> qui a été ouvert en
-	  écriture, il suffit d'utiliser le module <em>pickle</em>
+	  literal"><span class="pre">f</span></tt> qui a Ã©tÃ© ouvert en
+	  Ã©criture, il suffit d'utiliser le module <em>pickle</em>
 	  pour sauvegarder l'objet:</p>
 
 	  <div class="highlight-python"><div class="highlight">
@@ -1954,10 +1954,10 @@ sound/                          Top-level package
 <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span> </pre></div>
 	  </div>
 
-	  <p>L'opération inverse est tout aussi simple,
+	  <p>L'opÃ©ration inverse est tout aussi simple,
 	  si <tt class="docutils
 	  literal"><span class="pre">f</span></tt> est un objet
-	  fichier qui a été ouvert en lecture:</p>
+	  fichier qui a Ã©tÃ© ouvert en lecture:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -1970,38 +1970,38 @@ sound/                          Top-level package
 	  <h3><em>Namespaces</em> et <em>scopes</em></h3>
 
 	  <p>Un <em>namespace</em> est une association entre les
-	  noms et les objets en mémoire. La plupart
-	  des <em>namespace</em> en Python sont implémentés comme des
+	  noms et les objets en mÃ©moire. La plupart
+	  des <em>namespace</em> en Python sont implÃ©mentÃ©s comme des
 	  dictionnaires. Des exemples de <em>namespace</em> sont:
-	  l'ensemble des noms intégrés ou <em>built-in</em> (contenant des
+	  l'ensemble des noms intÃ©grÃ©s ou <em>built-in</em> (contenant des
 	  fonctions comme <tt class="docutils
 	  literal"><span class="pre">abs()</span></tt>, et le noms des
-	  exceptions intégrées). La chose importante à savoir
-	  à propos des <em>namespace</em> est qu'il n'y absoluement
-	  aucun lien entre les noms de <em>namespace</em> différents;
-	  par exemple, deux modules différents peuvent définir une
-	  fonction nommée <tt class="docutils
+	  exceptions intÃ©grÃ©es). La chose importante Ã  savoir
+	  Ã  propos des <em>namespace</em> est qu'il n'y absoluement
+	  aucun lien entre les noms de <em>namespace</em> diffÃ©rents;
+	  par exemple, deux modules diffÃ©rents peuvent dÃ©finir une
+	  fonction nommÃ©e <tt class="docutils
 	  literal"><span class="pre">maximize</span></tt> sans qu'il
 	  n'y ait de confusion &#8212; les utilisateurs des modules
-	  doivent préfixer l'appel de fonction avec le nom du
+	  doivent prÃ©fixer l'appel de fonction avec le nom du
 	  module.</p>
 
-	  <p>Les <em>namespace</em> sont créés à différents moments et
-	  possèdent une durée de vie différente les uns des
+	  <p>Les <em>namespace</em> sont crÃ©Ã©s Ã  diffÃ©rents moments et
+	  possÃ¨dent une durÃ©e de vie diffÃ©rente les uns des
 	  autres. Le <em>namespace</em> contenant les
-	  noms intégrés est créé au démarage de
-	  l'interpréteur Python et n'est jamais
-	  supprimé. Le <em>namespace</em> global d'un module est créé
-	  lorsque la définition du module est
-	  lu. Le <em>namespace</em> local d'une fonction est créé
-	  lorsque la fonction est appelée et est supprimé lorsque la
-	  fonction se termine. Bien sûr, chaque appel récursif d'une fonction
-	  possède son propre <em>namespace</em> local.</p>
+	  noms intÃ©grÃ©s est crÃ©Ã© au dÃ©marage de
+	  l'interprÃ©teur Python et n'est jamais
+	  supprimÃ©. Le <em>namespace</em> global d'un module est crÃ©Ã©
+	  lorsque la dÃ©finition du module est
+	  lu. Le <em>namespace</em> local d'une fonction est crÃ©Ã©
+	  lorsque la fonction est appelÃ©e et est supprimÃ© lorsque la
+	  fonction se termine. Bien sÃ»r, chaque appel rÃ©cursif d'une fonction
+	  possÃ¨de son propre <em>namespace</em> local.</p>
 	  -->
 
-	  <h3>Définition d'une classe</h3>
+	  <h3>DÃ©finition d'une classe</h3>
 
-	  <p>La forme la plus simple pour définir une classe ressemble à:</p>
+	  <p>La forme la plus simple pour dÃ©finir une classe ressemble Ã :</p>
 
 	  <div class="highlight-python">
 <pre>class ClassName:
@@ -2011,28 +2011,28 @@ sound/                          Top-level package
       .
       &lt;statement-N&gt;</pre> </div>
 
-	  <p>Les définitions de classes ressemblent aux définitions de
-	  fonctions (mot-clé <tt class="docutils
+	  <p>Les dÃ©finitions de classes ressemblent aux dÃ©finitions de
+	  fonctions (mot-clÃ© <tt class="docutils
 	  literal"><span class="pre">def</span></tt>). </p>
 
-	  <p>Les instructions à l'intérieur de la
-	  définition d'une classe vont être des définitions de
+	  <p>Les instructions Ã  l'intÃ©rieur de la
+	  dÃ©finition d'une classe vont Ãªtre des dÃ©finitions de
 	  fonctions et de variables.</p>
 
-	  <p>Lorsqu'on exécute la définition d'une classe, un nouveau <em>namespace</em> est créé et sert de <em>scope</em> local. Donc, les définitions de fonctions et de variables iront dans ce <em>namespace</em>.</p>
+	  <p>Lorsqu'on exÃ©cute la dÃ©finition d'une classe, un nouveau <em>namespace</em> est crÃ©Ã© et sert de <em>scope</em> local. Donc, les dÃ©finitions de fonctions et de variables iront dans ce <em>namespace</em>.</p>
 
 	  <h3>Objets d'une classe</h3>
 
-	  <p>Les objets d'une classe supporte deux sortes d'opérations: 
-	    référencement aux attributs (variables et fonctions) et
+	  <p>Les objets d'une classe supporte deux sortes d'opÃ©rations: 
+	    rÃ©fÃ©rencement aux attributs (variables et fonctions) et
 	  l'instantiation.</p>
 
-	  <p>Le <em>référencement aux attributs</em> utilise la
+	  <p>Le <em>rÃ©fÃ©rencement aux attributs</em> utilise la
 	  syntaxe Python standard: <tt class="docutils
 	  literal"><span class="pre">obj.name</span></tt>.  Les
 	  attributs valides sont tous les noms (variables et
-	  fonctions) définis lorsque la classe a été crée. Ainsi,
-	  si nous avons une définition de classe qui ressemble à:</p>
+	  fonctions) dÃ©finis lorsque la classe a Ã©tÃ© crÃ©e. Ainsi,
+	  si nous avons une dÃ©finition de classe qui ressemble Ã :</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -2049,8 +2049,8 @@ sound/                          Top-level package
 	  literal"><span class="pre">MyClass.f</span></tt> sont des
 	  attributs valides, qui retournent respectivement un entier
 	  et un objet fonction. Les attributs de la classe peuvent
-	  également être modifiés, ainsi <tt class="docutils
-	  literal"><span class="pre">MyClass.i</span></tt> peut être modifié
+	  Ã©galement Ãªtre modifiÃ©s, ainsi <tt class="docutils
+	  literal"><span class="pre">MyClass.i</span></tt> peut Ãªtre modifiÃ©
 	  en utilisant l'affectation.</p>
 
 	  <p>L'<em>instantiation</em> d'une classe utilise la notation
@@ -2061,13 +2061,13 @@ sound/                          Top-level package
 <span class="n">x</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">()</span> </pre></div>
 	  </div>
 
-	  <p>crée une nouvelle instance de la classe et assigne
-	  l'objet résultant à une variable locale <tt class="docutils
+	  <p>crÃ©e une nouvelle instance de la classe et assigne
+	  l'objet rÃ©sultant Ã  une variable locale <tt class="docutils
 	  literal"><span class="pre">x</span></tt>.</p>
 
-	  <p>L'opération d'instantiation crée un objet vide. Or, il est possible de créer des
-	  instances ayant un état initial. Pour y arriver, la classe
-	  peut définir une méthode spéciale nommée <tt class="docutils
+	  <p>L'opÃ©ration d'instantiation crÃ©e un objet vide. Or, il est possible de crÃ©er des
+	  instances ayant un Ã©tat initial. Pour y arriver, la classe
+	  peut dÃ©finir une mÃ©thode spÃ©ciale nommÃ©e <tt class="docutils
 	  literal"><span class="pre">__init__()</span></tt>, comme
 	  ceci:</p>
 
@@ -2077,19 +2077,19 @@ sound/                          Top-level package
     <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>  </pre></div>
 	  </div>
 
-	  <p>Si une classe défini la méthode <tt class="docutils
+	  <p>Si une classe dÃ©fini la mÃ©thode <tt class="docutils
 	  literal"><span class="pre">__init__()</span></tt>, alors
-	  lors de l'instantiation la méthode <tt class="docutils
+	  lors de l'instantiation la mÃ©thode <tt class="docutils
 	  literal"><span class="pre">__init__()</span></tt> est
-	  automatiquement appelée. Donc, dans l'exemple, une nouvelle
-	  instance initialisée peut être obtenue en faisant:</p>
+	  automatiquement appelÃ©e. Donc, dans l'exemple, une nouvelle
+	  instance initialisÃ©e peut Ãªtre obtenue en faisant:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
 <span class="n">x</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">()</span> </pre></div>
 	  </div>
 
-	  <p>Bien sûr, la méthode <tt class="docutils
+	  <p>Bien sÃ»r, la mÃ©thode <tt class="docutils
 	  literal"><span class="pre">__init__()</span></tt> peut prendre
 	  des arguments. Par exemple,</p>
 
@@ -2105,8 +2105,8 @@ sound/                          Top-level package
 <span class="go">(3.0, -4.5)</span> </pre></div>
 	  </div>
 
-	  <p>Habituellement, une méthode peut être appelée
-	  immédiatement après l'instantiation:</p>
+	  <p>Habituellement, une mÃ©thode peut Ãªtre appelÃ©e
+	  immÃ©diatement aprÃ¨s l'instantiation:</p>
 
 	  <div class="highlight-python"><div class="highlight">
 	      <pre>
@@ -2114,30 +2114,30 @@ sound/                          Top-level package
 	  </div>
 
 	  <p>Dans l'exemple avec la classe <tt class="xref docutils
-	  literal"><span class="pre">MyClass</span></tt>, la méthode
-	  retournera la chaîne de caractères <tt class="docutils
+	  literal"><span class="pre">MyClass</span></tt>, la mÃ©thode
+	  retournera la chaÃ®ne de caractÃ¨res <tt class="docutils
 	  literal"><span class="pre">'hello</span> <span class="pre">world'</span></tt>.</p>
 
-	  <p>Vous avez sans doute remarqué que <tt class="docutils
-	  literal"><span class="pre">x.f()</span></tt> a été appelée
-	  sans spécifier d'arguments bien que la définition de la
-	  méthode <tt class="xref docutils
-	  literal"><span class="pre">f()</span></tt> spécifie un
-	  paramètre! En fait, l'objet qui a servi à l'appel de
-	  fonction est passé automatiquemen comme argument. Dans notre
+	  <p>Vous avez sans doute remarquÃ© que <tt class="docutils
+	  literal"><span class="pre">x.f()</span></tt> a Ã©tÃ© appelÃ©e
+	  sans spÃ©cifier d'arguments bien que la dÃ©finition de la
+	  mÃ©thode <tt class="xref docutils
+	  literal"><span class="pre">f()</span></tt> spÃ©cifie un
+	  paramÃ¨tre! En fait, l'objet qui a servi Ã  l'appel de
+	  fonction est passÃ© automatiquemen comme argument. Dans notre
 	  exemple, l'appel <tt class="docutils
 	  literal"><span class="pre">x.f()</span></tt> est exactement
-	  équivalent à <tt class="docutils
+	  Ã©quivalent Ã  <tt class="docutils
 	  literal"><span class="pre">MyClass.f(x)</span></tt>.</p>
 
 	  <h3>Remarques</h3>
 
-	  <p>Les variables membres écrasent (<em>override</em>) les
-	  méthodes qui ont le même nom; pour éviter ces conflits, on
+	  <p>Les variables membres Ã©crasent (<em>override</em>) les
+	  mÃ©thodes qui ont le mÃªme nom; pour Ã©viter ces conflits, on
 	  utilise des conventions de nommages (verbes pour les
-	  méthode, minuscule-majuscule, etc.).</p>
+	  mÃ©thode, minuscule-majuscule, etc.).</p>
 
-	  <p>Dans une méthode, il est possible d'en appeler d'autres
+	  <p>Dans une mÃ©thode, il est possible d'en appeler d'autres
 	  en utilisant l'argument <tt class="docutils
 	  literal"><span class="pre">self</span></tt>:</p>
 
@@ -2154,9 +2154,9 @@ sound/                          Top-level package
 	  </div>
 
 	  <br>
-	  <h3>L'héritage</h3>
+	  <h3>L'hÃ©ritage</h3>
 
-	  <p> La syntaxe pour définir une classe dérivée ressemble à:</p>
+	  <p> La syntaxe pour dÃ©finir une classe dÃ©rivÃ©e ressemble Ã :</p>
 
 	  <div class="highlight-python">
 <pre>
@@ -2170,31 +2170,31 @@ class DerivedClassName(BaseClassName):
 
 	  <p>Le nom <tt class="xref docutils
 	  literal"><span class="pre">BaseClassName</span></tt> doit
-	  être défini dans le <em>scope</em> contenant la définition
-	  de la classe dérivée (c.-à-d. doit être accessible). Sinon,
-	  on peut spécifier le nom du module: </p>
+	  Ãªtre dÃ©fini dans le <em>scope</em> contenant la dÃ©finition
+	  de la classe dÃ©rivÃ©e (c.-Ã -d. doit Ãªtre accessible). Sinon,
+	  on peut spÃ©cifier le nom du module: </p>
 
 	  <div class="highlight-python">
 	    <pre>
 class DerivedClassName(modname.BaseClassName):</pre>
 	  </div>
 
-	  <p>La classe dérivée peut redéfinir (<em>override</em>)
-	  des méthodes de la classe de base. (Pour les programmeurs
-	  C++: toutes méthodes en Python sont <tt class="docutils
+	  <p>La classe dÃ©rivÃ©e peut redÃ©finir (<em>override</em>)
+	  des mÃ©thodes de la classe de base. (Pour les programmeurs
+	  C++: toutes mÃ©thodes en Python sont <tt class="docutils
 	  literal"><span class="pre">virtual</span></tt>.)</p>
 
-	  <p>Il est possible d'appeler la méthode de base en appelant: <tt class="docutils
+	  <p>Il est possible d'appeler la mÃ©thode de base en appelant: <tt class="docutils
 	  literal"><span class="pre">BaseClassName.methodname(self,</span>
 	      <span class="pre">arguments)</span></tt>.</p>
 
-	  <p>Python possède deux fonctions intégrées qui sont
-	  utiles lorsqu'on travaille avec l'héritage:</p>
+	  <p>Python possÃ¨de deux fonctions intÃ©grÃ©es qui sont
+	  utiles lorsqu'on travaille avec l'hÃ©ritage:</p>
 
 	  <ul class="simple">
 	    <li>Utilisez <tt class="docutils
 	    literal"><span class="pre">isinstance()</span></tt> pour
-	    vérifier le type (le nom de la classe) de l'instance: <tt class="docutils
+	    vÃ©rifier le type (le nom de la classe) de l'instance: <tt class="docutils
 	    literal"><span class="pre">isinstance(obj,</span> <span class="pre">int)</span></tt>
 	    sera <tt class="xref docutils
 	    literal"><span class="pre">True</span></tt> seulement
@@ -2202,43 +2202,43 @@ class DerivedClassName(modname.BaseClassName):</pre>
 	    literal"><span class="pre">obj.__class__</span></tt> est
 	    un <tt class="docutils
 	    literal"><span class="pre">int</span></tt> ou bien une
-	    classe qui hérite de <tt class="docutils
+	    classe qui hÃ©rite de <tt class="docutils
 	    literal"><span class="pre">int</span></tt>.</li>
 
 	    <li>Utilisez <tt class="docutils
 	    literal"><span class="pre">issubclass()</span></tt> pour
-	    vérifier l'héritage d'une classe: <tt class="docutils
+	    vÃ©rifier l'hÃ©ritage d'une classe: <tt class="docutils
 	    literal"><span class="pre">issubclass(bool,</span> <span class="pre">int)</span></tt>
 	    est <tt class="xref docutils
 	    literal"><span class="pre">True</span></tt>
 	    puisque <a title="bool" class="reference external"
 	    href="../library/functions.html#bool"><tt class="xref
 	    docutils literal"><span class="pre">bool</span></tt></a>
-	    dérive de <a title="int" class="reference external"
+	    dÃ©rive de <a title="int" class="reference external"
 	    href="../library/functions.html#int"><tt class="xref
 	    docutils
 	    literal"><span class="pre">int</span></tt></a>.</li>
 	  </ul>
 	  <br>
 
-	  <h3>Variable privée</h3>
+	  <h3>Variable privÃ©e</h3>
 
-	  <p>En Python, le concept de variable privée n'existe
-	  pas. Par contre, il existe une convention pour le simulé:
-	  un nom (de variable ou de méthode) qui est préfixé avec un
+	  <p>En Python, le concept de variable privÃ©e n'existe
+	  pas. Par contre, il existe une convention pour le simulÃ©:
+	  un nom (de variable ou de mÃ©thode) qui est prÃ©fixÃ© avec un
 	  <i>underscore</i> (ex. <tt class="docutils
-	  literal"><span class="pre">_spam</span></tt>) devrait être
-	  considéré comme étant privé dans son usage.</p>
+	  literal"><span class="pre">_spam</span></tt>) devrait Ãªtre
+	  considÃ©rÃ© comme Ã©tant privÃ© dans son usage.</p>
 
 	  <h3>En Python, il n'y a pas de pointeurs</h3>
 
-	  <p>Toutes les variables en Python sont des références ou
-	    alias à des objets; il n'existe pas de notion de pointeur,
-	    comme en C++. Par contre, ceci n'empêche pas deux
-	    variables de référer au même objet en mémoire. En fait,
-	    l'assignation d'instances de classes à des variables ne
-	    crée pas de copies des instances. Ces variables pointeront
-	    plutôt vers le même espace mémoire:</p>
+	  <p>Toutes les variables en Python sont des rÃ©fÃ©rences ou
+	    alias Ã  des objets; il n'existe pas de notion de pointeur,
+	    comme en C++. Par contre, ceci n'empÃªche pas deux
+	    variables de rÃ©fÃ©rer au mÃªme objet en mÃ©moire. En fait,
+	    l'assignation d'instances de classes Ã  des variables ne
+	    crÃ©e pas de copies des instances. Ces variables pointeront
+	    plutÃ´t vers le mÃªme espace mÃ©moire:</p>
 <pre>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a = Bag()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b = a</span>
@@ -2250,19 +2250,19 @@ class DerivedClassName(modname.BaseClassName):</pre>
 <span class="gp">&gt;&gt;&gt; </span>a == b
 <span class="go">True</span></pre>
 
-	  <p> Par défaut, l'opérateur  <tt class="docutils
+	  <p> Par dÃ©faut, l'opÃ©rateur  <tt class="docutils
 	  literal"><span class="pre">==</span></tt>
-	  vérifie si les variables font références à la même instance
-	  de classe (on pourrait dire "pointent" vers le même
+	  vÃ©rifie si les variables font rÃ©fÃ©rences Ã  la mÃªme instance
+	  de classe (on pourrait dire "pointent" vers le mÃªme
 	  objet). </p>
 
 
 	  <a name="numpy"><h1>Numpy</h1></a>
 
 	  <p>Numpy est un package Python permettant de manipuler
-	  efficacement des tableaux multidimensionnels. Il est très
-	  utilisé pour représenter des vecteurs/matrices et leur
-	  appliquer des opérations mathématiques de façon très
+	  efficacement des tableaux multidimensionnels. Il est trÃ¨s
+	  utilisÃ© pour reprÃ©senter des vecteurs/matrices et leur
+	  appliquer des opÃ©rations mathÃ©matiques de faÃ§on trÃ¨s
 	  efficace.</p>
 	  
 	  <h2>Le tableau (<tt class="docutils literal"><span class="pre">ndarray</span></tt>)</h2>
@@ -2271,17 +2271,17 @@ class DerivedClassName(modname.BaseClassName):</pre>
       literal"><span class="pre">numpy.array</span></tt>
       alias <tt class="docutils
       literal"><span class="pre">ndarray</span></tt>. C'est une table
-      d'éléments (habituellement des nombres), qui sont tous du même
-      type et qui sont indexés par un tuple (plusieurs dimensions)
+      d'Ã©lÃ©ments (habituellement des nombres), qui sont tous du mÃªme
+      type et qui sont indexÃ©s par un tuple (plusieurs dimensions)
       d'entiers positifs.</p>
       
-      <p>Notez que dans la librairie Numpy, une dimension est également appelée axe (<em>axis</em>).</p>
+      <p>Notez que dans la librairie Numpy, une dimension est Ã©galement appelÃ©e axe (<em>axis</em>).</p>
       
-      <h3>Création de tableaux</h3>
+      <h3>CrÃ©ation de tableaux</h3>
       <p>
-      Il y a plusieurs façons de créer des tableaux.</p>
+      Il y a plusieurs faÃ§ons de crÃ©er des tableaux.</p>
       <p>
-        La première consiste à créer un tableau à partir d'une liste
+        La premiÃ¨re consiste Ã  crÃ©er un tableau Ã  partir d'une liste
         ou d'un tuple en utilisant la fonction <tt class="docutils
         literal"><span class="pre">array</span></tt>.
       </p>
@@ -2297,10 +2297,10 @@ dtype('int32')
 <span class="gp">&gt;&gt;&gt;</span> b.dtype
 dtype('float64') </pre>
       
-      <p>Une erreur fréquente est d'omettre les crochets, ce qui
-      revient à appeler <tt class="docutils
+      <p>Une erreur frÃ©quente est d'omettre les crochets, ce qui
+      revient Ã  appeler <tt class="docutils
       literal"><span class="pre">array</span></tt> avec plusieurs
-      arguments au lieu d'une séquence de nombres.</p>
+      arguments au lieu d'une sÃ©quence de nombres.</p>
       
       <pre>
 <span class="gp">&gt;&gt;&gt;</span> a = array(<span class="mf">1</span>,<span class="mf">2</span>,<span class="mf">3</span>,<span class="mf">4</span>)    <span class="c"># Erreur</span>
@@ -2308,7 +2308,7 @@ dtype('float64') </pre>
       
       <p><tt class="docutils
       literal"><span class="pre">array</span></tt> transforme les
-      séquences imbriquées en tableau multidimensionnel. Par
+      sÃ©quences imbriquÃ©es en tableau multidimensionnel. Par
       exemple: </p>
       
       <pre>
@@ -2317,9 +2317,9 @@ dtype('float64') </pre>
 array([[ <span class="mf">1.5</span>,  <span class="mf">2.</span> ,  <span class="mf">3.</span> ],
        [ <span class="mf">4.</span> ,  <span class="mf">5.</span> ,  <span class="mf">6.</span> ]])</pre>
       
-      <p>Le type de données peut également être spécifié à la
-      création. Par défaut, il est automatiquement détecté. Ici, on
-      force les éléments du tableau à être des nombres complexes:</p>
+      <p>Le type de donnÃ©es peut Ã©galement Ãªtre spÃ©cifiÃ© Ã  la
+      crÃ©ation. Par dÃ©faut, il est automatiquement dÃ©tectÃ©. Ici, on
+      force les Ã©lÃ©ments du tableau Ã  Ãªtre des nombres complexes:</p>
       
       <pre>
 <span class="gp">&gt;&gt;&gt;</span> c = array([ [<span class="mf">1</span>,<span class="mf">2</span>], [<span class="mf">3</span>,<span class="mf">4</span>] ], dtype=complex )
@@ -2327,22 +2327,22 @@ array([[ <span class="mf">1.5</span>,  <span class="mf">2.</span> ,  <span class
 array([[ <span class="mf">1.+0.j</span>,  <span class="mf">2.+0.j</span>],
        [ <span class="mf">3.+0.j</span>,  <span class="mf">4.+0.j</span>]])</pre>
       
-      <p>Parfois, les éléments que l'on désire conserver dans un
-      tableau ne sont pas connus au départ, mais le nombre d'éléments
+      <p>Parfois, les Ã©lÃ©ments que l'on dÃ©sire conserver dans un
+      tableau ne sont pas connus au dÃ©part, mais le nombre d'Ã©lÃ©ments
       est connu. Dans ce cas, il existe quelques fonctions permettant
-      de créer des tableaux avec l'espace nécessaire préalablement
-      réservé, ce qui minimise la réallocation à chaque agrandissement
+      de crÃ©er des tableaux avec l'espace nÃ©cessaire prÃ©alablement
+      rÃ©servÃ©, ce qui minimise la rÃ©allocation Ã  chaque agrandissement
       du tableau.</p>
       
       <p>La fonction <tt class="docutils
-      literal"><span class="pre">zeros</span></tt> permet de créer un
-      tableau contenant seulement des zéros; la
+      literal"><span class="pre">zeros</span></tt> permet de crÃ©er un
+      tableau contenant seulement des zÃ©ros; la
       fonction <tt class="docutils
-      literal"><span class="pre">ones</span></tt> crée une tableau
+      literal"><span class="pre">ones</span></tt> crÃ©e une tableau
       avec des uns; et la fonction <tt class="docutils
-      literal"><span class="pre">empty</span></tt> crée un tableau
-      rempli d'éléments indéterminés (c.-à-d. avec ce qu'il y avait déjà en
-      mémoire). Tout ce qu'il faut, c'est de spécifier les dimensions
+      literal"><span class="pre">empty</span></tt> crÃ©e un tableau
+      rempli d'Ã©lÃ©ments indÃ©terminÃ©s (c.-Ã -d. avec ce qu'il y avait dÃ©jÃ  en
+      mÃ©moire). Tout ce qu'il faut, c'est de spÃ©cifier les dimensions
       du tableau. Voici un exemple:</p>
       
       <pre>
@@ -2350,7 +2350,7 @@ array([[ <span class="mf">1.+0.j</span>,  <span class="mf">2.+0.j</span>],
 array([[<span class="mf">0.</span>,  <span class="mf">0.</span>,  <span class="mf">0.</span>,  <span class="mf">0.</span>],
        [<span class="mf">0.</span>,  <span class="mf">0.</span>,  <span class="mf">0.</span>,  <span class="mf">0.</span>],
        [<span class="mf">0.</span>,  <span class="mf">0.</span>,  <span class="mf">0.</span>,  <span class="mf">0.</span>]])
-<span class="gp">&gt;&gt;&gt;</span> ones( (<span class="mf">2</span>,<span class="mf">3</span>,<span class="mf">4</span>), dtype=int16 )                <span class="c"># dtype peut aussi être spécifié</span>
+<span class="gp">&gt;&gt;&gt;</span> ones( (<span class="mf">2</span>,<span class="mf">3</span>,<span class="mf">4</span>), dtype=int16 )                <span class="c"># dtype peut aussi Ãªtre spÃ©cifiÃ©</span>
 array([[[ <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>],
         [ <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>],
         [ <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>]],
@@ -2363,39 +2363,39 @@ array([[  <span class="mf">3.73603959e-262</span>,   <span class="mf">6.02658058
       <br />
       <h3><em>arange</em> et <em>linspace</em></h3>
       <p>
-      Numpy offre deux fonctions facilitant la création de séquences
-      de nombres. Identique à la fonction <tt class="docutils
-      literal"><span class="pre">range</span></tt> à l'exception
+      Numpy offre deux fonctions facilitant la crÃ©ation de sÃ©quences
+      de nombres. Identique Ã  la fonction <tt class="docutils
+      literal"><span class="pre">range</span></tt> Ã  l'exception
       qu'elle retourne un <tt class="docutils
       literal"><span class="pre">array</span></tt> au lieu
       d'un <tt class="docutils
       literal"><span class="pre">list</span></tt>, <tt class="docutils
       literal"><span class="pre">arange</span></tt> prend en argument
-      le nombre de départ, le nombre de fin et le pas
+      le nombre de dÃ©part, le nombre de fin et le pas
       (<em>step</em>).</p>
       
       <pre>
 <span class="gp">&gt;&gt;&gt;</span> arange( <span class="mf">10</span>, <span class="mf">30</span>, <span class="mf">5</span> )
 array([<span class="mf">10</span>, <span class="mf">15</span>, <span class="mf">20</span>, <span class="mf">25</span>])
-<span class="gp">&gt;&gt;&gt;</span> arange( <span class="mf">0</span>, <span class="mf">2</span>, <span class="mf">0.3</span> )                 <span class="c"># les réels sont acceptés</span>
+<span class="gp">&gt;&gt;&gt;</span> arange( <span class="mf">0</span>, <span class="mf">2</span>, <span class="mf">0.3</span> )                 <span class="c"># les rÃ©els sont acceptÃ©s</span>
 array([ <span class="mf">0.</span> ,  <span class="mf">0.3</span>,  <span class="mf">0.6</span>,  <span class="mf">0.9</span>,  <span class="mf">1.2</span>,  <span class="mf">1.5</span>,  <span class="mf">1.8</span>])</pre>
       
-      <p>Lorsque l'on désire créer des séquences de nombres réels et
-      que l'on connaît le nombre d'éléments dont on a besoin, la
+      <p>Lorsque l'on dÃ©sire crÃ©er des sÃ©quences de nombres rÃ©els et
+      que l'on connaÃ®t le nombre d'Ã©lÃ©ments dont on a besoin, la
       fonction <tt class="docutils
       literal"><span class="pre">linspace</span></tt> est
       pratique. <tt class="docutils
       literal"><span class="pre">linspace</span></tt> prend en
-      argument le nombre d'éléments désirés plutôt que le pas
+      argument le nombre d'Ã©lÃ©ments dÃ©sirÃ©s plutÃ´t que le pas
       (<em>step</em>).</p>
       
       <pre>
-<span class="gp">&gt;&gt;&gt;</span> linspace( <span class="mf">0</span>, <span class="mf">2</span>, <span class="mf">9</span> )                 <span class="c"># 9 nombres de 0 à 2</span>
+<span class="gp">&gt;&gt;&gt;</span> linspace( <span class="mf">0</span>, <span class="mf">2</span>, <span class="mf">9</span> )                 <span class="c"># 9 nombres de 0 Ã  2</span>
 array([ <span class="mf">0.</span>  ,  <span class="mf">0.25</span>,  <span class="mf">0.5</span> ,  <span class="mf">0.75</span>,  <span class="mf">1.</span>  ,  <span class="mf">1.25</span>,  <span class="mf">1.5</span> ,  <span class="mf">1.75</span>,  <span class="mf">2.</span>  ])
-<span class="gp">&gt;&gt;&gt;</span> x = linspace( <span class="mf">0</span>, <span class="mf">2</span>*pi, <span class="mf">100</span> )        <span class="c"># utile pour évaluer une fonction pour des points donnés</span>
+<span class="gp">&gt;&gt;&gt;</span> x = linspace( <span class="mf">0</span>, <span class="mf">2</span>*pi, <span class="mf">100</span> )        <span class="c"># utile pour Ã©valuer une fonction pour des points donnÃ©s</span>
 <span class="gp">&gt;&gt;&gt;</span> f = sin(x)</pre>
       <br />  
-      <h3>Quelques propriétés des tableaux (<em>arrays</em>)</h3>
+      <h3>Quelques propriÃ©tÃ©s des tableaux (<em>arrays</em>)</h3>
       <p>
       <ul>
         <li><b><tt class="docutils
@@ -2403,17 +2403,17 @@ array([ <span class="mf">0.</span>  ,  <span class="mf">0.25</span>,  <span clas
         nombre de dimensions.</li>
         <li><b><tt class="docutils
         literal"><span class="pre">ndarray.shape</span></tt></b>: les
-        dimensions du tableau contenues dans un tuple de taille égale
-        à <tt class="docutils
+        dimensions du tableau contenues dans un tuple de taille Ã©gale
+        Ã  <tt class="docutils
         literal"><span class="pre">ndarray.ndim</span></tt>.</li>
         <li><b><tt class="docutils
         literal"><span class="pre">ndarray.size</span></tt></b>:
-        nombre total d'éléments dans le tableau et donc égal au
-        produit des éléments de <tt class="docutils
+        nombre total d'Ã©lÃ©ments dans le tableau et donc Ã©gal au
+        produit des Ã©lÃ©ments de <tt class="docutils
         literal"><span class="pre">ndarray.shape</span></tt></li>
         <li><b><tt class="docutils
         literal"><span class="pre">ndarray.dtype</span></tt></b>: le
-        type des éléments du tableau (ex. int, float, numpy.int32,
+        type des Ã©lÃ©ments du tableau (ex. int, float, numpy.int32,
         numpy.int16, and numpy.float64, etc)</li>
       </ul>
       </p>
@@ -2432,12 +2432,12 @@ array([ <span class="mf">0.</span>  ,  <span class="mf">0.25</span>,  <span clas
 <span class="gp">&gt;&gt;&gt;</span> type(a)
 numpy.ndarray</pre>
       
-      <h2>Les opérateurs de base</h2>
-      <h3>Arithmétique</h3>
+      <h2>Les opÃ©rateurs de base</h2>
+      <h3>ArithmÃ©tique</h3>
       
-      <p>Les opérateurs d'arithmétique sont appliqués élément par
-      élément (<em>element-wise</em>). Le résultat est contenu dans
-      un nouveau tableau de même dimension. Par exemple:</p>
+      <p>Les opÃ©rateurs d'arithmÃ©tique sont appliquÃ©s Ã©lÃ©ment par
+      Ã©lÃ©ment (<em>element-wise</em>). Le rÃ©sultat est contenu dans
+      un nouveau tableau de mÃªme dimension. Par exemple:</p>
       
       <pre>
 <span class="gp">&gt;&gt;&gt;</span> a = array([<span class="mf">20</span>,<span class="mf">30</span>,<span class="mf">40</span>,<span class="mf">50</span>])
@@ -2454,24 +2454,24 @@ array([ <span class="mf">9.12945251</span>, <span class="mf">-9.88031624</span>,
 <span class="gp">&gt;&gt;&gt;</span> a<<span class="mf">35</span>
 array([True, True, False, False], dtype=bool)</pre>
       
-      <p>Contrairement à plusieurs autres langages, l'opérateur
+      <p>Contrairement Ã  plusieurs autres langages, l'opÃ©rateur
       "produit/multiplication" n'est pas le produit scalaire (<em>dot
-      product</em>). Le produit ce fait éléments par éléments: </p>
+      product</em>). Le produit ce fait Ã©lÃ©ments par Ã©lÃ©ments: </p>
     
       <pre>
 <span class="gp">&gt;&gt;&gt;</span> A = array([[<span class="mf">1</span>,<span class="mf">1</span>],
 ...             [<span class="mf">0</span>,<span class="mf">1</span>]])
 <span class="gp">&gt;&gt;&gt;</span> B = array([[<span class="mf">2</span>,<span class="mf">0</span>],
 ...             [<span class="mf">3</span>,<span class="mf">4</span>]])
-<span class="gp">&gt;&gt;&gt;</span> A*B                         <span class="c"># produit élément par élément</span>
+<span class="gp">&gt;&gt;&gt;</span> A*B                         <span class="c"># produit Ã©lÃ©ment par Ã©lÃ©ment</span>
 array([[<span class="mf">2</span>, <span class="mf">0</span>],
        [<span class="mf">0</span>, <span class="mf">4</span>]])
 <span class="gp">&gt;&gt;&gt;</span> dot(A,B)                    <span class="c"># produit matriciel</span>
 array([[<span class="mf">5</span>, <span class="mf">4</span>],
        [<span class="mf">3</span>, <span class="mf">4</span>]])</pre>
       
-      <p>Quelques opérateurs comme += et *= effectuent les
-      modifications sur place (aucun nouveau tableau n'est créé).</p>
+      <p>Quelques opÃ©rateurs comme += et *= effectuent les
+      modifications sur place (aucun nouveau tableau n'est crÃ©Ã©).</p>
       
       <pre>
 <span class="gp">&gt;&gt;&gt;</span> a = ones((<span class="mf">2</span>,<span class="mf">3</span>), dtype=int)
@@ -2489,9 +2489,9 @@ array([[ <span class="mf">3.69092703</span>,  <span class="mf">3.8324276</span> 
 array([[<span class="mf">6</span>, <span class="mf">6</span>, <span class="mf">6</span>],
        [<span class="mf">6</span>, <span class="mf">6</span>, <span class="mf">6</span>]])</pre>
       <br />
-      <h3>Opérateurs unaires</h3>
-      <p>Plusieurs opérateurs unaires (ex. calculer la somme des
-      éléments d'un tableau) sont implémentés comme des méthodes de
+      <h3>OpÃ©rateurs unaires</h3>
+      <p>Plusieurs opÃ©rateurs unaires (ex. calculer la somme des
+      Ã©lÃ©ments d'un tableau) sont implÃ©mentÃ©s comme des mÃ©thodes de
       la classe <tt class="docutils
       literal"><span class="pre">ndarray</span></tt>.</p>
             
@@ -2507,11 +2507,11 @@ array([[ <span class="mf">0.6903007</span> ,  <span class="mf">0.39168346</span>
 <span class="gp">&gt;&gt;&gt;</span> a.max()
 <span class="mf">0.9479215542670073</span></pre>
       
-      <p>Par défaut, ces opérateurs considèrent les tableaux comme une
-      liste d'éléments sans tenir compte des dimensions. Par contre,
-      en spécifiant le paramètre <tt class="docutils
+      <p>Par dÃ©faut, ces opÃ©rateurs considÃ¨rent les tableaux comme une
+      liste d'Ã©lÃ©ments sans tenir compte des dimensions. Par contre,
+      en spÃ©cifiant le paramÃ¨tre <tt class="docutils
       literal"><span class="pre">axis</span></tt> (la dimension), il
-      est possible d'appliquer l'opérateur seulement selon cette
+      est possible d'appliquer l'opÃ©rateur seulement selon cette
       dimension.</p>
       
       <pre>
@@ -2532,9 +2532,9 @@ array([[ <span class="mf">0</span>,  <span class="mf">1</span>,  <span class="mf
        [ <span class="mf">4</span>,  <span class="mf">9</span>, <span class="mf">15</span>, <span class="mf">22</span>],
        [ <span class="mf">8</span>, <span class="mf">17</span>, <span class="mf">27</span>, <span class="mf">38</span>]])</pre>
       <br />
-      <h3>Opérateurs d'algèbre linéaire</h3>
+      <h3>OpÃ©rateurs d'algÃ¨bre linÃ©aire</h3>
       <p>Numpy offre des fonctions permettant d'effectuer des calculs
-      d'algèbre linéaire (ex. tranposer, inverser, produit scalaire,
+      d'algÃ¨bre linÃ©aire (ex. tranposer, inverser, produit scalaire,
       etc.)</p>
       
       <pre>
@@ -2554,7 +2554,7 @@ array([[ <span class="mf">1.</span>,  <span class="mf">3.</span>],
 array([[-<span class="mf">2.</span> ,  <span class="mf">1.</span> ],
        [ <span class="mf">1.5</span>, <span class="mf">-0.5</span>]])
 
-<span class="gp">&gt;&gt;&gt;</span> u = eye(<span class="mf">2</span>) <span class="c"># Matrice identité 2x2; "eye" represente "I"</span>
+<span class="gp">&gt;&gt;&gt;</span> u = eye(<span class="mf">2</span>) <span class="c"># Matrice identitÃ© 2x2; "eye" represente "I"</span>
 <span class="gp">&gt;&gt;&gt;</span> u
 array([[ <span class="mf">1.</span>,  <span class="mf">0.</span>],
        [ <span class="mf">0.</span>,  <span class="mf">1.</span>]])
@@ -2568,7 +2568,7 @@ array([[<span class="mf">-1.</span>,  <span class="mf">0.</span>],
 <span class="mf">2.0</span>
 
 <span class="gp">&gt;&gt;&gt;</span> y = array([[<span class="mf">5.</span>], [<span class="mf">7.</span>]])
-<span class="gp">&gt;&gt;&gt;</span> solve(a, y) <span class="c"># résolution d'un système linéaire (solution de dot(a,?) = y)</span>
+<span class="gp">&gt;&gt;&gt;</span> solve(a, y) <span class="c"># rÃ©solution d'un systÃ¨me linÃ©aire (solution de dot(a,?) = y)</span>
 array([[<span class="mf">-3.</span>],
        [ <span class="mf">4.</span>]])
 
@@ -2577,11 +2577,11 @@ array([[<span class="mf">-3.</span>],
 array([[ <span class="mf">0.70710678+0.j</span><span class="mf">,  0.70710678+0.j</span>],
        [ <span class="mf">0.00000000-0.70710678j</span>,  <span class="mf">0.00000000+0.70710678j</span>]]))</pre>
       
-      <h2>Indexation, <em>Slicing</em> et l'itération</h2>
+      <h2>Indexation, <em>Slicing</em> et l'itÃ©ration</h2>
       <h3>Une dimension</h3>
       
-      <p>Les tableaux à une dimension peuvent être indexés, tranchés
-      (<em>sliced</em>) et itérés essentiellement comme des
+      <p>Les tableaux Ã  une dimension peuvent Ãªtre indexÃ©s, tranchÃ©s
+      (<em>sliced</em>) et itÃ©rÃ©s essentiellement comme des
       listes.</p>
       
       <pre>
@@ -2593,11 +2593,11 @@ array([  <span class="mf">0</span>,   <span class="mf">1</span>,   <span class="
 <span class="gp">&gt;&gt;&gt;</span> a[<span class="mf">2</span>:<span class="mf">5</span>]
 array([ <span class="mf">8</span>, <span class="mf">27</span>, <span class="mf">64</span>])
 <span class="gp">&gt;&gt;&gt;</span> 
-<span class="gp">&gt;&gt;&gt;</span> <span class="c"># Du début jusqu'à l'indice 6 (exclus), affecter un élément sur deux à -1000</span>
-<span class="gp">&gt;&gt;&gt;</span> a[:<span class="mf">6</span>:<span class="mf">2</span>] = <span class="mf">-1000</span>    <span class="c"># équivalent à a[0:6:2] = -1000;</span> 
+<span class="gp">&gt;&gt;&gt;</span> <span class="c"># Du dÃ©but jusqu'Ã  l'indice 6 (exclus), affecter un Ã©lÃ©ment sur deux Ã  -1000</span>
+<span class="gp">&gt;&gt;&gt;</span> a[:<span class="mf">6</span>:<span class="mf">2</span>] = <span class="mf">-1000</span>    <span class="c"># Ã©quivalent Ã  a[0:6:2] = -1000;</span> 
 <span class="gp">&gt;&gt;&gt;</span> a
 array([<span class="mf">-1000</span>,     <span class="mf">1</span>, <span class="mf">-1000</span>,    <span class="mf">27</span>, <span class="mf">-1000</span>,   <span class="mf">125</span>,   <span class="mf">216</span>,   <span class="mf">343</span>,   <span class="mf">512</span>,   <span class="mf">729</span>])
-<span class="gp">&gt;&gt;&gt;</span> a[::<span class="mf">-1</span>]                   <span class="c"># permet d'inverser l'ordre des éléments de a</span>
+<span class="gp">&gt;&gt;&gt;</span> a[::<span class="mf">-1</span>]                   <span class="c"># permet d'inverser l'ordre des Ã©lÃ©ments de a</span>
 array([  <span class="mf">729</span>,   <span class="mf">512</span>,   <span class="mf">343</span>,   <span class="mf">216</span>,   <span class="mf">125</span>, <span class="mf">-1000</span>,    <span class="mf">27</span>, <span class="mf">-1000</span>,     <span class="mf">1</span>, <span class="mf">-1000</span>])
 <span class="gp">&gt;&gt;&gt;</span> for i in a:
 ...     print i**(<span class="mf">1</span>/<span class="mf">3.</span>),
@@ -2606,7 +2606,7 @@ nan <span class="mf">1.0</span> nan <span class="mf">3.0</span> nan <span class=
       <br />
       <h3>n-dimensions</h3>
       <p>Les tableaux multidimensionels peuvent avoir un indice par
-      dimension. Ces indices sont donnés sous forme de tuple (séparé
+      dimension. Ces indices sont donnÃ©s sous forme de tuple (sÃ©parÃ©
       par des virgules). Par exemple:</p>
       
       <pre>
@@ -2617,9 +2617,9 @@ nan <span class="mf">1.0</span> nan <span class="mf">3.0</span> nan <span class=
                [<span class="mf">40</span>, <span class="mf">41</span>, <span class="mf">42</span>, <span class="mf">43</span>]])
 <span class="gp">&gt;&gt;&gt;</span> b[<span class="mf">2</span>,<span class="mf">3</span>]
 <span class="mf">23</span>
-<span class="gp">&gt;&gt;&gt;</span> b[<span class="mf">0</span>:<span class="mf">5</span>,<span class="mf">1</span>]              <span class="c"># chaque ligne de la deuxième colonne de b</span>
+<span class="gp">&gt;&gt;&gt;</span> b[<span class="mf">0</span>:<span class="mf">5</span>,<span class="mf">1</span>]              <span class="c"># chaque ligne de la deuxiÃ¨me colonne de b</span>
 array([ <span class="mf">1</span>, <span class="mf">11</span>, <span class="mf">21</span>, <span class="mf">31</span>, <span class="mf">41</span>])
-<span class="gp">&gt;&gt;&gt;</span> b[:,<span class="mf">1</span>]                <span class="c"># équivalent à l'exemple précédent</span>
+<span class="gp">&gt;&gt;&gt;</span> b[:,<span class="mf">1</span>]                <span class="c"># Ã©quivalent Ã  l'exemple prÃ©cÃ©dent</span>
 array([ <span class="mf">1</span>, <span class="mf">11</span>, <span class="mf">21</span>, <span class="mf">31</span>, <span class="mf">41</span>])
 <span class="gp">&gt;&gt;&gt;</span> b[<span class="mf">1</span>:<span class="mf">3</span>,:]              <span class="c"># chaque colonne de la 2e et 3e ligne de b</span>
 array([[<span class="mf">10</span>, <span class="mf">11</span>, <span class="mf">12</span>, <span class="mf">13</span>],
@@ -2627,13 +2627,13 @@ array([[<span class="mf">10</span>, <span class="mf">11</span>, <span class="mf"
       
       <h2>Copie de tableaux</h2>
       
-      <p>La méthode <tt class="docutils
+      <p>La mÃ©thode <tt class="docutils
       literal"><span class="pre">copy</span></tt> permet d'effectuer
-      une copie complète en profondeur (<em>deep copy</em>) du
-      tableau et de ses éléments.</p>
+      une copie complÃ¨te en profondeur (<em>deep copy</em>) du
+      tableau et de ses Ã©lÃ©ments.</p>
       
       <pre>
-<span class="gp">&gt;&gt;&gt;</span> d = a.copy()       <span class="c"># crée un nouveau tableau avec une copie des éléments</span>
+<span class="gp">&gt;&gt;&gt;</span> d = a.copy()       <span class="c"># crÃ©e un nouveau tableau avec une copie des Ã©lÃ©ments</span>
 <span class="gp">&gt;&gt;&gt;</span> d is a
 False
 <span class="gp">&gt;&gt;&gt;</span> d.base is a        <span class="c"># d ne partage rien avec a</span>
@@ -2645,8 +2645,8 @@ array([[   <span class="mf">0</span>,   <span class="mf">10</span>,   <span clas
        [   <span class="mf">8</span>,   <span class="mf">10</span>,   <span class="mf">10</span>,   <span class="mf">11</span>]])</pre>
 
       <h2>Modification des dimensions</h2>
-      <p>Les dimensions (la <em>shape</em>) d'un tableau peuvent être
-      modifiées de plusieurs façons: </p>
+      <p>Les dimensions (la <em>shape</em>) d'un tableau peuvent Ãªtre
+      modifiÃ©es de plusieurs faÃ§ons: </p>
       
       <pre>
 <span class="gp">&gt;&gt;&gt;</span> a = floor(<span class="mf">10</span>*random.random((<span class="mf">3</span>,<span class="mf">4</span>)))
@@ -2669,11 +2669,11 @@ array([[ <span class="mf">7.</span>,  <span class="mf">9.</span>,  <span class="
       et <tt class="docutils
       literal"><span class="pre">resize</span></tt>. <tt class="docutils
       literal"><span class="pre">resize</span></tt> retourne une copie
-      du tableau avec les dimensions spécifiées en argument, tandis
+      du tableau avec les dimensions spÃ©cifiÃ©es en argument, tandis
       que <tt class="docutils
       literal"><span class="pre">reshape</span></tt> retourne un
-      tableau pointant vers le même espace mémoire mais ayant les
-      dimensions spécifiées:</p>
+      tableau pointant vers le mÃªme espace mÃ©moire mais ayant les
+      dimensions spÃ©cifiÃ©es:</p>
       
       <pre>
 <span class="gp">&gt;&gt;&gt;</span> a
@@ -2708,14 +2708,14 @@ array([[ <span class="mf">7.</span>,    <span class="mf">5.</span>],
 array([[ <span class="mf">7.</span>,  <span class="mf">5.</span>,  <span class="mf">9.</span>,  <span class="mf">3.</span>,  <span class="mf">7.</span>,  <span class="mf">2.</span>],
        [ <span class="mf">7.</span>,  <span class="mf">8.</span>,  <span class="mf">6.</span>,  <span class="mf">100.</span>,  <span class="mf">3.</span>,  <span class="mf">2.</span>]])</pre>
 
-      <h2>Rapidité de Numpy</h2>
+      <h2>RapiditÃ© de Numpy</h2>
 
-	  <p>Un des avantages important des tableaux Numpy est leur rapidité. Faire des
-	  opérations à l'aide de cette structure de données est <b>beaucoup</b> plus
-	  efficace que sous une représentation basée sur des listes imbriquées.</p>
+	  <p>Un des avantages important des tableaux Numpy est leur rapiditÃ©. Faire des
+	  opÃ©rations Ã  l'aide de cette structure de donnÃ©es est <b>beaucoup</b> plus
+	  efficace que sous une reprÃ©sentation basÃ©e sur des listes imbriquÃ©es.</p>
 
-	  <p>Par exemple, soit le script suivant qui compare le temps d'exécution de
-	    l'addition d'une matrice à elle-même:</p>
+	  <p>Par exemple, soit le script suivant qui compare le temps d'exÃ©cution de
+	    l'addition d'une matrice Ã  elle-mÃªme:</p>
 
 <pre>
 <span class="kn">import time</span>
@@ -2735,7 +2735,7 @@ current_time = time.time()
     a_plus_a = a+a
 print <span class="s">'a+a avec des Numpy:'</span>,time.time()-current_time,<span class="s">'secondes'</span></pre>
 
-	  <p>On observe en exécutant ce script que la version Numpy
+	  <p>On observe en exÃ©cutant ce script que la version Numpy
 	  est plus de 100 fois plus rapide:</p>
 
 	  <pre>
@@ -2744,37 +2744,37 @@ a+a avec des Numpy: 0.0159249305725 secondes</pre>
 
 	  <h2>Il y a bien plus</h2>
 
-	  <p>Plusieurs autres fonctionalités des tableaux Numpy sont
-	  décrites dans
+	  <p>Plusieurs autres fonctionalitÃ©s des tableaux Numpy sont
+	  dÃ©crites dans
 	  le <a href="http://www.scipy.org/Tentative_NumPy_Tutorial">tutoriel
-	  anglais</a> qui a inspiré celui-ci. Entre autre, il est
-	  conseillé de consulter les sections sur le concept
+	  anglais</a> qui a inspirÃ© celui-ci. Entre autre, il est
+	  conseillÃ© de consulter les sections sur le concept
 	  de <i><a href="http://www.scipy.org/EricsBroadcastingDoc">broadcasting</i></a>
 	  et sur
 	  les <a href="http://www.scipy.org/Tentative_NumPy_Tutorial#head-0dffc419afa7d77d51062d40d2d84143db8216c2">techniques
-	  d'indexage avancées</a>.</p>
+	  d'indexage avancÃ©es</a>.</p>
 
-	  <p>Numpy a une librairie complète de fonctions utiles pour
-	    le calcul mathématique.  Avant de coder une fonction
+	  <p>Numpy a une librairie complÃ¨te de fonctions utiles pour
+	    le calcul mathÃ©matique.  Avant de coder une fonction
 	    impliquant des tableaux Numpy, il est
-	    <b>fortement</b> recommandé de jeter un coup d'oeil à la
-	    documentation de Numpy, à l'adresse
+	    <b>fortement</b> recommandÃ© de jeter un coup d'oeil Ã  la
+	    documentation de Numpy, Ã  l'adresse
 	    suivante: <a href="http://docs.scipy.org/doc/numpy/reference/">http://docs.scipy.org/doc/numpy/reference/</a>.</p>
 	    
-	  <a name="debugger"><h1>Débogueur</h1></a>
+	  <a name="debugger"><h1>DÃ©bogueur</h1></a>
 	  <!--" -->
 	  <p>
-	    Afin de déboguer du code Python, le
+	    Afin de dÃ©boguer du code Python, le
 	    module <tt class="docutils
 	    literal"><span class="pre"><span class="pre">pdb</span></span></tt>
-	    peut être utilisé. Une fois le module importé, il suffit
-	    alors d'ajouter des appels à la fonction <tt class="xref
+	    peut Ãªtre utilisÃ©. Une fois le module importÃ©, il suffit
+	    alors d'ajouter des appels Ã  la fonction <tt class="xref
 	    docutils
 	    literal"><span class="pre">pdb.set_trace()</span></tt>
-	    dans votre code afin d'interrompre l'exécution à cet endroit.
-	    Une fois l'exécution interrompue, il est alors possible
-	    d'interagir avec les variables définies dans votre code à ce
-	    moment de l'exécution.
+	    dans votre code afin d'interrompre l'exÃ©cution Ã  cet endroit.
+	    Une fois l'exÃ©cution interrompue, il est alors possible
+	    d'interagir avec les variables dÃ©finies dans votre code Ã  ce
+	    moment de l'exÃ©cution.
 	  </p>
 	  
 	  <p>
@@ -2803,13 +2803,13 @@ a+a avec des Numpy: 0.0159249305725 secondes</pre>
 	  </div>
 
 	  <p>
-	    Il est alors possible de suivre l'exécution de la
+	    Il est alors possible de suivre l'exÃ©cution de la
 	    fonction <tt class="xref docutils
 	    literal"><span class="pre">fibo2()</span></tt> lors de son
-	    appel. L'exécution s'arrête d'abord au premier appel
+	    appel. L'exÃ©cution s'arrÃªte d'abord au premier appel
 	    de <tt class="xref docutils
 	    literal"><span class="pre">pdb.set_trace()</span></tt>. Afin
-	    de poursuire l'exécution jusqu'au prochain point d'arrêt, il
+	    de poursuire l'exÃ©cution jusqu'au prochain point d'arrÃªt, il
 	    suffit alors d'entrer <tt class="docutils
 	    literal"><span class="pre">c</span></tt>
 	    ou <tt class="docutils
@@ -2843,8 +2843,8 @@ a+a avec des Numpy: 0.0159249305725 secondes</pre>
  </pre></div>
 	  </div>
 
-	  <p> Une fois l'exécution arrêtée, il est possible d'avancer
-	    l'exécution une ligne à la fois, en
+	  <p> Une fois l'exÃ©cution arrÃªtÃ©e, il est possible d'avancer
+	    l'exÃ©cution une ligne Ã  la fois, en
 	    entrant <tt class="docutils
 	    literal"><span class="pre">s</span></tt>
 	    ou <tt class="docutils
@@ -2852,7 +2852,7 @@ a+a avec des Numpy: 0.0159249305725 secondes</pre>
 	  </p>
 
 	  <p> 
-	    Finalement, il est même possible de reprendre l'exécution à l'endroit ayant causé une erreur à l'aide
+	    Finalement, il est mÃªme possible de reprendre l'exÃ©cution Ã  l'endroit ayant causÃ© une erreur Ã  l'aide
 	    de la fonction <tt class="xref
 	    docutils
 	    literal"><span class="pre">pdb.pm()</span></tt> (post morterm):
@@ -2875,7 +2875,7 @@ a+a avec des Numpy: 0.0159249305725 secondes</pre>
 </div>
 
 	  <p> 
-	    Pour plus d'information sur le débogueur Python, visiter <a href="http://docs.python.org/library/pdb.html">http://docs.python.org/library/pdb.html</a>.
+	    Pour plus d'information sur le dÃ©bogueur Python, visiter <a href="http://docs.python.org/library/pdb.html">http://docs.python.org/library/pdb.html</a>.
 	  </p>
 
  	</div>
