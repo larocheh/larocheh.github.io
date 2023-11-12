@@ -1,0 +1,183 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="../../css/1.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+	  <font color="#FFFFFF">
+	    <font face="Copperplate" size=8>Hugo Larochelle</font>
+	    <br> http://www.dmi.usherb.ca/~larocheh/
+	  </font>
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="../../index_fr.html" accesskey="a"><em>A</em>ccueil</a></li>
+	      
+	      <li><a href="../../publications_fr.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="../../university_fr.html" accesskey="u" class="active"><em>U</em>niversité</a></li>
+
+	      <li><a href="../../links_fr.html" accesskey="l"><em>L</em>iens</a></li>
+
+	    </ul>
+	  </div>
+	  
+	  <div id="sidebar">
+	    <h2>IFT 615 <small>(Été 2012)</small></h2>
+	    <table id="nav" cellpadding="0" cellspacing="2" >
+	      <tr><td><a href="description.html">Description</a></td></tr>
+	      <tr><td><a href="contenu.html">Contenu</a></td></tr>
+	      <tr><td class="active"><a href="evaluations.html">Évaluations</a></td></tr>
+	    </table>
+	    <h2>Annonces</h2>
+<!--	    <b>[23/04/2012]</b><br>
+	    Notes du final et du cours disponibles.
+	    <br><br>
+	    -->
+	    <b>[09/08/2012]</b><br>
+	    Notes du devoir 4 disponibles.
+	    <br><br>
+	    <b>[20/07/2012]</b><br>
+	    Notes du devoir 3 disponibles.
+	    <br><br>
+	    <b>[12/07/2012]</b><br>
+	    Énnoncé du devoir 4 disponible.
+	    <br><br>
+	    <b>[14/06/2012]</b><br>
+	    Énnoncé du devoir 3 disponible.
+	    <br><br>
+	    <b>[23/06/2012]</b><br>
+	    Notes de l'intra disponibles.
+	    <br><br>
+	    <b>[19/06/2012]</b><br>
+	    Notes du devoir 2 disponibles.
+	    <br><br>
+	    <b>[11/06/2012]</b><br>
+	    Date de l'<b>examen final</b> annoncée: <br>
+	    VE 10/08/2012, 9h00-12h00, <br>au D3-2037.
+	    <br><br>
+	    <b>[04/06/2012]</b><br>
+	    Notes du devoir 1 disponibles.
+	    <br><br>
+	    <b>[29/05/2012]</b><br>
+	    Énnoncé du devoir 2 disponible.
+	    <br><br>
+	    <b>[25/05/2012]</b><br>
+	    <b>Séance de cours spéciale</b>: <br>
+	    VE 08/06/2012, 10h30-12h20,<br> D4-2022.
+	    <br><br>
+	    <b>[24/05/2012]</b><br>
+	    Date de l'<b>examen intra</b> annoncée: <br>
+	    VE 22/06/2012, 18h00-19h50,<br> D3-2037.
+	    <br><br>
+	    <b>[15/05/2012]</b><br>
+	    Énnoncé du devoir 1 disponible.
+	  </div>
+	  
+	  <!--
+	  <div id="sidebarright">
+	  </div>
+	  -->
+
+	  <div id="contentnorightbar">
+	    <h2> Devoirs </h2>
+
+	    <p> Pour toute question concernant les devoirs, n'hésitez pas à poser une question
+	    sur le <a href="https://groups.google.com/forum/?fromgroups#!forum/ift-615-e2012">forum de discussion</a> du cours!
+	      </p>
+
+	    <table cellspacing="0" >
+	      <tr bgcolor="#666">
+		<td width="10%"><font color="#FFF"><b>Devoir</b></font></td> 
+		<td width="15%"><font color="#FFF"><b>Énoncé donné le</b></font></td> 
+		<td width="45%"><font color="#FFF"><b>Thème</b></font> </td>
+		<td width="15%"><font color="#FFF"><b>Date de remise</b></font></td>
+		<td width="15%" align="right"><font color="#FFF"><b>Notes</b></font></td>
+	      </tr>
+	      
+	      <tr               >
+		<td >1</td> 
+		<td>15 mai</td> 
+		<td><a href="devoir_1/devoir_1.pdf">Recherche heuristique, recherche à deux adversaires</a> <br> [<a href="devoir_1/devoir_1.zip">devoir_1.zip</a>]</td>
+		<td>29 mai</td>
+		<td align="right">[<a href="devoir_1/notes.txt">individuelles<a>]<br> [<a href="devoir_1/histogrammes_notes.png">histogrammes</a>] <br>[<a href="devoir_1/resultats_connect4.txt">tournoi</a>]</td>
+	      </tr>
+	      
+	      <tr bgcolor="#EEE">
+		<td >2</td> 
+		<td>24 mai</td> 
+		<td><a href="devoir_2/devoir_2.pdf">Satisfaction de contraintes, logique de premier ordre</a><br> [<a href="devoir_2/devoir_2.zip">devoir_2.zip</a>] </td>
+		<td>14 juin  </td> 
+		<td align="right">[<a href="devoir_2/notes.txt">individuelles</a>]<br> [<a href="devoir_2/histogrammes_notes.png">histogrammes</a>]</td>
+	      </tr>
+	      
+	      <tr               >
+		<td >3</td> 
+		<td>14 juin</td> 
+		<td><a href="devoir_3/devoir_3.pdf">Réseaux bayésiens dynamiques, processus de décision markovien</a> <br>[<a href="devoir_3/devoir_3.zip">devoir_3.zip</a>] </td>
+		<td>12 juillet </td>
+		<td align="right">[<a href="devoir_3/notes.txt">individuelles<a>]<br> [<a href="devoir_3/histogrammes_notes.png">histogrammes</a>]</td>
+	      </tr>
+	      
+	      <tr bgcolor="#EEE">
+		<td >4</td> 
+		<td>12 juillet </td> 
+		<td><a href="devoir_4/devoir_4.pdf">Apprentissage automatique, traitement automatique de la langue</a> <br> [<a href="devoir_4/devoir_4.zip">devoir_4.zip</a>]</td>
+		<td>2 août   </td>
+		<td align="right">[<a href="devoir_4/notes.txt">individuelles<a>]<br> [<a href="devoir_4/histogrammes_notes.png">histogrammes</a>]</td>
+	      </tr>
+	    </table>
+	    
+	    <h2> Examens</h2>
+
+	    <table cellspacing="0" width="70%">
+	      <tr bgcolor="#666">
+		<td width="10%"><font color="#FFF"><b>Examen</b></font></td> 
+		<td width="20%"><font color="#FFF"><b>Date et heure</b></font></td> 
+		<td width="15%"><font color="#FFF"><b>Local</b></font></td> 
+		<td width="15%" align="right"><font color="#FFF"><b>Notes</b></font></td></tr>
+	      
+	      <tr >
+		<td > Intra </td> 
+		<td>22 juin <br> 18h00 à 19h50</td> 
+		<td>D3-2037</td> 
+		<td align="right">[<a href="intra/notes.txt">individuelles<a>]<br> [<a href="intra/histogrammes_notes.png">histogrammes</a>]</td>
+	      </tr>
+
+	      <tr bgcolor="#EEE">
+		<td > Final </td> 
+		<td>10 août<br>9h00 à 12h00</td> 
+		<td>D3-2037</td> 
+		<td align="right">[<blackface href="final/notes.txt">individuelles<blackface>]<br> [<blackface href="final/histogrammes_notes.png">histogrammes</blackface>]</td>
+	      </tr>
+	    </table>
+	    
+<!--
+	    <h2> Notes finales </h2>
+	    
+	    Les <blackface href="notes_finales.txt">notes finales</blackface> du cours
+	    sont maintenant
+	    disponibles. Les <blackface href="histogrammes_notes_finales.png">histogrammes</blackface>
+	    de notes pour chaque évaluation peuvent aussi être
+	    consultés.
+-->
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

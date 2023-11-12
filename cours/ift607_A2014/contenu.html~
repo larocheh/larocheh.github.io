@@ -1,0 +1,320 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold"
+          type="text/css" />
+    <link rel="stylesheet" href="../../css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+      <div id="header-text">
+	    Hugo Larochelle
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="../../index_fr.html" accesskey="a"><em>A</em>ccueil</a></li>
+	      
+	      <li><a href="../../publications_fr.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="../../university_fr.html" accesskey="u" class="active"><em>U</em>niversité</a></li>
+
+	      <li><a href="../../links_fr.html" accesskey="l"><em>L</em>iens</a></li>
+
+	    </ul>
+	  </div>
+	  </div>
+	  <div id="sidebar">
+	    <h2>IFT 607 <small>(Automne 2014)</small></h2>
+	    <table id="nav" cellpadding="0" cellspacing="8" width="120" >
+	      <tr><td><a href="description.html">Description</a></td></tr>
+	      <tr><td  class="active"><a href="contenu.html">Contenu</a></td></tr>
+	      <tr><td><a href="evaluations.html">Évaluations</a></td></tr>
+	    </table>
+	    <h2>Annonces</h2>
+	    <b>[23/12/2014]</b><br>
+	    Les notes finales du cours sont disponibles<br><br>
+	    <b>[23/12/2014]</b><br>
+	    Notes du final sont disponibles<br><br>
+	    <b>[23/12/2014]</b><br>
+	    Notes du devoir 4 disponibles<br><br>
+	    <b>[03/12/2014]</b><br>
+	    Notes du devoir 3 disponibles<br><br>
+	    <b>[24/11/2014]</b><br>
+	    Énoncé du devoir 4 disponible<br><br>
+	    <b>[15/11/2014]</b><br>
+	    Notes du devoir 2 disponibles<br><br>
+	    <b>[03/11/2014]</b><br>
+	    Énoncé du devoir 3 disponible<br><br>
+	    <b>[10/15/2014]</b><br>
+	    Notes de l'intra sont disponibles<br><br>
+	    <b>[10/10/2014]</b><br>
+	    Notes du devoir 1 disponibles<br><br>
+	    <b>[14/09/2014]</b><br>
+	    Énoncé du devoir 2 disponible<br><br>
+	    <b>[06/09/2014]</b><br>
+	    Énoncé du devoir 1 disponible<br><br>
+	    <b>[25/08/2014]</b><br>
+	    Bienvenue au cours IFT 607!
+	  </div>
+	  
+	  <!--
+	  <div id="sidebarright">
+	  </div>
+	  -->
+
+	  <div id="contentnorightbar">
+	    <h2> Contenu du cours </h2>
+	    
+            <p>
+              Voici la liste des sujets traités durant le cours,
+              accompagnés de vidéos explicatives (ajoutées progressivement
+	      durant le cours).
+            </p>
+	    
+	    <p>
+	      Pour toute question concernant le contenu, n'hésitez pas à poser une question
+	      sur le <a href="https://groups.google.com/forum/?fromgroups#!forum/ift-607-a2014">forum de discussion</a> du cours!
+	    </p>
+	    
+	    <table cellspacing="0">
+	      <tr bgcolor="#FD9842">
+		<td width="80px"><font color="#000"><b>Date</b></font></td> 
+		<td width="380px"><font color="#000"><b>Contenu</b></font></td> 
+              </tr>
+	      <tr bgcolor="#EEE">
+		    <td>ME 27/08<br>
+                      JE 28/08</td> 
+		    <td><b>Présentation du cours</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift607/presentation_cours.pdf">pdf</a>] <br>
+		      <b> Mise à niveau - Python</b><br>
+		      &#8194;&#8226; <a href="../tutoriel_python.html">Tutoriel Python</a><br><br>
+		      <b> Mise à niveau - Réseaux bayésiens</b><br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=bXyTTtEeVTs">Motivation</a> (9:23) <br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=M7dFPkdwAB8">D&eacute;finition</a> (9:21)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=gYVpFLEluXg">Calcul de probabilit&eacute;s</a> (16:34) <br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Ry_7z67xEpU">Ind&eacute;pendance</a> (16:45) <br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=TTMeGpaio_M">D-s&eacute;paration</a> (10:06) <br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=EeEs0hABG0c">Inf&eacute;rence</a> (26:02) <br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=vPXXMrMtmpQ">Sp&eacute;cifier les tables de probabilit&eacute;s</a> (12:35) <br>
+		    </td> 
+		    <td align="right"></td>
+              </tr>
+	      <tr>
+		    <td>ME 03/09<br>
+                      JE 04/09</td> 
+		    <td>
+		      <b>Introduction</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift607/01_introduction.pdf">pdf</a>]<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=waTZl_IbDdo">Motivation</a> (4:51)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=YlByYM_WmqY">Approches en TAL</a> (4:37)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=UbYpBk5CLbE">Défis en TAL</a> (7:06)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=FZqmUkRck-g">Propriétés de données textuelles</a> (11:25)<br><br>
+		      <b>Manipulation de textes</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift607/02_manipulation_de_textes.pdf">pdf</a>]<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=ZOyCPGTv-Ag">Motivation</a> (3:27)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=8LsYnCmGamU">Expressions régulières</a> (4:59)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=N7mIQX1LkXo">Disjonction, négation et répétition</a> (6:55)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=J1QShSiZJWk">Combinaison d'opérations</a> (2:49)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=tQE4J79m0bM">Caractères spéciaux et alias</a> (2:51)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=-AU4eCjs3L0">Substitution</a> (8:22)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=WlqMB2q4SoY">ELIZA</a> (2:56)<br>
+		    </td>
+              </tr>
+	      <tr bgcolor="#EEE">
+		    <td>ME 10/09<br>
+                      JE 11/09</td> 
+		    <td><b>Manipulation de textes (suite)</b> <br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=N6XZqMQTXGA">Morphologie</a> (3:27)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=dZasl3C7z3E">Types d'affixes</a> (2:39)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=duRDjebofNQ">Flexion</a> (5:14)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=jLfZx5ZBDtU">Dérivation</a> (1:49)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=Uwhy1Hmxnzo">Mots composés et clitiques</a> (2:11)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=ePEeX0J-SpA">Segmentation de mots et de phrases</a> (9:17)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=pf-R8PMMH4I">Racinisation et <i>Porter stemmer</i></a> (4:21)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=gr3IxKubOYY">Lemmatisation</a> (2:15)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=Zu6-BUXggNo">Distance d'édition</a> (15:05)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=UQyjdhz9T_M">Alignement</a> (4:36)<br>
+
+		    </td>
+              </tr>
+
+	      <tr>
+		    <td>ME 17/09<br>
+                      JE 18/09</td> 
+		    <td><b>Modèles de langue</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift607/03_modeles_de_langue.pdf">pdf</a>]<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=9bAxBUoCDJQ">Motivation</a> (7:04)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=VR44jf32Rf0">Définition</a> (12:42)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=13Z6IMFF72Q">Modèle N-gramme</a> (6:00)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=2gL9K4Q8dAg">Modèle N-gramme sans lissage</a> (12:28)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=Yde9mIsx2fY">Évaluation de performance</a> (6:53)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=vFGWJfnOkBY">Corpus d'entraînement et de test</a> (9:03)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=-nr1WLvNAJk">Lissage de modèles N-gramme</a> (10:19)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=RFcoZUkWw_s">Lissage de Good-Turing</a> (10:53)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=XwKvXzyVsO0">Lissage par interpolation</a> (7:59)<br>
+		    </td>
+              </tr>
+	      <tr bgcolor="#EEE">
+		    <td>ME 24/09<br>
+                      JE 25/09</td> 
+		    <td><b>Modèles de langue (suite)</b><br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=t-TZ0YrrIDA">Lissage par repli</a> (15:53)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=t4eJyuPq1Eo">Lissage de Kneser-Ney</a> (16:00)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=kldcxZM8dzQ">Modèle de langue dans la pratique</a> (5:48)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=_KajBvRChWI">Autres variantes avancées</a> (14:35)<br>
+		    </td>
+              </tr>
+
+	      <tr>
+		    <td>ME 01/10<br>
+                      JE 02/10</td> 
+		    <td>
+		      <b> Mise à niveau - Réseaux bayésiens dynamiques</b><br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=SGmMIEMJYwg">Modèle de Markov caché</a> (9:48) <br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=QLwhFEHtHXg">Explication la plus plausible</a> (15:27) <br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=xBkjehSDJx8">Étiquetage syntaxique</a> (12:14) <br>
+		      <br>
+		    <b>Étiquetage morpho-syntaxique</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift607/04_etiquetage_morpho-syntaxique.pdf">pdf</a>] <br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=GWSajBBs4hY">Motivation</a> (2:59)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=dq1JN7Dcceo">Classes grammaticales ouvertes</a> (8:23)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=M9hTP2Wsvcg">Classes grammaticales fermées</a> (6:28)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=zZsoMBwaEj4">Ensemble d'étiquettes (<i>tagset</i>)</a> (8:23)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=ujLzwEzHlNQ">En pratique</a> (10:02)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=dQdF8jEQy6Q">Analyse de performance</a> (7:25)<br>
+
+		    </td> 
+              </tr>
+	      <tr bgcolor="#EEE">
+		    <td>VE 10/10</td> 
+		    <td><b>Semaine d'examens périodiques</b> <br>
+		      Examen intra: 10 octobre, D4-2021, 8h30-10h20
+		    </td> 
+              </tr>
+	      <tr>
+		    <td>LU 13/10<br>
+		        VE 17/10</td> 
+		    <td><b>Semaine de lecture</b> 
+		    </td> 
+              </tr>
+	      <tr bgcolor="#EEE">
+		    <td>ME 22/10<br>
+                      JE 23/10</td> 
+		    <td>
+		      <b> Mise à niveau - Dérivées et gradients</b><br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=tdouYphUi-w">Dérivées</a> (11:16) <br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=HniO8Apx95A">Dérivées partielles et gradient</a> (18:42) <br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=diiP1ydlyss">Minimisation de perte</a> (24:10) <br>
+		      <br>
+		      <b>Classification de documents</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift607/05_classification_documents.pdf">pdf</a>]<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=UtWV0b3R7mk">Motivation</a> (2:45)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Xk-GQU0hQrI">Classification de documents</a> (19:40) <br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=usJwQGwZflU">Apprentissage en classification de documents</a> (19:32) <br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=P12Rdynjbvo">Sac de mots</a> (5:41)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=Fdg4sPzzXUY">Régression logistique</a> (20:06)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=azZBxpT69GM">Génératif vs. discriminant</a> (7:12)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=x-4D1Ht2wlE">Précision, rappel, F-mesure</a> (6:53)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=cxgC3Zi3Sqw">Pondération TF-IDF</a> (7:11)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=3bnmRnZSpEQ">Recherche d'information</a> (8:11)
+		    </td>
+              </tr>
+
+	      <tr >
+		    <td>ME 29/10<br>
+                      JE 30/10</td> 
+		    <td>
+		      <b>Analyse syntaxique</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift607/06_analyse_syntaxique.pdf">pdf</a>]<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=6IOZWuSLwus">Motivation</a> (4:44)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=gNgtRZpC3AI">Constituant</a> (4:49)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=anaSJZt57Pw">Grammaire hors contexte</a> (11:43)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=xibXvxpX8W0">Structures de phrase</a> (8:09)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=PjVs2J3_hvM">Syntagme nominal</a> (10:45)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=DnbFUSKaA-s">Accord</a> (5:04)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=_bxCOrWPI4E">Syntagme verbal</a> (5:32)<br>
+		    </td>
+              </tr>
+
+	      <tr bgcolor="#EEE">
+		    <td>ME 05/11<br>
+                      JE 06/11</td> 
+		    <td>
+		      <b>Analyse syntaxique (2)</b> <br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=2TJwhjaSY0s">Forme normale de Chomsky</a> (7:04)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=T0AMDZxDVkw">CKY</a> (16:54)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=V19xvvjWPmE"><i>Treebank</i></a> (9:07)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=u6VjylY9qgM">Grammaire hors contexte probabiliste</a> (8:02)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=geAeCtjlEUM">Version probabiliste de CKY</a> (13:57)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=z1QGAaHMHTA">Apprentissage avec PCFG</a> (2:05)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=mPpHcDDlrvo">Versions avancées de PCFGs</a> (12:54)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=WKcpQGaWkJ8">Évaluation</a> (7:27)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=BOGTJgLWzMs">Grammaire de dépendance</a> (4:08)<br>
+		    </td>
+              </tr>
+
+	      <tr >
+		    <td>ME 12/11<br>
+                      JE 13/11</td> 
+		    <td>
+		      <b>Traduction automatique</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift607/07_traduction_automatique.pdf">pdf</a>]<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=ZToM4AM_dPM">Motivation</a> (5:47)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=QQ5E90OPEJ4">Typologie des langues</a> (9:44)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=twE1IMewh1w">Défis en traduction automatique</a> (10:02)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=ouugMWQtERQ">Approches classiques</a> (3:19)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=shz5N1P_Izk">Approche par traduction directe</a> (6:50)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=VYNjg0YstmA">Approche par transfert</a> (6:38)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=IqQ4zDbm91k">Approche par interlingua</a> (7:16)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=IQJtpFGkOo0">Approche statistique</a> (9:44)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=xt6tod6WnfU">Approche <i>phrase-based</i></a> (13:44)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=m3QmU320qu8">Apprentissage</a> (5:50)<br>
+		    </td>
+              </tr>
+
+	      <tr bgcolor="#EEE">
+		    <td>ME 19/11<br>
+                      JE 20/11</td> 
+		    <td>
+		      <b>Traduction automatique (2)</b> <br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=9UFXF5EJ4Ek">Alignement de mots</a> (7:20)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=EhwVXQB_FKc">Modèle IBM 1</a> (11:50)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=2V92B9rmd3Y">Modèle HMM</a> (22:26)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=SDrYSJUZhm0">Apprentissage de modèle d'alignement</a> (12:41)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=w0BrZWbC34o">Symétrisation d'alignement</a> (12:41)<br>
+		    </td>
+              </tr>
+
+	      <tr >
+		    <td>ME 26/11<br>
+                      JE 27/11</td> 
+		    <td>
+		      <b>Traduction automatique (3)</b> <br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=fgrQmV9TYR4">Décodage pour modèle <i>phrase-based</i></a> (23:09)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=nnS-TdDAhdA">Évaluation</a> (21:32)<br>
+		      &#8194;&#8226; <a href="https://www.youtube.com/watch?v=HXzQQaSoSjQ">Modèle log-linéaire</a> (7:39)<br>
+		    </td>
+              </tr>
+
+	      <tr bgcolor="#EEE">
+		    <td>ME 03/12<br>
+                      JE 04/12</td> 
+		    <td>
+		      <b>Révision</b> 
+		    </td>
+              </tr>
+
+	      </table>
+	    <br>
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

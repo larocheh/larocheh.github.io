@@ -1,0 +1,65 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="../../css/1.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+	  <font color="#FFFFFF">
+	    <font face="Copperplate" size=8>Hugo Larochelle</font>
+	    <br> http://www.dmi.usherb.ca/~larocheh/
+	  </font>
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="../../index_fr.html" accesskey="a"><em>A</em>ccueil</a></li>
+	      
+	      <li><a href="../../publications_fr.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="../../university_fr.html" accesskey="u" class="active"><em>U</em>niversité</a></li>
+
+	      <li><a href="../../links_fr.html" accesskey="l"><em>L</em>iens</a></li>
+
+	    </ul>
+	  </div>
+	  
+	  <div id="contentnobars">
+	    <h2> Using the Mammouth MP2 super computer: steps to follow </h2>
+	    
+        <p>
+          To get a working account on Sherbrooke's Mammouth MP2 super computer, you must go through the
+          following steps. Be warned that your account is to be used only during the course's trimester
+          and only as part of the assignments/project of this course.
+        </p>
+
+	    <ul>
+          <li> Create account on Compute Canada platform by computing online form: <a href="https://ccdb.computecanada.ca/security/accept_aup">https://ccdb.computecanada.ca/security/accept_aup</a>
+          <li> 
+	    </ul>
+
+	    <p>
+	      If you ever need assistance with these steps, post a question on the 
+	      <a href="https://groups.google.com/forum/?fromgroups#!forum/ift-725-a2012">discussion forum</a>!
+	    </p>
+
+	      
+	    </table>
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

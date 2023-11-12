@@ -1,0 +1,162 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold"
+          type="text/css" />
+    <link rel="stylesheet" href="../../css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+	  <font color="#FFFFFF">
+	    <font face="Copperplate" size=8>Hugo Larochelle</font>
+	    <br> http://www.dmi.usherb.ca/~larocheh/
+	  </font>
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="../index_fr.html" accesskey="a"><em>A</em>ccueil</a></li>
+	      
+	      <li><a href="../publications_fr.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="../university_fr.html" accesskey="u" class="active"><em>U</em>niversité</a></li>
+
+	      <li><a href="../links_fr.html" accesskey="l"><em>L</em>iens</a></li>
+
+	    </ul>
+	  </div>
+	  
+	  <div id="contentnobars">
+	    <h2> Using the Mammouth Ms2 and Mp2 super computer: steps to follow </h2>
+	    
+        <p>
+          To get a working account on Sherbrooke's <a href="https://rqchp.ca/?pageId=1388">Mammouth Ms2 or Mp2</a> super computers, you must go through the
+          following steps:
+        </p>
+
+	    <ul>
+          <li> Create account on Compute Canada platform by completing
+            the online
+            form: <a href="https://ccdb.computecanada.ca/account_application">https://ccdb.computecanada.ca/account_application</a>.<br>
+            When asked for the Compute Canada Role Identifier of your
+            sponsor, enter <b>ycy-622-03</b>.<br><br>
+
+          <li> I will then be able to grant you access to the Mammouth Ms2 and/or Mp2 super
+          computer. This step can require two or three days, after which you
+          will receive an email confirming your access to the super
+          computer. The email will also specify how you can 
+          connect to the super computer using
+          the <tt><a href="http://support.suso.com/supki/SSH_Tutorial_for_Linux">ssh</a></tt>
+          linux program. The command line to use should look something like this:
+            <br><br>
+            <pre>
+ssh USERNAME@larochel-ms.ccs.usherbrooke.ca # for Ms2
+ssh USERNAME@larochel-mp2.ccs.usherbrooke.ca # for Mp2
+            </pre>
+            where <tt>USERNAME</tt> is the assigned to you for your account. This will allow you to connect
+            to an interactive node, on which you can install software for your account and debug your
+            code. However, never run long experiments on the interactive node: you need to use
+            <tt>jobdispatch</tt> to launch such experiments on the compute nodes of the super computer (see below).
+            <br><br>
+          <li> The first time you connect to the interative node, you'll need to modify your <tt>~/.bashrc</tt> file by adding the following lines in it
+            (you can use the <tt><a href="http://www2.lib.uchicago.edu/keith/tcl-course/emacs-tutorial.html">emacs</a></tt> program to edit the file):
+            <br><br>
+            <pre>
+# User specific aliases and functions
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# To look at the ms queue
+export BQMAMMOUTH=ms
+#export BQMAMMOUTH=mp2 # use this line instead if on Mp2
+
+# Add Python
+#module add python64/2.6.4
+module add python64/2.7.1
+export CPATH=$CPATH:/opt/python64/2.7.1/lib/python2.7/site-packages/numpy/core/include
+
+# Add boost
+module add boost64/1.38.0
+
+# Add lapack
+module add lapack64
+module add mkl64/10.1.3.027
+
+# For job launching
+PATH=$PATH:/home/laroche1/software/Jobman/bin
+export PYTHONPATH=${PYTHONPATH}:/home/laroche1/software/Jobman
+</pre>
+<br>
+          <li>
+            You'll also need to install MLPython in your account, like
+            you would on your own computer. Simply follow
+            the <a href="http://www.dmi.usherb.ca/~larocheh/mlpython/install.html#install">installation instructions</a>, except those
+            regarding the installation of other librairies required by
+            MLPython (they should already be installed).
+            <br><br>
+            <li> Say you have a Python script <tt>run_nnet.py</tt> which can be run as follows:
+              <br><br>
+              <pre>
+python run_nnet.py 0.01 0 [20,10] 0 0 1234 True
+              </pre>
+              You would now like to run the same script but with different values of its arguments.
+              To launch such experiments (jobs) on the Mammouth Mp2's compute nodes, you can use the <tt>jobdispatch</tt> program, as follows:
+              <br><br>
+              <pre>
+jobdispatch --bqtools --queue=qwork@mp2 python run_nnet.py '{{0.01,0.001}}' 0 ['{{20,10}}','{{10,40}}'] 0 0 1234 True
+              </pre>
+              In this example, 8 jobs (2 x 2 x 2 = 8) will be launched, corresponding to all combinations
+              of values within each set <tt>'{{A,B,C...}}'</tt>.
+              <br><br>
+              To launch experiments on Ms2, simply remove the <tt>--queue=qwork@mp2</tt>
+              from the command line in the example above.  
+              <br><br>
+              In a directory named <tt>LOGS</tt> (created the first time you use <tt>jobdispatch</tt>), 
+              log files will be added for each job. They will be put in separate subdirectories
+              (one for each time you use <tt>jobdispatch</tt>) within <tt>LOGS</tt>.
+              Each job will have its own <tt>ID.out</tt> (standard output) and <tt>ID.err</tt> file, where
+              <tt>ID</tt> is a number assigned to each job.
+              <br><br>
+              You can then use the <tt>bqwatch</tt> command to track whether your batch of jobs is
+              still running. On Mp2, <tt>bqwatch</tt> automatically groups the jobs in batches of up to 24 jobs,
+              so don't be surprised if it displays a smaller number than the total number of jobs.
+              <br><br>
+              Finally, if you launch jobs, realize after there is a bug in your code and wish to kill them, the command <tt>bqkill</tt>
+              will do that for you. Just run <tt>bqkill</tt> and a prompt will ask you to
+              specify which batch of jobs you'd like to kill among those you are currently running.
+	    </ul>
+
+        <p> You can find more information and documentation on Mammouth <a href="https://rqchp.ca/?pageId=1388">here</a>.
+
+        <p>
+          Be warned that your account is to be used only during the course's trimester
+          and only as part of the assignments/project of this course. <b>It will be deleted after the course.</b>
+        </p>
+
+<!--	    <p>
+	      If you ever need assistance with these steps, post a question on the 
+	      <a href="https://groups.google.com/forum/?fromgroups#!forum/ift-725-a2012">discussion forum</a>!
+	    </p>
+-->
+	      
+	    </table>
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

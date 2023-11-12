@@ -1,0 +1,113 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold,italic"
+          type="text/css" />
+    <link rel="stylesheet" href="css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+      <div id="header-text">
+	  Hugo Larochelle
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="index_en.html" accesskey="H"><em>H</em>ome</a></li>
+	      
+	      <li><a href="publications_en.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="university_en.html" accesskey="u" class="active"><em>U</em>niversity</a></li>
+
+	      <li><a href="links_en.html" accesskey="l"><em>L</em>inks</a></li>
+
+	      <li><a href="university_fr.html" accesskey="f"><em>F</em>rench</a></li>
+	      	      
+	    </ul>
+        </div>
+	  </div>
+	  
+	  <div id="contentnobars">
+
+        <h2> Courses </h2>
+		<ul>
+		  <li> IFT 603: Techniques d'apprentissage [<a href="cours/ift603_H2015/description.html">H2015</a>]  [<a href="cours/ift603_H2014/description.html">H2014</a>] 
+		  <li> IFT 607: Traitement automatique des langues naturelles [<a href="cours/ift607_A2014/description.html">A2014</a>] 
+		  <li> IFT 615: Intelligence artificielle [<a href="cours/ift615_E2013/description.html">E2013</a>] [<a href="cours/ift615_E2012/description.html">E2012</a>] [<a href="cours/ift615_H2012/description.html">H2012</a>] 
+          <li> IFT 725: Réseaux neuronaux [<a href="cours/ift725_A2014/description.html">A2014</a>] [<a href="cours/ift725_A2013/description.html">A2013</a>] [<a href="cours/ift725_A2012/description.html">A2012</a>] 
+        </ul>        
+
+	  <h2>Map and directions</h2>
+	  <table width="750" border="0" cellspacing="0" cellpadding="0"> 
+	    <tr>
+	      <td valign="top">
+		The computer science department is at 2500 boul. de
+		l'Université, in Sherbrooke (Québec, Canada).
+		<br><br>
+		My office room number is D4-1024-1, i.e.:
+		<ul>
+		  <li> "D4" for the building and wing
+		  <li> "1" for the floor
+		  <li> "024-1" for the office
+		</ul>
+		The computer science department covers wings D4 to D6,
+		and the Faculty of Sciences covers all D1 to D8 wings.
+		<br><br> 
+		More information on the campus is available 
+		<a href="http://www.usherbrooke.ca/visiter/plans-des-campus/campus-principal/">here</a>. 
+		Note that in addition to the main campus, Université de Sherbrooke also has a
+		<a href="http://www.usherbrooke.ca/parents/ludes/campus/campus-de-la-sante/">health campus</a> and a <a href="http://www.usherbrooke.ca/longueuil/">Longueuil campus</a>.
+		<br><br>
+		Within Sherbrooke, several city bus lines have a stop at the university.
+	      </td>
+	      <td width="5">
+	      </td>
+	      <td> 
+		<center>
+		  <iframe width="300" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?msa=0&amp;msid=215855812780967147894.0004a80965bff3ba7e7c2&amp;ie=UTF8&amp;ll=45.380239,-71.926632&amp;spn=0,0&amp;output=embed"></iframe><br />
+		</center>
+	      </td>
+	    </tr>
+	  </table>
+	  <br>
+
+	  From outside Sherbrooke (but within Québec), the best way to
+	  get to the university is probably by car (simply use the
+	  Google Map plan on the right to get an itinerary).
+      <br><br>
+	  If you plan on coming from outside of Québec, you can fly to 
+	  Montreal (Montréal-Trudeau airport) and rent a car.
+	  <br><br> From the airport, it is aslo possible to take
+	  a <a href="http://www.stm.info/english/info/a-747.htm">shuttle</a>
+	  to the
+	  <a href="http://www.stationcentrale.com/en/bienvenue/">central
+	  station</a>, from which a bus to Sherbrooke can be taken
+	  (more information available <a href="https://limocar.ca/en/network/montreal-sherbrooke/">here</a>). Not
+	  all buses stop at the university, but there are several city
+	  buses that go to the university from the final bus station
+	  in Sherbrooke.
+
+          <a name="calendar"><h2>Calendar (my busy times)</h2></a>
+          <center>
+	    <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=400&amp;wkst=1&amp;hl=en&amp;bgcolor=%23FFFFFF&amp;src=g685j86gld1ttf8h66e8k1p3dk%40group.calendar.google.com&amp;color=%23875509&amp;src=hugo.larochelle%40gmail.com&amp;color=%232952A3&amp;src=r6f6r50j6qcdhcururd2jlq83c%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FNew_York" style=" border-width:0 " width="730" height="400" frameborder="0" scrolling="no"></iframe>
+          </center>
+	  
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

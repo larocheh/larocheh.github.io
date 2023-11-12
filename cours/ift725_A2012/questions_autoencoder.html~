@@ -1,0 +1,70 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="../../css/1.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+	  <font color="#FFFFFF">
+	    <font face="Copperplate" size=8>Hugo Larochelle</font>
+	    <br> http://www.dmi.usherb.ca/~larocheh/
+	  </font>
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="../../index_fr.html" accesskey="a"><em>A</em>ccueil</a></li>
+	      
+	      <li><a href="../../publications_fr.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="../../university_fr.html" accesskey="u" class="active"><em>U</em>niversité</a></li>
+
+	      <li><a href="../../links_fr.html" accesskey="l"><em>L</em>iens</a></li>
+
+	    </ul>
+	  </div>
+	  
+	  <div id="contentnobars">
+	    <h2> Reading questions </h2>
+	    
+	    <p>
+	      If you are unsure about any of these concepts, post a question on the 
+	      <a href="https://groups.google.com/forum/?fromgroups#!forum/ift-725-a2012">discussion forum</a>!
+	    </p>
+
+
+	    <ul>
+          <li> What is the energy function of an RBM?
+          <li> What are the visible and hidden layers of an RBM?
+          <li> What is the probability distribution of an RBM?
+          <li> What are the conditional distributions of each layer given the other?
+          <li> What loss do we try to optimize to train an RBM?
+          <li> What is the Contrastive Divergence (CD) and how does it approximate the gradients used for training?
+          <li> What is a Gaussian-Bernoulli RBM?
+          <li> What is the free-energy of an RBM?
+          <li> What is a Boltzmann machine (i.e. non-restricted)?
+          <li> How de we perform Gibbs sampling in an RBM? 
+          <li> What is a negative sample?
+          <li> What is pesistent CD?
+	    </ul>
+
+	      
+	    </table>
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

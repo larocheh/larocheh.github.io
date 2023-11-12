@@ -1,0 +1,36 @@
+Matricule	Devoir 2	Explication
+14161836	13.5   		Boucles for évitables (gradient unary factors) [-0.25], belief_propagation et softmax pas numériquement stable [-0.25]
+14174074	13.75  		Boucles for évitables (calcul des unary factors, calcul des gradients) [-0.25]
+14148950	13.75  		Boucles for évitables (calcul des unary marginals) [-0.25]
+10107234	13.5   		Mauvais gradient reg L2/L1 des lateral weights [-0.25], Boucles for évitables (unary factors) [-0.25]
+06879023	0      		Pas de remise
+14077535	13.75  		Boucles for évitables (unary factors, calcul training loss) [-0.25]
+13168332	14     
+14148996	14     
+14172183	14     
+14166779	12.75		Boucles for évitables (unary factors, unary marginals) [-0.25], mauvais calcul de logZ dans training_loss [-0.5], 
+				mauvais intervalle de confiance [-0.5]
+14151179	12.75  		Boucles for évitables (unary marginals) [-0.25], mauvais calcul de logZ dans training_loss [-0.5], 
+				mauvais intervalle de confiance [-0.5]
+12089027	13.75  		Boucles for évitables (unary factors) [-0.25]
+14171497	12     		Mauvais calcul de logZ dans training_loss [-0.5], mauvaise utilisation de self.lateral_weights en général 
+				(utilise la transposée [-0.5], mauvais calcul des pairwise marginals [-1]
+10085891	13.75  		Boucles for évitables (unary factors) [-0.25]
+07130268	12     		Boucles for évitables (unary factors) [-0.25], pas de justification pour l'intervalle de confiance [-0.5], 
+				training_loss n'inclut pas les normes L1, L2 [-0.25], mauvais calcul des pairwise marginals [-1]
+14161916	12.75  		Boucles for évitables (unary factors, unary marginals) [-0.25], mauvais calcul de logZ dans training_loss [-0.5], 
+				mauvais intervalle de confiance [-0.5]
+10078694	13.75  		Boucles for évitables (unary factors, unary marginals) [-0.25]
+14172192	13.75  		Boucles for évitables (unary factors, unary marginals, gradient des self.weights) [-0.25]
+14172218	13.65  		Boucles for évitables (unary factors) [-0.25],  softmax pas numériquement stable [-0.1]
+14029286	10.5   		Mauvais calcul de belief_propagation [-2], mauvais calcul des pairwise_marginals [-1], mauvais intervalle de confiance [-0.5]
+14126947	13.65  		Boucles for évitables (unary factors, unary marginals) [-0.25],  softmax pas numériquement stable [-0.1]
+14172227	13.65  		Boucles for évitables (unary factors, unary marginals, gradient selt.weights) [-0.25],  softmax pas numériquement stable [-0.1]
+14080362	0      		Abandon
+14127223	14     		
+14029810	0      		Pas de remise
+14134493	11     		Mauvais calcul de belief_propagation [-2], mauvais calcul des pairwise_marginals [-1]
+14172236	13.75  		Boucles for évitables (unary factors, gradient de self.weights) [-0.25]
+14161961	14     		
+14149003	13.75  		Boucles for évitables (unary factors, unary marginals) [-0.25]
+Moyenne		11.91206897    

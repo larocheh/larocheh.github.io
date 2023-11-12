@@ -1,0 +1,352 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="../../css/1.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+	  <font color="#FFFFFF">
+	    <font face="Copperplate" size=8>Hugo Larochelle</font>
+	    <br> http://www.dmi.usherb.ca/~larocheh/
+	  </font>
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="../../index_fr.html" accesskey="a"><em>A</em>ccueil</a></li>
+	      
+	      <li><a href="../../publications_fr.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="../../university_fr.html" accesskey="u" class="active"><em>U</em>niversité</a></li>
+
+	      <li><a href="../../links_fr.html" accesskey="l"><em>L</em>iens</a></li>
+
+	    </ul>
+	  </div>
+	  
+	  <div id="sidebar">
+	    <h2>IFT 615 <small>(Été 2012)</small></h2>
+	    <table id="nav" cellpadding="0" cellspacing="2" >
+	      <tr><td><a href="description.html">Description</a></td></tr>
+	      <tr><td class="active"><a href="contenu.html">Contenu</a></td></tr>
+	      <tr><td><a href="evaluations.html">Évaluations</a></td></tr>
+	    </table>
+	    <h2>Annonces</h2>
+<!--	    <b>[23/04/2012]</b><br>
+	    Notes du final et du cours disponibles.
+	    <br><br>
+	    -->
+	    <b>[09/08/2012]</b><br>
+	    Notes du devoir 4 disponibles.
+	    <br><br>
+	    <b>[20/07/2012]</b><br>
+	    Notes du devoir 3 disponibles.
+	    <br><br>
+	    <b>[12/07/2012]</b><br>
+	    Énnoncé du devoir 4 disponible.
+	    <br><br>
+	    <b>[14/06/2012]</b><br>
+	    Énnoncé du devoir 3 disponible.
+	    <br><br>
+	    <b>[23/06/2012]</b><br>
+	    Notes de l'intra disponibles.
+	    <br><br>
+	    <b>[19/06/2012]</b><br>
+	    Notes du devoir 2 disponibles.
+	    <br><br>
+	    <b>[11/06/2012]</b><br>
+	    Date de l'<b>examen final</b> annoncée: <br>
+	    VE 10/08/2012, 9h00-12h00, <br>au D3-2037.
+	    <br><br>
+	    <b>[04/06/2012]</b><br>
+	    Notes du devoir 1 disponibles.
+	    <br><br>
+	    <b>[29/05/2012]</b><br>
+	    Énnoncé du devoir 2 disponible.
+	    <br><br>
+	    <b>[25/05/2012]</b><br>
+	    <b>Séance de cours spéciale</b>: <br>
+	    VE 08/06/2012, 10h30-12h20,<br> D4-2022.
+	    <br><br>
+	    <b>[24/05/2012]</b><br>
+	    Date de l'<b>examen intra</b> annoncée: <br>
+	    VE 22/06/2012, 18h00-19h50,<br> D3-2037.
+	    <br><br>
+	    <b>[15/05/2012]</b><br>
+	    Énnoncé du devoir 1 disponible.
+	  </div>
+	  
+	  <!--
+	  <div id="sidebarright">
+	  </div>
+	  -->
+
+	  <div id="contentnorightbar">
+	    <h2> Contenu du cours </h2>
+	    
+	    <p>
+	      Pour toute question concernant le contenu, n'hésitez pas à poser une question
+	      sur le <a href="https://groups.google.com/forum/?fromgroups#!forum/ift-615-e2012">forum de discussion</a> du cours!
+	    </p>
+	    
+	    <table cellspacing="0">
+	      <tr bgcolor="#666">
+		<td width="13%"><font color="#FFF"><b>Date</b></font></td> 
+		<td width="57%"><font color="#FFF"><b>Cours magistral</b></font></td> 
+		<td width="13%" align="right"><font color="#FFF"><b>Sections du livre</b></font></td>
+		<td width="19%" align="right"><font color="#FFF"><b>Dernière modification</b></font></td></tr>
+	      
+	      <tr>
+		<td rowspan="2">MA 01/05</td> 
+		<td><a href="diapositives/ift615-intro.ppt">Introduction et présentation du plan de cours</a> [<a href="diapositives/ift615-intro.pdf">pdf</a>]</td> 
+		<td align="right">1</td>
+		<td align="right">14h45, 30/04</td></tr>
+	      <tr>
+		<td><a href="diapositives/ift615-agents-intelligents.ppt">Agents intelligents</a> [<a href="diapositives/ift615-agents-intelligents.pdf">pdf</a>]</td> 
+		<td align="right">2, 7.1</td>
+		<td align="right">14h45, 30/04</td>
+              </tr>
+	      <tr bgcolor="#EEE">
+		<td>JE 03/05</td> 
+		<td><a href="diapositives/ift615-recherche-heuristique.pptx">Recherche heuristique</a> [<a href="diapositives/ift615-recherche-heuristique.pdf">pdf</a>] </td> 
+		<td align="right">3</td>
+		<td align="right">10h43, 21/06</td>
+	      </tr>
+	      
+	      <tr >
+		<td>MA 08/05</td> 
+		<td> <a href="../tutoriel_python.html">Séance pratique: introduction au langage Python</a></td> 
+		<td align="right"></td>
+		<td></td>
+	      </tr>
+	      
+	      <tr bgcolor="#EEE"> 
+		<td>JE 10/05</td> 
+		<td><a href="diapositives/ift615-recherche-locale.ppt">Recherche locale</a> [<a href="diapositives/ift615-recherche-locale.pdf">pdf</a>] </td> 
+		<td align="right">4.1</td>
+		<td align="right">14h36, 17/05</td>
+	      </tr>
+	      
+	      <tr>
+		<td >MA 15/05</td> 
+		<td><a href="diapositives/ift615-alpha-beta-pruning.ppt">Recherche pour jeux à deux adversaires</a> [<a href="diapositives/ift615-alpha-beta-pruning.pdf">pdf</a>]</td> 
+		<td align="right">5.1-5.5</td>
+		<td align="right">13h22, 15/05</td>
+	      </tr>
+	      
+	      <tr bgcolor="#EEE">
+		<td>JE 17/05</td> <td><a href="diapositives/ift615-satisfaction-contraintes.ppt">Satisfaction de contraintes</a> [<a href="diapositives/ift615-satisfaction-contraintes.pdf">pdf</a>] </td> 
+		<td align="right">6.1-6.4</td>
+		<td align="right">09h37, 21/05</td>
+	      </tr>
+	      
+	      <tr>
+		<td >MA 22/05</td> 
+		<td> <a href="diapositives/exercices_22_05.pdf">Travaux dirigés</a></td> 
+		<td align="right"></td>
+		<td></td>	      
+	      </tr>
+	      <tr bgcolor="#EEE">
+		<td >JE 24/05</td> 
+		<td><a href="diapositives/ift615-logique.ppt">Logique du premier ordre</a> [<a href="diapositives/ift615-logique.pdf">pdf</a>] [<a href="diapositives/solutions-final-ift615-h09.pdf">exercices</a>]</td> 
+		<td align="right">7, 8, 9.2, 9.5</td>
+		<td align="right">16h25, 12/06</td>	      
+	      </tr>
+	      
+	      <tr>
+		<td >MA 29/05</td> 
+		<td> Logique du premier ordre (suite)</td> 
+		<td align="right"></td>
+		<td align="right"></td>
+	      </tr>
+	      <tr>
+	      </tr>
+	      <tr bgcolor="#EEE">
+		<td>JE 31/05</td> 
+		<td><a href="diapositives/ift615-raisonnement-probabiliste.pptx">Raisonnement probabiliste</a> [<a href="diapositives/ift615-raisonnement-probabiliste.pdf">pdf</a>]</td> 
+		<td align="right">13</td>
+		<td align="right">11h17, 30/05</td>
+	      </tr>
+	      
+	      <tr>
+		<td >MA 05/06</td> 
+		<td><a href="diapositives/ift615-reseaux-bayesiens.ppt">Réseaux bayésiens</a> [<a href="diapositives/ift615-reseaux-bayesiens.pdf">pdf</a>] [<a href="diapositives/exercice_reseau_bayesien.pdf">exercices</a>]</td>
+ 		<td align="right">14.1-14.5</td>
+		<td align="right">12h47, 07/06</td>	      
+	      </tr>
+	      <tr bgcolor="#EEE">
+		<td>JE 07/06</td> 
+		<td><a href="diapositives/ift615-reseaux-bayesiens-dynamiques.ppt">Réseaux bayésiens dynamiques</a> [<a href="diapositives/ift615-reseaux-bayesiens-dynamiques.pdf">pdf</a>]</td> 
+		<td align="right">15.1-15.3</td>
+		<td align="right">11h27, 08/06</td>	      
+	      </tr>
+	      
+	      <tr bgcolor="#CCC">
+		<td>VE 08/06<br><b>Séance Spéciale</b></td> 
+		<td><a href="diapositives/ift615-mdp.ppt">Processus de décision Markoviens</a> [<a href="diapositives/ift615-mdp.pdf">pdf</a>]</td> 
+		<td align="right">17.1-17.3</td>
+		<td align="right">15h00, 07/06</td>	      
+
+	      <tr> 
+		<td>MA 12/06</td> 
+		<td> <a href="diapositives/ift615-apprentissage-automatique.pptx">Apprentissage automatique</a> [<a href="diapositives/ift615-apprentissage-automatique.pdf">pdf</a>]</td> 
+		<td align="right"> 18.1, 18.2, 18.8</td>
+		<td align="right">09h01, 14/06</td>	      
+	      </tr>
+	      
+	      <tr bgcolor="#EEE">
+		<td>JE 14/06</td> 
+		<td>Apprentissage automatique (suite)</td> 
+		<td align="right">18.4, 18.6, 18.7</td>
+		<td align="right"> </td>	      
+	      </tr>
+	      
+	      <tr>
+		<td rowspan="5">18-22/06</td> 
+		<td>Examens périodiques </td> 
+		<td align="right"></td>
+		<td align="right"> </td>	      
+	      </tr>
+	      <tr> 
+		<td><blackface href="diapositives/ift615-revision-intra.ppt">Matière pour l'intra</blackface> [<blackface href="diapositives/ift615-revision-intra.pdf">pdf</blackface>]</td> 
+		<td align="right"></td>
+		<td align="right"></td>	      
+	      </tr>
+	      <tr> 
+		<td><a href="diapositives/ift615-2009h-intra-solutions.pdf">Intra H2009</a></td> 
+		<td align="right"></td>
+		<td align="right"> </td>	      
+	      </tr>
+	      <tr> 
+		<td><a href="diapositives/ift615-2009e-intra-solutions.pdf">Intra E2009</a></td> 
+		<td align="right"></td>
+		<td align="right"> </td>	      
+	      </tr>
+	      <tr> 
+		<td><a href="diapositives/ift615-2010h_examen-intra-solutions.pdf">Intra H2010</a> </td> 
+		<td align="right"></td>
+		<td align="right"> </td>	      
+	      </tr>
+
+	      <tr> 
+		<td>MA 26/06</td> 
+		<td> Période libre </td> 
+		<td align="right"> </td>
+		<td align="right"></td>	      
+	      </tr>
+	      
+	      <tr bgcolor="#EEE">
+		<td>JE 28/06</td> 
+		<td> Période libre </td> 
+		<td align="right"></td>
+		<td align="right"> </td>	      
+	      </tr>
+	      
+	      <tr>
+		<td >MA 03/07</td> 
+		<td> <a href="diapositives/ift615-taln.ppt">Traitement automatique de la langue</a> [<a href="diapositives/ift615-taln.pdf">pdf</a>]</td> 
+		<td align="right">22.1, 22.2</td>
+		<td align="right">8h56, 12/07</td>	      
+	      </tr>
+	      <tr bgcolor="#EEE">
+		<td>JE 05/07</td> 
+		<td> Période libre </td> 
+		<td align="right"></td>
+		<td align="right"> </td>	      
+	      </tr>
+	      
+	      <tr>
+		<td >MA 10/07</td> 
+		<td> <a href="diapositives/ift615-apprentissage-renforcement.ppt">Apprentissage par renforcement</a> [<a href="diapositives/ift615-apprentissage-renforcement.pdf">pdf<a>]</td> 
+		<td align="right">21.1, 21.2</td>
+		<td align="right">11h15, 19/07</td>
+	      </tr>
+	      
+	      <tr bgcolor="#EEE">
+		<td >JE 12/07</td> 
+		<td> Apprentissage par renforcement (suite)</td> 
+		<td align="right"> 21.2</td>
+		<td align="right"></td>	      
+	      </tr>
+
+	      <tr>
+		<td >MA 17/07</td> 
+		<td> Apprentissage par renforcement (suite) [<a href="diapositives/exercice_apprentissage_renforcement_solution.pdf">exercices</a>]</td> 
+		<td align="right">21.3</td>
+		<td align="right"></td>	      
+	      </tr>
+	      <tr bgcolor="#EEE">
+		<td>JE 19/07</td> 
+		<td> Apprentissage par renforcement (suite)</td> 
+		<td align="right">21.4</td>
+		<td align="right"></td>
+	      </tr>
+	      
+	      <tr>
+		<td>MA 24/07</td> 
+		<td> <a href="diapositives/ift615-vision-par-ordinateur.ppt">Vision par ordinateur</a> [<a href="diapositives/ift615-vision-par-ordinateur.pdf">pdf</a>] </td> 
+		<td align="right">24.2</td>
+		<td align="right">11h15, 26/07 </td>
+	      </tr>
+	      <tr bgcolor="#EEE">
+		<td>JE 26/07</td> 
+		<td> Vision par ordinateur (suite) </td> 
+		<td align="right">24.3</td>
+		<td align="right"> </td>
+	      </tr>
+	      <tr>
+		<td rowspan=2>MA 31/07</td> 
+		<td> <a href="diapositives/ift615-robotique.ppt">Robotique</a> [<a href="diapositives/ift615-robotique.pdf">pdf</a>] 
+		<td align="right">25.1, 25.2, 25.3</td>
+		<td align="right"> 10h12, 31/07</td>
+	      </tr>
+	      <tr>
+		<td> <a href="diapositives/exercice_apprentissage_automatique_solution.pdf">Travaux dirigés</a> (apprentissage automatique)
+		<td align="right"></td>
+		<td align="right"></td>
+	      </tr>
+	      <tr bgcolor="#EEE">
+		<td rowspan=5>JE 02/08</td> 
+		<td> <a href="diapositives/ift615-revision-final.ppt">Révision</a> [<a href="diapositives/ift615-revision-final.pdf">pdf</a>] [<a href="diapositives/exercice_revision_solution.pdf">exercices</a>]
+		<td align="right"></td>
+		<td align="right">13h09, 02/08</td>	      
+</tr>
+	      <tr bgcolor="#EEE"> 
+		<td><a href="diapositives/final-IFT615-H03.pdf">Final H2003</a> [<a href="diapositives/solution-final-IFT615-H03.pdf">solutions</a>]</td> 
+		<td align="right"></td>
+		<td align="right"> </td>	      
+</tr>
+	      <tr bgcolor="#EEE"> 
+		<td><a href="diapositives/final-ift615-a06.pdf">Final A2006</a> [<a href="diapositives/solution-final-ift615-a06.pdf">solutions</a>]</td> 
+		<td align="right"></td>
+		<td align="right"> </td>	      
+</tr>
+	      <tr bgcolor="#EEE"> 
+		<td><a href="diapositives/solutions-final-ift615-h09.pdf">Final H2009</a> </td> 
+		<td align="right"></td>
+		<td align="right"> </td>	      
+</tr>
+	      <tr bgcolor="#EEE"> 
+		<td><a href="diapositives/ift615-2010E-final.pdf">Final E2010</a> [<a href="diapositives/ift615-2010E-final-solutions.pdf">solutions</a>] </td> 
+		<td align="right"></td>
+		<td align="right"> </td>	      
+</tr>
+	    </table>
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

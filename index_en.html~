@@ -1,0 +1,195 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold"
+          type="text/css" />
+    <link rel="stylesheet" href="css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+      <div id="header-text">
+	  Hugo Larochelle
+	  	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+
+	      <li><a href="index_en.html" accesskey="H" class="active"><em>H</em>ome</a></li>
+
+	      <li><a href="publications_en.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="university_en.html" accesskey="u"><em>U</em>niversity</a></li>
+
+	      <li><a href="links_en.html" accesskey="l"><em>L</em>inks</a></li>
+
+	      <li><a href="index_fr.html" accesskey="f"><em>F</em>rench</a></li>
+
+	    </ul>
+        </div>
+	  </div>
+
+	  <div id="sidebar">
+	    <h2>Recent stuff</h2>
+
+	    <b>I am no longer updating this website.</b> Please visit instead <a href="https://mila.quebec/en/person/hugo-larochelle/">my Mila page</a> for up-to-date information about me.
+
+	    <!--
+	  <table border="0" cellspacing="3" cellpadding="0" style="BORDER: #666 2px groove;" bgcolor="#DDD">
+	    <td> <font color="#555">
+		<b>I'm looking for PhD and master students.</b> <br>
+		If you are interested in machine learning research,
+		please contact me for details.<br>
+		Learn about USherbrooke <a href="http://www.usherbrooke.ca/accueil/english/">here</a>.
+	      </font>
+	    </td>
+	  </table>
+	  <br>
+
+	-->
+	  <!--
+	<b>General Chair for NeurIPS 2020 </b><br><br>
+
+            <b> Meta-Dataset: A Dataset of Datasets for Learning to Learn from Few Examples [<a href="https://openreview.net/forum?id=rkgAGAVKPr">html</a>] [<a href="https://github.com/google-research/meta-dataset">github</a>] </b><br>
+            Eleni Triantafillou, Tyler Zhu, Vincent Dumoulin, Pascal Lamblin, Utku Evci, Kelvin Xu, Ross Goroshin, Carles Gelada, Kevin Swersky, Pierre-Antoine Manzagol, Hugo Larochelle,<br>
+		    ICLR 2020<br><br>
+
+            <b> Language GANs Falling Short [<a href="https://openreview.net/forum?id=BJgza6VtPB">html</a>] </b><br>
+            Massimo Caccia, Lucas Caccia, William Fedus, Hugo Larochelle, Joelle Pineau, Laurent Charlin,<br>
+		    ICLR 2020<br><br>
+
+            <b> Algorithmic Improvements for Deep Reinforcement Learning applied to Interactive Fiction [<a href="https://arxiv.org/abs/1911.12511">arXiv</a>] </b><br>
+            Vishal Jain, William Fedus, Hugo Larochelle, Doina Precup, Marc G. Bellemare,<br>
+		    AAAI 2020<br><br>
+
+            <b> The Hanabi Challenge: A New Frontier for AI Research [<a href="https://www.sciencedirect.com/science/article/pii/S0004370219300116">html</a>] [<a href="https://arxiv.org/abs/1902.00506">arXiv</a>] </b><br>
+           Nolan Bard, Jakob N.Foerster, Sarath Chandar, Neil Burch, Marc Lanctot, H. Francis Song, Emilio Parisotto, Vincent Dumoulin, Subhodeep Moitra, Edward Hughes, Iain Dunning, Shibl Mourad, Hugo Larochelle, Marc G. Bellemare, Michael Bowling,<br>
+           <i>Artificial Intelligence</i>, 280, 2020<br><br>
+
+            <b> Machine Behaviour [<a href="https://www.nature.com/articles/s41586-019-1138-y">html</a>] [<a href="https://www.nature.com/articles/s41586-019-1138-y.pdf">pdf</a>] </b><br>
+           Iyad Rahwan, Manuel Cebrian, Nick Obradovich, Josh Bongard, Jean-François Bonnefon, Cynthia Breazeal, Jacob W. Crandall, Nicholas A. Christakis, Iain D. Couzin, Matthew O. Jackson, Nicholas R. Jennings, Ece Kamar, Isabel M. Kloumann, Hugo Larochelle, David Lazer, Richard McElreath, Alan Mislove, David C. Parkes, Alex 'Sandy' Pentland, Margaret E. Roberts, Azim Shariff, Joshua B. Tenenbaum, Michael Wellman,<br>
+           <i>Nature</i>, 568: 477-486, 2019<br><br>
+
+	  -->
+
+	</div>
+
+	  <!--
+	  <div id="sidebarright">
+	  </div>
+	  -->
+
+	  <div id="contentnorightbar">
+
+	  <table width="490" border="0" cellspacing="0" cellpadding="0" height="34">
+	    <tr>
+	      <td>
+		<b><font size=+1>Hugo Larochelle</font></b><br>
+                Google Brain<br>
+      <b>Twitter:</b> <a href="https://twitter.com/hugo_larochelle">@hugo_larochelle</a><br>
+	      </td>
+	      <td> <img src="images/hugo_udes.png" WIDTH=170 align=top> </td>
+	    </tr>
+	  </table><br>
+
+	  <!--
+	    <h2>Research interests</h2> My research focuses
+	    on <a href="http://en.wikipedia.org/wiki/Machine_learning">machine
+	    learning</a>, i.e. in the development of algorithms
+	    capable of extracting concepts and abstractions from data.
+	    I'm particularly interested in deep neural networks,
+	    mostly applied in the context of big data and to
+	    artificial intelligence problems such as computer vision
+	    and natural language processing.
+	    <br><br>
+
+
+        <h2> Students </h2>
+		<ul>
+		  <li> <a href="https://mila.quebec/personne/disha-shrivastava/">Disha Shrivastava</a> (Ph.D., co-supervised with <a href="http://daniel.tarlow.org/">Danny Tarlow</a>)
+		  <li> <a href="https://davidbieber.com/">David Bieber</a> (Ph.D., co-supervised with <a href="http://daniel.tarlow.org/">Danny Tarlow</a>)
+
+		  <li> <a href="http://acsweb.ucsd.edu/~wfedus/">William Fedus</a> (Ph.D., co-supervised with <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/research.html">Yoshua Bengio</a>)
+		  <li> <a href="http://adam.salvail.net">Adam Salvail-Bérard</a> (Ph.D., co-supervised with <a href="http://www.dmi.usherb.ca/~dussault/">Jean-Pierre Dussault</a>)
+		  <li> Alex Boulanger (M.Sc.)
+		  <li> <a href="http://www.sarathchandar.in">Sarath Chandar</a> (Ph.D., co-supervised with <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/research.html">Yoshua Bengio</a>, graduated)
+		  <li> <a href="http://havaeimo.github.io/about">Mohammad Havaei</a> (Ph.D., co-supervised with <a href="http://www.dmi.usherb.ca/~jodoin/en/index.html">Pierre-Marc Jodoin</a>, graduated)
+		  <li> <a href="http://marccote.github.io/">Marc-Alexandre Côté</a> (Ph.D., co-supervised with <a href="http://scil.dinf.usherbrooke.ca/?page_id=296&lang=en&langSwitched=1">Maxime Descoteaux</a>, graduated)
+		  <li> Stanislas Lauly (Ph.D., graduated)
+		  <li> <a href="https://sites.google.com/site/zhengyin1126/">Yin Zheng</a> (Ph.D., co-supervised with <a href="http://oa.ee.tsinghua.edu.cn/~zhangyujin/">Yu-Jin Zhang</a>, graduated)
+		  <li> Philippe Poulin (M.Sc., graduated)
+		  <li> Félix-Antoine Ouellet (M.Sc., graduated)
+		  <li> Mathieu Germain (M.Sc., graduated)
+		</ul>
+		-->
+<!--	      <h2>Research projects</h2>
+
+	      Here is a short list of my current projects:
+	      <br><br>
+
+	      <ul>
+		<li> <b><a href="projects_attention.html">Attention-based computer vision:</a></b> development of
+		  computer vision systems relying on attentional mechanisms;
+		  <br><br>
+		<li> <b><a href="projects_deep_learning.html">Deep learning:</a></b> exploration of learning
+		  procedures and algorithms to better train neural
+		  networks with several hidden layers;
+		  <br><br>
+		<li> <b><a href="projects_classrbm.html">Restricted Boltzmann machines for
+		  classification:</a></b> investigation of variants of the
+		  restricted Boltzmann machine that are more suitable
+		  for classification problems in high dimensions
+		  (images, documents, etc.);
+		  <br><br>
+		<li> <b><a href="projects_struct_output.html">Learning algorithms for structured output
+		  prediction:</a></b> development of new learning
+		  algorithms for structured output prediction, with a
+		  focus on energy-based models;
+		  <br><br>
+		<li> <b><a href="projects_nade.html">Neural autoregressive models:</a></b> investigation of
+		  neural network-based solutions to the modelling of the distribution
+		  of high-dimensional data.
+		  <br>
+	      </ul>
+	      <br>
+	      -->
+<!--
+	      <h2> Mini-CV</h2>
+
+	      Before joining Google Brain, I was a research scientist at Twitter and 
+              a professor at the Computer Science department
+	      of <a href="http://www.usherbrooke.ca/">Université de
+	      Sherbrooke</a>. I also spent two years in
+	      the <a href="http://learning.cs.toronto.edu/">machine
+	      learning group</a>
+	      at <a href="http://www.utoronto.ca">University of
+	      Toronto</a>, where I was a postdoctoral fellow under the supervision of
+	      <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey
+	      Hinton</a>.
+	      <br><br>
+	      I obtained my Ph.D. in Computer Science at
+	      <a href="http://www.umontreal.ca/">Université de
+	      Montréal</a>, under the supervision of
+	      professor <a href="http://www.iro.umontreal.ca/~bengioy">Yoshua
+	      Bengio</a>. I also did my undergrad at Université de Montréal,
+	      in Mathematics and Computer Science.
+	      <br><br> My complete CV can be found
+	      <a href="CV_en.pdf">here</a>.
+-->
+	  </div>
+
+	  <div id="footer">
+	  </div>
+
+	</div>
+      </div>
+
+
+    </body>
+  </html>

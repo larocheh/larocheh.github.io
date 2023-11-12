@@ -1,0 +1,111 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="../css/default.css" type="text/css" />
+    <link rel="stylesheet" href="../css/pygments.css" type="text/css" />
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold"
+          type="text/css" />
+    <link rel="stylesheet" href="../css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+      <div id="header-text">
+	    Hugo Larochelle
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="index_en.html" accesskey="H" class="active"><em>H</em>ome</a></li>
+	      
+	      <li><a href="publications_en.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="university_en.html" accesskey="u"><em>U</em>niversity</a></li>
+
+	      <li><a href="links_en.html" accesskey="l"><em>L</em>inks</a></li>
+
+	    </ul>
+	</div>
+	</div>
+	<div id="contentnobars">
+	  
+	  <h1>ECML/PKDD 2014 - Deep Learning Tutorial</h1>
+	  <b>Presenters:</b> <a href="http://aaroncourville.wordpress.com/">Aaron Courville</a> and <a href="http://info.usherbrooke.ca/hlarochelle/index_en.html">Hugo Larochelle</a>
+
+	  <p> Deep learning is one of the most rapidly growing areas
+	  of machine learning. It concerns the learning of multiple
+	  layers of representation that gradually transform the input
+	  into a form where a given task can be performed more
+	  effectively. Deep learning has recently been responsible for
+	  an impressive number of state-of-the-art results in a wide
+	  array of domains, including object detection and
+	  recognition, speech recognition, natural language processing
+	  tasks, bio-informatics and reinforcement learning.</p>
+	  
+	  <p>In this tutorial we will cover the foundations of deep
+	  learning: neural networks, convolutional neural networks,
+	  recurrent neural networks, autoencoders and Boltzmann
+	  machines. We will discuss why models with many layers of
+	  representation can be hard to learn and present strategies
+	  that have been developed to overcome these challenges. We
+	  will also discuss more recent innovations including dropout
+	  training that has proved to be an extremely effective
+	  regularization technique for training neural
+	  networks. Finally, we will cover some concrete and
+	  successful applications of deep learning.</p>
+
+
+	  <h2>Outline</h2>
+	  <div id="ouline">
+	    <b>A preliminary copy of the slides are <a href="https://dl.dropboxusercontent.com/u/19557502/ecml-pkdd_slides.pdf">here</a>.</b><br><br>
+	  <ul>
+	    <li> Feed-forward neural networks
+	      <ul>
+		<li> backpropagation
+	      </ul>
+	      <li> Deep neural networks
+		<ul>
+		  <li> difficulties of training
+		  <li> dropout
+		  <li> unsupervised pre-training
+		  <li> denoising autoencoders
+		</ul>
+	      <li> Stochastic neural networks
+		<ul>
+		  <li> restricted Boltzmann machine
+		  <li> deep belief network
+		  <li> deep Boltzmann machine
+		</ul>
+	      <li> Applications
+		<ul>
+		  <li> computer vision: convolutional networks
+		  <li> speech recognition
+		  <li> natural language processing: recurrent/recursive neural networks
+		</ul>
+	  </ul>
+	  </div>
+
+	  <a name="references"><h2>References</h2></a>
+
+	  <p>This tutorial is partly inspired by Hugo Larochelle's online course on neural networks:<br>
+	    &nbsp; &nbsp; <a href="http://info.usherbrooke.ca/hlarochelle/neural_networks/youtube.html">http://info.usherbrooke.ca/hlarochelle/neural_networks/youtube.html</a></p>
+
+	  <p>References to papers on which this tutorial is based or on deep learning general can be found on the course's website:<br>
+	    &nbsp; &nbsp; <a href="http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html">http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html</a></p>
+
+	  <p>The website <a href="http://deeplearning.net/">deelearning.net</a> also provides a reading list on deep learning:<br>
+	    &nbsp; &nbsp; <a href="http://deeplearning.net/reading-list/">http://deeplearning.net/reading-list/</a></p>
+
+
+ 	</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="../../css/1.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+	  <font color="#FFFFFF">
+	    <font face="Copperplate" size=8>Hugo Larochelle</font>
+	    <br> http://www.dmi.usherb.ca/~larocheh/
+	  </font>
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="../../index_fr.html" accesskey="a"><em>A</em>ccueil</a></li>
+	      
+	      <li><a href="../../publications_fr.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="../../university_fr.html" accesskey="u" class="active"><em>U</em>niversité</a></li>
+
+	      <li><a href="../../links_fr.html" accesskey="l"><em>L</em>iens</a></li>
+
+	    </ul>
+	  </div>
+	  
+	  <div id="contentnobars">
+	    <h2> Reading questions </h2>
+	    
+	    <p>
+	      If you are unsure about any of these concepts, post a question on the 
+	      <a href="https://groups.google.com/forum/?fromgroups#!forum/ift-725-a2012">discussion forum</a>!
+	    </p>
+
+
+	    <b>Machine learning questions:</b>
+	    <ul>
+	      <li> What is a learning algorithm?
+	      <li> What is the difference between the training, validation and test sets?
+	      <li> What is supervised learning?
+	      <li> What is unsupervised learning?
+	      <li> What is empirical risk minimization?
+	      <li> What is stochastic gradient descent?
+	      <li> What is the capacity of a model?
+	      <li> What is the difference between a parametric and a non-parametric
+	      model?
+	      <li> What is the difference between a parameter and a hyper-parameter?
+	      <li> What is generalization?
+	      <li> What is the difference between under-fitting and over-fitting?
+	      <li> What is model selection?
+	      <li> What is regularization?
+	      <li> What is the bias variance trade-off?
+	    </ul>
+	    <br>
+
+	    <b>Differential calculus:</b>
+	    <ul>
+	      <li> What is a derivative?
+	      <li> What is a partial derivative?
+	      <li> What is a gradient?
+          <li> What is the chain rule?
+	      <li> What is a Hessian matrix?
+	    </ul>
+	    <br>
+
+	    <b>Linear algebra review:</b>
+	    <ul>
+	      <li> What is a matrix? What is a vector?
+	      <li> How to perform products between matrices and vectors?
+	      <li> What are the following properties of matrices?
+		<ul>
+		  <li> identity matrix
+		  <li> diagonal matrix
+		  <li> transpose matrix
+		  <li> symmetric matrix
+		  <li> orthogonal matrix
+		  <li> positive semidefinite matrix
+		</ul>
+	      <li> What are the following operations on a matrix and their properties?
+		<ul>
+		  <li> trace of a matrix
+		  <li> norm of a matrix
+		  <li> rank of a matrix
+		  <li> inverse of a matrix
+		  <li> determinant of a matrix
+		</ul>
+	      <li> What is the concept of linear dependance between vectors?
+	      <li> What is the rank of a matrix?
+	      <li> What are the range and nullspace of a matrix?
+	      <li> What are the eigenvalues and eigenvectors of a matrix, and what are
+		their properties?
+	      <li> How does the concept of gradient generalize to vectors and matrices?
+	    </ul>
+	    <br>
+	    
+	    <b>Probability review</b>
+	    <ul>
+	      <li> What is a probability space?
+	      <li> What is a random variable?
+	      <li> What is a distribution?
+	      <li> What is are joint, marginal and conditional distributions?
+	      <li> When are random variables independent?
+	      <li> What is the probability chain rule?
+	      <li> What is the Bayes rule?
+	      <li> What is the difference between a discrete and continuous distribution?
+	      <li> What is are density and cumulative distribution functions?
+	      <li> What are the expectation and variance of a random variable?
+	      <li> What are the Bernoulli, Poisson and Gaussian distributions?
+	      <li> What is Jensen's Inequality?
+	    </ul>
+	    <br>
+
+        <b>Statistics review:</b>
+	    <ul>
+	      <li> How to estimate the expectation or variance of a random variable from samples?
+	      <li> What is a confidence interval?
+	    </ul>
+        <br>
+
+	    <b>Sampling review:</b>
+	    <ul>
+	      <li> What is a simple Monte Carlo estimate?
+	      <li> What is direct sampling?
+	      <li> What is rejection sampling?
+	      <li> What is importance sampling?
+	      <li> What is Markov Chain Monte Carlo?
+	      <li> What is Metropolis Hastings?
+	      <li> What is Gibbs sampling?
+	    </ul>
+	    <br>
+
+	    <b>Python:</b>
+	    <ul>
+	      <li> What is the Python interpreter?
+	      <li> How to manipulate numbers and strings in Python?
+	      <li> What is the syntax of control flow statements (if, for, etc.) in
+		Python?
+	      <li> How to use the common data structures (Lists, Tuples, Sets and
+		Dictionaries) in Python?
+	      <li> How to define functions and classes?
+	      <li> What are modules and packages?
+	      <li> How to read and write in files?
+	      <li> What is and how to use Pickle (and cPickle)?
+	      <li> How to do linear algebra with Numpy?
+	      <li> How to debug in Python?
+	    </ul>
+	    <br>
+	    
+	    <b>MLPython:</b>
+	    <ul>
+	      <li> How to download and load a dataset?
+	      <li> What are MLProblems and how to manipulate them?
+	      <li> What are Learners?
+	      <li> How to perform a machine learning experiment with MLPython?
+	    </ul>
+
+	      
+	    </table>
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

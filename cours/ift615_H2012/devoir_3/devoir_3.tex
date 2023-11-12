@@ -1,0 +1,242 @@
+\documentclass{article}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{isolatin1}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{multirow}
+
+\def\x{{\mathbf x}}
+\def\w{{\mathbf w}}
+
+\newenvironment{itemize*}%
+  {\vspace*{.1cm}\begin{itemize}%
+      \renewcommand{\labelitemi}{$\bullet$}
+      \setlength{\itemsep}{0pt}%
+      \setlength{\parskip}{0pt}}%
+  {\end{itemize}\vspace*{.1cm}}
+
+\begin{document}
+\title{IFT 615: Devoir 3\\ Travail individuel}
+\author{Remise: 29 mars 2012, 16h20 ({\bf au plus tard})}
+\date{}
+\maketitle
+
+\begin{enumerate}[itemsep=20pt]
+\item {\bf [2 points]} Soit un modèle de Markov caché d'ordre 1 dont
+  les variables cachées $H_t$ et les variables observées $S_t$ ont
+  toutes comme domaine les symboles ${a,b,c}$.  Soit les distributions
+  de transition et d'émission suivantes:
+
+  \begin{center}
+    \begin{tabular}{|c||c|c|c|} \hline
+      & $H_t=a$ & $H_t=b$ & $H_t=c$ \\ \hline\hline
+      $P(S_t=a|H_t)$ & 0.8     & 0.4     & 0.1     \\ \hline
+      $P(S_t=b|H_t)$ & 0.1     & 0.4     & 0.3     \\ \hline
+      $P(S_t=c|H_t)$ & 0.1     & 0.2     & 0.6     \\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|c||c|c|c|} \hline
+      & $H_{t-1}=a$ & $H_{t-1}=b$ & $H_{t-1}=c$ \\ \hline\hline
+      $P(H_t=a|H_{t-1})$ & 0.2     & 0.1     & 0.6     \\ \hline
+      $P(H_t=b|H_{t-1})$ & 0.7     & 0.1     & 0.2     \\ \hline
+      $P(H_t=c|H_{t-1})$ & 0.1     & 0.8     & 0.2     \\ \hline
+    \end{tabular}
+  \end{center}
+  Soit également les probabilités initiales $P(H_1=a) = 0.4$,
+  $P(H_1=b) = 0.4$ et $P(H_1=c) = 0.2$ de la variable cachée au temps
+  $t=1$.
+
+  \begin{enumerate}
+  \item Calculez la distribution de filtrage ${\bf P}(H_3|S_1=b,S_2=b,S_3=c)$.\newline
+    Indice: utilisez le programme dynamique de $\alpha(i,t) = P(S_{1:t}=s_{1:t}, H_t=i)$.
+  \item Calculez la distribution de lissage ${\bf P}(H_2|S_1=b,S_2=b,S_3=c)$.\newline
+    Indice: utilisez le programme dynamique de $\beta(i,t) = P(S_{t+1:T}=s_{t+1:T} | H_t=i)$
+    où $T=3$, ainsi que le tableau $\alpha(i,t)$ calculé en (a).
+  \item Calculez la distribution de prédiction ${\bf P}(H_4|S_1=b,S_2=b,S_3=c)$.\newline
+    Indice: utilisez le programme dynamique $\pi(i,k) = P(H_{t+k}=i|S_{1:t}=s_{1:t})$,
+    initialisé à $\pi(i,0) = \alpha(i,3) / \sum_{j\in\{a,b,c\}} \alpha(j,3)$ à
+    partir du tableau $\alpha(i,t)$ calculé en (a).
+  \item Trouvez l'explication la plus plausible, c'est-à-dire la
+    valeur la plus vraisemblable de $H_1$ $H_2$ et $H_3$ étant donnée
+    la séquence observée $S_1=b$, $S_2=b$ et $S_3=c$. \newline Indice: utilisez
+    le programme dynamique $\alpha^*(i,t) = P(S_{1:t}=s_{1:t},
+    H_{1:t-1}=h^*_{1:t-1}, H_t=i)$.
+  \end{enumerate}
+\newpage
+
+\item {\bf [2 points]} 
+  Soit le processus de décision markovien suivant:
+
+  \begin{center}
+    \includegraphics[width=0.7\textwidth]{numero_2.pdf}
+  \end{center}
+
+  où la fonction de récompense est telle que $R(nord) = -1$,
+  $R(ouest)=1$, $R(milieu)=0$, $R(est) = 2$ et $R(sud) = 3$ et le
+  facteur d'escompte est $\gamma = 0.5$. L'ensemble des états est
+  ainsi $S=\{milieu,nord,sud,est,ouest\}$ et l'ensemble complet des
+  actions est ${gauche,droite,haut,bas}$.
+  
+
+  \begin{enumerate}
+  \item Calculez le tableau de valeur $V(\pi,s)$ pour la politique
+    $\pi = \{nord \rightarrow haut, ouest \rightarrow droite, milieu
+    \rightarrow bas, est \rightarrow droite, sud \rightarrow haut\}$.
+    Vous pouvez utiliser Python pour calculer la solution du système
+    d'équations linéaires à résoudre, en utilisant la fonction
+    {\tt numpy.linalg.inv}.
+  \item Donnez toutes les étapes de l'algorithme {\it policy iteration}
+    appliqué à ce MDP, en utilisant la politique en (a) comme politique
+    initiale.
+  \item Donnez l'exécution de deux itérations de l'algorithme {\it
+      value iteration} appliqué à ce MDP, en utilisant comme tableau
+    de valeurs $V(s)$ initiales: $V(nord) = -1$, $V(ouest)=1$,
+    $V(milieu)=0$, $V(est) = 2$ et $V(sud) = 3$.
+  \end{enumerate}
+  
+\newpage
+
+\item {\bf [2 points]} Soit l'ensemble d'entraînement suivant:
+
+  \begin{center}
+    \begin{tabular}{|c|c|} \hline
+      $\x_t$ & $y_t$  \\ \hline\hline
+      $[4,4,0]$ & $0$ \\ \hline
+      $[1,2,4]$ & $0$ \\ \hline
+      $[2,2,2]$ & $0$ \\ \hline
+      $[8,0,0]$ & $0$ \\ \hline
+      $[1,1,1]$ & $0$ \\ \hline
+      $[2,5,5]$ & $1$ \\ \hline
+      $[3,3,3]$ & $1$ \\ \hline
+      $[0,0,9]$ & $1$ \\ \hline
+      $[1,3,5]$ & $1$ \\ \hline
+      $[5,5,3]$ & $1$ \\ \hline
+    \end{tabular}
+  \end{center}
+
+  Soit une entrée de test $\x=[4.2,2.1,3.7]$.
+
+  \begin{enumerate}
+    \item Donnez la classe de $\x$ qui serait prédite par l'algorithme des $k$ plus proches
+      voisins basé sur la distance Euclidienne $d_1(\x,\x') = \sqrt{\sum_i (x_i - x_i')^2}$, 
+      {\bf et ce pour $k=1$, $k=3$ et $k=5$}.
+    \item Donnez également les prédictions pour $k=1$, $k=3$ et $k=5$, mais pour la distance
+      de Manhattan $d_2(\x,\x') = \sum_i |x_i - x_i'|$.
+  \end{enumerate}
+
+\item {\bf [2 points]} Soit la fonction:
+
+  $$g(\x) = \frac{x_1 + x_2^2 - \log(x_3)}{\exp(x_2) + x_4}$$
+
+  Calculez toutes les dérivées partielles, c'est-à-dire:
+  \begin{enumerate}
+    \item $\frac{\partial g(\x)}{\partial x_1}$
+    \item $\frac{\partial g(\x)}{\partial x_2}$
+    \item $\frac{\partial g(\x)}{\partial x_3}$
+    \item $\frac{\partial g(\x)}{\partial x_4}$
+  \end{enumerate}
+
+\newpage
+
+\item {\bf [2 points]} Implémentez une classe Python {\tt Perceptron}
+  correspondant à l'algorithme du Perceptron à 2 classes ($y=0$ et
+  $y=1$). Pour ce faire, complétez l'implémentation des méthodes
+  suivantes:
+
+\begin{verbatim}
+class Perceptron:
+    
+    def __init__(self, alpha, T):
+        #Mettre code ici
+        pass
+
+    def initialisation(self, w, b):
+        # Mettre code ici
+        pass
+
+    def parametres(self):
+        # Mettre code ici
+        pass
+
+    def prediction(self, x):
+        # Mettre code ici
+        pass
+
+    def mise_a_jour(self, x, y):
+        # Mettre code ici
+        pass
+
+    def entrainement(self, X, Y):
+        # Mettre code ici
+        pass
+\end{verbatim}
+
+où:
+\begin{itemize*}
+  \item {\tt \_\_init\_\_(self, alpha, T)} est le constructeur et
+    a comme arguments le taux d'apprentissage {\tt alpha} et
+    le nombre d'itérations {\tt T} à utiliser pour l'entraînement.
+  \item {\tt initialisation(self, w, b)} initialise le vecteur de
+    poids $\w$ et le biais $b$ du Perceptron (c'est-à-dire ses
+    paramètres) aux valeurs contenues dans le vecteur Numpy {\tt w} et
+    le nombre à virgule flottante {\tt b}, respectivement.
+  \item {\tt parametres(self)} retourne la paire {\tt (w,b)}
+    du vecteur de poids $\w$ (c'est-à-dire un vecteur Numpy {\tt w})
+    et du biais $b$ (c'est-à-dire un nombre à virgule flottante {\tt b})
+    du Perceptron.
+  \item {\tt prediction(self, x)} retourne la prédiction par le Perceptron
+    de la classe d'une entrée représentée par un vecteur Numpy {\tt
+      x}. Cette prédiction doit donc être 0 ou 1.
+  \item {\tt mise\_a\_jour(self, x, y)} met à jour les paramètres du Perceptron
+    à l'aide de sa règle d'apprentissage, à partir de d'une entrée {\tt x} 
+    (vecteur Numpy) et de sa classe cible {\tt y} (0 ou 1).
+  \item {\tt entrainement(self, X, Y)} entraîne le Perceptron durant $T$
+    itérations sur l'ensemble d'entraînement formé des entrées {\tt X}
+    (une matrice Numpy, où la $t^{\rm e}$ rangée correspond à l'entrée
+    $\x_t$) et des classes cibles {\tt Y} (un vecteur Numpy où le
+    $t^{\rm e}$ élément correspond à la cible $y_t$). Il est recommandé
+    d'appeler votre méthode {\tt mise\_a\_jour(self, x, y)} à l'intérieur
+    de {\tt entrainement(self, X, Y)}.
+\end{itemize*}
+
+Votre implémentation de cette classe doit être placée dans un fichier
+{\tt solution.py}, qui sera importé lors de la procédure automatique
+de correction. Le fichier {\tt devoir\_3.py} contient un exemple d'exécution de votre
+code. Vous pouvez l'appeler comme un script. Ce script nécessite
+également que les fichiers {\tt train.pkl}, {\tt test.pkl} et {\tt parametres\_attendus.pkl}
+soient présents dans le même répertoire. Une implémentation
+correcte obtiendra une erreur d'entraînement de 0\% et une erreur de test
+de 10\%. {\tt devoir\_3.py} compare également les valeurs de paramètres
+trouvées par votre implémentation et celles trouvées par une
+implémentation correcte.
+
+La correction se fera de façon automatique. Veuillez soumettre votre
+fichier {\tt solution.py} via l'outil {\bf turnin}, avant la date de
+remise.  À noter que {\bf tout autre fichier soumis sera ignoré}:
+votre implémentation doit être entièrement comprise dans le fichier
+{\tt solution.py}.
+
+\newpage
+
+\item {\bf [BONUS]} Pour {\bf 2 points} boni, soit le réseau bayésien
+  ayant les tables de probabilités conditionnelles suivantes:
+
+  \begin{center}
+    \includegraphics[width=0.7\textwidth]{bonus.pdf}
+  \end{center}
+
+\begin{enumerate}
+  \item Calculez la distribution ${\bf P}(A | E=vrai)$
+  \item Calculez la distribution ${\bf P}(C | F=vrai, E=vrai)$
+  \item Est-ce que $F$ et $E$ sont indépendantes conditionnellement,
+    sachant $A$? Justifiez votre réponse.
+  \item Est-ce que $A$ et $C$ sont indépendantes sachant $E$?
+    Justifiez votre réponse.
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}

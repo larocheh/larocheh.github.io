@@ -1,0 +1,109 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold,italic"
+          type="text/css" />
+    <link rel="stylesheet" href="css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+      <div id="header-text">
+	  Hugo Larochelle
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="index_en.html" accesskey="H" class="active"><em>H</em>ome</a></li>
+	      
+	      <li><a href="publications_en.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="university_en.html" accesskey="u"><em>U</em>niversity</a></li>
+
+	      <li><a href="links_en.html" accesskey="l"><em>L</em>inks</a></li>
+
+	    </ul>
+        </div>
+	  </div>
+	  
+	  <div id="sidebar">
+	    <h2>Research projects</h2>
+
+	    <table id="nav" cellpadding="0" cellspacing="10" >
+	      <tr><td><a href="projects_attention.html">Attention-based computer vision</a></td></tr>
+	      <tr><td><a href="projects_deep_learning.html">Deep learning</a></td></tr>
+	      <tr><td><a href="projects_classrbm.html">Restricted Boltzmann machines for classification</a></td></tr>
+	      <tr><td><a href="projects_struct_output.html">Learning algorithms for structured output prediction</a></td></tr>
+	      <tr><td class="active"><a href="projects_nade.html">Neural autoregressive models</a></td></tr>
+	    </table>
+
+	  </div>
+	  
+	  <!--
+	  <div id="sidebarright">
+	  </div>
+	  -->
+
+	  <div id="contentnorightbar">
+	    <h2>Neural autoregressive models</h2>
+	    
+	    <img src="images/nade.jpg" WIDTH=160 ALIGN=right>
+	    Density modeling, i.e. the problem of learning the
+	    distribution that generated some available data, is one of
+	    the most general and fundamental problem in machine
+	    learning. One simple approach to tackle this problem is to
+	    define some directed graph over the input observations
+	    and then learn the conditional distribution of each observation
+	    given its parents in the graph.
+	    <br><br>
+	    In <a href="publications/aistats2011_nade.pdf">The Neural
+	    Autoregressive Distribution Estimator</a>
+	    (NADE), <a href="http://homepages.inf.ed.ac.uk/imurray2/">Iain
+	    Murray</a> and I proposed a neural network specifically
+	    tailored to this task of density or distribution
+	    modeling. Compared to many baselines, NADE was able to
+	    reach state of the art performances on several different
+	    datasets. Published at
+	    the <a href="http://www.aistats.org/">AISTATS 2011
+	    conference</a>, the paper received a Notable Paper Award.
+	    <br><br>
+	    Once NADE is trained, we can also easily generate samples from 
+	    its learned distribution. When trained on small images of handwritten
+	    digit characters (with binary pixels), NADE can reproduce images
+	    that resemble such handwritten characters:<br><br>
+	    
+	    <center>
+	    <img src="images/nade_on_mnist.jpg" WIDTH=400>
+	    </center><br>
+
+	    I'm now interested in how this simple yet powerful approach can be further
+	    developed to model more complex data with arbitrary structure.
+
+	    <br><br>
+	    <h3>References</h3>
+	    <br>
+	    <ul>
+	      <li><b> The Neural Autoregressive Distribution Estimator [<a href="publications/aistats2011_nade.pdf" target=_top>pdf</a>] [<a href="http://videolectures.net/aistats2011_larochelle_neural/">talk</a>] [<a href="code/nade.tar.gz">code</a>] </b> <br>
+		Hugo Larochelle and Iain Murray,<br>
+		<i>Artificial Intelligence and Statistics</i>, 2011<br>
+		<b><i>Notable Paper Award</i></b><br><br>
+	    </ul>
+
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

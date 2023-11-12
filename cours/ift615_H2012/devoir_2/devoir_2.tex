@@ -1,0 +1,212 @@
+\documentclass{article}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{isolatin1}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{multirow}
+
+
+\newenvironment{itemize*}%
+  {\vspace*{.1cm}\begin{itemize}%
+      \renewcommand{\labelitemi}{$\bullet$}
+      \setlength{\itemsep}{0pt}%
+      \setlength{\parskip}{0pt}}%
+  {\end{itemize}\vspace*{.1cm}}
+
+\begin{document}
+\title{IFT 615: Devoir 2\\ Travail individuel}
+\author{Remise: 2 mars 2012, 12h20 ({\bf au plus tard})}
+\date{}
+\maketitle
+
+\begin{enumerate}[itemsep=20pt]
+\item {\bf [2 points]} Soit le prédicat $p$, les fonctions $f$, $g$ et
+  $h$, les variables $x$, $y$ et $z$ puis les constantes $a$, $b$ et
+  $c$. Trouvez, s'il existe, l'unificateur le plus général (UPG) des
+  clauses suivantes:
+  \begin{enumerate}
+  \item $\{p(f(y),a), p(y,x)\}$ 
+  \item $\{p( h(f(x),z), z ) , p( y, g(x) )\}$
+  \item $\{p( a, b), p( c, x)\}$
+  \item $\{p( a, f(x), z, b), p(x, f(z), a, y)\}$
+  \end{enumerate}
+
+\item {\bf [2 points]} Soit les symboles suivants:
+  \begin{itemize*}
+    \item $Emploi(p,o)$: prédicat indiquant que la personne $p$ a comme profession $o$
+    \item $Client(p1,p2)$: prédicat indiquant que la personne $p1$ est un client de la personne $p2$
+    \item $Patron(p1,p2)$ prédicat indiquant que la personne $p1$ est le patron de $p2$
+    \item $Docteur$, $Chirurgien$, $Avocat$, $Acteur$: constantes désignant des professions
+    \item $Anne$, $Jean$: constantes désignant des personnes
+  \end{itemize*}
+  Supposez également l'existence d'un prédicat $Egale(x,y)$ qui est
+  vrai seulement si les variables $x$ et $y$ correspondent à la même
+  constante. 
+
+  Donnez une formule de logique du premier ordre décrivant
+  chacune des assertions suivantes:
+  \begin{enumerate}
+    \item Anne est chirurgienne ou avocate.
+    \item Jean est un acteur, mais il a également un autre emploi.
+    \item Tous les chirurgiens sont également des docteurs.
+    \item Jean n'a pas d'avocat.
+    \item Le patron d'Anne est avocat.
+    \item Il y a un avocat dont tous les clients sont des docteurs.
+    \item Tous les chirurgiens ont un avocat.
+  \end{enumerate}
+
+\item {\bf [2 points]} Soit les prédicats $p$, $q$ et $r$, les
+  variables $x$ et $y$, puis les constantes $a$ et $b$.  Soit
+  la base de connaissances suivante:
+  \begin{enumerate}[]
+    \item $\neg p(a,b)$
+    \item $\neg p(a,b) \vee q(b) \vee r(a)$
+    \item $\forall x~ \forall y~ q(x) \vee p(y,b) \vee r(a)$
+    \item $q(b) \vee p(a,b)$
+    \item $\neg q(a)$
+    \item $q(b) \vee p(a,a)$
+  \end{enumerate}
+  Utilisez la preuve par résolution pour prouver $\exists x~ r(x)$, et
+  trouvez la valeur de $x$ satisfaisant cette formule.
+
+\newpage
+
+\item {\bf [2 points]} Soit la distribution conjointe sur les variables aléatoires booléennes
+  $A$, $B$, $C$ et $D$:
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|c|c|} \hline
+    \multicolumn{2}{|c|}{} & \multicolumn{2}{|c|}{$A = false$} & \multicolumn{2}{|c|}{$A = true$} \\\cline{3-6}
+    \multicolumn{2}{|c|}{} & $B=false$ & $B=true$ & $B=false$ & $B=true$ \\ \hline
+    \multirow{2}{*}{$C = false$} & $D=false$ & 0.0054 & 0.0126 & 0.0216 & 0.0504 \\ \cline{2-6}
+                                 & $D=true$  & 0.0003 & 0.0007 & 0.0027 & 0.0063 \\ \hline
+    \multirow{2}{*}{$C = true$}  & $D=false$ & 0.3888 & 0.0972 & 0.2592 & 0.0648 \\ \cline{2-6}
+                                 & $D=true$  & 0.0360 & 0.0090 & 0.0360 & 0.0090 \\ \hline
+  \end{tabular}
+  \end{center}
+  \begin{enumerate}
+    \item Calculez la probabilité marginale $P(B = true)$.
+    \item Calculez la probabilité conditionnelle $P(C=false | B=true)$.
+    \item Calculez la probabilité $P(C = true \vee D = true \vee A = false)$.
+    \item Est-ce que $D$ et $C$ sont indépendantes?
+    \item Est-ce que $B$ et $A$ sont conditionnellement indépendantes, sachant $C$?
+  \end{enumerate}
+  {\bf Suggestion:} utilisez Python pour faire vos calculs.
+
+
+\item {\bf [2 points]} Soit la classe Python suivante, représentant un noeud dans un réseau bayésien:
+
+\begin{verbatim}
+class Noeud:
+    
+    def __init__(self, variable, domaine, parents,
+                 p_variable_etant_donnes_parents):
+        self.variable = variable
+        self.domaine = domaine
+        self.parents = parents
+        self.p_variable_etant_donnes_parents = p_variable_etant_donnes_parents
+
+    def sample(self, valeur_parents, rng):
+        p = np.array([ 
+                self.p_variable_etant_donnes_parents[(i,) + valeur_parents] 
+                for i in self.domaine ])
+        return rng.multinomial(1,p).argmax()
+\end{verbatim}
+
+Dans cette classe, {\tt \_\_init\_\_(self, variable, domaine, parents,
+    p\_variable\_etant\_donnes\_parents)} est le constructeur. Il nécessite:
+\begin{itemize*}
+  \item Le nom de la variable aléatoire: {\tt variable} est une {\it string}.
+  \item Le domaine de cette variable: {\tt domaine} est une liste d'entiers de 0 à {\tt len(domaine) - 1}.
+  \item Les parents du noeud: {\tt parents} est une liste de {\it string} correspondant aux parents.
+  \item La table de probabilités de la variable: {\tt
+      p\_variable\_etant\_donnes\_parents} est un tableau Numpy à {\tt
+      1 + len(parents)} dimensions, où la première correspond à la
+    variable du noeud et les suivantes correspondent aux variables parents, dans
+    l'ordre qu'elles apparaissent dans {\tt parents}.  Par exemple, pour
+    le noeud ayant {\tt 'A'} comme variable et ayant les parents {\tt
+      ['B','C']}, la probabilité $p(A=2|B=3,C=0)$ est donnée par {\tt
+      p\_variable\_etant\_donnes\_parents[(2,3,0)]}.
+\end{itemize*}
+
+Le méthode {\tt sample(self, valeur\_parents, rng)} 
+retourne une valeur échantillonnée de la variable du noeud (donc qui
+appartient au domaine de la variable), étant données
+les valeurs des parents. {\tt valeur\_parents} doit être un tuple,
+contenant la valeur des parents, dans l'ordre qu'elles apparaissent dans {\tt parents}.
+{\tt rng} est un objet générateur de nombres aléatoires, utilisé par la méthode {\tt sample}
+(il n'est pas nécessaire de comprendre cet objet, il vous sera fourni).
+
+\newpage
+
+Programmez une classe {\tt ReseauBayesien}:
+\begin{verbatim}
+class ReseauBayesien:
+    
+    def __init__(self, noeuds):
+        #Mettre code ici
+        pass
+
+    def p_exacte(self, variable_requete, observations):
+        # Mettre code ici
+        pass
+
+    def p_echantillonnage_direct(self, variable_requete, observations, 
+                                 n_echantillons, rng):
+        # Mettre code ici
+        pass
+\end{verbatim}
+
+définissant les méthodes suivantes:
+\begin{itemize*}
+  \item {\tt \_\_init\_\_(self, noeuds)}: le constructeur prenant
+    une liste d'objets {\tt Noeud} qui correspondent
+    aux noeuds du réseau bayésien.
+  \item {\tt p\_exacte(self, variable\_requete, observations)}:
+    retourne le calcul exacte de la {\bf distribution} de la variable
+    aléatoire {\tt variable\_requete} étant données les observations
+    dans le dictionnaire {\tt observations}.  Ce dictionnaire a comme
+    clés des noms de variables, et comme valeur la valeur de chaque
+    variable. Cette méthode doit donc retourner un vecteur sous forme
+    de tableau Numpy contenant la probabilité de chaque valeur
+    possible de la variable {\tt variable\_requete} (par exemple,
+    $p(A=0|B=3,C=0)$, $P(A=1|B=3,C=0)$, $P(A=2|B=3,C=0)$, etc.). Vous
+    pouvez utiliser la méthode d'inférence par énumération, ou toute
+    autre méthode exacte.
+  \item {\tt p\_echantillonnage\_direct(self, variable\_requete,
+      observations, n\_echantillons, rng)}: retourne une estimation
+    approximative de cette même distribution. Vous devez absolument
+    utiliser la {\bf méthode de rejet} vue en classe. {\tt n\_echantillons}
+    donne le nombre d'échantillons à générer pour l'estimation, {\tt rng}
+    est le générateur de nombres aléatoires à utiliser.
+\end{itemize*}
+
+Votre implémentation de cette classe doit être placée dans un fichier
+{\tt solution.py}, qui sera importé lors de la procédure automatique
+de correction. 
+
+Le fichier {\tt devoir\_2.py} contient un exemple d'exécution de votre
+code. Vous pouvez l'appeler comme un script. Les probabilités
+calculées par le script correspondent aux exemples vus dans le cours. À
+noter que l'évaluation ne se fera pas sur la base de ces
+exemples. Ainsi, n'hésitez pas à générer vous-mêmes d'autres exemples
+de réseaux bayésiens, pour tester votre code.
+
+La correction se fera de façon automatique. Ainsi, dans le cas de la
+méthode de rejet, il est important d'utiliser le générateur de nombres
+aléatoires passé en argument. Veuillez soumettre votre fichier {\tt
+  solution.py} via l'outil {\bf turnin}, avant la date de remise.
+À noter que {\bf tout autre fichier soumis sera ignoré}: votre implémentation
+doit être entièrement comprise dans le fichier {\tt solution.py}.
+
+\item {\bf [BONUS]} Les 3 étudiants ayant remis une implémentation de
+  l'inférence exacte {\bf correcte} et {\bf plus rapide} que celle des
+  autres étudiants recevra {\bf 1 point bonus}.  L'évaluation du temps
+  de calcul incluera la construction du réseau bayésien ainsi que
+  l'appel de la fonction {\tt p\_exacte} à quelques reprises.
+
+\end{enumerate}
+
+\end{document}

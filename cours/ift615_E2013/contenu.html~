@@ -1,0 +1,539 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold"
+          type="text/css" />
+    <link rel="stylesheet" href="../../css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+      <div id="header-text">
+	    Hugo Larochelle
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="../../index_fr.html" accesskey="a"><em>A</em>ccueil</a></li>
+	      
+	      <li><a href="../../publications_fr.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="../../university_fr.html" accesskey="u" class="active"><em>U</em>niversité</a></li>
+
+	      <li><a href="../../links_fr.html" accesskey="l"><em>L</em>iens</a></li>
+
+	    </ul>
+	  </div>
+	  </div>
+	  <div id="sidebar">
+	    <h2>IFT 615 <small>(Été 2013)</small></h2>
+	    <table id="nav" cellpadding="0" cellspacing="8" width="120" >
+	      <tr><td><a href="description.html">Description</a></td></tr>
+	      <tr><td  class="active"><a href="contenu.html">Contenu</a></td></tr>
+	      <tr><td><a href="evaluations.html">Évaluations</a></td></tr>
+	    </table>
+	    <h2>Annonces</h2>
+	    <b>[14/08/2013]</b><br>
+	    Notes du final et du cours disponibles.
+	    <br><br>
+        <!--
+	    <b>[16/08/2012]</b><br>
+	    Notes du final et du cours disponibles.
+	    <br><br>
+	    <b>[09/08/2012]</b><br>
+	    Notes du devoir 4 disponibles.
+	    <br><br>
+	    <b>[20/07/2012]</b><br>
+	    Notes du devoir 3 disponibles.
+	    <br><br>
+	    <b>[12/07/2012]</b><br>
+	    Énnoncé du devoir 4 disponible.
+	    <br><br>
+	    <b>[14/06/2012]</b><br>
+	    Énnoncé du devoir 3 disponible.
+	    <br><br>
+	    <b>[23/06/2012]</b><br>
+	    Notes de l'intra disponibles.
+	    <br><br>
+	    <b>[19/06/2012]</b><br>
+	    Notes du devoir 2 disponibles.
+	    <br><br>
+	    <b>[11/06/2012]</b><br>
+	    Date de l'<b>examen final</b> annoncée: <br>
+	    VE 10/08/2012, 9h00-12h00, <br>au D3-2037.
+	    <br><br>
+	    <b>[04/06/2012]</b><br>
+	    Notes du devoir 1 disponibles.
+	    <br><br>
+	    <b>[29/05/2012]</b><br>
+	    Énnoncé du devoir 2 disponible.
+	    <br><br>
+	    <b>[25/05/2012]</b><br>
+	    <b>Séance de cours spéciale</b>: <br>
+	    VE 08/06/2012, 10h30-12h20,<br> D4-2022.
+	    <br><br>
+        -->
+	    <b>[05/08/2012]</b><br>
+	    Notes du devoir 4 disponibles.
+	    <br><br>
+	    <b>[01/08/2013]</b><br>
+	    <b>Séance de cours spéciale</b>: <br>
+	    LU 05/08/2013, 16h30-17h20,<br> D3-2037.
+	    <br><br>
+	    <b>[18/07/2013]</b><br>
+	    Notes du devoir 3 disponibles.
+	    <br><br>
+	    <b>[27/06/2013]</b><br>
+	    Date de l'<b>examen final</b> annoncée: <br>
+	    VE 13/08/2013, 9h00-12h00, <br>au D3-2037.
+	    <br><br>
+	    <b>[27/06/2013]</b><br>
+	    Notes de l'intra disponibles.
+	    <br><br>
+	    <b>[18/06/2013]</b><br>
+	    Notes du devoir 2 disponibles.
+	    <br><br>
+	    <b>[12/06/2013]</b><br>
+	    Date de l'<b>examen intra modifiée!</b> <br>
+	    MA 18/06/2013, 13h30-15h20,<br> D3-2039.
+	    <br><br>
+	    <b>[06/06/2013]</b><br>
+	    Notes du devoir 1 disponibles.
+	    <br><br>
+	    <b>[29/04/2013]</b><br>
+	    Bienvenue au cours IFT 615!
+	  </div>
+	  
+	  <!--
+	  <div id="sidebarright">
+	  </div>
+	  -->
+
+	  <div id="contentnorightbar">
+	    <h2> Contenu du cours </h2>
+	    
+        <p>
+          Voici la liste des sujets traités durant le cours,
+          accompagnés de vidéos explicatives. La colonne "<b>Date</b>"
+          correspond à la date à laquelle vous devez avoir visionné
+          les vidéos.
+        </p>
+
+	    <p>
+	      Pour toute question concernant le contenu, n'hésitez pas à poser une question
+	      sur le <a href="https://groups.google.com/forum/?fromgroups#!forum/ift-615-e2013">forum de discussion</a> du cours!
+	    </p>
+	    
+	    <table cellspacing="0">
+	      <tr bgcolor="#FD9842">
+		<td width="16%"><font color="#000"><b>Date</b></font></td> 
+		<td width="69%"><font color="#000"><b>Contenu</b></font></td> 
+		<td width="15%" align="right"><font color="#000"><b>Diapositives</b></font></td>
+        </tr>
+	      <tr bgcolor="#EEE">
+		<td>JE 02/05</td> 
+		<td><b>Introduction et présentation du plan de cours</b> </td> 
+		<td align="right">[<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-intro.pdf">pdf</a>]</td>
+        </tr>
+        <tr>
+          <td>VE 03/05</td> 
+		<td> <b> Introduction au langage Python</b></td> 
+		<td align="right"> [<a href="../tutoriel_python.html">html</a>]</td>
+       </tr>
+	      <tr bgcolor="#EEE">
+		<td rowspan="2">MA 07/05</td> 
+		<td><b>Agents intelligents</b>  (section 1)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=stuU2TK3t0Q">Motivation</a> (5:12) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=kol5g04vAUo">Définition</a> (14:44)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=p4Xg4dlIpS0">Types d'environnements</a> (11:14) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=TUHAVbaBLlg">Types d'agents</a> (8:59) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=BngSOcOaR1E">Exemple</a> (9:33) <br>
+      </td> 
+		<td align="right"><br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-1.1-agents-intelligents-motivation.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-1.2-agents-intelligents-definition.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-1.3-agents-intelligents-types-environnements.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-1.4-agents-intelligents-types-agents.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-1.5-agents-intelligents-exemple.pdf">pdf</a>]<br>
+        </td>
+          </tr>
+          <tr bgcolor="#EEE">
+		<td><b>Recherche heuristique</b>  (sections 2, 7.1)<br>
+        &#8194;&#8226;  <a href="http://www.youtube.com/watch?v=LBEkOoICj20">Motivation</a> (7:01)<br>
+        &#8194;&#8226;  <a href="http://www.youtube.com/watch?v=ooOrlgM0L8Q">Recherche dans un graphe</a> (9:13)<br>
+        &#8194;&#8226;  <a href="http://www.youtube.com/watch?v=8_dGurEKXDk">A*</a> (15:45)<br>
+        &#8194;&#8226;  <a href="http://www.youtube.com/watch?v=5RcAYMzT6jY">Exemple</a> (12:26) <br>
+        &#8194;&#8226;  <a href="http://www.youtube.com/watch?v=2Ej8ZufX-w8">Propriétés théoriques</a> (11:30)<br>
+        &#8194;&#8226;  <a href="http://www.youtube.com/watch?v=BSvzs8aARag">Variations et applications</a> (10:47) <br>
+          <br>
+          <b> Exercices</b><br>
+        &#8194;&#8226;  <a href="exercices/a_etoile.pdf">A*</a>  <br>          
+        </td> 
+        <td align="right"><br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-2.1-recherche-heuristique-motivation.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-2.2-recherche-heuristique-recherche-graphe.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-2.3-recherche-heuristique-A-etoile.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-2.4-recherche-heuristique-exemple.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-2.5-recherche-heuristique-propietes-theoriques.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-2.6-recherche-heuristique-variations-et-applications.pdf">pdf</a>]<br>
+        </td>
+      </tr>
+	      <tr >
+		<td rowspan="2">MA 14/05</td> 
+		<td><b>Recherche locale</b>  (section 4.1)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=kBzcpuCyK48">Motivation</a> (5:52) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=2DnYUh8UXAY"><i>Hill climbing</i></a> (14:16)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=yxtbuK3dM7Y"><i>Simulated annealing</i></a> (12:46) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=9tCySY6TLk8">Algorithme g&eacute;n&eacute;tique</a> (15:55) <br>
+        </td> 
+		<td align="right"><br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-3.1-recherche-locale-motivation.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-3.2-recherche-locale-hill-climbing.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-3.3-recherche-locale-simulated-annealing.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-3.4-recherche-locale-algorithme-genetique.pdf">pdf</a>]<br>
+        </td>
+          </tr>
+          <tr>
+		<td><b>Jeux &agrave; deux adversaires</b>  (sections 5.1-5.5)<br>
+        &#8194;&#8226;  <a href="http://www.youtube.com/watch?v=8XL2ebvEOOg">Motivation</a> (5:40)<br>
+        &#8194;&#8226;  <a href="http://www.youtube.com/watch?v=QTw8VJzRW6g">Algorithme minimax</a> (17:40)<br>
+        &#8194;&#8226;  <a href="http://www.youtube.com/watch?v=KS2QkHe-hpE">Élagage alpha-bêta</a> (16:36)<br>
+        &#8194;&#8226;  <a href="http://www.youtube.com/watch?v=j4bFdwkAll0">Exemple</a> (13:01) <br>
+        &#8194;&#8226;  <a href="http://www.youtube.com/watch?v=mtpHNFC11oM">D&eacute;cisions &agrave; temps r&eacute;el</a> (10:47)<br>
+          <br>
+          <b> Exercices</b><br>
+        &#8194;&#8226;  <a href="exercices/recherche_locale.pdf">Recherche locale</a>  <br>          
+        &#8194;&#8226;  <a href="exercices/alpha_beta.pdf">Alpha-bêta</a>  <br>          
+        </td> 
+        <td align="right"><br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-4.1-jeux-deux-adversaires-motivation.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-4.2-jeux-deux-adversaires-minimax.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-4.3-jeux-deux-adversaires-alpha-beta.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-4.4-jeux-deux-adversaires-exemple.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-4.5-jeux-deux-adversaires-temps-reel.pdf">pdf</a>]<br>
+        </td>
+        </tr>
+        <tr bgcolor="#EEE">
+		<td >MA 21/05</td> 
+		<td><b>Satisfaction de contraintes</b>  (sections 6.1-6.4)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=R3c6evPDhdY">Motivation</a> (6:01) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=pbRmvSG6_fU">Définition</a> (11:06)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=T3EsJRtDNt0"><i>Backtracking search</i></a> (14:27) <br>
+            &#8194;&#8226; <a href="http://youtu.be/oRS7OndJ_m0">Am&eacute;liorations &agrave; <i>backtracking search</i></a> (22:50) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=JUfEyiPKSa8">Algorithme AC-3</a> (17:34) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=YgSw8_memRg">Recherche locale</a> (6:03) <br>
+          <br>
+          <b> Exercices</b><br>
+        &#8194;&#8226;  <a href="exercices/satisfaction_contraintes.pdf">Satisfaction de contraintes</a>  <br>          
+        </td> 
+		<td align="right"><br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-5.1-satisfaction-constraintes-motivation.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-5.2-satisfaction-constraintes-definition.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-5.3-satisfaction-constraintes-backtracking-search.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-5.4-satisfaction-constraintes-ameliorations.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-5.5-satisfaction-constraintes-AC-3.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-5.6-satisfaction-constraintes-recherche-locale.pdf">pdf</a>]<br>
+        </td>
+          </tr>
+          <tr>
+		<td >MA 28/05</td> 
+		<td><b>Logique du premier ordre</b> (sections 7, 8, 9.2, 9.5)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=TQ5F4mf_HPU">Motivation</a> (12:55) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=1PfuTidp-Qk">Syntaxe</a> (20:47)<br>
+            &#8194;&#8226; <a href="http://youtu.be/0Th7WqxGDC0">Inf&eacute;rence</a> (6:08) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=zyGP8ix5opE">Substitution</a> (10:06) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=yhH6gT3olnM">Unification</a> (16:39) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=v0Emj4LeQug">Forme normale conjonctive</a> (13:52) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=ApHFWV7iin0">Preuve par r&eacute;solution</a> (23:56) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=_K-IyzhHydQ">Autres concepts</a> (11:49) <br>
+          <br>
+          <b> Exercices</b><br>
+        &#8194;&#8226;  <a href="exercices/unification.pdf">Unification</a>  <br>          
+        &#8194;&#8226;  <a href="exercices/formule_logique_premier_ordre.pdf">Formules en logique du premier ordre</a>  <br>          
+        &#8194;&#8226;  <a href="exercices/resolution.pdf">Preuve par résolution</a>  <br>          
+      </td> 
+		<td align="right"><br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-6.1-logique-motivation.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-6.2-logique-syntaxe.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-6.3-logique-inference.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-6.4-logique-substitution.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-6.5-logique-unification.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-6.6-logique-forme-normale-conjonctive.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-6.7-logique-resolution.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-6.8-logique-autres-concepts.pdf">pdf</a>]<br>
+        </td></tr>
+        <tr bgcolor="#EEE">
+		<td>MA 04/06</td> 
+		<td><b>Raisonnement probabiliste</b> (section 13)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=wIHv5ylN9ZY">Motivation</a> (8:00) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Rfc6A5S8tx8">D&eacute;finitions</a> (10:00)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=hpzb2UpafHs">Calcul de probabilit&eacute;s</a> (17:46) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Dc6TdcbWris">Distribution de probabilit&eacute;s</a> (6:00) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=fME09p3XMWY">R&egrave;gles de chaînage et de Bayes</a> (12:53) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=mUwkilyUOSk">Ind&eacute;pendance</a> (14:06) <br>
+          <br>
+          <b> Exercices</b><br>
+        &#8194;&#8226;  <a href="exercices/probabilites_marginales.pdf">Probabilités marginales</a>  <br>          
+        &#8194;&#8226;  <a href="exercices/probabilites_conditionnelles.pdf">Probabilités conditionnelles</a>  <br>          
+        &#8194;&#8226;  <a href="exercices/probabilites_conditionnelles_2.pdf">Probabilités conditionnelles (2)</a>  <br>          
+        &#8194;&#8226;  <a href="exercices/independance.pdf">Indépendance</a>  <br>          
+
+        </td> 
+		<td align="right"><br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-7.1-raisonnement-probabiliste-motivation.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-7.2-raisonnement-probabiliste-definitions.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-7.3-raisonnement-probabiliste-calcul-probabilites.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-7.4-raisonnement-probabiliste-distribution.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-7.5-raisonnement-probabiliste-regles.pdf">pdf</a>]<br>
+          [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-7.6-raisonnement-probabiliste-independance.pdf">pdf</a>]<br>
+        </td></tr>
+        <tr>
+		<td >MA 11/06</td> 
+		<td><b>Réseaux bayésiens</b> (sections 14.1-14.5)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=bXyTTtEeVTs">Motivation</a> (9:23) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=M7dFPkdwAB8">D&eacute;finition</a> (9:21)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=gYVpFLEluXg">Calcul de probabilit&eacute;s</a> (16:34) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Ry_7z67xEpU">Ind&eacute;pendance</a> (16:45) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=TTMeGpaio_M">D-s&eacute;paration</a> (10:06) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=EeEs0hABG0c">Inf&eacute;rence</a> (26:02) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=vPXXMrMtmpQ">Sp&eacute;cifier les tables de probabilit&eacute;s</a> (12:35) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=fvMm17s00HY">Sp&eacute;cifier la structure</a> (17:04) <br>
+          <br>
+          <b> Exercices</b><br>
+        &#8194;&#8226;  <a href="exercices/reseau_bayesien_probabilites_resolu.pdf">Probabilités conditionnelles</a>  <br>          
+        &#8194;&#8226;  <a href="exercices/reseau_bayesien_probabilites_2.pdf">Probabilités conditionnelles (2)</a>  <br>          
+        &#8194;&#8226;  <a href="exercices/reseau_bayesien_independance_resolu.pdf">Indépendance</a>  <br>          
+        &#8194;&#8226;  <a href="exercices/reseau_bayesien_independance_2.pdf">Indépendance (2)</a>  <br>          
+        </td>
+ 		<td align="right"><br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-8.1-reseaux-bayesiens-motivation.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-8.2-reseaux-bayesiens-definition.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-8.3-reseaux-bayesiens-calcul-probabilites.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-8.4-reseaux-bayesiens-independance.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-8.5-reseaux-bayesiens-D-separation.pdf">pdf</a>]<br>
+          [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-8.6-reseaux-bayesiens-inference.pdf">pdf</a>]<br>
+          [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-8.7-reseaux-bayesiens-specifier-probabilites.pdf">pdf</a>]<br>
+          [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-8.8-reseaux-bayesiens-specifier-structure.pdf">pdf</a>]<br>
+        </td>
+	      </tr>
+	      <tr bgcolor="#CCC">
+
+            <td rowspan="1">17-21/06</td> 
+		<td><b>Examens périodiques</b> <br>
+          &#8194;&#8226; <a href="https://dl.dropboxusercontent.com/u/19557502/ift615-revision-intra.pdf">Matière à l'examen</a><br>          
+          &#8194;&#8226; <a href="examens/ift615-2009h-intra-solutions.pdf">Intra H2009</a><br>
+          &#8194;&#8226; <a href="examens/ift615-2009e-intra-solutions.pdf">Intra E2009</a><br>
+          &#8194;&#8226; <a href="examens/ift615-2010h_examen-intra-solutions.pdf">Intra H2010</a> <br>
+          </td>
+		<td align="right"></td>
+	      </tr>
+
+        <td>MA 25/06</td> 
+		<td><b>Réseaux bayésiens dynamiques</b> (sections 15.1-15.3)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=i7rQjR1sbLo">Motivation</a> (7:42) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=qY9_eTYPjbg">D&eacute;finition</a> (12:56)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=4M0pznWvFhg">Types d'inférences</a> (8:13) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=KM1S2P6SO0s">Chaîne de Markov</a> (7:33) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=SGmMIEMJYwg">Modèle de Markov caché</a> (9:48) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=hEczL504Eqg">Probabilité marginale et filtrage</a> (23:47) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Ie81iPCDHA0">Lissage</a> (19:32) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=EBoiC2sc5LY">Prédiction</a> (10:23) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=QLwhFEHtHXg">Explication la plus plausible</a> (15:27) <br><br>
+          <b> Exercices</b><br>
+        &#8194;&#8226;  <a href="exercices/definition_hmm.pdf">Définition</a>  <br>          
+        &#8194;&#8226;  <a href="exercices/alpha_hmm.pdf">Tableau alpha</a>  <br>          
+        &#8194;&#8226;  <a href="exercices/beta_hmm.pdf">Tableau beta</a>  <br>          
+        <!--&#8194;&#8226;  <a href="exercices/lissage_hmm.pdf">Probabilités lissage</a>  <br> -->
+        </td> 
+		<td align="right"><br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-9.1-reseaux-bayesiens-dynamiques-motivation.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-9.2-reseaux-bayesiens-dynamiques-definitions.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-9.3-reseaux-bayesiens-dynamiques-types-inference.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-9.4-reseaux-bayesiens-dynamiques-chaine-de-markov.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-9.5-reseaux-bayesiens-dynamiques-modele-markov-cache.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-9.6-reseaux-bayesiens-dynamiques-probabilite-marginale-et-filtrage.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-9.7-reseaux-bayesiens-dynamiques-lissage.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-9.8-reseaux-bayesiens-dynamiques-prediction.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-9.9-reseaux-bayesiens-dynamiques-explication-plus-plausible.pdf">pdf</a>]<br></td>
+	      </tr>
+	      
+	      <tr bgcolor="#EEE">
+		<td>MA 02/07</td> 
+		<td>
+		<b>Traitement automatique de la langue</b> (sections 22.1, 22.2)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=ni4a4HO6E8E">Motivation</a> (8:00) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Xk-GQU0hQrI">Classification de documents</a> (19:40) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=usJwQGwZflU">Apprentissage en classification de documents</a> (19:32) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=tfPUl2Hv1Kg">Modèle de langage</a> (17:14) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=m19ya57qCbo">Évaluation d'un modèle de langage</a> (17:09) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=xBkjehSDJx8">Étiquetage syntaxique</a> (12:14) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=IA_bLvZBm2g">Extraction d'information</a> (6:28) <br>
+        <br>
+        <b>Processus de décision Markoviens</b> (sections 17.1-17.3)<br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=KXrGs5T9fwU">Motivation</a> (5:37) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=mxHhrP4fVmM">Définitions</a> (14:26) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=x10PqzjDVdM">Valeur d'un plan</a> (10:51) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=iiUVbKn1XZs">Itération par valeurs</a> (13:49) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=9DZPeyR98jw">Itération par politiques</a> (16:56) <br>
+        <br>
+        <b> Exercices</b><br>
+        &#8194;&#8226;  <a href="exercices/taln_classif_document.pdf">Classification de documents</a>  <br>
+        &#8194;&#8226;  <a href="exercices/mdp_iteration_valeur.pdf">Itération par valeurs</a>  <br>
+        </td> 
+		<td align="right"><br><br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-10.1-taln-motivation.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-10.2-taln-classification-documents.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-10.3-taln-apprentissage-classification-documents.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-10.4-taln-modele-langage.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-10.5-taln-evaluation-modele-langage.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-10.6-taln-etiquetage-syntaxique.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-10.7-taln-extraction-information.pdf">pdf</a>]<br>
+          <br>
+          <br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-11.1-mdp-motivation.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-11.2-mdp-definitions.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-11.3-mdp-valeur-plan.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-11.4-mdp-iteration-valeur.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-11.5-mdp-iteration-politique.pdf">pdf</a>]<br>
+        </td>
+	      <tr> 
+		<td>MA 09/07</td> 
+		<td>
+		<b>Apprentissage automatique</b> (sections 18.1, 18.2, 18.4, 18.6-18.8)</br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=m1GRBCCJprE">Motivation</a> (7:35) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=bybQvF0VJrI">Définitions</a> (6:18) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=BJvg5o7MSSI">k plus proches voisins</a> (10:04) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=L7WNYvbvGBc">Perceptron</a> (12.58) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=nZjg8DjrWVo">Exemple du perceptron</a> (7:05) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=AFVn-J9gV8E">Propriétés du perceptron</a> (8:07) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=tdouYphUi-w">Dérivées</a> (11:16) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=HniO8Apx95A">Dérivées partielles et gradient</a> (18:42) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=diiP1ydlyss">Minimisation de perte</a> (24:10) <br>
+
+        </td>
+		<td align="right"> 
+        <br><br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-12.1-apprentissage-automatique-motivation.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-12.2-apprentissage-automatique-definitions.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-12.3-apprentissage-automatique-k-plus-proches-voisins.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-12.4-apprentissage-automatique-perceptron.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-12.5-apprentissage-automatique-exemple-perceptron.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-12.6-apprentissage-automatique-proprietes-perceptron.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-12.7-apprentissage-automatique-derivees.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-12.8-apprentissage-automatique-derivees-partielles-et-gradients.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-12.9-apprentissage-automatique-minimisation-de-perte.pdf">pdf</a>]<br>
+        </td>
+	      </tr>
+	      
+	      <tr bgcolor="#EEE">
+		<td>MA 16/07</td> 
+		<td>
+		<b>Apprentissage automatique (suite)</b> <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=af1j0ogiUak">Régression logistique</a> (11:03) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=ngTF9NxEx7c">Réseau de neurones</a> (13:28) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=NgwvhX0xBs0">Rétropropagation</a> (23:49) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=0jh-jlWfKwo">Exemple de réseau de neurones</a> (12:59) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=B9OjPEZ4yuA">Généralisation</a> (18:33) <br>
+        <br>
+        <b> Exercices</b><br>
+        &#8194;&#8226;  <a href="exercices/knn.pdf">k plus proches voisins</a>  <br>
+        &#8194;&#8226;  <a href="exercices/perceptron.pdf">Perceptron</a>  <br>
+        &#8194;&#8226;  <a href="exercices/derivees.pdf">Dérivées de fonction</a>  <br>
+        &#8194;&#8226;  <a href="exercices/derivees_partielles.pdf">Dérivées partielles de fonction</a>  <br>
+        &#8194;&#8226;  <a href="exercices/regression_logistique_vs_perceptron.pdf">Régression logistique vs. perceptron</a>  <br>
+        </td>
+		<td align="right"><br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-12.10-apprentissage-automatique-regression-logistique.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-12.11-apprentissage-automatique-reseau-de-neurones.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-12.12-apprentissage-automatique-retropropagation.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-12.13-apprentissage-automatique-exemple-reseau-neurones.pdf">pdf</a>]<br>
+        [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-12.14-apprentissage-automatique-generalisation.pdf">pdf</a>]<br>
+
+        </td>
+
+	      </tr>
+	      <tr> 
+		<td >MA 23/07</td> 
+		<td><b>Apprentissage par renforcement</b> (sections 21.1-21.4)<br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=1QyGL9u5BxA">Motivation</a> (10:35) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=9fZ0B6FTWiU">Estimation directe</a> (14:04) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=QqHBFTRcLUo">Programmation dynamique adaptative</a> (21:41) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=lDNUB7ywaWc">Différence temporelle</a> (13:18) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=wsX5IvQw1h4">Passif vs. actif</a> (9:16) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=9XDrr6MeQf0">Dilemme exploration vs. exploitation</a> (10:32) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=r-Q0wgJzD98"><i>Q-learning</i></a> (17:06) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=TG5JA__l5K0">Recherche de plan</a> (11:39) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=GsLz4_xXKt0">Généralisation</a> (15:19) <br>
+        <br>
+        <b> Exercices</b><br>
+        &#8194;&#8226;  <a href="exercices/rl_estimation_directe.pdf">Estimation directe</a>  <br>
+        &#8194;&#8226;  <a href="exercices/rl_q_learning.pdf"><i>Q-learning</i></a>  <br>
+        &#8194;&#8226;  <a href="exercices/rl_recherche_locale.pdf">Recherche locale en apprentissage par renforcement</a>  <br>
+	      </td>
+          <td align="right"><br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-13.1-apprentissage-renforcement-motivation.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-13.2-apprentissage-renforcement-estimation-directe.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-13.3-apprentissage-renforcement-programmation-dynamique-adaptative.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-13.4-apprentissage-renforcement-difference-temporelle.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-13.5-apprentissage-renforcement-passif-vs-actif.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-13.6-apprentissage-renforcement-exploration-vs-exploitation.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-13.7-apprentissage-renforcement-Q-learning.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-13.8-apprentissage-renforcement-recherche-de-plan.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-13.9-apprentissage-renforcement-generalisation.pdf">pdf</a>]<br>
+          </td>
+	      <tr bgcolor="#EEE">
+		<td>MA 30/07</td> 
+		<td> <b>Vision par ordinateur</b> (sections 24.2, 24.3)<br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=G3slg71mGuY">Motivation</a> (6:16) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=xTrlSYU_yEM">Représentation d'images</a> (5:29) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=dGh1lBQsUT4">Gradients d'images</a> (19:12) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=0XT1PQm26T4">Contours d'images</a> (12:33) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=IN4UY1CBqto">Histogrammes de gradients</a> (11:36) <br>
+        &#8194;&#8226; <a href="http://www.youtube.com/watch?v=mj_e3BPWhaA">Reconnaissance d'objets</a> (10:17) <br>
+        <br>
+        <b> Exercices</b><br>
+        &#8194;&#8226;  <a href="exercices/convolution.pdf">Convolution</a>  <br>
+        &#8194;&#8226;  <a href="exercices/reconnaissance_objets.pdf">Reconnaissance d'objets</a>  <br>
+
+        </td> 
+		<td align="right"><br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-14.1-vision-motivation.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-14.2-vision-representation-images.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-14.3-vision-gradients-images.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-14.4-vision-contours-images.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-14.5-vision-histogrammes-gradients.pdf">pdf</a>]<br>
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-14.6-vision-reconnaissance-objets.pdf">pdf</a>]<br>
+        </td>
+	      </tr>
+          <tr>
+		<td>JE 01/08</td> 
+		<td align="left"><b>Révision</b><br>
+        &#8194;&#8226; <a href="examens/ift615-E2012-final.pdf">Final E2012</a> <br>
+        &#8194;&#8226; <a href="examens/ift615-H2012-final.pdf">Final H2012</a> <br>
+        &#8194;&#8226; <a href="examens/ift615-2010E-final.pdf">Final E2010</a> [<a href="examens/ift615-2010E-final-solutions.pdf">solutions</a>] <br>
+        &#8194;&#8226; <a href="examens/solutions-final-ift615-h09.pdf">Final H2009</a> <br>
+        &#8194;&#8226; <a href="examens/final-ift615-a06.pdf">Final A2006</a> [<a href="examens/solution-final-ift615-a06.pdf">solutions</a>]<br>
+        &#8194;&#8226; <a href="examens/final-IFT615-H03.pdf">Final H2003</a> [<a href="examens/solution-final-IFT615-H03.pdf">solutions</a>]<br>
+		<td align="right">
+            [<a href="https://dl.dropboxusercontent.com/u/19557502/ift615-revision-final.pdf">pdf</a>]<br>
+        </td>		  
+</tr>
+	    </table>
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold,italic"
+          type="text/css" />
+    <link rel="stylesheet" href="css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+	  Hugo Larochelle
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="index_en.html" accesskey="H" class="active"><em>H</em>ome</a></li>
+	      
+	      <li><a href="publications_en.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="university_en.html" accesskey="u"><em>U</em>niversity</a></li>
+
+	      <li><a href="links_en.html" accesskey="l"><em>L</em>inks</a></li>
+
+	    </ul>
+	  </div>
+	  
+	  <div id="sidebar">
+	    <h2>Research projects</h2>
+
+	    <table id="nav" cellpadding="0" cellspacing="10" >
+	      <tr><td><a href="projects_attention.html">Attention-based computer vision</a></td></tr>
+	      <tr><td><a href="projects_deep_learning.html">Deep learning</a></td></tr>
+	      <tr><td><a href="projects_classrbm.html">Restricted Boltzmann machines for classification</a></td></tr>
+	      <tr><td class="active"><a href="projects_struct_output.html">Learning algorithms for structured output prediction</a></td></tr>
+	      <tr><td><a href="projects_nade.html">Neural autoregressive models</a></td></tr>
+	    </table>
+
+	  </div>
+	  
+	  <!--
+	  <div id="sidebarright">
+	  </div>
+	  -->
+
+	  <div id="contentnorightbar">
+	    <h2>Learning algorithms for structured output prediction</h2> 
+
+	    Many real life applications correspond to problems that
+	    cannot be described as the classification of an input into
+	    one of a few categories or classes. These include tasks
+	    like image labeling, machine translation, information
+	    retrieval, speech recognition, and many others. Indeed,
+	    the target to be predicted for such problems is typically
+	    very high dimensional and structured. 
+	    <br><br> 
+
+	    I'm particularly interested in developing general
+	    structured output learning algorithms for highly
+	    non-linear models, as opposed to linear ones such as
+	    structured SVMs and CRFs.
+	    In <a href="publications/struct_output_crbm_uai.pdf">Conditional
+	    Restricted Boltzmann Machines for Structured Output
+	    Prediction</a>, <a href="http://www.cs.toronto.edu/~vmnih/">Volodymyr
+	    Mnih</a>, <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey
+	    Hinton</a> and I investigated two such approaches for training
+	    RBMs on structured output prediciton problems.
+	    <br><br> 
+	    
+	    I'm also interested in algorithms that better take into
+	    account the loss under which the model is
+	    evaluated. Such loss functions can have as complex a structure as the
+	    output
+	    itself. In <a href="http://arxiv.org/abs/1107.1805">Loss-sensitive
+	    Training of Probabilistic Conditional Random Fields</a>,
+	    Maksim
+	    Volkovs, <a href="http://www.cs.toronto.edu/~zemel/inquiry/home.php">Richard
+	    Zemel</a> and I proposed and evaluated several different
+	    learning algorithms for doing that, focusing on the document ranking
+	    problems.
+	    
+
+	    <br><br>
+	    <h3>References</h3>
+	    <br>
+	    <ul>
+	      <li> <b> Loss-sensitive Training of Probabilistic Conditional Random Fields [<a href="http://arxiv.org/abs/1107.1805" target=_top>arxiv</a>]</b><br>
+		Maksim Volkovs, Hugo Larochelle and Richard Zemel,<br>
+		arXiv, 2011<br>
+		<br>
+	      <li> <b> Conditional Restricted Boltzmann Machines for Structured Output Prediction [<a href="publications/struct_output_crbm_uai.pdf" target=_top>pdf</a>]</b><br>
+		Volodymyr Mnih, Hugo Larochelle and Geoffrey Hinton,<br>
+		<i>Uncertainty in Artificial Intelligence</i>, 2011<br><br>
+	      <li> <b> Autotagging music with conditional restricted Boltzmann machines [<a href="http://arxiv.org/abs/1103.2832" target=_top>arxiv</a>]</b><br>
+		Michael Mandel, Razvan Pascanu, Hugo Larochelle and Yoshua Bengio,<br>
+		arXiv, 2011<br>
+		<br>
+	    </ul>
+
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

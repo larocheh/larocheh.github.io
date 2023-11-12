@@ -1,0 +1,341 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold"
+          type="text/css" />
+    <link rel="stylesheet" href="../../css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+      <div id="header-text">
+	    Hugo Larochelle
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="../../index_fr.html" accesskey="a"><em>A</em>ccueil</a></li>
+	      
+	      <li><a href="../../publications_fr.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="../../university_fr.html" accesskey="u" class="active"><em>U</em>niversité</a></li>
+
+	      <li><a href="../../links_fr.html" accesskey="l"><em>L</em>iens</a></li>
+
+	    </ul>
+	  </div>
+	  </div>
+	  <div id="sidebar">
+	    <h2>IFT 603 <small>(Hiver 2014)</small></h2>
+	    <table id="nav" cellpadding="0" cellspacing="8" width="120" >
+	      <tr><td><a href="description.html">Description</a></td></tr>
+	      <tr><td  class="active"><a href="contenu.html">Contenu</a></td></tr>
+	      <tr><td><a href="evaluations.html">Évaluations</a></td></tr>
+	    </table>
+	    <h2>Annonces</h2>
+	    <b>[05/02/2014]</b><br>
+	    L'<b>examen intra</b> aura lieu le 27 février, au D3-2029, de 8h30 à 10h20<br><br>
+	    <b>[05/02/2014]</b><br>
+	    Énoncé du devoir 2 disponible<br><br>
+	    <b>[06/01/2014]</b><br>
+	    Bienvenue au cours IFT 603!
+	  </div>
+	  
+	  <!--
+	  <div id="sidebarright">
+	  </div>
+	  -->
+
+	  <div id="contentnorightbar">
+	    <h2> Contenu du cours </h2>
+	    
+            <p>
+              Voici la liste des sujets traités durant le cours,
+              accompagnés de vidéos explicatives (ajoutées progressivement
+	      durant le cours).
+            </p>
+	    
+	    <p>
+	      Pour toute question concernant le contenu, n'hésitez pas à poser une question
+	      sur le <a href="https://groups.google.com/forum/?fromgroups#!forum/ift-603-h2014">forum de discussion</a> du cours!
+	    </p>
+	    
+	    <table cellspacing="0">
+	      <tr bgcolor="#FD9842">
+		<td width="80px"><font color="#000"><b>Date</b></font></td> 
+		<td width="340px"><font color="#000"><b>Contenu</b></font></td> 
+		<td width="80px" align="right"><font color="#000"><b>Sections<br> du livre</b></font></td>
+              </tr>
+	      <tr bgcolor="#EEE">
+		    <td>LU 06/01<br>
+                      MA 07/01</td> 
+		    <td><b>Présentation du cours</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift603/00_introduction.pdf">pdf</a>] <br>
+		      <b> Mise à niveau</b><br>
+		      &#8194;&#8226; <a href="../tutoriel_python.html">Tutoriel Python</a><br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=tdouYphUi-w">Dérivées</a><br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=HniO8Apx95A">Dérivées partielles</a><br>
+		      &#8194;&#8226; Algèbre linéaire (Bishop : <i>Appendix C</i>)
+		    </td> 
+		    <td align="right"></td>
+              </tr>
+	      <tr>
+		    <td>LU 13/01<br>
+                      MA 14/01</td> 
+		    <td><b>Concepts fondamentaux</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift603/01_concepts_fondamentaux.pdf">pdf</a>]<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=GROvIr2GGcc">Motivation</a> (3:48)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=z7_nvHzIDik">Notation et nomenclature</a> (3:41)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=4EvNjHyepRY">Types d'apprentissage</a> (10:45)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Q-wL466wvVg">Exemple : régression polynomiale</a> (11:07)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=2GlotNzDdO0">Sur-apprentissage / sous-apprentissage</a> (9:45)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Ma2-NZsTa2s">Régularisation</a> (8:05)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=kNGTKO8kvTI">Sélection de modèle</a> (11:23)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=6oh-ZTl_OYk">Malédiction de la dimensionnalité</a> (9:47)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=KUfdIxHsDe8">Résumé</a> (2:38)
+		      
+		    </td> 
+		    <td align="right">
+		      <br>
+		      1.0<br>
+		      |<br>
+		      |<br>
+		      1.1<br>
+		      |<br>
+		      |<br>
+		      1.3<br>
+		      1.4<br>
+		      x
+		    </td>
+              </tr>
+	      <tr bgcolor="#EEE">
+		    <td>LU 20/01<br>
+                      MA 21/01</td> 
+		    <td><b>Formulation probabiliste</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift603/02_formulation_probabiliste.pdf">pdf</a>] [<a href="ipython_notebook/Formulation probabiliste.ipynb">ipython notebook</a>]<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=KXt69ngquss">Rappel de la théorie des probabilités</a> (14:47)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Q7SaLDSYQjM">Variable aléatoire continue</a> (9:15)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=8GRaTTkulvA">Espérance, variance et covariance</a> (12:59)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=WkS1JtH4OOU">Loi gaussienne / normale</a> (10:01)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=H8oB-X6vsBI">Régression polynomiale revisitée</a> (12:00)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Z3hblmSD8BI">Maximum a posteriori</a> (7:17)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=MB7O6e9W6bo">Théorie de l'information</a> (16:47)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=3FMcJVnnRcw">Divergence de Kullback-Leibler</a> (5:05)
+		    </td> 
+		    <td align="right">
+		      <br>
+		      1.2<br>
+		      1.2.1<br>
+		      1.2.2<br>
+		      1.2.4<br>
+		      1.2.5<br>
+		      |<br>
+		      1.6<br>
+		      1.6.1
+		    </td>
+              </tr>
+
+	      <tr>
+		    <td>LU 27/01<br>
+                      MA 28/01</td> 
+		    <td><b>Régression linéaire</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift603/03_regression_lineaire.pdf">pdf</a>] [<a href="ipython_notebook/Regression.ipynb">ipython notebook</a>]<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Vi0sSUVLPb0">Modèle</a> (4:57)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=mABPCbFOWFc">Fonction de bases</a> (8:58)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=svMCpEnLKrM">Maximum de vraisemblance</a> (11:57)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=ZI3r8aizB_c">Régularisation</a> (4:22)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=xdBDsjX-464">Prédictions multiples</a> (5:37)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=xjr-2Po93rk">Théorie de la décision</a> (16:37)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=zWjNk2iS8ao">Décomposition biais-variance</a> (11:38)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=flY58QH9USA">Résumé</a> (1:41)
+
+		    </td> 
+		    <td align="right">
+		      <br>
+		      3.1<br>
+		      |<br>
+		      3.1.1<br>
+		      3.1.4<br>
+		      3.1.5<br>
+		      1.5<br>
+		      3.2<br>
+		      x
+		    </td>
+              </tr>
+	      <tr bgcolor="#EEE">
+		    <td>LU 03/02<br>
+                      MA 04/02</td> 
+		    <td><b>Classification linéaire</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift603/04_classification_lineaire.pdf">pdf</a>] [<a href="ipython_notebook/Classification lineaire.ipynb">ipython notebook</a>]<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=iBhClcEWqwA">Fonction discriminante</a> (17:17)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=hBVJ4J_CaKU">Méthode des moindres carrés</a> (4:53)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=s4e6xsPboDo">Analyse discriminante linéaire</a> (12:43)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=HBfsOTuUilQ">Approche probabiliste générative</a> (24:02)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=shvVtXhZ1Dc">Approche probabiliste discriminante</a> (17:12)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=lAgdydNs_1U">Classificiation à multiples classes</a> (6:23)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=uEYTmuv3UMY">Résumé</a> (8:05)
+		    </td> 
+		    <td align="right">
+		      <br>
+		      4.1<br>
+		      4.1.3<br>
+		      4.1.4<br>
+		      4.2<br>
+		      4.3<br>
+		      4.1.2<br>
+		      x
+		    </td>
+              </tr>
+
+	      <tr>
+		    <td>LU 10/02<br>
+                      MA 11/02</td> 
+		    <td>
+		    <b>Concepts fondamentaux (2)</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift603/01_concepts_fondamentaux_2.pdf">pdf</a>] [<a href="ipython_notebook/Concepts fondamentaux (2).ipynb">ipython notebook</a>]<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=HXuLN7EbWn8">Prétraitement de données</a> (10:55)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=lxFJeoIApTo">Comparaison d'algorithmes</a> (7:43)<br>
+		    <br>
+		      <b>Méthodes à noyau</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift603/05_methodes_a_noyaux.pdf">pdf</a>] [<a href="ipython_notebook/Methodes a noyaux.ipynb">ipython notebook</a>]<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=_Z-OniBilIY">Motivation</a> (4:30)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=vAtkcuIgVek">Représentation duale (régression)</a> (15:48)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=mKLKXaWOVaQ">Astuce du noyau</a> (12:38)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=I59q2Tb9PGs">Construction de noyaux</a> (12:43)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=M9KoeZmhCII">Résumé</a> (6:40)
+
+		    </td> 
+		    <td align="right">
+		      <br>
+		      x<br>
+		      x<br>
+		      <br>
+		      <br>
+		      x<br>
+		      6.1<br>
+		      6.2<br>
+		      |<br>
+		      x
+		    </td>
+              </tr>
+	      <tr bgcolor="#EEE">
+		    <td>LU 17/02<br>
+                      MA 18/02</td> 
+		    <td><b>Machine à vecteurs de support</b> [<a href="https://dl.dropboxusercontent.com/u/19557502/ift603/06_machine_vecteurs_support.pdf">pdf</a>]<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=b7tpZ6-XUVQ">Motivation</a> (4:41)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=ni_WopvT8T8">Marge</a> (6:13)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=xv3_tHB-hY4">Classifieur à marge maximale</a> (9:55)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=pxsFAVFdNQk">Représentation duale</a> (15:33)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=TEK1EH2PbcM">Chevauchement de classes</a> (10:26)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=bzHZo85I6WQ">Lien avec la régression logistique</a> (11:22)<br>
+		      &#8194;&#8226; <a href="http://www.youtube.com/watch?v=cFrmZ3Eb_oo">Résumé</a> (7:05)
+		    </td> 
+		    <td align="right">
+		      <br>
+		      7.0<br>
+		      7.1<br>
+		      |<br>
+		      |<br>
+		      7.1.1<br>
+		      7.1.2<br>
+		      x
+		    </td>
+              </tr>
+
+	      <tr>
+		    <td>JE 27/02<br>
+                      </td> 
+		    <td><b>Semaine d'examens périodiques</b><br>
+		      Examen intra: 27 février, D3-2029, 8h30-10h20
+		    </td> 
+		    <td align="right">
+		    </td>
+              </tr>
+	      <tr bgcolor="#EEE">
+		    <td>LU 3/03<br>
+                      VE 7/03</td> 
+		    <td><b>Semaine de lecture</b>
+		    </td> 
+		    <td align="right">
+		    </td>
+              </tr>
+
+	      <tr>
+		    <td>LU 10/03<br>
+                      MA 11/03</td> 
+		    <td><b>Estimation de densité</b><br>
+		      &#8194;&#8226; Modèle de mélange gaussien<br>
+		      &#8194;&#8226; Algorithme EM<br>
+		      &#8194;&#8226; Fenêtre de Parzen
+
+		    </td> 
+		    <td align="right">
+		      <br>
+		    </td>
+              </tr>
+	      <tr bgcolor="#EEE">
+		    <td>LU 17/03<br>
+                      MA 18/03</td> 
+		    <td><b>Réduction de dimensionnalité</b> <br>
+		      &#8194;&#8226; Analyse en composante principale (ACP)<br>
+		      &#8194;&#8226; ACP à noyau<br>
+		      &#8194;&#8226; Choix parmi LLE et Isomap
+		    </td> 
+		    <td align="right">
+		      <br>
+		    </td>
+              </tr>
+
+	      <tr>
+		    <td>LU 24/03<br>
+                      MA 25/03</td> 
+		    <td><b>Combinaison de modèles</b><br>
+		      &#8194;&#8226; <i>Bootstrap</i><br>
+		      &#8194;&#8226; <i>Boosting</i><br>
+		      &#8194;&#8226; Mélange d'experts
+		    </td> 
+		    <td align="right">
+		      <br>
+		    </td>
+              </tr>
+	      <tr bgcolor="#EEE">
+		    <td>LU 31/03<br>
+                      MA 01/04</td> 
+		    <td><b>Apprentissage bayésien</b> <br>
+		      &#8194;&#8226; Apprentissage fréquentiste vs. bayésien<br>
+		      &#8194;&#8226; Régression bayésienne<br>
+		      &#8194;&#8226; Processus gaussien
+		    </td> 
+		    <td align="right">
+		      <br>
+		    </td>
+              </tr>
+
+	      <tr>
+		    <td>LU 08/04<br>
+                      MA 09/04</td> 
+		    <td><b>Méthodes d'échantillonnage</b><br>
+		      &#8194;&#8226; Méthode de rejet<br>
+		      &#8194;&#8226; Échantillonnage préférentiel<br>
+		      &#8194;&#8226; Méthode de Monte-Carlo par chaines de Markov<br>
+		      &#8194;&#8226; Metropolis-Hastings<br>
+		      &#8194;&#8226; Échantillonnage de Gibbs
+		    </td> 
+		    <td align="right">
+		      <br>
+		    </td>
+              </tr>
+
+	      </table>
+
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

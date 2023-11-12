@@ -1,0 +1,2884 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="../css/default.css" type="text/css" />
+    <link rel="stylesheet" href="../css/pygments.css" type="text/css" />
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold"
+          type="text/css" />
+    <link rel="stylesheet" href="../css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+      <div id="header-text">
+	    Hugo Larochelle
+	  <!-- <h1 id="header-right"></h1>-->
+	  <ul id="nav">
+	    
+	    <li><a href="../index_fr.html" accesskey="a"><em>A</em>ccueil</a></li>
+	    
+	    <li><a href="../publications_fr.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	    <li><a href="../university_fr.html" accesskey="u"  class="active"><em>U</em>niversité</a></li>
+
+	    <li><a href="../links_fr.html" accesskey="l"><em>L</em>iens</a></li>
+	    
+	  </ul>
+	</div>
+	</div>
+	<div id="contentnobars">
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Guido_van_Rossum_OSCON_2006.jpg/200px-Guido_van_Rossum_OSCON_2006.jpg" align="right" height="50%">
+	  <h1>Python</h1>
+
+	  <p> Python a été développé par Guido van Rossum, un développeur néerlandais en 1989. Le nom Python n'a rien à voir avec les reptiles vient de la série télévisée britanique <i>Monty Python</i>. En 2005, Guido fut engagé par Google dans le but de maintenir et d'améliorer Python. </p>
+
+	  <p>Ce tutoriel Python, rédigé par <a href="http://pages.usherbrooke.ca/mcote5/accueil.html">Marc-Alexandre
+	  Côté</a> et Hugo Larochelle, donne un aperçu des aspects
+	  de base les plus importants de Python. Il correspond
+	  essentiellement à une traduction de certaines sections des
+	  tutoriels <a href="http://docs.python.org/tutorial/">http://docs.python.org/tutorial/</a>
+	  et <a href="http://www.scipy.org/Tentative_NumPy_Tutorial">http://www.scipy.org/Tentative_NumPy_Tutorial</a>,
+	  avec ajouts mineurs. </p>
+
+	  <h2>Table des matières</h2>
+	  <div id="tablecontent">
+	  <ul>
+	    <li ><a href="#carac">Caractéristiques générales</a></li>
+	    <li ><a href="#syntaxe">Syntaxe</a></li>
+	    <li ><a href="#interp">Interpréteur</a></li>
+	    <li ><a href="#types">Types de base</a></li>
+	    <li ><a href="#controle">Structures de contrôle</a></li>
+	    <li ><a href="#fonctions">Définition des fonctions</a></li>
+	    <li ><a href="#struct">Structures de données</a></li>
+	    <li ><a href="#modules">Modules</a></li>
+	    <li ><a href="#io">Lecture et écriture de fichiers</a></li>
+	    <li ><a href="#classes">Classes</a></li>
+	    <li ><a href="#numpy">Numpy</a></li>
+	    <li ><a href="#debugger">Débogueur</a></li>
+	  </ul>
+	  </div>
+
+	  <a name="carac"><h2>Caractéristiques générales</h2></a>
+	  <ul>
+            <li>Langage interprété</li>
+            <li>Machine virtuelle</li>
+            <li>Portable (Unix, Windows, Mac)</li>
+            <li>Peut être utilisé comme <i>Scripting language</i></li>
+            <li>Typage dynamique (JavaScript, PHP, Ruby, ...)</li>
+            <li>Supporte plusieurs paradigmes de programmation:</li>
+            <ul>
+              <li>Orientée-objet (Java, C++, ...)</li>
+              <li>Impérative/Procédurale (FORTRAN, Pascal, C, ...)</li>
+              <li>Fonctionnelle (Haskell, Scheme, ...)</li>
+            </ul>
+            
+	  </ul>
+	  <a name="syntaxe"><h2>Syntaxe</h2></a>
+
+	  <p>Python a été conçu pour être un langage lisible. Il vise
+	    à être visuellement épuré. Il utilise des mots anglais
+	    fréquemment là où d'autres langages utilisent de la
+	    ponctuation, et possède également moins de constructions
+	    syntaxiques que de nombreux langages structurés tels que C,
+	    Perl, ou Pascal. Les commentaires sont indiqués par le
+	    caractère '#'.</p>
+
+	  Les blocs sont identifiés par l'<b>indentation</b>, au lieu
+	  d'accolades comme en C ou C++ ou de begin ... end comme en
+	  Pascal. Une augmentation de l'indentation marque le début
+	  d'un bloc, et une réduction de l'indentation marque la fin
+	  du bloc courant.
+	  
+	  <a name="interp"><h2>Interpréteur</h2> </a>
+
+	  <p>Python peut être utilisé en mode interpréteur (très
+	    pratique pour tester des lignes de code rapidement). Pour
+	    démarrer l'interpréteur Python, il suffit de tappez dans
+	    une console Unix (ou DOS) la commande</p>
+
+	  <pre>python </pre>
+	  
+	  <p>Pour quitter, il faut tapper un caractère de fin de
+	    fichier (soit <tt class="docutils
+	    literal"><span class="pre">Control-D</span></tt> sous
+	    Unix, <tt class="docutils
+	    literal"><span class="pre">Control-Z</span></tt> sous
+	    Windows) ou bien utiliser la
+	    commande <tt class="docutils
+	    literal"><span class="pre">quit()</span></tt>.</p>
+	  
+	  <p>Il existe également une version plus riche de
+	    l'interpréteur, IPython, qui permet entre autre
+	    de faire de la complétion d'expression (en appuyant sur la
+	    touche de tabulation ou <i>tab</i>). Pour l'invoquer,
+	    suffit de taper la commande</p>
+
+	  <pre>ipython </pre>
+	  
+	  <p>Pour plus d'information sur IPython, visiter
+	    <a href="http://ipython.org/">http://ipython.org/</a>.</p>
+
+	  <h3>Passage d'arguments</h3>
+	  
+	  <p>La commande <tt class="docutils
+	    literal"><span class="pre">python</span></tt> peut
+	    également lancer l'exécution de code dans des fichiers ou
+	    scripts. Lorsqu'ils sont spécifiés à l'interpréteur, le
+	    nom du script et les arguments supplémentaires sont
+	    transformés en une liste de chaînes et affectés à la
+	    variable <tt class="docutils
+	    literal"><span class="pre"><span class="pre">argv</span></span></tt>
+	    du module <tt class="docutils
+	    literal"><span class="pre"><span class="pre">sys</span></span></tt>. Vous
+	    pouvez accéder à cette liste en
+	    exécutant <tt class="docutils
+	    literal"><span class="pre"><span class="pre">import
+	    sys</span></span></tt>. La longueur de la liste est au
+	    moins un. Lorsqu'aucun script ou arguments ne sont
+	    donnés, <tt class="docutils
+	    literal"><span class="pre">sys.argv[0]</span></tt>
+	    est une chaîne vide.</p>
+
+<!--
+	  <h3>Mode interactif</h3>
+
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">the_world_is_flat</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">the_world_is_flat</span><span class="p">:</span>
+<span class="gp">... </span><span class="k">print</span> <span class="s">"Be careful not to fall off!"</span>
+
+<span class="gp">...</span>
+<span class="go">Be careful not to fall off!</span></pre>
+-->
+          <a name="types"><h2>Types de base</h2></a>
+	  <h3>Nombres</h3>
+
+	  <p>L'interpréteur peut servir de calculatrice: vous pouvez
+	  y tapper une expression et il écrira la résultat. La syntaxe
+	  des expressions est simple: les
+	  opérateurs <tt class="docutils
+	  literal"><span class="pre">+</span></tt>, <tt class="docutils
+	  literal"><span class="pre">-</span></tt>, <tt class="docutils
+	  literal"><span class="pre">*</span></tt>
+	  et <tt class="docutils
+	  literal"><span class="pre">/</span></tt> fonctionnent
+	  exactement comme dans la plupart des autres langages
+	  (ex. Pascal ou C). S'ajoute également l'opérateur
+	  <tt class="docutils literal"><span class="pre">**</span></tt> 
+	  pour les puissances. Les parenthèses peuvent être utilisées
+	  pour grouper les expressions. Par exemple :</p>
+
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Ceci est un commentaire</span>
+<span class="gp">... </span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span>  <span class="c"># et un commentaire sur une même ligne de code</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">50</span><span class="o">-</span><span class="mi">5</span><span class="o">*</span><span class="mi">6</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span>
+<span class="go">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Division entière retourne la valeur tronquée (<i>floor</i>) :</span>
+<span class="gp">... </span><span class="mi">7</span><span class="o">/</span><span class="mi">3</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">7</span><span class="o">/-</span><span class="mi">3</span>
+<span class="go">-3</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">**</span><span class="mi">4</span>
+<span class="go">16</span> </pre>
+
+	  <p>Le symbole égal (<tt class="docutils
+	  literal"><span class="pre">'='</span></tt>) est utilisé pour
+	  assigner une valeur à une variable. L'affectation ne cause
+	  aucun affichage de résultat avant la prochaine invite de
+	  commande :</p>
+
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">largeur</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hauteur</span> <span class="o">=</span> <span class="mi">5</span><span class="o">*</span><span class="mi">9</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">largeur</span> <span class="o">*</span> <span class="n">hauteur</span>
+<span class="go">900</span> </pre>
+
+	  <p>Une valeur peut être assignée simultanément à plusieurs
+	  variables :</p>
+
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">y</span> <span class="o">=</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c"># Zéro x, y et z</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span>
+<span class="go">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span>
+<span class="go">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">z</span>
+<span class="go">0</span> </pre>
+
+	  <p>Les variables doivent être "définies" (c.-à-d. une valeur leur a été
+	  assignée) avant de pouvoir s'en servir, sinon cela cause une
+	  erreur:</p>
+
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># try to access an undefined variable</span>
+<span class="gp">... </span><span class="n">n</span>
+<span class="gt">Traceback (most recent call last):</span><span>
+  File </span><span class="nb">"&lt;stdin&gt;"</span><span>, line </span><span class="m">1</span><span>, in </span><span class="n-Identifier">&lt;module&gt;</span>
+<span class="nc">NameError</span><span>: </span><span class="n-Identifier">name 'n' is not defined</span> </pre>
+
+	  <p>Python supporte entièrement les nombres à points
+	  flottants; les opérateurs convertissent les entiers en réels
+	  au besoin:</p>
+
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">3</span> <span class="o">*</span> <span class="mf">3.75</span> <span class="o">/</span> <span class="mf">1.5</span>	    
+<span class="go">7.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">7.0</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="go">3.5</span> </pre>
+
+<!--	  <p>Les nombres complexes sont également supportés; les
+	  nombres imaginaires se servent d'un suffixe:
+	    <tt class="docutils
+	    literal"><span class="pre">j</span></tt>
+	    ou <tt class="docutils
+	    literal"><span class="pre">J</span></tt>.  Les nombres
+	    complexes possédant une partie réel non nulle sont écrits
+	    de cette façon:
+	    
+	    <tt class="docutils
+	    literal"><span class="pre">(real+imagj)</span></tt>, ou
+	    peuvent être créés avec la fonction <tt class="docutils
+	    literal"><span class="pre">complex(real,</span> <span class="pre">imag)</span></tt>
+	    .</p>
+
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="mi">1</span><span class="n">J</span>
+<span class="go">(-1+0j)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="nb">complex</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">(-1+0j)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">3</span><span class="o">+</span><span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="mi">3</span>
+<span class="go">(3+3j)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="mi">1</span><span class="n">j</span><span class="p">)</span><span class="o">*</span><span class="mi">3</span>
+<span class="go">(9+3j)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="n">j</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="n">j</span><span class="p">)</span>
+
+<span class="go">(1.5+0.5j)</span> </pre>
+
+	  <p>Les nombres complexes sont toujours représentés comme
+	  deux nombres à virgule flottante, la partie réelle et la
+	  partie imaginaire. Pour extraire ces parties d'un nombre
+	  complexe, on utilise
+	    <tt class="docutils
+	    literal"><span class="pre">z.real</span></tt>
+	    et <tt class="docutils
+	    literal"><span class="pre">z.imag</span></tt>.</p>
+
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">=</span><span class="mf">1.5</span><span class="o">+</span><span class="mf">0.5</span><span class="n">j</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">real</span>
+<span class="go">1.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">imag</span>
+<span class="go">0.5</span> </pre>
+
+	  <p>Les fonctions de conversion en virgule flottante et en
+	  entier (<a title="float" class="reference external"
+	  href="../library/functions.html#float"><tt class="xref
+	  docutils literal"><span class="pre">float()</span></tt></a>,
+	    
+	    <a title="int" class="reference external"
+	    href="../library/functions.html#int"><tt class="xref
+	    docutils literal"><span class="pre">int()</span></tt></a>
+	    and <a title="long" class="reference external"
+	    href="../library/functions.html#long"><tt class="xref
+	    docutils
+	    literal"><span class="pre">long()</span></tt></a>) ne
+	    fonctionnent pas avec les nombres complexes - il n'existe
+	    aucune méthode qui convertit correctement un nombre
+	    complexe en nombre réel. Utilisez <tt class="docutils
+	    literal"><span class="pre">abs(z)</span></tt> pour obtenir
+	    sa magnitude (en réel) ou <tt class="docutils
+	    literal"><span class="pre">z.real</span></tt> pour obtenir
+	    sa partie réelle.</p>
+
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">=</span><span class="mf">3.0</span><span class="o">+</span><span class="mf">4.0</span><span class="n">j</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span><span>
+  File </span><span class="nb">"&lt;stdin&gt;"</span><span>, line </span><span class="m">1</span><span>, in </span><span class="n-Identifier">?</span>
+<span class="nc">TypeError</span><span>: </span><span class="n-Identifier">can't convert complex to float; use abs(z)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">real</span>
+<span class="go">3.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">imag</span>
+<span class="go">4.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>  <span class="c"># sqrt(a.real**2 + a.imag**2)</span>
+<span class="go">5.0</span> </pre>
+-->
+
+	  <p>Dans la console intéractive, la dernière expression
+	  calculée est assignée à la variable
+	    <tt class="docutils
+	    literal"><span class="pre">_</span></tt>.  Ce qui veut
+	    dire que lorsque vous utilisez Python comme calculatrice,
+	    il peut être parfois utile, par exemple:</p>
+
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxe</span> <span class="o">=</span> <span class="mf">12.5</span> <span class="o">/</span> <span class="mi">100</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">prix</span> <span class="o">=</span> <span class="mf">100.50</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">prix</span> <span class="o">*</span> <span class="n">taxe</span>
+<span class="go">12.5625</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">prix</span> <span class="o">+</span> <span class="n">_</span>
+<span class="go">113.0625</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="go">113.06</span> </pre>
+
+	  <p>Cette variable devrait toujours être traité comme une
+	  variable en lecture seule. N'assignez jamais explicitement
+	  une valeur à cette variable.</p>
+	  
+	  <h3>String</h3>
+
+	  <p>En plus des nombres, Python peut aussi manipuler les
+	  chaînes de caractères, qui peuvent être exprimées de
+	  plusieurs façons. Elles peuvent être entourés par des
+	  apostrophes ou des guillemets:</p>
+
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">'spam eggs'</span>
+<span class="go">'spam eggs'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">'doesn</span><span class="se">\'</span><span class="s">t'</span>
+<span class="go">"doesn't"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">"doesn't"</span>
+<span class="go">"doesn't"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">'"Yes," he said.'</span>
+<span class="go">'"Yes," he said.'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">"</span><span class="se">\"</span><span class="s">Yes,</span><span class="se">\"</span><span class="s"> he said."</span>
+<span class="go">'"Yes," he said.'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">'"Isn</span><span class="se">\'</span><span class="s">t," she said.'</span>
+<span class="go">'"Isn\'t," she said.'</span> </pre>
+
+	  <p>L'interpréteur affiche le résultat des opérations de
+	  chaîne de la même manière qu'ils ont été saisies. La chaîne
+	  est entre guillemets si la chaîne contient un apostrophe et
+	  aucun guillemet, sinon c'est entre apostrophe. La
+	  fonction <a class="reference external"
+	  href="../reference/simple_stmts.html#print"><tt class="xref
+	  docutils literal"><span class="pre">print</span></tt></a>
+	  produit un affichage plus lisible.</p>
+
+	  <p>Les continuations de lignes peuvent être utilisés avec
+	  un <i>backslash</i> en fin de ligne qui permet d'indiquer
+	  que la prochaine ligne est la suite logique de la ligne
+	  courante:</p>
+	  
+	  <div style="position: relative;" class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="n">hello</span> <span class="o">=</span> <span class="s">"Ceci est plutôt une longue châine contenant</span><span class="se">\n\</span>
+<span class="s">plusieurs lignes de texte comme on peut le faire en C.</span><span class="se">\n\</span>
+<span class="s">    Notez que les espaces au début de la ligne sont </span><span class="se">\</span>
+<span class="s"> prises en compte."</span>
+<span class="k">print</span> <span class="n">hello</span> </pre></div>
+	  </div>
+
+	  <p>Notez que les sauts de lignes ont toujours besoin d'être
+	  spécifiés dans la chaîne par le
+	  caractère <tt class="docutils
+	  literal"><span class="pre">\n</span></tt> - le saut de ligne
+	  suivant le <i>backslash</i> de continuation n'est pas tenu
+	  en compte. Cet exemple affichera:</p>
+
+	  <div class="highlight-text"><div class="highlight">
+	      <pre>
+Ceci est plutôt une longue châine contenant
+plusieurs lignes de texte comme on peut le faire en C.
+    Notez que les espaces au début de la ligne sont prises en compte.  </pre></div>
+	  </div>
+
+	  <p>Par contre, les chaînes de caractères peuvent être
+	  placées entre une paire de triple-guillements: <tt class="docutils
+	  literal"><span class="pre">"""</span></tt> ou de
+	  triple-apostrophes:
+	    
+	    <tt class="docutils
+	    literal"><span class="pre">'''</span></tt>.  Il n'est pas
+	    nécessaire d'utiliser le caractère de continuation dans ce
+	    cas. Les saut de lignes seront pris en compte.</p>
+	  <div style="position: relative;" class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="k">print</span> <span class="s">"""</span>
+<span class="s">Usage: thingy [OPTIONS]</span>
+<span class="s">     -h                        Display this usage message</span>
+<span class="s">     -H hostname               Hostname to connect to</span>
+<span class="s">"""</span>  </pre></div>
+	  </div>
+
+	  <p>affichera:</p>
+	  <div class="highlight-text"><div class="highlight">
+	      <pre>
+Usage: thingy [OPTIONS]
+     -h                        Display this usage message
+     -H hostname               Hostname to connect   </pre></div>
+	  </div>
+
+	  <p>Les chaînes peuvent être concaténées avec
+	  l'opérateur <tt class="docutils
+	  literal"><span class="pre">+</span></tt>, et répétées
+	  avec <tt class="docutils
+	  literal"><span class="pre">*</span></tt>:</p>
+	  
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span> <span class="o">=</span> <span class="s">'Help'</span> <span class="o">+</span> <span class="s">'A'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span>
+<span class="go">'HelpA'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">'&lt;'</span> <span class="o">+</span> <span class="n">word</span><span class="o">*</span><span class="mi">5</span> <span class="o">+</span> <span class="s">'&gt;'</span>
+<span class="go">'&lt;HelpAHelpAHelpAHelpAHelpA&gt;'</span></pre>
+	  
+	  <p>Les chaînes peuvent être indexées; comme en C, le premier
+	  caractère d'une chaîne est à l'indice 0. Un caractère est
+	  simplement une chaîne de longueur un. Comme en Icon, les
+	  sous-chaînes peuvent être obtenues par l'utilisation de la
+	    <em>slice notation</em> (tranche): deux indices séparés
+	    par un deux-points <tt class="docutils
+	    literal"><span class="pre">:</span></tt>.</p>
+	  
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="go">'A'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<span class="go">'He'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+
+<span class="go">'lp'</span> </pre>
+
+	  <p>Les indices définissant la tranche possèdent des valeurs
+	  par défaut très pratiques; l'omission du premier indice
+	  équivaut à l'indice zéro, l'omission du deuxième équivaut à la
+	  longueur de la chaîne originale.</p>
+
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span><span class="c"># Les deux premiers caractères </span>
+<span class="go">'He'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span><span class="c"># Tous les caractères sauf les deux premiers</span>
+
+<span class="go">'lpA'</span> </pre>
+
+	  <p>Contrairement aux chaînes de caractères en C, celles en
+	  Python ne peuvent pas être modifiées. L'assignation à une
+	  position donnée dans la chaîne cause une erreur:</p>
+
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s">'x'</span>
+<span class="gt">Traceback (most recent call last):</span><span>
+  File </span><span class="nb">"&lt;stdin&gt;"</span><span>, line </span><span class="m">1</span><span>, in </span><span class="n-Identifier">?</span>
+<span class="nc">TypeError</span><span>: </span><span class="n-Identifier">object does not support item assignment</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s">'Splat'</span>
+<span class="gt">Traceback (most recent call last):</span><span>
+  File </span><span class="nb">"&lt;stdin&gt;"</span><span>, line </span><span class="m">1</span><span>, in </span><span class="n-Identifier">?</span>
+<span class="nc">TypeError</span><span>: </span><span class="n-Identifier">object does not support slice assignment</span></pre>
+	  
+	  <p>Par contre, créer une nouvelle chaîne en combinant les
+	  différentes tranches est simple et efficace:</p>
+
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">'x'</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+<span class="go">'xelpA'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">'Splat'</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+
+<span class="go">'SplatA'</span></pre>
+	  
+	  <p>Les indices peuvent être négatifs, permettant de compter
+	  à partir de la droite. Par exemple:</p>
+	  
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c"># Le dernier caractère</span>
+<span class="go">'A'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="c"># L'avant dernier caractère</span>
+<span class="go">'p'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span><span class="c"># Les deux derniers caractères</span>
+<span class="go">'pA'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="c"># Tous les caractères sauf les deux derniers</span>
+<span class="go">'Hel'</span> </pre>
+
+	  <p>Notez que -0 est équivalent à 0, donc il ne compte pas à
+	  partir de la droite!</p>
+	  
+	  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">]</span> <span class="c"># (puisque -0 égale 0)</span>
+<span class="go">'H'</span> </pre>
+	  
+	  <p>Une façon de se souvenir du fonctionnement du <i>slicing</i>
+	    est d'imaginer que les indices pointent
+	    <em>entre</em> les caractères, et la gauche du premier caractère est indexée à 0. Par exemple:</p>
+
+	  <div class="highlight-python">
+<pre style="word-spacing:0px">
+ +---+---+---+---+---+
+ | H | e | l | p | A |
+ +---+---+---+---+---+
+ 0   1   2   3   4   5
+-5  -4  -3  -2  -1</pre>
+	  </div>
+	  
+	  <p>La fonction intégrée (<i>built-in</i>) <tt class="docutils
+	  literal"><span class="pre">len()</span></tt> retourne la
+	  longeur de la chaîne:</p>
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="s">&#39;supercalifragilisticexpialidocious&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">34</span></pre></div>
+	  </div>
+	  <br>
+
+	  <h3>Listes</h3>
+
+	  <p>En Python, il existe plusieurs structures de données. 
+	    La plus versatile est
+	  la liste (<em>list</em>), qui peut être créée en écrivant une suite
+	  de valeurs séparées par des virgules, le tout entre
+	  crochet. Les items d'une liste peuvent être de type
+	  différent:</p>
+	  
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;spam&#39;</span><span class="p">,</span> <span class="s">&#39;eggs&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1234</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">[&#39;spam&#39;, &#39;eggs&#39;, 100, 1234]</span> </pre></div>
+	  </div>
+
+	  <p>Comme pour les chaînes de caractères, le premier item
+	  d'une liste est à l'indice 0, et les listes supportent
+	  le <em>slicing</em>, la concaténation, etc:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">&#39;spam&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="go">1234</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<span class="go">100</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="go">[&#39;eggs&#39;, 100]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="s">&#39;bacon&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="p">]</span>
+<span class="go">[&#39;spam&#39;, &#39;eggs&#39;, &#39;bacon&#39;, 4]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">3</span><span class="o">*</span><span class="n">a</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="s">&#39;Boo!&#39;</span><span class="p">]</span>
+<span class="go">[&#39;spam&#39;, &#39;eggs&#39;, 100, &#39;spam&#39;, &#39;eggs&#39;, 100, &#39;spam&#39;, &#39;eggs&#39;, 100, &#39;Boo!&#39;]</span> </pre></div>
+	  </div>
+
+	  <p>Toute opération de <em>slicing</em> retourne une nouvelle
+	  liste contenant les éléments demandés. De ce fait, la 
+	  tranche suivante est une copie superficielle (<em>shallow
+	  copy</em>) de la liste <em>a</em>, c.-à-d. que
+	  les éléments de la tranche ne sont pas des copies indépendantes des éléments
+	  de la liste <em>a</em>:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">[:]</span>
+<span class="go">[&#39;spam&#39;, &#39;eggs&#39;, 100, 1234]</span></pre></div>
+	  </div>
+	  
+	  <p>Contrairement aux chaînes de caractères, qui
+	  sont immuables (<em>immutable</em>), il est possible de modifier
+	  individuellement les éléments d'une liste:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">[&#39;spam&#39;, &#39;eggs&#39;, 100, 1234]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="mi">23</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">[&#39;spam&#39;, &#39;eggs&#39;, 123, 1234]</span> </pre></div>
+	  </div>
+
+	  <p>Il est également possible d'assigner des valeurs à des
+	  tranches, ce qui peut causer un changement de taille de la
+	  liste, voir même la vider complètement:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Replace quelques items:</span>
+<span class="gp">... </span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">[1, 12, 123, 1234]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Enlève quelques items:</span>
+<span class="gp">... </span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">[123, 1234]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Insère quelques items:</span>
+<span class="gp">... </span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;bletch&#39;</span><span class="p">,</span> <span class="s">&#39;xyzzy&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">[123, &#39;bletch&#39;, &#39;xyzzy&#39;, 1234]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Insère (une copie de) lui-même au début de la liste</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">[:</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">[123, &#39;bletch&#39;, &#39;xyzzy&#39;, 1234, 123, &#39;bletch&#39;, &#39;xyzzy&#39;, 1234]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Vide la liste: remplace tous les items par une liste vide</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">[:]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">[]</span> </pre></div>
+	  </div>
+
+	  <p>La fonction intégrée <tt class="xref docutils
+	  literal"><span class="pre">len()</span></tt> s'applique
+	  également au listes:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">,</span> <span class="s">&#39;c&#39;</span><span class="p">,</span> <span class="s">&#39;d&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="go">4</span></pre></div>
+	  </div>
+
+	  <p>Il est possible d'imbriquer des listes (créer de listes
+	  qui contiennent d'autres listes), par exemple:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="go">[2, 3]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">&#39;xtra&#39;</span><span class="p">)</span>     <span class="c"># See section 5.1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span>
+<span class="go">[1, [2, 3, &#39;xtra&#39;], 4]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span>
+<span class="go">[2, 3, &#39;xtra&#39;]</span></pre></div>
+	  </div>
+
+	  <p>Notez que l'exemple précédent, <tt class="docutils
+	  literal"><span class="pre">p[1]</span></tt>
+	  et <tt class="docutils
+	  literal"><span class="pre">q</span></tt> réfèrent au même
+	  objet!</p>
+
+
+	  <h3>Petit exemple</h3>
+
+	  <p>Bien sûr, on peut utiliser Python pour autre chose qu'une
+	  simple calculatrice de poche! Par exemple, on peut calculer
+	  les premiers termes de la suite de <em>Fibonacci</em> comme
+	  suit:</p>
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Suite de Fibonacci:</span>
+<span class="gp">... </span><span class="c"># la somme des deux derniers éléments de la suite définit le prochain</span>
+<span class="gp">... </span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">print</span> <span class="n">b</span>
+<span class="gp">... </span>    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+<span class="gp">...</span>
+<span class="go">1</span>
+<span class="go">1</span>
+<span class="go">2</span>
+<span class="go">3</span>
+<span class="go">5</span>
+<span class="go">8</span> </pre></div>
+	  </div>
+
+	  <p>Cet exemple introduit plusieurs fonctionnalités de
+	  Python.</p>
+
+	  <ul>
+	    <li><p class="first">La première ligne contient
+		un <em>affectation multiple</em>: respectivement les
+		variables <tt class="docutils
+		literal"><span class="pre">a</span></tt>
+		et <tt class="docutils
+		literal"><span class="pre">b</span></tt> obtiennent
+		simultanément les valeurs 0 et 1. Le même principe est
+		réutilisé à la dernière ligne montrant cette fois-ci
+		que l'évaluation de la partie droite de l'expression
+		est faite en premier (c.-à-d. avant l'affectation).</p>
+	    </li>
+	    <li><p class="first">La boucle <tt class="xref docutils
+		literal"><span class="pre">while</span></tt> s'exécute
+		tant que la condition (ici: <tt class="docutils
+		literal"><span class="pre">b</span> <span class="pre">&lt;</span> <span class="pre">10</span></tt>)
+		demeure vrai. En Python, comme en C, n'importe quel
+		entier non nul est évalué à vrai; zéro est faux. La
+		condition peut également être une chaîne de caractères
+		ou une liste, de façon plus générale n'importe quelle
+		séquence. Si la taille est non nulle, alors
+		l'évaluation sera vraie, sinon la séquence est vide et
+		donc l'évaluation sera fausse. Le test utilisé dans
+		l'exemple est une simple comparaison. Les opérateurs
+		standards de comparaison s'écrivent comme en C: <tt class="docutils
+		literal"><span class="pre">&lt;</span></tt> (plus
+		petit que), <tt class="docutils
+		literal"><span class="pre">&gt;</span></tt> (plus
+		grand que), <tt class="docutils
+		literal"><span class="pre">==</span></tt> (egal
+		à), <tt class="docutils
+		literal"><span class="pre">&lt;=</span></tt> (plus
+		petit ou égal à), <tt class="docutils
+		literal"><span class="pre">&gt;=</span></tt> (plus
+		grand ou égal à) and <tt class="docutils
+		literal"><span class="pre">!=</span></tt> (différent
+		de).</p>
+	    </li>
+	    <li><p class="first">Le <b>corps</b> de la boucle
+	    est <b>indenté</b>: l'indentation est la technique
+	    Pythonienne de grouper les blocs d'expressions. Notez que
+	    chaque ligne d'un bloc doit avoir la même
+	    indentation.</p>
+
+	    </li>
+	  </ul>
+
+	  <a name="controle"><h2>Structures de contrôle</h2></a>
+
+	  <p>Mise à part la boucle <tt class="xref docutils
+	  literal"><span class="pre">while</span></tt>, Python possède
+	  également les structures de contrôle que l'on retrouve dans
+	  les autres langages de programmation, mais avec quelques
+	  particularités.</p>
+	  
+	  <h3>if</h3>
+	  <br>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Please enter an integer: &quot;</span><span class="p">))</span>
+<span class="go">Veuillez entrer un entier: 42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="gp">... </span>     <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="gp">... </span>     <span class="k">print</span> <span class="s">&#39;Negatif changé pour zéro&#39;</span>
+<span class="gp">... </span><span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="gp">... </span>     <span class="k">print</span> <span class="s">&#39;Zéro&#39;</span>
+<span class="gp">... </span><span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+<span class="gp">... </span>     <span class="k">print</span> <span class="s">&#39;Un&#39;</span>
+<span class="gp">... </span><span class="k">else</span><span class="p">:</span>
+<span class="gp">... </span>     <span class="k">print</span> <span class="s">&#39;Plus&#39;</span>
+<span class="gp">...</span>
+<span class="go">Plus</span></pre></div>
+	  </div>
+
+	  <p>Il peut y avoir aucun ou plusieurs <tt class="docutils
+	  literal"><span class="pre">elif</span></tt>, et
+	  le <tt class="docutils
+	  literal"><span class="pre">else</span></tt> est optionel. Le
+	  mot-clé &#8216;<tt class="docutils
+	  literal"><span class="pre">elif</span></tt>&#8216; est la
+	  contraction de &#8216;else if&#8217;</p>
+
+	  <p>Notez qu'il n'y a pas de <tt class="docutils
+	  literal"><span class="pre">switch</span></tt> ni
+	  de <tt class="docutils
+	  literal"><span class="pre">case</span></tt> en Python.
+
+	    <h3>for</h3>
+
+	  <p id="index-1117">La boucle <tt class="docutils
+	  literal"><span class="pre">for</span></tt> en Python est
+	  légèrement différente de celle en C ou en Pascal. Plutôt que
+	  d'itérer sur une suite arithmétique de nombres,
+	  le <tt class="docutils
+	  literal"><span class="pre">for</span></tt> en Python itère
+	  sur les éléments d'une séquence (ex. liste ou une chaîne de
+	  caractères) dans l'ordre qu'ils apparaîssent. Par exemple:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Mesure quelques chaînes:</span>
+<span class="gp">... </span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;cat&#39;</span><span class="p">,</span> <span class="s">&#39;window&#39;</span><span class="p">,</span> <span class="s">&#39;defenestrate&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">cat 3</span>
+<span class="go">window 6</span>
+<span class="go">defenestrate 12</span> </pre></div>
+	  </div>
+
+	  <p>Il n'est pas sécuritaire de modifier une séquence
+	  (ex. une liste puisqu'elle est mutable) pendant
+	  l'itération. Il est plutôt préférable d'itérer sur une copie
+	  de la liste. Pour y arriver, on peut recourir
+	  au <em>slicing</em>:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">a</span><span class="p">[:]:</span> <span class="c"># crée une tranche: copie entière de la liste</span>
+<span class="gp">... </span>   <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">6</span><span class="p">:</span> <span class="n">a</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">[&#39;defenestrate&#39;, &#39;cat&#39;, &#39;window&#39;, &#39;defenestrate&#39;]</span></pre></div>
+	  </div>
+
+	  <br>
+	  <h3>La function <em>range()</em></h3>
+
+	  <p>Si vous avez besoin d'itérer parmi une séquence de
+	  nombres, la fonction intégrée <tt class="docutils
+	  literal"><span class="pre">range()</span></tt> est très
+	  pratique. Elle génère une liste contenant un suite
+	  arithmétique:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="go">[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span> </pre></div>
+	  </div>
+
+	  <p>L'élément de fin n'est jamais inclus dans la
+	  liste; <tt class="docutils
+	  literal"><span class="pre">range(10)</span></tt> genère une
+	  liste de 10 valeurs. Il est possible de spécifier le début
+	  de la suite, ou bien de modifier l'incrément (même négatif):</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="go">[5, 6, 7, 8, 9]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="go">[0, 3, 6, 9]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">)</span>
+<span class="go">[-10, -40, -70]</span></pre></div>
+	  </div>
+
+	  <p>Pour itérer parmi les indices possibles d'une séquence,
+	  on combine <tt class="docutils
+	  literal"><span class="pre">range()</span></tt>
+	  et <tt class="docutils
+	  literal"><span class="pre">len()</span></tt>:</p>
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;Mary&#39;</span><span class="p">,</span> <span class="s">&#39;had&#39;</span><span class="p">,</span> <span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;little&#39;</span><span class="p">,</span> <span class="s">&#39;lamb&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)):</span>
+<span class="gp">... </span>    <span class="k">print</span> <span class="n">i</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="gp">...</span>
+<span class="go">0 Mary</span>
+<span class="go">1 had</span>
+<span class="go">2 a</span>
+<span class="go">3 little</span>
+<span class="go">4 lamb</span> </pre></div>
+	  </div>
+
+	  <br>
+	  <h3><em>break</em> et <em>continue</em></h3>
+
+	  <p>Le mot-clé <tt class="docutils
+	  literal"><span class="pre">break</span></tt>, comme en C,
+	  termine la boucle courante: <tt class="docutils
+	  literal"><span class="pre">for</span></tt>
+	  ou <tt class="docutils
+	  literal"><span class="pre">while</span></tt>.</p>
+
+	  <p>Le mot-clé <tt class="docutils
+	  literal"><span class="pre">continue</span></tt>, se comporte
+	  également comme en C et permet de continuer avec la
+	  prochaine itération de la boucle.</p>
+
+	  <a name="fonctions"><h2>Définition des fonctions</h2></a>
+
+	  <p>On peut créer une fonction qui écrit la suite de
+	  Fibonacci jusqu'à un nombre donné comme suite:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>    <span class="c"># écrit la suite Fibonacci jusqu'à n</span>
+<span class="gp">... </span>    <span class="sd">&quot;&quot;&quot;Affiche une suite Fibonacci jusqu'à n.&quot;&quot;&quot;</span>
+<span class="gp">... </span>    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+<span class="gp">... </span>    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="k">print</span> <span class="n">a</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Maintenant, on appelle la fonction qu'on vient de définir:</span>
+<span class="gp">... </span><span class="n">fib</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+<span class="go">0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597</span></pre></div>
+	  </div>
+
+	  <p id="index-1118">Le mot-clé <tt class="docutils
+	  literal"><span class="pre">def</span></tt> introduit la
+	  définition de la fonction.  Il est suivit du nom de la
+	  fonction et de la liste des paramètres entre
+	  parenthèse. Ensuite, à la ligne suivante se trouve le corps
+	  de la fonction, qui doit être indenté.</p>
+
+	  <p>Il est simple d'écrire une fonction qui retourne la liste
+	  des nombres de Fibonacci au lieu de les afficher:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">fib2</span><span class="p">(</span><span class="n">n</span><span class="p">):</span> <span class="c"># retourne la suite de Fibonacci jusqu'à n</span>
+<span class="gp">... </span>    <span class="sd">&quot;&quot;&quot;Retourne une liste des nombres de Fibonacci jusqu'à n.&quot;&quot;&quot;</span>
+<span class="gp">... </span>    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="gp">... </span>    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+<span class="gp">... </span>    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">result</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f100</span> <span class="o">=</span> <span class="n">fib2</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>    <span class="c"># appel de la fonction</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f100</span>                <span class="c"># affichage du résultat</span>
+<span class="go">[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]</span> </pre></div>
+	  </div>
+
+	  <p>Dans cet exemple, le mot-clé <tt class="docutils
+	  literal"><span class="pre">return</span></tt> permet à la
+	  fonction de retourner une valeur. Si la fonction ne retourne
+	  pas explicitement de valeur (par défaut), la fonction
+	  retournera <tt class="docutils
+	  literal"><span class="pre">None</span></tt> (peut être vu comme une sorte de pointeur nul).</p>
+
+	  <h3>Arguments par défaut</h3>
+
+	  <p>Ceci permet de créer une fonction qui peut être appelée
+	  avec moins d'arguments. Par exemple:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="k">def</span> <span class="nf">ask_ok</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">retries</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">complaint</span><span class="o">=</span><span class="s">&#39;Yes or no, please!&#39;</span><span class="p">):</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">ok</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ok</span> <span class="ow">in</span> <span class="p">(</span><span class="s">&#39;y&#39;</span><span class="p">,</span> <span class="s">&#39;ye&#39;</span><span class="p">,</span> <span class="s">&#39;yes&#39;</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">True</span>
+        <span class="k">if</span> <span class="n">ok</span> <span class="ow">in</span> <span class="p">(</span><span class="s">&#39;n&#39;</span><span class="p">,</span> <span class="s">&#39;no&#39;</span><span class="p">,</span> <span class="s">&#39;nop&#39;</span><span class="p">,</span> <span class="s">&#39;nope&#39;</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">False</span>
+        <span class="n">retries</span> <span class="o">=</span> <span class="n">retries</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">retries</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s">&#39;refusenik user&#39;</span><span class="p">)</span>
+        <span class="k">print</span> <span class="n">complaint</span></pre></div>
+	  </div>
+
+	  <p>La fonction peut être appelée de diverses façons:</p>
+
+	  <ul class="simple">
+	    <li>en spécifiant seulement l'argument obligatoire:
+	      <tt class="docutils
+	      literal"><span class="pre">ask_ok('Do</span> <span class="pre">you</span> <span class="pre">really</span> <span class="pre">want</span> <span class="pre">to</span> <span class="pre">quit?')</span></tt></li>
+	    <li>en spécifiant un des arguments optionels:
+	      <tt class="docutils
+	      literal"><span class="pre">ask_ok('OK</span> <span class="pre">to</span> <span class="pre">overwrite</span> <span class="pre">the</span> <span class="pre">file?',</span> <span class="pre">2)</span></tt></li>
+
+	    <li>ou bien en spécifiant tous les arguments:
+	      <tt class="docutils
+	      literal"><span class="pre">ask_ok('OK</span> <span class="pre">to</span> <span class="pre">overwrite</span> <span class="pre">the</span> <span class="pre">file?',</span> <span class="pre">2,</span> <span class="pre">'Come</span> <span class="pre">on,</span> <span class="pre">only</span> <span class="pre">yes</span> <span class="pre">or</span> <span class="pre">no!')</span></tt></li>
+
+	  </ul>
+	  <p>Cet exemple introduit le mot-clé <tt class="docutils
+	  literal"><span class="pre">in</span></tt>. Il test si une
+	  certaine valeur est contenue ou pas dans une séquence.</p>
+
+	  <h3>Arguments par mot-clés</h3>
+
+	  <p>Les fonctions peuvent également être appelées en utilisant
+	  des <em>keyword arguments</em> de la
+	  forme <tt class="docutils
+	  literal"><span class="pre">kwarg=value</span></tt>. Par
+	  exemple, la fonction suivante:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="k">def</span> <span class="nf">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s">&#39;a stiff&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s">&#39;voom&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s">&#39;Norwegian Blue&#39;</span><span class="p">):</span>
+    <span class="k">print</span> <span class="s">&quot;-- This parrot wouldn&#39;t&quot;</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span>
+    <span class="k">print</span> <span class="s">&quot;if you put&quot;</span><span class="p">,</span> <span class="n">voltage</span><span class="p">,</span> <span class="s">&quot;volts through it.&quot;</span>
+    <span class="k">print</span> <span class="s">&quot;-- Lovely plumage, the&quot;</span><span class="p">,</span> <span class="nb">type</span>
+    <span class="k">print</span> <span class="s">&quot;-- It&#39;s&quot;</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="s">&quot;!&quot;</span></pre></div>
+	  </div>
+
+	  <p>possède un argument obligatoire (<tt class="docutils
+	  literal"><span class="pre">voltage</span></tt>) et trois
+	  arguments optionnels (<tt class="docutils
+	  literal"><span class="pre">state</span></tt>, <tt class="docutils
+	  literal"><span class="pre">action</span></tt>,
+	  et <tt class="docutils
+	  literal"><span class="pre">type</span></tt>). Cette fonction
+	  peut être appelée de ces différentes façons:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="n">parrot</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>                                          <span class="c"># 1 argument positionel</span>
+<span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>                                  <span class="c"># 1 argument mot-clé</span>
+<span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mi">1000000</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s">&#39;VOOOOOM&#39;</span><span class="p">)</span>             <span class="c"># 2 argument mot-clé</span>
+<span class="n">parrot</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s">&#39;VOOOOOM&#39;</span><span class="p">,</span> <span class="n">voltage</span><span class="o">=</span><span class="mi">1000000</span><span class="p">)</span>             <span class="c"># 2 arguments mot-clé</span>
+<span class="n">parrot</span><span class="p">(</span><span class="s">&#39;a million&#39;</span><span class="p">,</span> <span class="s">&#39;bereft of life&#39;</span><span class="p">,</span> <span class="s">&#39;jump&#39;</span><span class="p">)</span>         <span class="c"># 3 arguments positionnels</span>
+<span class="n">parrot</span><span class="p">(</span><span class="s">&#39;a thousand&#39;</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s">&#39;pushing up the daisies&#39;</span><span class="p">)</span>  <span class="c"># 1 argument positionnel, 1 argument mot-clé</span></pre></div>
+	  </div>
+
+	  <p>mais les appels suivants sont invalides:</p>
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="n">parrot</span><span class="p">()</span>                     <span class="c"># nécessite un argument manquant</span>
+<span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="s">&#39;dead&#39;</span><span class="p">)</span>  <span class="c"># aucun argument positionnel à la suite d'un argument mot-clé</span>
+<span class="n">parrot</span><span class="p">(</span><span class="mi">110</span><span class="p">,</span> <span class="n">voltage</span><span class="o">=</span><span class="mi">220</span><span class="p">)</span>     <span class="c"># affectation redondante pour un même argument</span>
+<span class="n">parrot</span><span class="p">(</span><span class="n">actor</span><span class="o">=</span><span class="s">&#39;John Cleese&#39;</span><span class="p">)</span>  <span class="c"># argument mot-clé inconnu</span> </pre></div>
+	  </div>
+
+	  <p>Lors de l'appel d'une fonction les arguments mot-clé
+	  doivent se trouver à la suite des arguments
+	  positionnels. Tous les arguments mot-clé doivent
+	  correspondrent à un argument accepté par la fonction et leur ordre
+	  importe peu. Aucun argument ne peut recevoir plus d'une
+	  valeur.</p>
+
+	  <a name="struct"><h2>Structures de données</h2></a>
+
+	  <h3>list</h3>
+
+	  <p>Un exemple qui montre l'utilisation de la plupart
+	  des <a href="http://docs.python.org/tutorial/datastructures.html#more-on-lists">méthodes</a>
+	  de <tt class="docutils
+	  literal"><span class="pre">list</span></tt>:</p>
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mf">66.25</span><span class="p">,</span> <span class="mi">333</span><span class="p">,</span> <span class="mi">333</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">1234.5</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">a</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">333</span><span class="p">),</span> <span class="n">a</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mf">66.25</span><span class="p">),</span> <span class="n">a</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">&#39;x&#39;</span><span class="p">)</span>
+<span class="go">2 1 0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">333</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">[66.25, 333, -1, 333, 1, 1234.5, 333]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">333</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">333</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">[66.25, -1, 333, 1, 1234.5, 333]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">[333, 1234.5, 1, 333, -1, 66.25]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">[-1, 1, 66.25, 333, 333, 1234.5]</span> </pre></div>
+	  </div>
+
+	  <br>
+	  <h3>Outils de programmation fonctionnelle</h3>
+
+	  <p>Trois fonctions intégrées sont très utiles
+	  lorsque utilisées avec des listes: <tt class="docutils
+	  literal"><span class="pre">filter()</span></tt>, <tt class="docutils
+	  literal"><span class="pre">map()</span></tt>,
+	  et <tt class="docutils
+	  literal"><span class="pre">reduce()</span></tt>.</p>
+
+	  <p><tt class="docutils
+	    literal"><span class="pre">filter(function,</span> <span class="pre">sequence)</span></tt>
+	    retourne une séquence composée des items
+	    de <em>sequence</em> pour lesquels <tt class="docutils
+	    literal"><span class="pre">function(item)</span></tt> est
+	    vraie. Si <em>sequence</em> est une chaîne de caractères
+	    ou un <tt class="docutils
+	    literal"><span class="pre">tuple</span></tt>, le résultat
+	    sera du même type; sinon, ce sera toujours
+	    une <tt class="docutils
+	    literal"><span class="pre">liste</span></tt>. Par exemple,
+	    pour créer une séquence de nombres divisibles ni par 2, ni
+	    par 3:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">!=</span> <span class="mi">0</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">filter</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">25</span><span class="p">))</span>
+<span class="go">[5, 7, 11, 13, 17, 19, 23]</span> </pre></div>
+	  </div>
+
+	  <p><tt class="docutils
+	  literal"><span class="pre">map(function,</span> <span class="pre">sequence)</span></tt>
+	  appelle <tt class="docutils
+	  literal"><span class="pre">function(item)</span></tt> pour
+	  chaque item de <em>sequence</em> et retourne une liste des
+	  valeurs de retour. Par exemple, pour calculer le cube de
+	  quelques nombres:</p>
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">cube</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="o">*</span><span class="n">x</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="p">(</span><span class="n">cube</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
+<span class="go">[1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]</span>  </pre></div>
+	  </div>
+
+	  <p>Plus d'une séquence peut être spécifiée; la fonction doit
+	  alors avoir autant d'arguments que de séquences. Par
+	  exemple:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">seq</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="p">(</span><span class="n">add</span><span class="p">,</span> <span class="n">seq</span><span class="p">,</span> <span class="n">seq</span><span class="p">)</span>
+<span class="go">[0, 2, 4, 6, 8, 10, 12, 14]</span> </pre></div>
+	  </div>
+
+	  <p><tt class="docutils
+	  literal"><span class="pre">reduce(function,</span> <span class="pre">sequence)</span></tt>
+	  retourne une seule valeur créée en
+	  appelant <em>function</em> pour les deux premiers items
+	  de <em>sequence</em>. Ensuite <em>function</em> est appelée
+	  en lui passant le résultat et le prochain item de la
+	  séquence, et ainsi de suite. Par exemple, pour calculer la
+	  somme des 10 premiers nombres:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">reduce</span><span class="p">(</span><span class="n">add</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
+<span class="go">55</span> </pre></div>
+	  </div>
+
+	  <p>S'il n'y a qu'un seul item dans <em>sequence</em>, sa
+	  valeur est retournée; si <em>sequence</em> est vide, une
+	  exception est lancée.</p>
+
+	  <p>Un troisième arguement peut être spécifié pour indiquer
+	  la valeur de départ. Dans ce cas, cette valeur de départ est
+	  retournée si <em>sequence</em> est vide, et la fonction est
+	  d'abord appliquée sur la valeur de départ et au premier item
+	  de <em>sequence</em>, ensuite sur le résultat et le prochain
+	  item, et ainsi de suite. Par exemple,</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">seq</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="nb">reduce</span><span class="p">(</span><span class="n">add</span><span class="p">,</span> <span class="n">seq</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">sum</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
+<span class="go">55</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">sum</span><span class="p">([])</span>
+<span class="go">0</span></pre></div>
+
+	    <br>
+	    <h3>Liste en compréhension (<em>list comprehensions</em>)</h3>
+
+	    <p>La technique liste en compréhension apporte une façon
+	    concise de créer des listes. Parmi les applications
+	    communes se trouve la confection de nouvelles listes
+	    pour lesquelles chaque élément est le résultat
+	    d'opérations effectuées sur chaque membre d'une autre
+	    séquence.</p>
+	    
+	    <p>Par exemple, supposons qu'on désire créer une liste de
+	      carrés de nombre, telle:</p>
+	    
+	    <div class="highlight-python"><div class="highlight">
+		<pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">squares</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">squares</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">squares</span>
+<span class="go">[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]</span></pre></div>
+	    </div>
+
+	    <p>On peut obtenir le même résultat avec:</p>
+
+	    <div class="highlight-python"><div class="highlight">
+		<pre>
+<span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span> </pre></div>
+	    </div>
+
+	    <p>Les listes en compréhension peuvent contenir des
+	    expressions complexes et des fonctions imbriquées:</p>
+	    <div class="highlight-python"><div class="highlight">
+		<pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">pi</span><span class="p">,</span> <span class="n">i</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)]</span>
+<span class="go">[&#39;3.1&#39;, &#39;3.14&#39;, &#39;3.142&#39;, &#39;3.1416&#39;, &#39;3.14159&#39;]</span> </pre></div>
+	    </div>
+
+	    <br>
+	    <h3>Tuples et séquences</h3>
+
+	    <p>On voit que les listes et les chaînes de caractères ont
+	    plusieurs propriétés en commun, telles l'indexation et
+	    le <em>slicing</em>. Il y a aussi un autre type de
+	    séquence: le <tt class="docutils
+	    literal"><span class="pre">tuple</span></tt>.</p>
+
+	    <p>Un tuple se compose d'un certain nombre de valeurs
+	    séparées par une virgule, par exemple:</p>
+
+	    <div class="highlight-python"><div class="highlight">
+		<pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="mi">12345</span><span class="p">,</span> <span class="mi">54321</span><span class="p">,</span> <span class="s">&#39;hello!&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">12345</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span>
+<span class="go">(12345, 54321, &#39;hello!&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Les <em>tuples</em> peuvent être imbriqués:</span>
+<span class="gp">... </span><span class="n">u</span> <span class="o">=</span> <span class="n">t</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span>
+<span class="go">((12345, 54321, &#39;hello!&#39;), (1, 2, 3, 4, 5))</span> </pre></div>
+	    </div>
+
+	    <p>Comme on le constate, à l'affichage, les tuples sont
+	    toujours entre parenthèses, afin que les tuples imbriqués
+	    soient reconnus correctement; par contre, ils peuvent être
+	    entrés avec ou sans parenthèses, malgré que les
+	    parenthèses sont souvent nécessaires malgré tout (si le
+	    tuple fait partie d'une grande expression).</p>
+
+	    <p>Les tuples, comme les chaînes de caractères, sont
+	    immuables: ce n'est pas possible de modifier les éléments
+	    d'un tuple. Il est possible de créer des tuples contenant
+	    des objets muables, comme des listes.</p>
+
+	    <p>L'instruction <tt class="docutils
+	      literal"><span class="pre">t</span> <span class="pre">=</span> <span class="pre">12345,</span> <span class="pre">54321,</span> <span class="pre">'hello!'</span></tt>
+	      est un exemple d'un <em>tuple packing</em>: les
+	      valeurs <tt class="docutils
+	      literal"><span class="pre">12345</span></tt>, <tt class="docutils
+	      literal"><span class="pre">54321</span></tt>
+	      et <tt class="docutils
+	      literal"><span class="pre">'hello!'</span></tt> sont
+	      combinées toutes les trois dans un tuple. L'opération
+	      inverse est aussi possible:</p>
+
+	    <div class="highlight-python"><div class="highlight">
+		<pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">t</span></pre></div>
+	    </div>
+
+	    <p>Cela est appelé <em>sequence unpacking</em> ou déballement
+	      de séquence, et
+	    fonctionne pour toutes les séquence. Le <em>sequence
+	    unpacking</em> nécessite que la liste des variables à
+	    gauche possède le même nombre d'éléments que dans la
+	    séquence.</p>
+
+	    <h3>Ensembles (<em>Sets</em>)</h3>
+
+	    <p>Python inclus aussi un type de données pour les
+	    ensemble. Un <tt class="docutils
+	    literal"><span class="pre">set</span></tt> est une
+	    collection non-ordonnée composée uniquement d'éléments
+	    différents les uns des autres. Les usages de base
+	    comprennent les tests d'appartenance et l'élimination des
+	    doublons. Les ensembles supportent également les
+	    opérations mathématiques telles l'union, l'intersection,
+	    la différence et la différence symétrique.</p>
+
+	    <p>Voici une courte démonstration:</p>
+
+	    <div class="highlight-python"><div class="highlight">
+		<pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">basket</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;apple&#39;</span><span class="p">,</span> <span class="s">&#39;orange&#39;</span><span class="p">,</span> <span class="s">&#39;apple&#39;</span><span class="p">,</span> <span class="s">&#39;pear&#39;</span><span class="p">,</span> <span class="s">&#39;orange&#39;</span><span class="p">,</span> <span class="s">&#39;banana&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fruit</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">basket</span><span class="p">)</span>               <span class="c"># creation d'un <em>set</em> sans doublons</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fruit</span>
+<span class="go">set([&#39;orange&#39;, &#39;pear&#39;, &#39;apple&#39;, &#39;banana&#39;])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;orange&#39;</span> <span class="ow">in</span> <span class="n">fruit</span>                 <span class="c"># rapide test d'appartenance</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;crabgrass&#39;</span> <span class="ow">in</span> <span class="n">fruit</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Démontre les opérations des ensembles sur les lettres uniques de deux mots</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="s">&#39;abracadabra&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="s">&#39;alacazam&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>                                  <span class="c"># lettre unique dans a</span>
+<span class="go">set([&#39;a&#39;, &#39;r&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;])</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span>                              <span class="c"># la lettre est dans a mais pas dans b</span>
+<span class="go">set([&#39;r&#39;, &#39;d&#39;, &#39;b&#39;])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">|</span> <span class="n">b</span>                              <span class="c"># la lettre est dans a ou dans b ou dans les deux</span>
+<span class="go">set([&#39;a&#39;, &#39;c&#39;, &#39;r&#39;, &#39;d&#39;, &#39;b&#39;, &#39;m&#39;, &#39;z&#39;, &#39;l&#39;])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">&amp;</span> <span class="n">b</span>                              <span class="c"># la lettre est dans a et dans b</span>
+<span class="go">set([&#39;a&#39;, &#39;c&#39;])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">^</span> <span class="n">b</span>                              <span class="c"># la lettre est dans a ou dans b mais pas dans les deux</span>
+<span class="go">set([&#39;r&#39;, &#39;d&#39;, &#39;b&#39;, &#39;m&#39;, &#39;z&#39;, &#39;l&#39;])</span></pre></div>
+	    </div>
+
+	    <br>
+	    <h3>Dictionnaire</h3>
+
+	    <p>Un autre type de données construite dans Python est le
+	    dictionnaire. Contrairement aux séquences qui sont
+	      indexées par un nombre, les dictionnaires
+	      sont indexés par des clés, qui peuvent être n'importe
+	      quel type immuable. Les tuples peuvent être utilisés
+	      comme des clés s'ils contiennent seulement des chaînes de
+	      caractères, des nombres ou des tuples; si un tuple
+	      contient n'importe quel objet muable directement ou
+	      indirectement, il ne peut pas être utilisé comme
+	      clé. Vous ne pouvez pas utiliser les listes comme des
+	      clés puisqu'elles peuvent être modifiées sur place.</p>
+
+	    <p>Une paire d'accolades crée un
+	    dictionnaire vide: <tt class="docutils
+	    literal"><span class="pre">{}</span></tt>. Placer une
+	    liste de paires de <em>key:value</em> séparées par une
+	    virgule entre accolades ajoute des paires
+	    de <em>key:value</em> initiales au dictionnaire; c'est
+	    également la façon dont le dictionnaire est affiché. </p>
+
+	    <p>L'opération principale du dictionnaire est
+	    l'entreposage de valeurs à l'aide d'une clé et l'extraction
+	    de la valeur étant donnée sa clé. Il est également possible
+	    de supprimer une paire de <em>key:value</em> à l'aide de <tt class="docutils
+	    literal"><span class="pre">del</span></tt>. Une assignation utilisant
+	    une clé existante écrasera la valeur
+	    associée précédente. Extraire une valeur à
+	    l'aide d'une clé inexistante cause une erreur.</p>
+
+	    <p>La fonction <tt class="xref docutils
+	    literal"><span class="pre">keys()</span></tt> du
+	    dictionnaire retourne une liste de toutes les clés
+	    utilisées dans le dictionnaire, selon un ordre arbitraire
+	    (si vous les voulez dans l'ordre, vous pouvez simplement
+	    appliquer la fonction <tt class="docutils
+	    literal"><span class="pre">sorted()</span></tt>). Pour
+	    vérifier qu'une clé est dans le dictionnaire, on utilise
+	    le mot-clé <tt class="docutils
+	    literal"><span class="pre">in</span></tt>.</p>
+
+	    <p>Voici un petit exemple de l'utilisation d'un
+	    dictionnaire:</p>
+
+	    <div class="highlight-python"><div class="highlight">
+		<pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tel</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;jack&#39;</span><span class="p">:</span> <span class="mi">4098</span><span class="p">,</span> <span class="s">&#39;sape&#39;</span><span class="p">:</span> <span class="mi">4139</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tel</span><span class="p">[</span><span class="s">&#39;guido&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4127</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tel</span>
+<span class="go">{&#39;sape&#39;: 4139, &#39;guido&#39;: 4127, &#39;jack&#39;: 4098}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tel</span><span class="p">[</span><span class="s">&#39;jack&#39;</span><span class="p">]</span>
+<span class="go">4098</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">del</span> <span class="n">tel</span><span class="p">[</span><span class="s">&#39;sape&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tel</span><span class="p">[</span><span class="s">&#39;irv&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4127</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tel</span>
+<span class="go">{&#39;guido&#39;: 4127, &#39;irv&#39;: 4127, &#39;jack&#39;: 4098}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tel</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="go">[&#39;guido&#39;, &#39;irv&#39;, &#39;jack&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;guido&#39;</span> <span class="ow">in</span> <span class="n">tel</span>
+<span class="go">True</span> </pre></div>
+	    </div>
+
+	    <br>
+	    <h3>Techniques d'itération</h3>
+
+	    <p>Lorsqu'on itère parmi les éléments d'un dictionnaire la
+	    clé et la valeur correspondante peuvent être retrouvées en
+	    même temps grâce à la méthode <tt class="xref docutils
+	    literal"><span class="pre">iteritems()</span></tt>.</p>
+
+	    <div class="highlight-python"><div class="highlight">
+		<pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">knights</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;gallahad&#39;</span><span class="p">:</span> <span class="s">&#39;the pure&#39;</span><span class="p">,</span> <span class="s">&#39;robin&#39;</span><span class="p">:</span> <span class="s">&#39;the brave&#39;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">knights</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="k">print</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span>
+<span class="gp">...</span>
+<span class="go">gallahad the pure</span>
+<span class="go">robin the brave</span> </pre></div>
+	    </div>
+
+	    <p>Lorsqu'on itère parmi les éléments d'une séquence,
+	    l'indice et la valeur correspondante peuvent être
+	    retrouvés en même temps grâce à la
+	    fonction <tt class="docutils
+	    literal"><span class="pre">enumerate()</span></tt>.</p>
+
+	    <div class="highlight-python"><div class="highlight">
+		<pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="s">&#39;tic&#39;</span><span class="p">,</span> <span class="s">&#39;tac&#39;</span><span class="p">,</span> <span class="s">&#39;toe&#39;</span><span class="p">]):</span>
+<span class="gp">... </span>    <span class="k">print</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span>
+<span class="gp">...</span>
+<span class="go">0 tic</span>
+<span class="go">1 tac</span>
+<span class="go">2 toe</span></pre></div>
+	    </div>
+
+	    <p>Pour itérer sur deux séquences ou plus en même temps,
+	    les éléments peuvent être combinés à l'aide de la
+	    fonction <tt class="docutils
+	    literal"><span class="pre">zip()</span></tt>.
+	      
+	      <div class="highlight-python"><div class="highlight">
+		  <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">questions</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;quest&#39;</span><span class="p">,</span> <span class="s">&#39;favorite color&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;lancelot&#39;</span><span class="p">,</span> <span class="s">&#39;the holy grail&#39;</span><span class="p">,</span> <span class="s">&#39;blue&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">q</span><span class="p">,</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">questions</span><span class="p">,</span> <span class="n">answers</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">print</span> <span class="s">&#39;What is your {0}?  It is {1}.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">What is your name?  It is lancelot.</span>
+<span class="go">What is your quest?  It is the holy grail.</span>
+<span class="go">What is your favorite color?  It is blue.</span></pre></div>
+	      </div>
+
+	    <p>Pour itérer sur les éléments d'une séquence en sens
+	    inverse, appelez la fonction <tt class="docutils
+	    literal"><span class="pre">reversed()</span></tt>.</p>
+
+	    <div class="highlight-python"><div class="highlight">
+		<pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="nb">xrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)):</span>
+<span class="gp">... </span>    <span class="k">print</span> <span class="n">i</span>
+<span class="gp">...</span>
+<span class="go">9</span>
+<span class="go">7</span>
+<span class="go">5</span>
+<span class="go">3</span>
+<span class="go">1</span></pre></div>
+	    </div>
+
+	    <p>Pour itérer sur les éléments d'une séquence ordonnée,
+	    utilisez la fonction <tt class="docutils
+	    literal"><span class="pre">sorted()</span></tt> qui
+	    retournera une nouvelle liste ordonnée en laissant la
+	    liste originale non-alterée.</p>
+
+	    <div class="highlight-python"><div class="highlight">
+		<pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">basket</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;apple&#39;</span><span class="p">,</span> <span class="s">&#39;orange&#39;</span><span class="p">,</span> <span class="s">&#39;apple&#39;</span><span class="p">,</span> <span class="s">&#39;pear&#39;</span><span class="p">,</span> <span class="s">&#39;orange&#39;</span><span class="p">,</span> <span class="s">&#39;banana&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">basket</span><span class="p">)):</span>
+<span class="gp">... </span>    <span class="k">print</span> <span class="n">f</span>
+<span class="gp">...</span>
+<span class="go">apple</span>
+<span class="go">banana</span>
+<span class="go">orange</span>
+<span class="go">pear</span></pre></div>
+	    </div>
+	  </div>
+
+	  <a name="modules"><h2>Modules</h2></a>
+
+	  <p>Une fois l'interpréteur fermé, les définitions qui ont
+	  été faites (fonctions et variables) sont
+	  perdues. Évidemment, si vous désirez écrire de plus long
+	  programme, il est préférable d'utiliser un éditeur texte
+	  pour écrire des scripts et par la suite, les exécuter. Vous
+	  pourriez vouloir séparer votre programme en plusieurs
+	  fichiers, ou bien réutiliser des fonctions que vous jugez
+	  pratiques sans avoir à les recopier dans chacun de vos
+	  programmes.</p>
+
+	  <p>Pour remédier à cela, Python permet de mettre les
+	  définitions dans un fichier et de les utiliser à partir
+	  d'autres scripts ou dans l'interpréteur. Ces fichiers se
+	  nomment <em>modules</em>; les définitions d'un module
+	  peuvent être importées dans d'autres modules.</p>
+
+	  <p>Un module est un fichier contenant des expressions et des
+	  définitions en Python. Le nom du fichier est le nom du
+	  module avec l'extension <tt class="docutils
+	  literal"><span class="pre">.py</span></tt>. Par exemple,
+	  utilisez un éditeur de texte pour créer un fichier
+	  nommé <tt class="docutils
+	  literal"><span class="pre">fibo.py</span></tt> et écrivez-y:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="c"># Fibonacci numbers module</span>
+
+<span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>    <span class="c"># write Fibonacci series up to n</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+        <span class="k">print</span> <span class="n">b</span><span class="p">,</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+
+<span class="k">def</span> <span class="nf">fib2</span><span class="p">(</span><span class="n">n</span><span class="p">):</span> <span class="c"># return Fibonacci series up to n</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+        <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+    <span class="k">return</span> <span class="n">result</span></pre></div>
+	  </div>
+
+	  <p>Maintenant allez dans l'interpréteur intéractif de Python
+	  et importez ce module à l'aide de la commande suivante:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">fibo</span></pre></div>
+	  </div>
+
+	  <p>En utilisant le nom du module, on peut accéder aux
+	  fonctions:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fibo</span><span class="o">.</span><span class="n">fib</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="go">1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fibo</span><span class="o">.</span><span class="n">fib2</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="go">[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fibo</span><span class="o">.</span><span class="n">__name__</span>
+<span class="go">&#39;fibo&#39;</span></pre></div>
+	  </div>
+
+	  <p>Si vous planifiez utiliser une fonction souvent, il est
+	  possible de l'assigner à une variable locale:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fib</span> <span class="o">=</span> <span class="n">fibo</span><span class="o">.</span><span class="n">fib</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fib</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+<span class="go">1 1 2 3 5 8 13 21 34 55 89 144 233 377</span> </pre></div>
+	  </div>
+
+	  <br>
+	  <h3>Exécuter un module comme un script</h3>
+
+	  <p>Lorsque vous exécutez un module Python avec </p>
+
+	  <div class="highlight-python">
+	    <pre>
+python fibo.py &lt;arguments&gt;</pre>
+	  </div>
+
+	  <p>le code dans le module sera exécuté, exactement comme si
+	  vous l'aviez importé, mais avec la variable
+	  globale <tt class="docutils
+	  literal"><span class="pre">__name__</span></tt> assignée
+	  à <tt class="docutils
+	  literal"><span class="pre">&quot;__main__&quot;</span></tt>. Ce
+	  qui implique qu'en ajoutant ce code à la fin du module:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">sys</span>
+    <span class="n">fib</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span></pre></div>
+	  </div>
+
+	  <p>il est possible d'utiliser ce fichier en tant que 
+	  script ainsi qu'en tant que module, puisque le code accédant
+	  aux arguments du script ne sera exécuté que si le 
+	  module est utilisé comme un script:</p>
+
+	  <div class="highlight-python">
+	    <pre>
+$ python fibo.py 50
+1 1 2 3 5 8 13 21 34</pre>
+	  </div>
+	  
+	  <p>Si le module est importé, le code ne sera pas
+	  exécuté:</p>
+	  
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">fibo</span>
+<span class="go">&gt;&gt;&gt;</span></pre></div>
+
+	    <br>
+
+	    <h3><em>scopes (portée)</em></h3>
+	    
+	    <p>Python utilise un <em>lexical scope</em> (portée lexicale), c.-à-d. que
+	      la liste des noms accessibles à un moment de l'exécution est définie par
+	      le code source. Pour résoudre à quelle variable un nom fait référence,
+	      Python cherche:
+	      
+	      <ol>
+		<li> d'abord localement dans la fonction </li>
+		<li> puis dans les autres fonctions englobantes (de l'intérieur vers l'extérieur) </li>
+		<li> ensuite dans le module contenant la définition de la fonction </li>
+		<li> et finalement cherche parmi les noms intégrés (<i>built-in</i>) </li>
+	      </ol>
+	      <br>
+
+<pre>
+<span class="gp">&gt;&gt;&gt; </span>a = 1
+<span class="gp">&gt;&gt;&gt; </span>b = 2
+<span class="gp">&gt;&gt;&gt; </span>c = 3
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">blu</span>():
+<span class="gp">... </span>    b = 4
+<span class="gp">... </span>    c = 5
+<span class="gp">... </span>    <span class="k">def</span> <span class="nf">bla</span>():
+<span class="gp">... </span>        c = 6
+<span class="gp">... </span>        print 'In bla(): a =',a , 'b =', b, 'c =', c
+<span class="gp">... </span>    bla()
+<span class="gp">... </span>    print 'In blu(): a =',a , 'b =', b, 'c =', c
+<span class="gp">... </span>    return bla
+<span class="gp">... </span>
+<span class="gp">&gt;&gt;&gt; </span>bla = blu()
+In bla(): a = 1 b = 4 c = 6
+In blu(): a = 1 b = 4 c = 5
+<span class="gp">&gt;&gt;&gt; </span>bla()
+In bla(): a = 1 b = 4 c = 6
+<span class="gp">&gt;&gt;&gt; </span>print 'In global: a =',a , 'b =', b, 'c =', c
+In global: a = 1 b = 2 c = 3</pre>
+
+	    <p>Il est important de noter qu'en Python, bien que la
+	      portée soit lexicale, l'évaluation de la valeur associée
+	      à un nom est faite de façon <b>dynamique</b>. Ainsi, un nom
+	      dans une fonction peut changer de valeur si la variable
+	      associée change:
+
+<pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">blu</span>():
+<span class="gp">... </span>    b = 4
+<span class="gp">... </span>    <span class="k">def</span> <span class="nf">bla</span>():
+<span class="gp">... </span>        print 'In bla(): b =', b
+<span class="gp">... </span>    bla()
+<span class="gp">... </span>    b = 5
+<span class="gp">... </span>    return bla
+<span class="gp">... </span>
+<span class="gp">&gt;&gt;&gt; </span>bla = blu()
+In bla(): b = 4
+<span class="gp">&gt;&gt;&gt; </span>bla()
+In bla(): b = 5</pre>
+<br>
+	    <h3>L'espace de recherche des modules (<em>search path</em>)</h3>
+
+	    <p id="index-1131">Lorsqu'un module nommé <tt class="xref
+	    docutils literal"><span class="pre">spam</span></tt> est
+	    importé, l'interpréteur cherche un fichier
+	    nommé <tt class="docutils
+	    literal"><span class="pre">spam.py</span></tt> dans le
+	    répertoire contenant le script exécuté, puis ensuite dans la liste
+	    des répertoires spécifiés par la variable
+	    d'environnement <tt class="docutils
+	    literal"><span class="pre"><b>PYTHONPATH</b></span></tt>.</p>
+
+	  </div>
+
+	  <h3>Fichiers Python compilés</h3>
+
+	  <p>Une optimisation utile du temps de
+	  démarrage des programmes utilisant de nombreux modules est
+	  faite automatiquement par Python, via la création de
+	  versions compilés en <em>byte-code</em> de ces modules. 
+	  Si un fichier nommé <tt class="docutils
+	  literal"><span class="pre">spam.pyc</span></tt> existe dans
+	  le répertoire où <tt class="docutils
+	  literal"><span class="pre">spam.py</span></tt> se situe,
+	  alors il est supposé que celui-ci correspond à sa version compliée. Cependant,
+	  si une modification à <tt class="docutils
+	  literal"><span class="pre">spam.py</span></tt> a été apportée
+	  depuis la création de <tt class="docutils
+	  literal"><span class="pre">spam.pyc</span></tt>, ce dernier sera ignoré.</p>
+
+
+	  <h3>La fonction <em>dir()</em></h3>
+
+	  <p>La fonction intégrée <tt class="docutils
+	  literal"><span class="pre">dir()</span></tt> est utilisée
+	  pour connaître le nom des définitions qu'un module
+	  contient. Elle retourne une liste triée de chaînes de
+	  caractères:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">fibo</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">(</span><span class="n">fibo</span><span class="p">)</span>
+<span class="go">[&#39;__name__&#39;, &#39;fib&#39;, &#39;fib2&#39;]</span> </pre></div>
+	  </div>
+
+	  <p>Sans arguments, <tt class="docutils
+	  literal"><span class="pre">dir()</span></tt> liste les noms
+	  définis actuellement:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">fibo</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fib</span> <span class="o">=</span> <span class="n">fibo</span><span class="o">.</span><span class="n">fib</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">()</span>
+<span class="go">[&#39;__builtins__&#39;, &#39;__doc__&#39;, &#39;__file__&#39;, &#39;__name__&#39;, &#39;a&#39;, &#39;fib&#39;, &#39;fibo&#39;, &#39;sys&#39;]</span> </pre></div>
+	  </div>
+
+	  <p>Notez qu'il énumère tous les types de noms: les
+	  variables, les modules, les fonctions, etc.</p>
+
+	  <h3>Packages</h3>
+
+	  <p>Les <em>packages</em> sont une façon pratique de
+	      structurer les modules en utilisant <em>&#8220;dotted
+	      module names&#8221;</em>. Par exemple, ce nom de
+	      module <tt class="xref docutils
+	      literal"><span class="pre">A.B</span></tt> désigne un
+	      sous-module nommé <tt class="docutils
+	      literal"><span class="pre">B</span></tt> inclus dans
+	      le <em>package</em> nommé <tt class="docutils
+	      literal"><span class="pre">A</span></tt>. </p>
+
+	  <p>Supposons que l'on désire créer une collection de modules
+	  (un <em> &#8220;package&#8221;</em>) afin d'uniformiser la
+	  gestion de fichiers sonores. Une structure possible
+	  du <em>package</em> (exprimé en terme de structure de
+	  système de fichiers hierarchique) serait:</p>
+	  <div class="highlight-python">
+<pre>
+sound/                          Top-level package
+      __init__.py               Initialize the sound package
+      formats/                  Subpackage for file format conversions
+              __init__.py
+              wavread.py
+              wavwrite.py
+              aiffread.py
+              aiffwrite.py
+              auread.py
+              auwrite.py
+              ...
+      effects/                  Subpackage for sound effects
+              __init__.py
+              echo.py
+              surround.py
+              reverse.py
+              ...
+      filters/                  Subpackage for filters
+              __init__.py
+              equalizer.py
+              vocoder.py
+              karaoke.py
+              ...</pre>
+	  </div>
+
+	  <p>Lorsqu'un <em>package</em> est importé, Python cherche
+	  parmi les répertoires spécifiés par le <tt class="docutils
+	  literal"><span class="pre">sys.path</span></tt>, le
+	  sous-répertoire du <em>package</em>.</p>
+
+	  <p>Les fichiers <tt class="docutils
+	  literal"><span class="pre">__init__.py</span></tt> indiquent
+	  à Python que ces répertoires contiennent
+	  des <em>packages</em>. Dans le plus simple des
+	  cas, <tt class="docutils
+	  literal"><span class="pre">__init__.py</span></tt> peut être
+	  un fichier vide, mais il peut également exécuter du code
+	  d'initialisation pour le <em>package</em>.</p>
+	  
+	  <p>Les utilisateurs des <em>packages</em> peuvent importer
+	  les modules individuellement à partir
+	  d'un <em>package</em>. Par exemple:</p>
+	  
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="kn">import</span> <span class="nn">sound.effects.echo</span> </pre></div>
+	  </div>
+
+	  <p>Ceci charge le sous-module <tt class="xref docutils
+	  literal"><span class="pre">sound.effects.echo</span></tt>. Par
+	  la suite, il devra être référencé par son nom entier.</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="n">sound</span><span class="o">.</span><span class="n">effects</span><span class="o">.</span><span class="n">echo</span><span class="o">.</span><span class="n">echofilter</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">atten</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span> </pre></div>
+	  </div>
+
+	  <p>Une alternative est d'importer le module comme suit:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="kn">from</span> <span class="nn">sound.effects</span> <span class="kn">import</span> <span class="n">echo</span> </pre></div>
+	  </div>
+
+	  <p>Ceci charge également le sous-module <tt class="xref
+	  docutils literal"><span class="pre">echo</span></tt>, mais
+	  il pourra être référencé sans spécifier le nom
+	  du <em>package</em> en préfix et pourra donc être utilisé de
+	  cette façon:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="n">echo</span><span class="o">.</span><span class="n">echofilter</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">atten</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span> </pre></div>
+	  </div>
+
+	  <p>Une autre variation est d'importer directement la
+	  fonction ou la variable désirée:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="kn">from</span> <span class="nn">sound.effects.echo</span> <span class="kn">import</span> <span class="n">echofilter</span> </pre></div>
+	  </div>
+
+	  <p>Encore une fois, cela charge le
+	  sous-module <tt class="xref docutils
+	  literal"><span class="pre">echo</span></tt>, mais rend la
+	  fonction <tt class="xref docutils
+	  literal"><span class="pre">echofilter()</span></tt>
+	  directement disponible:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+<pre><span class="n">echofilter</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">atten</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>  </pre></div>
+	  </div>
+	  <br>
+
+	    <h3>Librairie standard de Python</h3>
+
+	    <p>Python vient avec plusieurs modules intégrés (<i>built-in</i>), qui
+	      font partie de la librairie standard. La librairie standard inclue 
+	      également d'autres types, fonctions et structures de données qui ne sont pas
+	      décrites dans ce tutoriel.</p>
+
+	    <p>La librairie standard se trouve à l'adresse
+	    suivante: <a href="http://docs.python.org/release/2.6.5/library/index.html">http://docs.python.org/release/2.6.5/library/index.html</a>. Il
+	    est <b>fortement</b> recommandé de la consulter avant
+	    d'implémenter soi-même toute fonction ou structure de données
+	    nécessaire, puisqu'elle pourrait déjà être présente dans la
+	    librairie.</p>
+
+	  <a name="io"><h2>Lecture et écriture de fichiers</h2></a>
+	  
+	  <p> La fonction <tt class="docutils
+	  literal"><span class="pre">open()</span></tt> retourne un
+	  objet fichier et accepte deux arguments: <tt class="docutils
+	  literal"><span class="pre">open(filename,</span> <span class="pre">mode)</span></tt>.</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;/tmp/workfile&#39;</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">f</span>
+<span class="go">&lt;open file &#39;/tmp/workfile&#39;, mode &#39;w&#39; at 80a0960&gt;</span>  </pre></div>
+	  </div>
+
+	  <p>Le premier argument est une chaîne de caractère
+	  contenant le nom du fichier. Le second argument est une
+	  autre chaîne contenant quelques caractères décrivant la
+	  façon dont le fichier sera utilisé. <em>mode</em> peut
+	  être <tt class="docutils
+	  literal"><span class="pre">'r'</span></tt> afin d'ouvrir le
+	  fichier en lecture seule, <tt class="docutils
+	  literal"><span class="pre">'w'</span></tt> afin d'ouvrir le
+	  fichier pour écriture seulement (un fichier existant avec le
+	    même nom sera écrasé), ou <tt class="docutils
+	  literal"><span class="pre">'a'</span></tt> qui permet
+	  d'ouvrir le fichier pour y insérer des caractères à la fin. 
+	    <tt class="docutils
+	  literal"><span class="pre">'r+'</span></tt> permet d'ouvrir
+	  le fichier en lecture et en écriture. L'argument
+	  <em>mode</em> est optionnel et par défaut le
+	  fichier est ouvert en lecture seule.</p>
+
+	  <h3>Méthodes des objets fichier</h3>
+
+	  <p>Tous les exemples de cette section suppose qu'un objet
+	  fichier nommé <tt class="docutils
+	  literal"><span class="pre">f</span></tt> existe.</p>
+
+	  <p>Pour lire le contenu d'un fichier, on utilise une des
+	  fonctions suivantes: <tt class="docutils
+	  literal"><span class="pre">f.read([size])</span></tt>, <tt class="docutils
+	  literal"><span class="pre">f.readline()</span></tt>
+	  ou <tt class="docutils
+	  literal"><span class="pre">f.readlines()</span></tt> .</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="go">&#39;This is the entire file.\n&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="go">&#39;&#39;</span></pre></div>
+	  </div>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="go">&#39;This is the first line of the file.\n&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="go">&#39;Second line of the file\n&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="go">&#39;&#39;</span> </pre></div>
+	  </div>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<span class="go">[&#39;This is the first line of the file.\n&#39;, &#39;Second line of the file\n&#39;]</span></pre></div>
+	  </div>
+
+	  <p>Une approche alternative est de lire les lignes en
+	  itérant l'objet fichier. Ceci est simple et performant tant
+	  en mémoire qu'en rapidité:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+<pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+<span class="go">        print line,</span>
+<span class="go">This is the first line of the file.</span>
+<span class="go">Second line of the file</span></pre></div>
+	  </div>
+
+	  <p>La fonction <tt class="docutils
+	  literal"><span class="pre">f.write(string)</span></tt> écrit
+	  le contenu d'une chaîne de caractères dans le fichier.</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;This is a test</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span> </pre></div>
+	  </div>
+
+	  <p>Afin d'écrire d'autres types de données, il faut d'abord
+	  les convertir en chaîne de caractères:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">value</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;the answer&#39;</span><span class="p">,</span> <span class="mi">42</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> </pre></div>
+	  </div>
+
+	  <p>Lorsque vous avez terminé avec un fichier, appelez la
+	  fonction <tt class="docutils
+	  literal"><span class="pre">f.close()</span></tt> pour fermer
+	  le fichier et libérer les ressources système. Après
+	  avoir appelé <tt class="docutils
+	  literal"><span class="pre">f.close()</span></tt>, toutes
+	  tentatives d'utiliser l'objet fichier échouera.</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n-Identifier">?</span>
+<span class="nc">ValueError</span>: <span class="n-Identifier">I/O operation on closed file</span></pre></div>
+	  </div>
+
+	  <br>
+	  <h3>Le module <em>pickle</em></h3>
+
+	  <p id="index-1125">Les chaînes de caractères peuvent être
+	  facilement écrites et lues à partir d'un fichier. En ce qui
+	  concerne les nombres, c'est un peu plus compliqué puisque la
+	  méthode <tt class="xref docutils
+	  literal"><span class="pre">read()</span></tt> retourne
+	  seulement des chaînes de caractères qui devront être passées
+	  à une fonction comme <tt class="docutils
+	  literal"><span class="pre">int()</span></tt>, qui s'occupera
+	  de convertir, par exemple, <tt class="docutils
+	  literal"><span class="pre">'123'</span></tt> en valeur
+	  numérique 123. Par contre, lorsqu'on veut sauvegarder des
+	  types de données plus complexes comme des listes,
+	  dictionnaires, voir même des instances de classe, les choses
+	  se compliquent.</p>
+
+	  <p>Si vous avez un objet <tt class="docutils
+	  literal"><span class="pre">x</span></tt>, et un objet
+	  fichier <tt class="docutils
+	  literal"><span class="pre">f</span></tt> qui a été ouvert en
+	  écriture, il suffit d'utiliser le module <em>pickle</em>
+	  pour sauvegarder l'objet:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span> </pre></div>
+	  </div>
+
+	  <p>L'opération inverse est tout aussi simple,
+	  si <tt class="docutils
+	  literal"><span class="pre">f</span></tt> est un objet
+	  fichier qui a été ouvert en lecture:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="n">x</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> </pre></div>
+	  </div>
+
+	  <a name="classes"><h2>Classes</h2></a>
+
+	  <!--
+	  <h3><em>Namespaces</em> et <em>scopes</em></h3>
+
+	  <p>Un <em>namespace</em> est une association entre les
+	  noms et les objets en mémoire. La plupart
+	  des <em>namespace</em> en Python sont implémentés comme des
+	  dictionnaires. Des exemples de <em>namespace</em> sont:
+	  l'ensemble des noms intégrés ou <em>built-in</em> (contenant des
+	  fonctions comme <tt class="docutils
+	  literal"><span class="pre">abs()</span></tt>, et le noms des
+	  exceptions intégrées). La chose importante à savoir
+	  à propos des <em>namespace</em> est qu'il n'y absoluement
+	  aucun lien entre les noms de <em>namespace</em> différents;
+	  par exemple, deux modules différents peuvent définir une
+	  fonction nommée <tt class="docutils
+	  literal"><span class="pre">maximize</span></tt> sans qu'il
+	  n'y ait de confusion &#8212; les utilisateurs des modules
+	  doivent préfixer l'appel de fonction avec le nom du
+	  module.</p>
+
+	  <p>Les <em>namespace</em> sont créés à différents moments et
+	  possèdent une durée de vie différente les uns des
+	  autres. Le <em>namespace</em> contenant les
+	  noms intégrés est créé au démarage de
+	  l'interpréteur Python et n'est jamais
+	  supprimé. Le <em>namespace</em> global d'un module est créé
+	  lorsque la définition du module est
+	  lu. Le <em>namespace</em> local d'une fonction est créé
+	  lorsque la fonction est appelée et est supprimé lorsque la
+	  fonction se termine. Bien sûr, chaque appel récursif d'une fonction
+	  possède son propre <em>namespace</em> local.</p>
+	  -->
+
+	  <h3>Définition d'une classe</h3>
+
+	  <p>La forme la plus simple pour définir une classe ressemble à:</p>
+
+	  <div class="highlight-python">
+<pre>class ClassName:
+      &lt;statement-1&gt;
+      .
+      .
+      .
+      &lt;statement-N&gt;</pre> </div>
+
+	  <p>Les définitions de classes ressemblent aux définitions de
+	  fonctions (mot-clé <tt class="docutils
+	  literal"><span class="pre">def</span></tt>). </p>
+
+	  <p>Les instructions à l'intérieur de la
+	  définition d'une classe vont être des définitions de
+	  fonctions et de variables.</p>
+
+	  <p>Lorsqu'on exécute la définition d'une classe, un nouveau <em>namespace</em> est créé et sert de <em>scope</em> local. Donc, les définitions de fonctions et de variables iront dans ce <em>namespace</em>.</p>
+
+	  <h3>Objets d'une classe</h3>
+
+	  <p>Les objets d'une classe supporte deux sortes d'opérations: 
+	    référencement aux attributs (variables et fonctions) et
+	  l'instantiation.</p>
+
+	  <p>Le <em>référencement aux attributs</em> utilise la
+	  syntaxe Python standard: <tt class="docutils
+	  literal"><span class="pre">obj.name</span></tt>.  Les
+	  attributs valides sont tous les noms (variables et
+	  fonctions) définis lorsque la classe a été crée. Ainsi,
+	  si nous avons une définition de classe qui ressemble à:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Un example simple de classe&quot;&quot;&quot;</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">12345</span>
+    <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s">&#39;hello world&#39;</span></pre></div>
+	  </div>
+
+	  <p>alors <tt class="docutils
+	  literal"><span class="pre">MyClass.i</span></tt>
+	  et <tt class="docutils
+	  literal"><span class="pre">MyClass.f</span></tt> sont des
+	  attributs valides, qui retournent respectivement un entier
+	  et un objet fonction. Les attributs de la classe peuvent
+	  également être modifiés, ainsi <tt class="docutils
+	  literal"><span class="pre">MyClass.i</span></tt> peut être modifié
+	  en utilisant l'affectation.</p>
+
+	  <p>L'<em>instantiation</em> d'une classe utilise la notation
+	  des appels de fonctions. Par exemple:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="n">x</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">()</span> </pre></div>
+	  </div>
+
+	  <p>crée une nouvelle instance de la classe et assigne
+	  l'objet résultant à une variable locale <tt class="docutils
+	  literal"><span class="pre">x</span></tt>.</p>
+
+	  <p>L'opération d'instantiation crée un objet vide. Or, il est possible de créer des
+	  instances ayant un état initial. Pour y arriver, la classe
+	  peut définir une méthode spéciale nommée <tt class="docutils
+	  literal"><span class="pre">__init__()</span></tt>, comme
+	  ceci:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>  </pre></div>
+	  </div>
+
+	  <p>Si une classe défini la méthode <tt class="docutils
+	  literal"><span class="pre">__init__()</span></tt>, alors
+	  lors de l'instantiation la méthode <tt class="docutils
+	  literal"><span class="pre">__init__()</span></tt> est
+	  automatiquement appelée. Donc, dans l'exemple, une nouvelle
+	  instance initialisée peut être obtenue en faisant:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="n">x</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">()</span> </pre></div>
+	  </div>
+
+	  <p>Bien sûr, la méthode <tt class="docutils
+	  literal"><span class="pre">__init__()</span></tt> peut prendre
+	  des arguments. Par exemple,</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">Complex</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">realpart</span><span class="p">,</span> <span class="n">imagpart</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="n">realpart</span>
+<span class="gp">... </span>        <span class="bp">self</span><span class="o">.</span><span class="n">i</span> <span class="o">=</span> <span class="n">imagpart</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">Complex</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">4.5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">r</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">i</span>
+<span class="go">(3.0, -4.5)</span> </pre></div>
+	  </div>
+
+	  <p>Habituellement, une méthode peut être appelée
+	  immédiatement après l'instantiation:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="n">x</span><span class="o">.</span><span class="n">f</span><span class="p">()</span></pre></div>
+	  </div>
+
+	  <p>Dans l'exemple avec la classe <tt class="xref docutils
+	  literal"><span class="pre">MyClass</span></tt>, la méthode
+	  retournera la chaîne de caractères <tt class="docutils
+	  literal"><span class="pre">'hello</span> <span class="pre">world'</span></tt>.</p>
+
+	  <p>Vous avez sans doute remarqué que <tt class="docutils
+	  literal"><span class="pre">x.f()</span></tt> a été appelée
+	  sans spécifier d'arguments bien que la définition de la
+	  méthode <tt class="xref docutils
+	  literal"><span class="pre">f()</span></tt> spécifie un
+	  paramètre! En fait, l'objet qui a servi à l'appel de
+	  fonction est passé automatiquemen comme argument. Dans notre
+	  exemple, l'appel <tt class="docutils
+	  literal"><span class="pre">x.f()</span></tt> est exactement
+	  équivalent à <tt class="docutils
+	  literal"><span class="pre">MyClass.f(x)</span></tt>.</p>
+
+	  <h3>Remarques</h3>
+
+	  <p>Les variables membres écrasent (<em>override</em>) les
+	  méthodes qui ont le même nom; pour éviter ces conflits, on
+	  utilise des conventions de nommages (verbes pour les
+	  méthode, minuscule-majuscule, etc.).</p>
+
+	  <p>Dans une méthode, il est possible d'en appeler d'autres
+	  en utilisant l'argument <tt class="docutils
+	  literal"><span class="pre">self</span></tt>:</p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="k">class</span> <span class="nc">Bag</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">addtwice</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></pre></div>
+	  </div>
+
+	  <br>
+	  <h3>L'héritage</h3>
+
+	  <p> La syntaxe pour définir une classe dérivée ressemble à:</p>
+
+	  <div class="highlight-python">
+<pre>
+class DerivedClassName(BaseClassName):
+      &lt;statement-1&gt;
+      .
+      .
+      .
+      &lt;statement-N&gt;</pre>
+	  </div>
+
+	  <p>Le nom <tt class="xref docutils
+	  literal"><span class="pre">BaseClassName</span></tt> doit
+	  être défini dans le <em>scope</em> contenant la définition
+	  de la classe dérivée (c.-à-d. doit être accessible). Sinon,
+	  on peut spécifier le nom du module: </p>
+
+	  <div class="highlight-python">
+	    <pre>
+class DerivedClassName(modname.BaseClassName):</pre>
+	  </div>
+
+	  <p>La classe dérivée peut redéfinir (<em>override</em>)
+	  des méthodes de la classe de base. (Pour les programmeurs
+	  C++: toutes méthodes en Python sont <tt class="docutils
+	  literal"><span class="pre">virtual</span></tt>.)</p>
+
+	  <p>Il est possible d'appeler la méthode de base en appelant: <tt class="docutils
+	  literal"><span class="pre">BaseClassName.methodname(self,</span>
+	      <span class="pre">arguments)</span></tt>.</p>
+
+	  <p>Python possède deux fonctions intégrées qui sont
+	  utiles lorsqu'on travaille avec l'héritage:</p>
+
+	  <ul class="simple">
+	    <li>Utilisez <tt class="docutils
+	    literal"><span class="pre">isinstance()</span></tt> pour
+	    vérifier le type (le nom de la classe) de l'instance: <tt class="docutils
+	    literal"><span class="pre">isinstance(obj,</span> <span class="pre">int)</span></tt>
+	    sera <tt class="xref docutils
+	    literal"><span class="pre">True</span></tt> seulement
+	    si <tt class="docutils
+	    literal"><span class="pre">obj.__class__</span></tt> est
+	    un <tt class="docutils
+	    literal"><span class="pre">int</span></tt> ou bien une
+	    classe qui hérite de <tt class="docutils
+	    literal"><span class="pre">int</span></tt>.</li>
+
+	    <li>Utilisez <tt class="docutils
+	    literal"><span class="pre">issubclass()</span></tt> pour
+	    vérifier l'héritage d'une classe: <tt class="docutils
+	    literal"><span class="pre">issubclass(bool,</span> <span class="pre">int)</span></tt>
+	    est <tt class="xref docutils
+	    literal"><span class="pre">True</span></tt>
+	    puisque <a title="bool" class="reference external"
+	    href="../library/functions.html#bool"><tt class="xref
+	    docutils literal"><span class="pre">bool</span></tt></a>
+	    dérive de <a title="int" class="reference external"
+	    href="../library/functions.html#int"><tt class="xref
+	    docutils
+	    literal"><span class="pre">int</span></tt></a>.</li>
+	  </ul>
+	  <br>
+
+	  <h3>Variable privée</h3>
+
+	  <p>En Python, le concept de variable privée n'existe
+	  pas. Par contre, il existe une convention pour le simulé:
+	  un nom (de variable ou de méthode) qui est préfixé avec un
+	  <i>underscore</i> (ex. <tt class="docutils
+	  literal"><span class="pre">_spam</span></tt>) devrait être
+	  considéré comme étant privé dans son usage.</p>
+
+	  <h3>En Python, il n'y a pas de pointeurs</h3>
+
+	  <p>Toutes les variables en Python sont des références ou
+	    alias à des objets; il n'existe pas de notion de pointeur,
+	    comme en C++. Par contre, ceci n'empêche pas deux
+	    variables de référer au même objet en mémoire. En fait,
+	    l'assignation d'instances de classes à des variables ne
+	    crée pas de copies des instances. Ces variables pointeront
+	    plutôt vers le même espace mémoire:</p>
+<pre>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a = Bag()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b = a</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b.add(</span><span class="s">'hello'</span><span class="n">)</span>
+<span class="gp">&gt;&gt;&gt; </span>b.data
+<span class="go">['hello']</span>
+<span class="gp">&gt;&gt;&gt; </span>a.data
+<span class="go">['hello']</span>
+<span class="gp">&gt;&gt;&gt; </span>a == b
+<span class="go">True</span></pre>
+
+	  <p> Par défaut, l'opérateur  <tt class="docutils
+	  literal"><span class="pre">==</span></tt>
+	  vérifie si les variables font références à la même instance
+	  de classe (on pourrait dire "pointent" vers le même
+	  objet). </p>
+
+
+	  <a name="numpy"><h1>Numpy</h1></a>
+
+	  <p>Numpy est un package Python permettant de manipuler
+	  efficacement des tableaux multidimensionnels. Il est très
+	  utilisé pour représenter des vecteurs/matrices et leur
+	  appliquer des opérations mathématiques de façon très
+	  efficace.</p>
+	  
+	  <h2>Le tableau (<tt class="docutils literal"><span class="pre">ndarray</span></tt>)</h2>
+      <p>Le type d'objet principal en Numpy est le tableau
+      multidimensonnel: <tt class="docutils
+      literal"><span class="pre">numpy.array</span></tt>
+      alias <tt class="docutils
+      literal"><span class="pre">ndarray</span></tt>. C'est une table
+      d'éléments (habituellement des nombres), qui sont tous du même
+      type et qui sont indexés par un tuple (plusieurs dimensions)
+      d'entiers positifs.</p>
+      
+      <p>Notez que dans la librairie Numpy, une dimension est également appelée axe (<em>axis</em>).</p>
+      
+      <h3>Création de tableaux</h3>
+      <p>
+      Il y a plusieurs façons de créer des tableaux.</p>
+      <p>
+        La première consiste à créer un tableau à partir d'une liste
+        ou d'un tuple en utilisant la fonction <tt class="docutils
+        literal"><span class="pre">array</span></tt>.
+      </p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> <span class="kn">from numpy import</span> *
+<span class="gp">&gt;&gt;&gt;</span> a = array([<span class="mi">2</span>,<span class="mi">3</span>,<span class="mi">4</span>])
+<span class="gp">&gt;&gt;&gt;</span> a
+array([<span class="mf">2</span>, <span class="mf">3</span>, <span class="mf">4</span>])
+<span class="gp">&gt;&gt;&gt;</span> a.dtype
+dtype('int32')
+<span class="gp">&gt;&gt;&gt;</span> b = array([<span class="mf">1.2</span>, <span class="mf">3.5</span>, <span class="mf">5.1</span>])
+<span class="gp">&gt;&gt;&gt;</span> b.dtype
+dtype('float64') </pre>
+      
+      <p>Une erreur fréquente est d'omettre les crochets, ce qui
+      revient à appeler <tt class="docutils
+      literal"><span class="pre">array</span></tt> avec plusieurs
+      arguments au lieu d'une séquence de nombres.</p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> a = array(<span class="mf">1</span>,<span class="mf">2</span>,<span class="mf">3</span>,<span class="mf">4</span>)    <span class="c"># Erreur</span>
+<span class="gp">&gt;&gt;&gt;</span> a = array([<span class="mf">1</span>,<span class="mf">2</span>,<span class="mf">3</span>,<span class="mf">4</span>])  <span class="c"># OK</span></pre>
+      
+      <p><tt class="docutils
+      literal"><span class="pre">array</span></tt> transforme les
+      séquences imbriquées en tableau multidimensionnel. Par
+      exemple: </p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> b = array([ (<span class="mf">1.5</span>,<span class="mf">2</span>,<span class="mf">3</span>), (<span class="mf">4</span>,<span class="mf">5</span>,<span class="mf">6</span>) ])
+<span class="gp">&gt;&gt;&gt;</span> b
+array([[ <span class="mf">1.5</span>,  <span class="mf">2.</span> ,  <span class="mf">3.</span> ],
+       [ <span class="mf">4.</span> ,  <span class="mf">5.</span> ,  <span class="mf">6.</span> ]])</pre>
+      
+      <p>Le type de données peut également être spécifié à la
+      création. Par défaut, il est automatiquement détecté. Ici, on
+      force les éléments du tableau à être des nombres complexes:</p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> c = array([ [<span class="mf">1</span>,<span class="mf">2</span>], [<span class="mf">3</span>,<span class="mf">4</span>] ], dtype=complex )
+<span class="gp">&gt;&gt;&gt;</span> c
+array([[ <span class="mf">1.+0.j</span>,  <span class="mf">2.+0.j</span>],
+       [ <span class="mf">3.+0.j</span>,  <span class="mf">4.+0.j</span>]])</pre>
+      
+      <p>Parfois, les éléments que l'on désire conserver dans un
+      tableau ne sont pas connus au départ, mais le nombre d'éléments
+      est connu. Dans ce cas, il existe quelques fonctions permettant
+      de créer des tableaux avec l'espace nécessaire préalablement
+      réservé, ce qui minimise la réallocation à chaque agrandissement
+      du tableau.</p>
+      
+      <p>La fonction <tt class="docutils
+      literal"><span class="pre">zeros</span></tt> permet de créer un
+      tableau contenant seulement des zéros; la
+      fonction <tt class="docutils
+      literal"><span class="pre">ones</span></tt> crée une tableau
+      avec des uns; et la fonction <tt class="docutils
+      literal"><span class="pre">empty</span></tt> crée un tableau
+      rempli d'éléments indéterminés (c.-à-d. avec ce qu'il y avait déjà en
+      mémoire). Tout ce qu'il faut, c'est de spécifier les dimensions
+      du tableau. Voici un exemple:</p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> zeros( (<span class="mf">3</span>,<span class="mf">4</span>) )
+array([[<span class="mf">0.</span>,  <span class="mf">0.</span>,  <span class="mf">0.</span>,  <span class="mf">0.</span>],
+       [<span class="mf">0.</span>,  <span class="mf">0.</span>,  <span class="mf">0.</span>,  <span class="mf">0.</span>],
+       [<span class="mf">0.</span>,  <span class="mf">0.</span>,  <span class="mf">0.</span>,  <span class="mf">0.</span>]])
+<span class="gp">&gt;&gt;&gt;</span> ones( (<span class="mf">2</span>,<span class="mf">3</span>,<span class="mf">4</span>), dtype=int16 )                <span class="c"># dtype peut aussi être spécifié</span>
+array([[[ <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>],
+        [ <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>],
+        [ <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>]],
+       [[ <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>],
+        [ <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>],
+        [ <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>, <span class="mf">1</span>]]], dtype=int16)
+<span class="gp">&gt;&gt;&gt;</span> empty( (<span class="mf">2</span>,<span class="mf">3</span>) )
+array([[  <span class="mf">3.73603959e-262</span>,   <span class="mf">6.02658058e-154</span>,   <span class="mf">6.55490914e-260</span>],
+       [  <span class="mf">5.30498948e-313</span>,   <span class="mf">3.14673309e-307</span>,   <span class="mf">1.00000000e+000</span>]])</pre>
+      <br />
+      <h3><em>arange</em> et <em>linspace</em></h3>
+      <p>
+      Numpy offre deux fonctions facilitant la création de séquences
+      de nombres. Identique à la fonction <tt class="docutils
+      literal"><span class="pre">range</span></tt> à l'exception
+      qu'elle retourne un <tt class="docutils
+      literal"><span class="pre">array</span></tt> au lieu
+      d'un <tt class="docutils
+      literal"><span class="pre">list</span></tt>, <tt class="docutils
+      literal"><span class="pre">arange</span></tt> prend en argument
+      le nombre de départ, le nombre de fin et le pas
+      (<em>step</em>).</p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> arange( <span class="mf">10</span>, <span class="mf">30</span>, <span class="mf">5</span> )
+array([<span class="mf">10</span>, <span class="mf">15</span>, <span class="mf">20</span>, <span class="mf">25</span>])
+<span class="gp">&gt;&gt;&gt;</span> arange( <span class="mf">0</span>, <span class="mf">2</span>, <span class="mf">0.3</span> )                 <span class="c"># les réels sont acceptés</span>
+array([ <span class="mf">0.</span> ,  <span class="mf">0.3</span>,  <span class="mf">0.6</span>,  <span class="mf">0.9</span>,  <span class="mf">1.2</span>,  <span class="mf">1.5</span>,  <span class="mf">1.8</span>])</pre>
+      
+      <p>Lorsque l'on désire créer des séquences de nombres réels et
+      que l'on connaît le nombre d'éléments dont on a besoin, la
+      fonction <tt class="docutils
+      literal"><span class="pre">linspace</span></tt> est
+      pratique. <tt class="docutils
+      literal"><span class="pre">linspace</span></tt> prend en
+      argument le nombre d'éléments désirés plutôt que le pas
+      (<em>step</em>).</p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> linspace( <span class="mf">0</span>, <span class="mf">2</span>, <span class="mf">9</span> )                 <span class="c"># 9 nombres de 0 à 2</span>
+array([ <span class="mf">0.</span>  ,  <span class="mf">0.25</span>,  <span class="mf">0.5</span> ,  <span class="mf">0.75</span>,  <span class="mf">1.</span>  ,  <span class="mf">1.25</span>,  <span class="mf">1.5</span> ,  <span class="mf">1.75</span>,  <span class="mf">2.</span>  ])
+<span class="gp">&gt;&gt;&gt;</span> x = linspace( <span class="mf">0</span>, <span class="mf">2</span>*pi, <span class="mf">100</span> )        <span class="c"># utile pour évaluer une fonction pour des points donnés</span>
+<span class="gp">&gt;&gt;&gt;</span> f = sin(x)</pre>
+      <br />  
+      <h3>Quelques propriétés des tableaux (<em>arrays</em>)</h3>
+      <p>
+      <ul>
+        <li><b><tt class="docutils
+        literal"><span class="pre">ndarray.ndim</span></tt></b>: le
+        nombre de dimensions.</li>
+        <li><b><tt class="docutils
+        literal"><span class="pre">ndarray.shape</span></tt></b>: les
+        dimensions du tableau contenues dans un tuple de taille égale
+        à <tt class="docutils
+        literal"><span class="pre">ndarray.ndim</span></tt>.</li>
+        <li><b><tt class="docutils
+        literal"><span class="pre">ndarray.size</span></tt></b>:
+        nombre total d'éléments dans le tableau et donc égal au
+        produit des éléments de <tt class="docutils
+        literal"><span class="pre">ndarray.shape</span></tt></li>
+        <li><b><tt class="docutils
+        literal"><span class="pre">ndarray.dtype</span></tt></b>: le
+        type des éléments du tableau (ex. int, float, numpy.int32,
+        numpy.int16, and numpy.float64, etc)</li>
+      </ul>
+      </p>
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> <span class="kn">from numpy import</span> *
+<span class="gp">&gt;&gt;&gt;</span> a = numpy.array([[<span class="mf">0</span>, <span class="mf">1</span>, <span class="mf">2</span>, <span class="mf">3</span>, <span class="mf">4</span>],
+                       [<span class="mf">5</span>, <span class="mf">6</span>, <span class="mf">7</span>, <span class="mf">8</span>, <span class="mf">9</span>]])
+<span class="gp">&gt;&gt;&gt;</span> a.shape
+(<span class="mf">2</span>, <span class="mf">5</span>)
+<span class="gp">&gt;&gt;&gt;</span> a.ndim
+<span class="mf">2</span>
+<span class="gp">&gt;&gt;&gt;</span> a.dtype.name
+'int32'
+<span class="gp">&gt;&gt;&gt;</span> a.size
+<span class="mf">10</span>
+<span class="gp">&gt;&gt;&gt;</span> type(a)
+numpy.ndarray</pre>
+      
+      <h2>Les opérateurs de base</h2>
+      <h3>Arithmétique</h3>
+      
+      <p>Les opérateurs d'arithmétique sont appliqués élément par
+      élément (<em>element-wise</em>). Le résultat est contenu dans
+      un nouveau tableau de même dimension. Par exemple:</p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> a = array([<span class="mf">20</span>,<span class="mf">30</span>,<span class="mf">40</span>,<span class="mf">50</span>])
+<span class="gp">&gt;&gt;&gt;</span> b = arange( <span class="mf">4</span> )
+<span class="gp">&gt;&gt;&gt;</span> b
+array([<span class="mf">0</span>, <span class="mf">1</span>, <span class="mf">2</span>, <span class="mf">3</span>])
+<span class="gp">&gt;&gt;&gt;</span> c = a-b
+<span class="gp">&gt;&gt;&gt;</span> c
+array([<span class="mf">20</span>, <span class="mf">29</span>, <span class="mf">38</span>, <span class="mf">47</span>])
+<span class="gp">&gt;&gt;&gt;</span> b**<span class="mf">2</span>
+array([<span class="mf">0</span>, <span class="mf">1</span>, <span class="mf">4</span>, <span class="mf">9</span>])
+<span class="gp">&gt;&gt;&gt;</span> <span class="mf">10</span>*sin(a)
+array([ <span class="mf">9.12945251</span>, <span class="mf">-9.88031624</span>,  <span class="mf">7.4511316</span> , <span class="mf">-2.62374854</span>])
+<span class="gp">&gt;&gt;&gt;</span> a<<span class="mf">35</span>
+array([True, True, False, False], dtype=bool)</pre>
+      
+      <p>Contrairement à plusieurs autres langages, l'opérateur
+      "produit/multiplication" n'est pas le produit scalaire (<em>dot
+      product</em>). Le produit ce fait éléments par éléments: </p>
+    
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> A = array([[<span class="mf">1</span>,<span class="mf">1</span>],
+...             [<span class="mf">0</span>,<span class="mf">1</span>]])
+<span class="gp">&gt;&gt;&gt;</span> B = array([[<span class="mf">2</span>,<span class="mf">0</span>],
+...             [<span class="mf">3</span>,<span class="mf">4</span>]])
+<span class="gp">&gt;&gt;&gt;</span> A*B                         <span class="c"># produit élément par élément</span>
+array([[<span class="mf">2</span>, <span class="mf">0</span>],
+       [<span class="mf">0</span>, <span class="mf">4</span>]])
+<span class="gp">&gt;&gt;&gt;</span> dot(A,B)                    <span class="c"># produit matriciel</span>
+array([[<span class="mf">5</span>, <span class="mf">4</span>],
+       [<span class="mf">3</span>, <span class="mf">4</span>]])</pre>
+      
+      <p>Quelques opérateurs comme += et *= effectuent les
+      modifications sur place (aucun nouveau tableau n'est créé).</p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> a = ones((<span class="mf">2</span>,<span class="mf">3</span>), dtype=int)
+<span class="gp">&gt;&gt;&gt;</span> b = random.random((<span class="mf">2</span>,<span class="mf">3</span>))
+<span class="gp">&gt;&gt;&gt;</span> a *= <span class="mf">3</span>
+<span class="gp">&gt;&gt;&gt;</span> a
+array([[<span class="mf">3</span>, <span class="mf">3</span>, <span class="mf">3</span>],
+       [<span class="mf">3</span>, <span class="mf">3</span>, <span class="mf">3</span>]])
+<span class="gp">&gt;&gt;&gt;</span> b += a
+<span class="gp">&gt;&gt;&gt;</span> b
+array([[ <span class="mf">3.69092703</span>,  <span class="mf">3.8324276</span> ,  <span class="mf">3.0114541</span> ],
+       [ <span class="mf">3.18679111</span>,  <span class="mf">3.3039349</span> ,  <span class="mf">3.37600289</span>]])
+<span class="gp">&gt;&gt;&gt;</span> a += b                                  <span class="c"># b est convertit en entier</span>
+<span class="gp">&gt;&gt;&gt;</span> a
+array([[<span class="mf">6</span>, <span class="mf">6</span>, <span class="mf">6</span>],
+       [<span class="mf">6</span>, <span class="mf">6</span>, <span class="mf">6</span>]])</pre>
+      <br />
+      <h3>Opérateurs unaires</h3>
+      <p>Plusieurs opérateurs unaires (ex. calculer la somme des
+      éléments d'un tableau) sont implémentés comme des méthodes de
+      la classe <tt class="docutils
+      literal"><span class="pre">ndarray</span></tt>.</p>
+            
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> a = random.random((<span class="mf">2</span>,<span class="mf">3</span>))
+<span class="gp">&gt;&gt;&gt;</span> a
+array([[ <span class="mf">0.6903007</span> ,  <span class="mf">0.39168346</span>,  <span class="mf">0.16524769</span>],
+       [ <span class="mf">0.48819875</span>,  <span class="mf">0.77188505</span>,  <span class="mf">0.94792155</span>]])
+<span class="gp">&gt;&gt;&gt;</span> a.sum()
+<span class="mf">3.4552372100521485</span>
+<span class="gp">&gt;&gt;&gt;</span> a.min()
+<span class="mf">0.16524768654743593</span>
+<span class="gp">&gt;&gt;&gt;</span> a.max()
+<span class="mf">0.9479215542670073</span></pre>
+      
+      <p>Par défaut, ces opérateurs considèrent les tableaux comme une
+      liste d'éléments sans tenir compte des dimensions. Par contre,
+      en spécifiant le paramètre <tt class="docutils
+      literal"><span class="pre">axis</span></tt> (la dimension), il
+      est possible d'appliquer l'opérateur seulement selon cette
+      dimension.</p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> b = arange(<span class="mf">12</span>).reshape(<span class="mf">3</span>,<span class="mf">4</span>)
+<span class="gp">&gt;&gt;&gt;</span> b
+array([[ <span class="mf">0</span>,  <span class="mf">1</span>,  <span class="mf">2</span>,  <span class="mf">3</span>],
+       [ <span class="mf">4</span>,  <span class="mf">5</span>,  <span class="mf">6</span>,  <span class="mf">7</span>],
+       [ <span class="mf">8</span>,  <span class="mf">9</span>, <span class="mf">10</span>, <span class="mf">11</span>]])
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt;</span> b.sum(axis=<span class="mf">0</span>)                            <span class="c"># somme de chaque colonn</span>
+array([<span class="mf">12</span>, <span class="mf">15</span>, <span class="mf">18</span>, <span class="mf">21</span>])
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt;</span> b.min(axis=<span class="mf">1</span>)                            <span class="c"># min de chaque ligne</span>
+array([<span class="mf">0</span>, <span class="mf">4</span>, <span class="mf">8</span>])
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt;</span> b.cumsum(axis=<span class="mf">1</span>)                         <span class="c"># somme cumulative pour chaque ligne</span>
+array([[ <span class="mf">0</span>,  <span class="mf">1</span>,  <span class="mf">3</span>,  <span class="mf">6</span>],
+       [ <span class="mf">4</span>,  <span class="mf">9</span>, <span class="mf">15</span>, <span class="mf">22</span>],
+       [ <span class="mf">8</span>, <span class="mf">17</span>, <span class="mf">27</span>, <span class="mf">38</span>]])</pre>
+      <br />
+      <h3>Opérateurs d'algèbre linéaire</h3>
+      <p>Numpy offre des fonctions permettant d'effectuer des calculs
+      d'algèbre linéaire (ex. tranposer, inverser, produit scalaire,
+      etc.)</p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> <span class="kn">from numpy import</span> *
+<span class="gp">&gt;&gt;&gt;</span> <span class="kn">from numpy.linalg import</span> *
+
+<span class="gp">&gt;&gt;&gt;</span> a = array([[<span class="mf">1.0</span>, <span class="mf">2.0</span>], [<span class="mf">4.0</span>, <span class="mf">3.0</span>]])
+<span class="gp">&gt;&gt;&gt;</span> print a
+[[ <span class="mf">1.</span>  <span class="mf">2.</span>]
+ [ <span class="mf">3.</span>  <span class="mf">4.</span>]]
+
+<span class="gp">&gt;&gt;&gt;</span> a.transpose()
+array([[ <span class="mf">1.</span>,  <span class="mf">3.</span>],
+       [ <span class="mf">2.</span>,  <span class="mf">4.</span>]])
+
+<span class="gp">&gt;&gt;&gt;</span> inv(a)
+array([[-<span class="mf">2.</span> ,  <span class="mf">1.</span> ],
+       [ <span class="mf">1.5</span>, <span class="mf">-0.5</span>]])
+
+<span class="gp">&gt;&gt;&gt;</span> u = eye(<span class="mf">2</span>) <span class="c"># Matrice identité 2x2; "eye" represente "I"</span>
+<span class="gp">&gt;&gt;&gt;</span> u
+array([[ <span class="mf">1.</span>,  <span class="mf">0.</span>],
+       [ <span class="mf">0.</span>,  <span class="mf">1.</span>]])
+<span class="gp">&gt;&gt;&gt;</span> j = array([[<span class="mf">0.0</span>, <span class="mf">-1.0</span>], [<span class="mf">1.0</span>, <span class="mf">0.0</span>]])
+
+<span class="gp">&gt;&gt;&gt;</span> dot (j, j) <span class="c"># produit matriciel</span>
+array([[<span class="mf">-1.</span>,  <span class="mf">0.</span>],
+       [ <span class="mf">0.</span>, <span class="mf">-1.</span>]])
+
+<span class="gp">&gt;&gt;&gt;</span> trace(u)  <span class="c"># trace</span>
+<span class="mf">2.0</span>
+
+<span class="gp">&gt;&gt;&gt;</span> y = array([[<span class="mf">5.</span>], [<span class="mf">7.</span>]])
+<span class="gp">&gt;&gt;&gt;</span> solve(a, y) <span class="c"># résolution d'un système linéaire (solution de dot(a,?) = y)</span>
+array([[<span class="mf">-3.</span>],
+       [ <span class="mf">4.</span>]])
+
+<span class="gp">&gt;&gt;&gt;</span> eig(j) <span class="c"># valeurs/vecteurs propres d'une matrice</span>
+(array([ <span class="mf">0.+1.j</span>,  <span class="mf">0.-1.j</span>]),
+array([[ <span class="mf">0.70710678+0.j</span><span class="mf">,  0.70710678+0.j</span>],
+       [ <span class="mf">0.00000000-0.70710678j</span>,  <span class="mf">0.00000000+0.70710678j</span>]]))</pre>
+      
+      <h2>Indexation, <em>Slicing</em> et l'itération</h2>
+      <h3>Une dimension</h3>
+      
+      <p>Les tableaux à une dimension peuvent être indexés, tranchés
+      (<em>sliced</em>) et itérés essentiellement comme des
+      listes.</p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> a = arange(<span class="mf">10</span>)**<span class="mf">3</span>
+<span class="gp">&gt;&gt;&gt;</span> a
+array([  <span class="mf">0</span>,   <span class="mf">1</span>,   <span class="mf">8</span>,  <span class="mf">27</span>,  <span class="mf">64</span>, <span class="mf">125</span>, <span class="mf">216</span>, <span class="mf">343</span>, <span class="mf">512</span>, <span class="mf">729</span>])
+<span class="gp">&gt;&gt;&gt;</span> a[<span class="mf">2</span>]
+<span class="mf">8</span>
+<span class="gp">&gt;&gt;&gt;</span> a[<span class="mf">2</span>:<span class="mf">5</span>]
+array([ <span class="mf">8</span>, <span class="mf">27</span>, <span class="mf">64</span>])
+<span class="gp">&gt;&gt;&gt;</span> 
+<span class="gp">&gt;&gt;&gt;</span> <span class="c"># Du début jusqu'à l'indice 6 (exclus), affecter un élément sur deux à -1000</span>
+<span class="gp">&gt;&gt;&gt;</span> a[:<span class="mf">6</span>:<span class="mf">2</span>] = <span class="mf">-1000</span>    <span class="c"># équivalent à a[0:6:2] = -1000;</span> 
+<span class="gp">&gt;&gt;&gt;</span> a
+array([<span class="mf">-1000</span>,     <span class="mf">1</span>, <span class="mf">-1000</span>,    <span class="mf">27</span>, <span class="mf">-1000</span>,   <span class="mf">125</span>,   <span class="mf">216</span>,   <span class="mf">343</span>,   <span class="mf">512</span>,   <span class="mf">729</span>])
+<span class="gp">&gt;&gt;&gt;</span> a[::<span class="mf">-1</span>]                   <span class="c"># permet d'inverser l'ordre des éléments de a</span>
+array([  <span class="mf">729</span>,   <span class="mf">512</span>,   <span class="mf">343</span>,   <span class="mf">216</span>,   <span class="mf">125</span>, <span class="mf">-1000</span>,    <span class="mf">27</span>, <span class="mf">-1000</span>,     <span class="mf">1</span>, <span class="mf">-1000</span>])
+<span class="gp">&gt;&gt;&gt;</span> for i in a:
+...     print i**(<span class="mf">1</span>/<span class="mf">3.</span>),
+...
+nan <span class="mf">1.0</span> nan <span class="mf">3.0</span> nan <span class="mf">5.0</span> <span class="mf">6.0</span> <span class="mf">7.0</span> <span class="mf">8.0</span> <span class="mf">9.0</span></pre>
+      <br />
+      <h3>n-dimensions</h3>
+      <p>Les tableaux multidimensionels peuvent avoir un indice par
+      dimension. Ces indices sont donnés sous forme de tuple (séparé
+      par des virgules). Par exemple:</p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> b = array([[ <span class="mf">0</span>,  <span class="mf">1</span>,  <span class="mf">2</span>,  <span class="mf">3</span>],
+               [<span class="mf">10</span>, <span class="mf">11</span>, <span class="mf">12</span>, <span class="mf">13</span>],
+               [<span class="mf">20</span>, <span class="mf">21</span>, <span class="mf">22</span>, <span class="mf">23</span>],
+               [<span class="mf">30</span>, <span class="mf">31</span>, <span class="mf">32</span>, <span class="mf">33</span>],
+               [<span class="mf">40</span>, <span class="mf">41</span>, <span class="mf">42</span>, <span class="mf">43</span>]])
+<span class="gp">&gt;&gt;&gt;</span> b[<span class="mf">2</span>,<span class="mf">3</span>]
+<span class="mf">23</span>
+<span class="gp">&gt;&gt;&gt;</span> b[<span class="mf">0</span>:<span class="mf">5</span>,<span class="mf">1</span>]              <span class="c"># chaque ligne de la deuxième colonne de b</span>
+array([ <span class="mf">1</span>, <span class="mf">11</span>, <span class="mf">21</span>, <span class="mf">31</span>, <span class="mf">41</span>])
+<span class="gp">&gt;&gt;&gt;</span> b[:,<span class="mf">1</span>]                <span class="c"># équivalent à l'exemple précédent</span>
+array([ <span class="mf">1</span>, <span class="mf">11</span>, <span class="mf">21</span>, <span class="mf">31</span>, <span class="mf">41</span>])
+<span class="gp">&gt;&gt;&gt;</span> b[<span class="mf">1</span>:<span class="mf">3</span>,:]              <span class="c"># chaque colonne de la 2e et 3e ligne de b</span>
+array([[<span class="mf">10</span>, <span class="mf">11</span>, <span class="mf">12</span>, <span class="mf">13</span>],
+       [<span class="mf">20</span>, <span class="mf">21</span>, <span class="mf">22</span>, <span class="mf">23</span>]])</pre>
+      
+      <h2>Copie de tableaux</h2>
+      
+      <p>La méthode <tt class="docutils
+      literal"><span class="pre">copy</span></tt> permet d'effectuer
+      une copie complète en profondeur (<em>deep copy</em>) du
+      tableau et de ses éléments.</p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> d = a.copy()       <span class="c"># crée un nouveau tableau avec une copie des éléments</span>
+<span class="gp">&gt;&gt;&gt;</span> d is a
+False
+<span class="gp">&gt;&gt;&gt;</span> d.base is a        <span class="c"># d ne partage rien avec a</span>
+False
+<span class="gp">&gt;&gt;&gt;</span> d[<span class="mf">0</span>,<span class="mf">0</span>] = <span class="mf">9999</span>
+<span class="gp">&gt;&gt;&gt;</span> a
+array([[   <span class="mf">0</span>,   <span class="mf">10</span>,   <span class="mf">10</span>,    <span class="mf">3</span>],
+       [<span class="mf">1234</span>,   <span class="mf">10</span>,   <span class="mf">10</span>,    <span class="mf">7</span>],
+       [   <span class="mf">8</span>,   <span class="mf">10</span>,   <span class="mf">10</span>,   <span class="mf">11</span>]])</pre>
+
+      <h2>Modification des dimensions</h2>
+      <p>Les dimensions (la <em>shape</em>) d'un tableau peuvent être
+      modifiées de plusieurs façons: </p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> a = floor(<span class="mf">10</span>*random.random((<span class="mf">3</span>,<span class="mf">4</span>)))
+<span class="gp">&gt;&gt;&gt;</span> a
+array([[ <span class="mf">7.</span>,  <span class="mf">5.</span>,  <span class="mf">9.</span>,  <span class="mf">3.</span>],
+       [ <span class="mf">7.</span>,  <span class="mf">2.</span>,  <span class="mf">7.</span>,  <span class="mf">8.</span>],
+       [ <span class="mf">6.</span>,  <span class="mf">8.</span>,  <span class="mf">3.</span>,  <span class="mf">2.</span>]])
+<span class="gp">&gt;&gt;&gt;</span> a.shape
+(<span class="mf">3</span>, <span class="mf">4</span>)
+<span class="gp">&gt;&gt;&gt;</span> a.ravel() <span class="c"># aplanit le tableau</span>
+array([ <span class="mf">7.</span>,  <span class="mf">5.</span>,  <span class="mf">9.</span>,  <span class="mf">3.</span>,  <span class="mf">7.</span>,  <span class="mf">2.</span>,  <span class="mf">7.</span>,  <span class="mf">8.</span>,  <span class="mf">6.</span>,  <span class="mf">8.</span>,  <span class="mf">3.</span>,  <span class="mf">2.</span>])
+<span class="gp">&gt;&gt;&gt;</span> a.shape = (<span class="mf">6</span>, <span class="mf">2</span>)
+<span class="gp">&gt;&gt;&gt;</span> a.transpose()
+array([[ <span class="mf">7.</span>,  <span class="mf">9.</span>,  <span class="mf">7.</span>,  <span class="mf">7.</span>,  <span class="mf">6.</span>,  <span class="mf">3.</span>],
+       [ <span class="mf">5.</span>,  <span class="mf">3.</span>,  <span class="mf">2.</span>,  <span class="mf">8.</span>,  <span class="mf">8.</span>,  <span class="mf">2.</span>]])</pre>
+      
+      <p>Deux autres fonctions permettent de modifier les dimensions
+      d'un tableau: <tt class="docutils
+      literal"><span class="pre">reshape</span></tt>
+      et <tt class="docutils
+      literal"><span class="pre">resize</span></tt>. <tt class="docutils
+      literal"><span class="pre">resize</span></tt> retourne une copie
+      du tableau avec les dimensions spécifiées en argument, tandis
+      que <tt class="docutils
+      literal"><span class="pre">reshape</span></tt> retourne un
+      tableau pointant vers le même espace mémoire mais ayant les
+      dimensions spécifiées:</p>
+      
+      <pre>
+<span class="gp">&gt;&gt;&gt;</span> a
+array([[ <span class="mf">7.</span>,  <span class="mf">5.</span>],
+       [ <span class="mf">9.</span>,  <span class="mf">3.</span>],
+       [ <span class="mf">7.</span>,  <span class="mf">2.</span>],
+       [ <span class="mf">7.</span>,  <span class="mf">8.</span>],
+       [ <span class="mf">6.</span>,  <span class="mf">8.</span>],
+       [ <span class="mf">3.</span>,  <span class="mf">2.</span>]])
+<span class="gp">&gt;&gt;&gt;</span> b = resize(a,(<span class="mf">2</span>,<span class="mf">6</span>))
+<span class="gp">&gt;&gt;&gt;</span> b[<span class="mf">1</span>,<span class="mf">3</span>] = <span class="mf">100</span>
+<span class="gp">&gt;&gt;&gt;</span> a
+array([[ <span class="mf">7.</span>,  <span class="mf">5.</span>],
+       [ <span class="mf">9.</span>,  <span class="mf">3.</span>],
+       [ <span class="mf">7.</span>,  <span class="mf">2.</span>],
+       [ <span class="mf">7.</span>,  <span class="mf">8.</span>],
+       [ <span class="mf">6.</span>,  <span class="mf">8.</span>],
+       [ <span class="mf">3.</span>,  <span class="mf">2.</span>]])
+<span class="gp">&gt;&gt;&gt;</span> b
+array([[ <span class="mf">7.</span>,  <span class="mf">5.</span>,  <span class="mf">9.</span>,  <span class="mf">3.</span>,  <span class="mf">7.</span>,  <span class="mf">2.</span>],
+       [ <span class="mf">7.</span>,  <span class="mf">8.</span>,  <span class="mf">6.</span>,  <span class="mf">100.</span>,  <span class="mf">3.</span>,  <span class="mf">2.</span>]])
+<span class="gp">&gt;&gt;&gt;</span> c = reshape(a,(<span class="mf">2</span>,<span class="mf">6</span>))
+<span class="gp">&gt;&gt;&gt;</span> a
+array([[ <span class="mf">7.</span>,    <span class="mf">5.</span>],
+       [ <span class="mf">9.</span>,    <span class="mf">3.</span>],
+       [ <span class="mf">7.</span>,    <span class="mf">2.</span>],
+       [ <span class="mf">7.</span>,    <span class="mf">8.</span>],
+       [ <span class="mf">6.</span>,  <span class="mf">100.</span>],
+       [ <span class="mf">3.</span>,    <span class="mf">2.</span>]])
+<span class="gp">&gt;&gt;&gt;</span> c
+array([[ <span class="mf">7.</span>,  <span class="mf">5.</span>,  <span class="mf">9.</span>,  <span class="mf">3.</span>,  <span class="mf">7.</span>,  <span class="mf">2.</span>],
+       [ <span class="mf">7.</span>,  <span class="mf">8.</span>,  <span class="mf">6.</span>,  <span class="mf">100.</span>,  <span class="mf">3.</span>,  <span class="mf">2.</span>]])</pre>
+
+      <h2>Rapidité de Numpy</h2>
+
+	  <p>Un des avantages important des tableaux Numpy est leur rapidité. Faire des
+	  opérations à l'aide de cette structure de données est <b>beaucoup</b> plus
+	  efficace que sous une représentation basée sur des listes imbriquées.</p>
+
+	  <p>Par exemple, soit le script suivant qui compare le temps d'exécution de
+	    l'addition d'une matrice à elle-même:</p>
+
+<pre>
+<span class="kn">import time</span>
+<span class="kn">from numpy import array</span>
+
+<span class="c"># Equivalent de ones((100,100)) mais avec des listes</span>
+a = [ [ <span class="mf">1</span> <span class="k">for</span> j <span class="k">in</span> range(<span class="mf">100</span>) ] <span class="k">for</span> i <span class="k">in</span> range(<span class="mf">100</span>) ]
+current_time = time.time()
+<span class="k">for</span> i <span class="k">in</span> range(<span class="mf">1000</span>):
+    a_plus_a = [ [ aij + aij for aij in ai] for ai in a ] <span class="c"># a + a</span>
+print <span class="s">'a+a avec des listes:'</span>,time.time()-current_time,<span class="s">'secondes'</span>
+
+# Version Numpy
+a = array(a)
+current_time = time.time()
+<span class="k">for</span> i <span class="k">in</span> range(<span class="mf">1000</span>):
+    a_plus_a = a+a
+print <span class="s">'a+a avec des Numpy:'</span>,time.time()-current_time,<span class="s">'secondes'</span></pre>
+
+	  <p>On observe en exécutant ce script que la version Numpy
+	  est plus de 100 fois plus rapide:</p>
+
+	  <pre>
+a+a avec des listes: 1.97460913658 secondes
+a+a avec des Numpy: 0.0159249305725 secondes</pre>
+
+	  <h2>Il y a bien plus</h2>
+
+	  <p>Plusieurs autres fonctionalités des tableaux Numpy sont
+	  décrites dans
+	  le <a href="http://www.scipy.org/Tentative_NumPy_Tutorial">tutoriel
+	  anglais</a> qui a inspiré celui-ci. Entre autre, il est
+	  conseillé de consulter les sections sur le concept
+	  de <i><a href="http://www.scipy.org/EricsBroadcastingDoc">broadcasting</i></a>
+	  et sur
+	  les <a href="http://www.scipy.org/Tentative_NumPy_Tutorial#head-0dffc419afa7d77d51062d40d2d84143db8216c2">techniques
+	  d'indexage avancées</a>.</p>
+
+	  <p>Numpy a une librairie complète de fonctions utiles pour
+	    le calcul mathématique.  Avant de coder une fonction
+	    impliquant des tableaux Numpy, il est
+	    <b>fortement</b> recommandé de jeter un coup d'oeil à la
+	    documentation de Numpy, à l'adresse
+	    suivante: <a href="http://docs.scipy.org/doc/numpy/reference/">http://docs.scipy.org/doc/numpy/reference/</a>.</p>
+	    
+	  <a name="debugger"><h1>Débogueur</h1></a>
+	  <!--" -->
+	  <p>
+	    Afin de déboguer du code Python, le
+	    module <tt class="docutils
+	    literal"><span class="pre"><span class="pre">pdb</span></span></tt>
+	    peut être utilisé. Une fois le module importé, il suffit
+	    alors d'ajouter des appels à la fonction <tt class="xref
+	    docutils
+	    literal"><span class="pre">pdb.set_trace()</span></tt>
+	    dans votre code afin d'interrompre l'exécution à cet endroit.
+	    Une fois l'exécution interrompue, il est alors possible
+	    d'interagir avec les variables définies dans votre code à ce
+	    moment de l'exécution.
+	  </p>
+	  
+	  <p>
+	    Par exemple, on pourrait ajouter un tel appel au fichier <tt class="docutils
+	  literal"><span class="pre">fibo.py</span></tt>:
+	  </p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="c"># Fibonacci numbers module</span>
+
+<span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>    <span class="c"># write Fibonacci series up to n</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+        <span class="k">print</span> <span class="n">b</span><span class="p">,</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+
+<span class="k">def</span> <span class="nf">fib2</span><span class="p">(</span><span class="n">n</span><span class="p">):</span> <span class="c"># return Fibonacci series up to n</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+        <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+        <span class="n">pdb</span><span class="o">.</span><span class="n">set_trace()</span><span class="p"></span> <span class="c"># ajout d'un point d'arret ou "breakpoint"</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+    <span class="k">return</span> <span class="n">result</span></pre></div>
+	  </div>
+
+	  <p>
+	    Il est alors possible de suivre l'exécution de la
+	    fonction <tt class="xref docutils
+	    literal"><span class="pre">fibo2()</span></tt> lors de son
+	    appel. L'exécution s'arrête d'abord au premier appel
+	    de <tt class="xref docutils
+	    literal"><span class="pre">pdb.set_trace()</span></tt>. Afin
+	    de poursuire l'exécution jusqu'au prochain point d'arrêt, il
+	    suffit alors d'entrer <tt class="docutils
+	    literal"><span class="pre">c</span></tt>
+	    ou <tt class="docutils
+	    literal"><span class="pre">continue</span></tt>.
+	  </p>
+
+	  <div class="highlight-python"><div class="highlight">
+	      <pre>
+<span class="gp">>>></span> <span class="kn">import</span> <span class="nn">fibo</span>
+<span class="gp">>>></span> fibo.fib2(10)
+> /Users/Hugo/dump/fibo.py(17)fib2()
+-> a, b = b, a+b
+(Pdb) print result
+[1]
+(Pdb) c
+> /Users/Hugo/dump/fibo.py(16)fib2() <span class="c"># ignorer le fait que le numero de ligne change de +/- 1 ...</span>
+-> pdb.set_trace()
+(Pdb) print result
+[1, 1]
+(Pdb) c
+> /Users/Hugo/dump/fibo.py(17)fib2() 
+-> a, b = b, a+b
+(Pdb) print result
+[1, 1, 2]
+(Pdb) c
+> /Users/Hugo/dump/fibo.py(16)fib2()
+-> pdb.set_trace()
+(Pdb) print result
+[1, 1, 2, 3]
+(Pdb) 
+ </pre></div>
+	  </div>
+
+	  <p> Une fois l'exécution arrêtée, il est possible d'avancer
+	    l'exécution une ligne à la fois, en
+	    entrant <tt class="docutils
+	    literal"><span class="pre">s</span></tt>
+	    ou <tt class="docutils
+	    literal"><span class="pre">step</span></tt>.
+	  </p>
+
+	  <p> 
+	    Finalement, il est même possible de reprendre l'exécution à l'endroit ayant causé une erreur à l'aide
+	    de la fonction <tt class="xref
+	    docutils
+	    literal"><span class="pre">pdb.pm()</span></tt> (post morterm):
+	  </p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pdb</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mymodule</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mymodule</span><span class="o">.</span><span class="n">test</span><span class="p">()</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n-Identifier">?</span>
+  File <span class="nb">&quot;./mymodule.py&quot;</span>, line <span class="m">4</span>, in <span class="n-Identifier">test</span>
+    <span class="n">test2</span><span class="p">()</span>
+  File <span class="nb">&quot;./mymodule.py&quot;</span>, line <span class="m">3</span>, in <span class="n-Identifier">test2</span>
+    <span class="k">print</span> <span class="n">spam</span>
+<span class="nc">NameError</span>: <span class="n-Identifier">spam</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pdb</span><span class="o">.</span><span class="n">pm</span><span class="p">()</span>
+<span class="go">&gt; ./mymodule.py(3)test2()</span>
+<span class="go">-&gt; print spam</span>
+<span class="go">(Pdb)</span>
+</pre></div>
+</div>
+
+	  <p> 
+	    Pour plus d'information sur le débogueur Python, visiter <a href="http://docs.python.org/library/pdb.html">http://docs.python.org/library/pdb.html</a>.
+	  </p>
+
+ 	</div>
+      </div>
+    </div>
+  </body>
+</html>

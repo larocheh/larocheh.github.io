@@ -1,0 +1,199 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold,italic"
+          type="text/css" />
+    <link rel="stylesheet" href="css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+      <div id="header-text">
+	  Hugo Larochelle
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="index_en.html" accesskey="H" class="active"><em>H</em>ome</a></li>
+	      
+	      <li><a href="publications_en.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="university_en.html" accesskey="u"><em>U</em>niversity</a></li>
+
+	      <li><a href="links_en.html" accesskey="l"><em>L</em>inks</a></li>
+
+	    </ul>
+        </div>
+	  </div>
+	  
+	  <div id="sidebar">
+	    <h2>Research projects</h2>
+
+	    <table id="nav" cellpadding="0" cellspacing="10" >
+	      <tr><td><a href="projects_attention.html">Attention-based computer vision</a></td></tr>
+	      <tr><td class="active"><a href="projects_deep_learning.html">Deep learning</a></td></tr>
+	      <tr><td><a href="projects_classrbm.html">Restricted Boltzmann machines for classification</a></td></tr>
+	      <tr><td><a href="projects_struct_output.html">Learning algorithms for structured output prediction</a></td></tr>
+	      <tr><td><a href="projects_nade.html">Neural autoregressive models</a></td></tr>
+	    </table>
+
+	  </div>
+	  
+	  <!--
+	  <div id="sidebarright">
+	  </div>
+	  -->
+
+	  <div id="contentnorightbar">
+	    <h2> Deep learning </h2>
+	    
+	    <center>
+	    <img src="images/deep_learning.jpg" WIDTH=500>
+	    </center><br>
+
+	    Since most artificial intelligence systems don't come
+	    close to the ability of the human brain to solve many
+	    problems related to vision, speech recognition and natural
+	    language understanding, a lot of research has been trying
+	    to draw inspiration from the human brain to design machine
+	    learning solutions to such tasks. One obvious property of
+	    the brain is its deep, layered connectivity, particularly
+	    apparent in
+	    the <a href="http://en.wikipedia.org/wiki/Visual_cortex">visual
+	    cortex</a>.  Yet, until the mid-2000s, attemps to train
+	    artificial neural networks with several hidden layers have
+	    mostly failed, i.e. would generally not yield
+	    performances higher than non-deep or <i>shallow</i> neural
+	    networks.
+	    <br><br>
+
+	    In
+	    2006,  <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey
+	    Hinton</a>, Simon Osindero
+	    and <a href="http://www.gatsby.ucl.ac.uk/~ywteh/">Yee Whye
+	    Teh</a> designed the
+	    <a href="http://www.scholarpedia.org/article/Deep_belief_networks">deep
+	    belief network</a>, a probabilistic neural network, along
+	    with an efficient greedy procedure for successfully
+	    pre-training (i.e. initializing) it. This procedure relies
+	    on the learning algorithm of the restricted Boltzmann
+	    machine (RBM) for layer-wise training of the hidden layers, in
+	    an unsupervised fashion.
+	    <br><br>
+	    
+	    Later,
+	    in <a href="publications/greedy-deep-nets-nips-06.pdf">Greedy
+	    Layer-Wise Training of Deep
+	    Networks</a>, <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua
+	    Bengio</a>, Pascal Lamblin, Dan Popovici and myself
+	    generalized this procedure by showing that the learning
+	    algorithm of the autoencoder could also be used for greedy
+	    layer-wise pre-training. Along with similar results from
+	    <a href="http://yann.lecun.com/">Yann Lecun</a>'s group, 
+	    this initial work culminated into the creation of a new
+	    topic of research: <a href="http://deeplearning.net/">deep learning</a>.
+	    <br><br>
+
+	    Ever since, I've been interested in further studying the
+	    original pre-training procedure and deriving new deep
+	    learning algorithms as well. I give here a quick overview of 
+	    some of the work I've been doing.
+	    <br><br>
+
+	    In <a href="publications/deep-nets-icml-07.pdf">An
+		  Empirical Evaluation of Deep Architectures on
+		  Problems with Many Factors of Variation</a>, along
+		  with many colleagues from
+		  the <a href="http://www.iro.umontreal.ca/article.php3?id_article=107">LISA
+		  lab</a>, I've empirically compared the performance of deep neural networks
+		(based on RBMs or autoencoders) on several image classification problems of
+		varying complexity, showing that they generally would outperform other
+		shallow models.<br><br>
+
+	    In <a href="publications/icml-2008-denoising-autoencoders.pdf">Extracting
+		and Composing Robust Features with Denoising
+		Autoencoders</a>, <a href="http://www.iro.umontreal.ca/~vincentp/">Pascal
+		Vincent</a>, <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua
+		Bengio</a>, Pierre-Antoine Manzagol and myself
+		designed the <i>denoising autoencoder</i>, which outperforms both the regular autoencoder
+		and the RBM as a pre-training module.<br><br>
+
+	    In <a href="publications/aistats_2009_robust_interdependent.pdf">Deep
+		Learning using Robust Interdependent Codes</a> (joint
+		work
+		with <a href="http://www.iro.umontreal.ca/~vincentp/">Pascal
+		Vincent</a>
+		and <a href="http://www.dumitru.ca/">Dumitru
+		Erhan</a>), I investigated a variant of the denoising
+		autoencoder that would allow for more complexe
+		interactions between hidden units within the same
+		hidden layer.<br><br>
+	     
+	    <a href="http://www.mit.edu/~rsalakhu/papers/dbm.pdf">Deep
+	    Boltzmann machines</a> are another interesting alternative to
+	    deep belief networks and artifical neural networks for
+	    deep learning, developed
+	    by <a href="http://www.mit.edu/~rsalakhu/">Ruslan
+	    Salakhutdinov</a>
+	    and <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey
+	    Hinton</a>.
+	    In <a href="publications/aistats_2010_dbm_recnet.pdf">Efficient
+	    Learning of Deep Boltzmann
+	    Machines</a>, <a href="http://www.mit.edu/~rsalakhu/">Ruslan
+	    Salakhutdinov</a> and I looked at the deep Boltzmann
+	    machine and proposed a more efficient learning algorithm
+	    based on an improved approximate inference procedure.
+	    <br><br>
+
+	    <h3>References</h3>
+	    <br>
+	    <ul>
+	      <li><b>Stacked Denoising Autoencoders: Learning Useful Representations in a Deep Network with a Local Denoising Criterion [<a href="publications/vincent10a.pdf" target=_top>pdf</a>]</b><br>
+		Pascal Vincent, Hugo Larochelle, Isabelle Lajoie, Yoshua Bengio and Pierre-Antoine Manzagol,<br>
+		<i>Journal of Machine Learning Research</i>, 11(Dec): 3371--3408, 2010<br><br>
+		
+	      <li><b>Efficient Learning of Deep Boltzmann Machines [<a href="publications/aistats_2010_dbm_recnet.pdf" target=_top>pdf</a>][<a href="code/dbm_recnet.tar.gz" target=_top>code</a>]</b><br>
+		Ruslan Salakhutdinov and Hugo Larochelle,<br>
+		<i>Artificial Intelligence and Statistics</i>, 2010<br><br>
+
+	      <li> <b>Exploring Strategies for Training Deep Neural Networks
+		  [<a href="publications/jmlr-larochelle09a.pdf" target=_top>pdf</a>]</b><br>
+		Hugo Larochelle, Yoshua Bengio, Jérôme Louradour and Pascal Lamblin,<br>
+		<i>Journal of Machine Learning Research</i>, 10(Jan): 1--40, 2009<br><br>
+
+	      <li> <b>Deep Learning using Robust Interdependent Codes [<a href="publications/aistats_2009_robust_interdependent.pdf" target=_top>pdf</a>]</b><br>
+		Hugo Larochelle, Dumitru Erhan and Pascal Vincent,<br>
+		<i>Artificial Intelligence and Statistics</i>, 2009<br><br>
+
+	      <li> <b>Extracting and Composing Robust Features with Denoising Autoencoders
+		  [<a href="publications/icml-2008-denoising-autoencoders.pdf" target=_top>pdf</a>]
+		</b><br>Pascal Vincent, Hugo Larochelle, Yoshua Bengio and Pierre-Antoine Manzagol,<br>
+		<i> International Conference on Machine Learning proceedings</i>, 2008<br><br>
+
+	      <li> <b>An Empirical Evaluation of Deep Architectures on Problems with Many Factors of Variation [<a href="publications/deep-nets-icml-07.pdf" target=_top>pdf</a>][<a href="http://www.iro.umontreal.ca/~lisa/twiki/bin/view.cgi/Public/DeepVsShallowComparisonICML2007">html</a>]</b><br>
+		Hugo Larochelle, Dumitru Erhan, Aaron Courville, James Bergstra and Yoshua Bengio,<br>
+		<i> International Conference on Machine Learning proceedings</i>, 2007<br><br>
+
+	      <li> <b>Greedy Layer-Wise Training of Deep Networks [<a href="publications/greedy-deep-nets-nips-06.pdf" target=_top>pdf</a>]</b><br>
+		Yoshua Bengio, Pascal Lamblin, Dan Popovici and Hugo Larochelle,<br>
+		<i>Advances in Neural Information Processing Systems 19</i>, 2007<br><br>
+	    </ul>
+
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold,italic"
+          type="text/css" />
+    <link rel="stylesheet" href="css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+      <div id="header-text">
+	    Hugo Larochelle
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+
+	      <li><a href="index_en.html" accesskey="H"><em>H</em>ome</a></li>
+
+	      <li><a href="publications_en.html" accesskey="p" class="active"><em>P</em>ublications</a></li>
+
+	      <li><a href="university_en.html" accesskey="u"><em>U</em>niversity</a></li>
+
+	      <li><a href="links_en.html" accesskey="l"><em>L</em>inks</a></li>
+
+	      <li><a href="publications_fr.html" accesskey="f"><em>F</em>rench</a></li>
+
+	    </ul>
+        </div>
+	  </div>
+
+	  <div id="contentnobars">
+
+
+
+	    <h2>Journal papers</h2>
+
+	    <ul>
+
+           <li> <b> Domain-Adversarial Training of Neural Networks [<a href="http://arxiv.org/abs/1505.07818">arxiv</a>] </b><br>
+           Yaroslav Ganin, Evgeniya Ustinova, Hana Ajakan, Pascal Germain, Hugo Larochelle, François Laviolette, Mario Marchand and Victor Lempitsky,<br>
+           to appear in <i>Journal of Machine Learning Research</i>, 2016<br><br>
+
+           <li> <b> Correlational Neural Networks [<a href="http://www.mitpressjournals.org/doi/pdf/10.1162/NECO_a_00801">pdf</a>] [<a href="http://arxiv.org/abs/1504.07225">arxiv</a>] </b><br>
+            Sarath Chandar, Mitesh M. Khapra, Hugo Larochelle and Balaraman Ravindran,<br>
+            <i>Neural Computation</i>, 28(2): 286-304, 2016<br><br>
+
+	    <li> <b>A Deep and Autoregressive Approach for Topic Modeling of Multimodal Data [<a href="http://arxiv.org/abs/1409.3970" target=_top>arxiv</a>]</b><br>
+	    Yin Zheng, Yu-Jin Zhang and Hugo Larochelle,<br>
+	    <i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i>, 2015<br><br>
+
+	      <li> <b>Within-Brain Classification for Brain Tumor Segmentation [<a href="http://arxiv.org/abs/1510.01344" target=_top>arxiv</a>]</b><br>
+		Mohammad Havaei, Hugo Larochelle, Philippe Poulin and Pierre-Marc Jodoin,<br>
+		<i>International Journal of Computer Assisted Radiology and Surgery</i>,  1-12, 2015<br><br>
+
+	      <li> <b>A Neural Autoregressive Approach to Attention-based Recognition [<a href="publications/preprint_ijcv_2014.pdf" target=_top>pdf</a>]</b><br>
+		Yin Zheng, Richard Zemel, Yu-Jin Zhang and Hugo Larochelle,<br>
+		<i>International Journal of Computer Vision</i>, 113(1): 67-79, 2015<br><br>
+
+	      <li> <b>PhenoVar: a phenotype-driven approach in clinical genomics for the diagnosis of polymalformative syndromes [<a href="http://www.biomedcentral.com/1755-8794/7/22/abstract" target=_top>html</a>]</b><br>
+		Yannis J Trakadis, Caroline Buote, Jean-François Therriault, Pierre-Étienne Jacques, Hugo Larochelle and Sébastien Lévesque,<br>
+		<i>BMC Medical Genomics</i>, 7(22), 2014<br><br>
+
+	      <li> <b>Nonparametric Guidance of Autoencoder Representations using Label Information [<a href="publications/snoek12a.pdf" target=_top>pdf</a>]</b><br>
+		Jasper Snoek, Ryan P. Adams and Hugo Larochelle,<br>
+		<i>Journal of Machine Learning Research</i>, 13(Sep): 2567-2588, 2012<br><br>
+
+	      <li><b>Learning Where to Attend With Deep Architectures for Image Tracking [<a href="http://arxiv.org/pdf/1109.3737v1.pdf" target=_top>pdf</a>] [<a href="http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00312" target=_top>html</a>]</b><br>
+		Misha Denil, Loris Bazzani, Hugo Larochelle and Nando de Freitas,<br>
+		<i>Neural Computation</i>, 24(8): 2151-2184, 2012<br><br>
+
+	      <li> <b> Learning Algorithms for the Classification Restricted Boltzmann Machine [<a href="publications/larochelle12a.pdf" target=_top>pdf</a>]</b><br>
+		Hugo Larochelle, Michael Mandel, Razvan Pascanu and Yoshua Bengio,<br>
+		<i>Journal of Machine Learning Research</i>, 13(Mar): 643-669, 2012<br><br>
+
+	      <li> <b> Detonation Classification from Acoustic Signature with the Restricted Boltzmann Machine [<a href="http://www.iro.umontreal.ca/~lisa/pointeurs/detonation_rbm_coin_2010.pdf" target=_top>pdf</a>]</b><br>
+		Yoshua Bengio, Nicolas Chapados, Olivier Delalleau, Hugo Larochelle, Xavier Saint-Mleux, Christian Hudon and Jérôme Louradour,<br>
+		<i>Computational Intelligence</i>, 28(2): 261-288, 2012<br><br>
+
+	      <li><b>Stacked Denoising Autoencoders: Learning Useful Representations in a Deep Network with a Local Denoising Criterion [<a href="publications/vincent10a.pdf" target=_top>pdf</a>]</b><br>
+		Pascal Vincent, Hugo Larochelle, Isabelle Lajoie, Yoshua Bengio and Pierre-Antoine Manzagol,<br>
+		<i>Journal of Machine Learning Research</i>, 11(Dec): 3371-3408, 2010<br><br>
+
+	      <li><b>Tractable Multivariate Binary Density Estimation
+		  and the Restricted Boltzmann Forest [<a href="publications/NECO-10-09-1100R2-PDF.pdf" target=_top>pdf</a>]</b><br>
+		Hugo Larochelle, Yoshua Bengio and Joseph Turian,<br>
+		<i>Neural Computation</i>, 22(9): 2285-2307, 2010<br><br>
+
+	      <li> <b>Exploring Strategies for Training Deep Neural Networks
+		  [<a href="publications/jmlr-larochelle09a.pdf" target=_top>pdf</a>]</b><br>
+		Hugo Larochelle, Yoshua Bengio, Jérôme Louradour and Pascal Lamblin,<br>
+		<i>Journal of Machine Learning Research</i>, 10(Jan): 1-40, 2009<br><br>
+
+	      <li> <b>Non-Local Estimation of Manifold Structure
+		  [<a href="publications/nc_submission-final.pdf" target=_top>pdf</a>]
+		  [<a href="publications/nc_submission-final.ps" target=_top>ps</a>]</b><br>
+		Yoshua Bengio, Martin Monperrus and Hugo Larochelle,<br>
+		<i>Neural Computation</i>, 18(10): 2509-2528, 2006<br>
+	    </ul>
+
+	    <h2> Conference Papers </h2>
+
+	    <ul>
+
+	    <li> <b> Describing Videos by Exploiting Temporal Structure [<a href="http://arxiv.org/abs/1502.08029">arxiv</a>] </b><br>
+            Li Yao, Atousa Torabi, Kyunghyun Cho, Nicolas Ballas, Christopher Pal, Hugo Larochelle and Aaron Courville,<br>
+	         <i>International Conference on Computer Vision</i>, 2015<br><br>
+
+       <li> <b> MADE: Masked Autoencoder for Distribution Estimation [<a href="http://jmlr.org/proceedings/papers/v37/germain15.pdf">pdf</a>] [<a href="http://jmorg/proceedings/papers/v37/germain15-supp.pdf">supp</a>] </b><br>
+         Mathieu Germain, Karol Gregor, Iain Murray and Hugo Larochelle,<br>
+         <i>International Conference on Machine Learning</i>, 2015<br><br>
+
+      <li> <b> Using a Recursive Neural Network to Learn an Agent's Decision Model for Plan Recognition [<a href="publications/ijcai15.pdf">pdf</a>] </b><br>
+         Francis Bisson, Hugo Larochelle and Froduald Kabanza,<br>
+         <i>International Joint Conference on Artificial Intelligence</i>, 2015<br><br>
+
+      <li> <b> An Autoencoder Approach to Learning Bilingual Word Representations [<a href="publications/Bilingual_Autoencoder_NIPS.pdf">pdf</a>]</b> <br>
+         Sarath Chandar, Stanislas Lauly, Hugo Larochelle, Mitesh M. Khapra, Balaraman Ravindran, Vikas Raykar et Amrita Saha,<br>
+	    <i>Advances in Neural Information Processing Systems 27</i>, 2014<br><br>
+
+          <li> <b>Sequential Model-Based Ensemble Optimization [<a href="publications/ESMBO.pdf">pdf</a>]</b><br>
+            Alexandre Lacoste, Hugo Larochelle, Mario Marchand and François Laviolette,<br>
+	    <i>Uncertainty in Artificial Intelligence</i>, 2014<br><br>
+
+              <li> <b>Leveraging user libraries to bootstrap collaborative filtering [<a href="publications/cf_w_si_kdd.pdf">pdf</a>] </b><br>
+		Laurent Charlin, Richard Zemel and Hugo Larochelle,<br>
+		<i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining</i>, 2014<br><br>
+
+              <li> <b>Topic Modeling of Multimodal Data: an Autoregressive Approach [<a href="publications/ZhengY2014.pdf">pdf</a>] </b><br>
+		Yin Zheng, Yu-Jin Zhang and Hugo Larochelle,<br>
+		<i>IEEE Conference on Computer Vision and Pattern Recognition</i>, 2014<br><br>
+
+          <li> <b>Efficient interactive brain tumor segmentation as within-brain kNN classification [<a href="publications/ICPR_2014_paper.pdf">pdf</a>]</b><br>
+            Mohammad Havaei, Pierre-Marc Jodoin and Hugo Larochelle,<br>
+	    <i>International Conference on Pattern Recognition</i>, 2014<br><br>
+
+          <li> <b>A Deep and Tractable Density Estimator [<a href="publications/Uria14.pdf">pdf</a>] </b><br>
+            Benigno Uria, Iain Murray and Hugo Larochelle,<br>
+		    <i>International Conference on Machine Learning</i>, 2014<br><br>
+
+          <li> <b>Agnostic Bayesian Learning of Ensembles [<a href="publications/Lacoste14.pdf">pdf</a>] </b><br>
+            Alexandre Lacoste, Mario Marchand, François Laviolette and Hugo Larochelle,<br>
+		    <i>International Conference on Machine Learning</i>, 2014<br><br>
+
+          <li> <b>RNADE: The real-valued neural autoregressive density-estimator [<a href="publications/Uria2013.pdf">pdf</a>] </b><br>
+            Benigno Uria, Iain Murray and Hugo Larochelle,<br>
+		    <i>Advances in Neural Information Processing Systems 26</i>, 2013<br><br>
+
+          <li> <b>A Neural Autoregressive Topic Model [<a href="publications/nips_2012_camera_ready.pdf">pdf</a>] [<a href="publications/nips_2012_supplementary_camera_ready.pdf">supp</a>] [<a href="http://www.dmi.usherb.ca/~larocheh/code/DocNADE.zip">code</a>]</b><br>
+            Hugo Larochelle and Stanislas Lauly,<br>
+		    <i>Advances in Neural Information Processing Systems 25</i>, 2012<br><br>
+
+          <li> <b>Practical Bayesian Optimization of Machine Learning Algorithms [<a href="publications/gpopt_nips.pdf">pdf</a>] [<a href="publications/gpopt_nips_appendix.pdf">supp</a>] [<a href="http://www.cs.toronto.edu/~jasper/software.html">code</a>]</b><br>
+		    Jasper Snoek, Hugo Larochelle and Ryan P. Adams,<br>
+		    <i>Advances in Neural Information Processing Systems 25</i>, 2012<br><br>
+
+	      <li> <b> Learning to Rank By Aggregating Expert Preferences [<a href="publications/cikm_2012.pdf" target=_top>pdf</a>]</b><br>
+		    Maksims Volkovs, Hugo Larochelle and Richard Zemel,<br>
+		    <i>International Conference on Information and Knowledge Management</i>, 2012<br><br>
+
+	      <li> <b> Training Restricted Boltzmann Machines on Word Observations [<a href="publications/wrrbm_icml2012.pdf" target=_top>pdf</a>]</b><br>
+		    George E. Dahl, Ryan P. Adams and Hugo Larochelle,<br>
+		    <i>International Conference on Machine Learning</i>, 2012<br><br>
+
+	      <li> <b> On Nonparametric Guidance for Learning Autoencoder Representations [<a href="publications/aistats_2012.pdf" target=_top>pdf</a>]</b><br>
+		    Jasper Snoek, Ryan P. Adams and Hugo Larochelle,<br>
+		    <i>Artificial Intelligence and Statistics</i>, 2012<br><br>
+
+	      <li> <b> Classification of Sets using Restricted Boltzmann Machines [<a href="publications/class_set_rbms_uai.pdf" target=_top>pdf</a>] [<a href="publications/class_set_rbms_additional_material.pdf" target=_top>supp</a>] [<a href="http://arxiv.org/abs/1103.4896" target=_top>arxiv</a>]</b><br>
+		Jérôme Louradour and Hugo Larochelle,<br>
+		<i>Uncertainty in Artificial Intelligence</i>, 2011<br><br>
+
+	      <li> <b> Conditional Restricted Boltzmann Machines for Structured Output Prediction [<a href="publications/struct_output_crbm_uai.pdf" target=_top>pdf</a>]</b><br>
+		Volodymyr Mnih, Hugo Larochelle and Geoffrey Hinton,<br>
+		<i>Uncertainty in Artificial Intelligence</i>, 2011<br><br>
+
+	      <li> <b> Learning Attentional Policies for Tracking and Recognition in Video with Deep Networks [<a href="publications/rbmTracking.pdf" target=_top>pdf</a>] [<a href="http://techtalks.tv/talks/54324/">talk</a>] [<a href="http://www.youtube.com/watch?v=e14xHDS-Cnk&feature=youtu.be">youtube</a>]</b><br>
+		Loris Bazzani, Nando de Freitas, Hugo Larochelle, Vittorio Murino and Jo-Anne Ting,<br>
+		<i> International Conference on Machine Learning</i>, 2011<br><br>
+
+	      <li><b> The Neural Autoregressive Distribution Estimator [<a href="publications/aistats2011_nade.pdf" target=_top>pdf</a>] [<a href="http://videolectures.net/aistats2011_larochelle_neural/">talk</a>] [<a href="code/nade.tar.gz">code</a>] </b> <br>
+		Hugo Larochelle and Iain Murray,<br>
+		<i>Artificial Intelligence and Statistics</i>, 2011<br>
+		<b><i>Notable Paper Award</i></b><br><br>
+
+	      <li> <b>Learning to combine foveal glimpses with a third-order Boltzmann machine [<a href="publications/nips_eyebm.pdf" target=_top>pdf</a>] [<a href="publications/nips_eyebm_supp.pdf" target=_top>supp</a>] [<a href="http://videolectures.net/nips2010_larochelle_lcf/">talk</a>] [<a href="http://www.youtube.com/watch?v=Pl6Z-ZAldSY&feature=player_embedded">faces video</a>]</b><br>
+		Hugo Larochelle and Geoffrey Hinton,<br>
+		<i>Advances in Neural Information Processing Systems 23</i>, 2010<br><br>
+
+	      <li><b>Efficient Learning of Deep Boltzmann Machines [<a href="publications/aistats_2010_dbm_recnet.pdf" target=_top>pdf</a>][<a href="code/dbm_recnet.tar.gz" target=_top>code</a>]</b><br>
+		Ruslan Salakhutdinov and Hugo Larochelle,<br>
+		<i>Artificial Intelligence and Statistics</i>, 2010<br><br>
+
+	      <li> <b>Deep Learning using Robust Interdependent Codes [<a href="publications/aistats_2009_robust_interdependent.pdf" target=_top>pdf</a>]</b><br>
+		Hugo Larochelle, Dumitru Erhan and Pascal Vincent,<br>
+		<i>Artificial Intelligence and Statistics</i>, 2009<br><br>
+
+	      <li> <b>Classification using Discriminative Restricted Boltzmann Machines [<a href="publications/icml-2008-discriminative-rbm.pdf" target=_top>pdf</a>] [<a href="http://videolectures.net/icml08_larochelle_cud/">talk</a>]</b><br>
+		Hugo Larochelle and Yoshua Bengio,<br>
+		<i> International Conference on Machine Learning</i>, 2008<br><br>
+
+	      <li> <b>Extracting and Composing Robust Features with Denoising Autoencoders
+		  [<a href="publications/icml-2008-denoising-autoencoders.pdf" target=_top>pdf</a>]
+		</b><br>Pascal Vincent, Hugo Larochelle, Yoshua Bengio and Pierre-Antoine Manzagol,<br>
+		<i> International Conference on Machine Learning</i>, 2008<br><br>
+
+	      <li> <b>Zero-data Learning of New Tasks [<a href="publications/aaai2008_zero-data.pdf" target=_top>pdf</a>]</b><br>
+		Hugo Larochelle, Dumitru Erhan and Yoshua Bengio,<br>
+		<i>AAAI Conference on Artificial Intelligence</i>, 2008<br><br>
+
+	      <li> <b>An Empirical Evaluation of Deep Architectures on Problems with Many Factors of Variation [<a href="publications/deep-nets-icml-07.pdf" target=_top>pdf</a>][<a href="http://www.iro.umontreal.ca/~lisa/twiki/bin/view.cgi/Public/DeepVsShallowComparisonICML2007">html</a>]</b><br>
+		Hugo Larochelle, Dumitru Erhan, Aaron Courville, James Bergstra and Yoshua Bengio,<br>
+		<i> International Conference on Machine Learning</i>, 2007<br><br>
+
+	      <li> <b>Greedy Layer-Wise Training of Deep Networks [<a href="publications/greedy-deep-nets-nips-06.pdf" target=_top>pdf</a>]</b><br>
+		Yoshua Bengio, Pascal Lamblin, Dan Popovici and Hugo Larochelle,<br>
+		<i>Advances in Neural Information Processing Systems 19</i>, 2007<br><br>
+
+	      <li> <b>Non-Local Manifold Parzen Windows [<a href="publications/nlmp-nips-05.pdf" target=_top>pdf</a>]</b><br>
+		Yoshua Bengio, Hugo Larochelle and Pascal Vincent,<br>
+		<i>Advances in Neural Information Processing Systems 18</i>, 2006<br>
+
+	    </ul>
+
+	    <h2> Thesis </h2>
+
+	    <ul>
+	      <li> <b>Études de techniques d'appentissage non-supervisé pour l'amélioration de l'entraînement supervisé de modèles connexionnistes
+		  [<a href="publications/thesis.pdf" target=_top>pdf</a>]</b><br>
+		Hugo Larochelle,<br>
+		<i>Ph.D. thesis, Université de Montréal</i>, 2009<br><br>
+	    </ul>
+
+	    <h2> Workshop Papers and Technical Reports </h2>
+
+	    <ul>
+
+	    <li> <b> An Infinite Restricted Boltzmann Machine [<a href="http://arxiv.org/abs/1502.02476">arxiv</a>] </b><br>
+            Marc-Alexandre Côté and Hugo Larochelle,<br>
+		      arXiv, 2015<br><br>
+
+	    <li> <b> Using Descriptive Video Services to Create a Large Data Source for Video Annotation Research [<a href="http://arxiv.org/abs/1503.01070">arxiv</a>] </b><br>
+                Atousa Torabi, Christopher Pal, Hugo Larochelle and Aaron Courville,<br>
+          	    arXiv, 2015<br><br>
+
+	      <li> <b> Learning Multilingual Word Representations using a Bag-of-Words Autoencoder [<a href="publications/bilingual_word_rep_worskhop.pdf">pdf</a>] [<a href="http://arxiv.org/abs/1401.1803">arxiv</a>]</b><br>
+		Stanislas Lauly, Alex Boulanger and Hugo Larochelle,<br>
+		NIPS Deep Learning Workshop, 2013<br>
+		<br>
+
+	      <li> <b> Loss-sensitive Training of Probabilistic Conditional Random Fields [<a href="http://arxiv.org/abs/1107.1805" target=_top>arxiv</a>]</b><br>
+		Maksims Volkovs, Hugo Larochelle and Richard Zemel,<br>
+		arXiv, 2011<br>
+		<br>
+	      <li> <b> Autotagging music with conditional restricted Boltzmann machines [<a href="http://arxiv.org/abs/1103.2832" target=_top>arxiv</a>]</b><br>
+		Michael Mandel, Razvan Pascanu, Hugo Larochelle and Yoshua Bengio,<br>
+		arXiv, 2011<br>
+		<br>
+	      <li> <b>Extracting and Composing Robust Features with Denoising Autoencoders
+		  [<a href="publications/denoising_autoencoders_tr1316.pdf" target=_top>pdf</a>]
+		</b><br>Pascal Vincent, Hugo Larochelle, Yoshua Bengio and Pierre-Antoine Manzagol,<br>
+		Technical Report #1316, Département d'informatique et recherche opérationnelle,<br>
+		Université de Montréal, 2008<br>
+		<br>
+	      <li> <b>Distributed Representation Prediction for Generalization to New Words
+		  [<a href="publications/dist_rep_pred_tr1284.pdf" target=_top>pdf</a>]
+		</b><br>Hugo Larochelle and Yoshua Bengio,<br>
+		Technical Report #1284, Département d'informatique et recherche opérationnelle,<br>
+		Université de Montréal, 2006<br>
+		<br>
+	      <li> <b>Greedy Layer-Wise Training of Deep Networks
+		  [<a href="publications/dbn_supervised_tr1282.pdf" target=_top>pdf</a>]
+		</b><br>Yoshua Bengio, Pascal Lamblin, Dan Popovici and Hugo Larochelle,<br>
+		Technical Report #1282, Département d'informatique et recherche opérationnelle,<br>
+		Université de Montréal, 2006<br>
+		<br>
+	      <li> <b>Non-Local Manifold Parzen Windows
+		  [<a href="publications/nlmp-techreport.pdf" target=_top>pdf</a>]
+		  [<a href="publications/nlmp-techreport.ps" target=_top>ps</a>]
+		</b><br>Yoshua Bengio and Hugo Larochelle,<br>
+		Technical Report #1264, Département d'informatique et recherche opérationnelle,<br>
+		Université de Montréal, 2005<br>
+	    </ul>
+
+	    <h2> Others </h2>
+
+	    <ul>
+
+	      <li> <b>Classification using Discriminative Restricted Boltzmann Machines
+		  [<a href="publications/drbm-mitacs-poster.pdf" target=_top>pdf</a>]
+		</b><br>
+		Hugo Larochelle and Yoshua Bengio,<br>
+		MITACS Second Canada-France Congress,<br>
+		<b><i>Third place at poster competition</i></b>,<br>
+		Montreal, Canada, 2008<br><br>
+
+	      <li> <b>Deep Woods
+		  [<a href="publications/deep-woods-snowbird.pdf" target=_top>pdf</a>]
+		</b><br>
+		Yoshua Bengio, Hugo Larochelle and Joseph Turian,<br>
+		Poster presented at the <i>Learning@Snowbird Workshop</i>,<br>
+		Snowbird, USA, 2008<br><br>
+
+	      <li> <b>Generalization to a zero-data task: an empirical study [<a href="publications/snowbird-poster-slides-2007.pdf" target=_top>pdf</a>] [<a href="publications/snowbird-poster-slides-2007.ps" target=_top>ps</a>]</b>
+		<br>
+		Hugo Larochelle, Dumitru Erhan and Yoshua Bengio<br>
+		Talk and poster presented at the <i>Learning Workshop</i>,<br>
+		San Juan, Puerto Rico, 2007<br><br>
+
+	      <li> <b>Didactiel sur les réseaux de neurones en traitement
+		  de la langue [<a href="publications/nnet-nlp-rali.pdf" target=_top>pdf</a>]</b>
+		<br>
+		Hugo Larochelle,<br>
+		Talk in the RALI-OLST seminar series<br>
+		Université de Montréal, 2006<br><br>
+
+	      <li><b>Non-Local Manifold Parzen Windows [<a href="publications/nlmp-CIAR-slides.pdf" target=_top>pdf</a>]</b><br>
+		Yoshua Bengio, Hugo Larochelle and Pascal Vincent,<br>
+		Talk at the <i>CIAR Summer School</i>, <br>
+		University of Toronto, 2005<br><br>
+
+	      <li> <b>Non-Local Manifold Parzen Windows
+		  [<a href="publications/snowbird-poster.pdf" target=_top>pdf</a>]
+		  [<a href="publications/snowbird-poster.ps" target=_top>ps</a>]
+		</b><br>
+		Yoshua Bengio and Hugo Larochelle,<br>
+		Poster presented at the <i>Learning@Snowbird Workshop</i>,<br>
+		Snowbird, USA, 2005<br><br>
+
+	      <li> <b>Implantation et analyse d’un modèle graphique de
+		  désambiguïsation<br> à entraînement supervisé, semi-supervisé
+		  et non-supervisé
+		  [<a href="ift3051/rapport_final.pdf" target=_top>pdf</a>]
+		  [<a href="ift3051/rapport_final.ps" target=_top>ps</a>]<!--
+		  [<a href="ift3051" target=_top>site</a>]--></b><br>
+		Hugo Larochelle and Yoshua Bengio,<br>
+		IFT3051 project, Département d'informatique et recherche opérationnelle,<br>
+		Université de Montréal, 2004.<br>
+
+		<br>
+
+	      <li> <b>Some Supervised Models in Disambiguation
+		  [<a href="publications/hugo_mitacs_disambiguation.ppt" target=_top>ppt</a>]</b><br>
+		Hugo Larochelle, Christian Jauvin and Yoshua Bengio,<br>
+		Poster presented at MITACS Quebec Interchange,<br>
+		Montréal, Canada, 2003.<br>
+
+
+		<br>
+
+	      <li> <b>Étude de la pertinence de métriques statistiques
+		  pour la détection de termes dans un document
+		  [<a href="publications/memoire.pdf" target=_top>pdf</a>]
+		  [<a href="publications/memoire.ps" target=_top>ps</a>]
+		</b><br>
+		Hugo Larochelle and Philippe Langlais,<br>
+		NSERC Internship report at RALI lab,<br>
+		Département d'informatique et recherche opérationnelle,<br>
+		Université de Montréal, été 2002.<br>
+
+	    </ul>
+	  </div>
+
+	  <div id="footer">
+	  </div>
+
+	</div>
+      </div>
+
+
+    </body>
+  </html>

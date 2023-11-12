@@ -1,0 +1,1265 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold"
+          type="text/css" />
+    <link rel="stylesheet" href="../../css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+      <div id="header-text">
+	    Hugo Larochelle
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="../../index_fr.html" accesskey="a"><em>A</em>ccueil</a></li>
+	      
+	      <li><a href="../../publications_fr.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="../../university_fr.html" accesskey="u" class="active"><em>U</em>niversité</a></li>
+
+	      <li><a href="../../links_fr.html" accesskey="l"><em>L</em>iens</a></li>
+
+	    </ul>
+	  </div>
+	  </div>
+	  <div id="sidebar">
+	    <h2>IFT 725 <small>(Automne 2014)</small></h2>
+	    <table id="nav" cellpadding="0" cellspacing="8" width="120" >
+	      <tr><td><a href="description.html">Description</a></td></tr>
+	      <tr><td  class="active"><a href="contenu.html">Contenu</a></td></tr>
+	      <tr><td><a href="evaluations.html">Évaluations</a></td></tr>
+	    </table>
+	    <h2>Annonces</h2>
+        <!--
+	    <b>[14/08/2012]</b><br>
+	    La séance d'information sera
+	    le <b>27 août, à 13h00, au D4-2025.</b><br><br>
+	    <b>[06/01/2014]</b><br>
+	    Notes finales du cours disponibles.</b><br><br>
+	    <b>[06/01/2014]</b><br>
+	    Notes des projets disponibles.</b><br><br>
+	    <b>[13/12/2013]</b><br>
+	    Notes des présentations disponibles.</b><br><br>
+	    <b>[14/11/2013]</b><br>
+	    Notes du devoir 3 disponibles.</b><br><br>
+	    <b>[23/10/2013]</b><br>
+	    Notes du devoir 2 disponibles.</b><br><br>
+	    <b>[07/10/2013]</b><br>
+	    Notes du devoir 1 disponibles.</b><br><br>
+        -->
+	    <b>[25/08/2014]</b><br>
+	    Bienvenue au cours IFT 725!
+	  </div>
+	  
+	  <!--
+	  <div id="sidebarright">
+	  </div>
+	  -->
+
+	  <div id="contentnorightbar">
+	    <h2> Contenu du cours </h2>
+	    
+	    <p>
+          Voici la liste des sujets traités durant le cours,
+          semaine après semaine. À chaque semaine sont associés
+          des capsules vidéo explicatives, un article obligatoire à lire
+          ainsi que des lectures optionnelles suggérées. La colonne "<b>Date</b>"
+          correspond à la date de la semaine durant laquelle vous devez avoir visionné
+          les vidéos.
+        </p>
+
+
+        <p>
+	      Pour toute question concernant le contenu, n'hésitez pas à poser une question
+	      sur le <a href="https://groups.google.com/forum/?fromgroups#!forum/ift-725-a2014">forum de discussion</a> du cours!
+	    </p>
+
+        <!--
+        <p>
+          Considérez également vous inscrire au
+          cours <a href="https://www.coursera.org/course/neuralnets">Neural
+          Networks for Machine Learning</a>, donné
+          par <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey
+          Hinton</a> et offert
+          par <a href="https://www.coursera.org">Coursera</a>.
+        </p>
+        -->
+
+	    <table cellspacing="0">
+	      <tr bgcolor="#FD9842">
+		<td width="11%"><b>Date</b></td> 
+		<td ><b>Contenu du cours</b></td> 
+	      
+	      <tr>
+		<td>LU 01/09</td> 
+		<td>
+		  <b><font face="Copperplate,georgia,Verdana">Introduction et révision mathématique</font></b><br>
+		  <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr><td>
+
+          <b>- Lectures obligatoires -</b> [<a href="questions_mise_a_niveau.html">questions de lecture</a>] | Diapositives: [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/review.pdf">pdf</a>]
+		  <ul>
+		    <li> <b>Apprentissage automatique:</b> pages 1 à 16 et 27 à 33 de <a href="http://info.usherbrooke.ca/hlarochelle/publications/thesis.pdf">ma thèse de doctorat</a>
+		    <li> <b>Calcul différentiel:</b> pages 28 à 46 et 61 à 62 des 
+		      <a href="diapositives/ift615-apprentissage-automatique.pdf">diapositives</a> sur l'apprentissage automatique du cours IFT 615
+		    <li> <b>Algèbre linéaire:</b> <a href="http://see.stanford.edu/materials/aimlcs229/cs229-linalg.pdf">révision</a> du cours d'<a href="http://ai.stanford.edu/~ang/">Andrew Ng</a>
+		    <li> <b>Probabilités:</b> <a href="http://see.stanford.edu/materials/aimlcs229/cs229-prob.pdf">révision</a> du cours d'<a href="http://ai.stanford.edu/~ang/">Andrew Ng</a>
+		    <li> <b>Statistiques:</b> chapitre 3 des <a href="http://math.arizona.edu/~faris/stat.pdf">notes de cours</a> de <a href="http://math.arizona.edu/~faris/">William Faris</a>
+		    <li> <b>Échantillonnage:</b> Capsules 11.1 à 11.9 du <a href="http://www.youtube.com/playlist?list=PL6Xpj9I5qXYFD_rc1tttugXLfE2TcKyiO">cours IFT 603</a> <b>ou</b> pages 20 à 31 de la <a href="http://homepages.inf.ed.ac.uk/imurray2/pub/07thesis/murray_thesis_2007.pdf">thèse de doctorat</a> 
+		      de <a href="http://homepages.inf.ed.ac.uk/imurray2/">Iain Murray</a>
+		    <li> <b>Python:</b> <a href="http://info.usherbrooke.ca/hlarochelle/cours/tutoriel_python.html">tutoriel Python</a>
+		    <li> <b><a href="http://info.usherbrooke.ca/hlarochelle/mlpython/">MLPython</a></b>: <a href="http://info.usherbrooke.ca/hlarochelle/mlpython/tutorial.html#tutorial">tutoriel</a> sur la librairie d'apprentissage automatique
+		  </ul>
+              </td></tr>
+          </table><br>
+		  <b>- Lectures suggérées -</b>
+		  <ul>
+		    <li> <a href="http://web.mit.edu/~wingated/www/stuff_i_use/matrix_cookbook.pdf"><i>The Matrix Cookbook</i></a> 
+		      de Kaare Brandt Petersen et Michael Syskind Pedersen (excellente référence, à consulter régulièrement)
+		    <li> Sections 7.1, 7.2, 7.3 et 7.10 du livre <a href="http://www.stanford.edu/~hastie/local.ftp/Springer/ESLII_print5.pdf"><i>The Elements of Statistical Learning</i></a> de <a href="http://www.stanford.edu/~hastie/">Trevor Hastie</a>, <a href="http://www-stat.stanford.edu/~tibs/">Robert Tibshirani</a> et <a href="http://www-stat.stanford.edu/~jhf/">Jerome Friedman</a>
+		    <li> Sections 18.2.1, 18.2.2 et 18.3 du livre <a href="http://www.naturalimagestatistics.net/nis_preprintFeb2009.pdf"><i>Natural Image Statistics</i></a>  de <a href="http://www.cs.helsinki.fi/u/ahyvarin/">Aapo Hyvärinen</a>, Jarmo Hurri et <a href="http://www.cs.helsinki.fi/u/phoyer/">Patrik Hoyer</a>
+		    <li> Section 19 du livre <a href="http://www.naturalimagestatistics.net/nis_preprintFeb2009.pdf"><i>Natural Image Statistics</i></a>
+		    <li> <a href="diapositives/probx.pdf">Diapositives de révision</a> par <a href="http://www.cs.nyu.edu/~roweis/">Sam Roweis</a>
+		  </ul><br>
+		  <b>- Matériel multimédia suggéré -</b>
+		  <ul>
+		    <li> Vidéos du cours <i>Machine Learning</i> de 
+		      <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a> 
+		      sur l'apprentissage automatique
+		      [<a href="http://www.youtube.com/watch?v=HN7VK4aDFiA&feature=relmfu">1</a>] 
+		      [<a href="http://www.youtube.com/watch?v=RxhXtz6rCBc&feature=relmfu">2</a>] 
+		      [<a href="http://www.youtube.com/watch?v=l9kvAXe5lVA&feature=relmfu">3</a>] 
+		      [<a href="http://www.youtube.com/watch?v=7ebYohehD1g&feature=relmfu">4</a>] 
+		      [<a href="http://www.youtube.com/watch?v=_Je5f750bp4&feature=relmfu">5</a>] 
+		      [<a href="http://www.youtube.com/watch?v=fgmMm-nWN1s&feature=relmfu">6</a>] 
+		      [<a href="http://www.youtube.com/watch?v=ZrIUWY3tkVU&feature=relmfu">7</a>] 
+		      [<a href="http://www.youtube.com/watch?v=as2z9I41Db8&feature=relmfu">8</a>] 
+		      [<a href="http://www.youtube.com/watch?v=0IYePTE2ZVw&feature=relmfu">9</a>] 
+		      [<a href="http://www.youtube.com/watch?v=o-HVrPZhd70&feature=relmfu">10</a>] 
+		      [<a href="http://www.youtube.com/watch?v=Tp7XNqCn1Vs&feature=relmfu">11</a>] 
+		      [<a href="http://www.youtube.com/watch?v=c2yKtYEfv10&feature=relmfu">12</a>] 
+
+		    <li> Vidéos du cours <i>Machine Learning</i> de 
+		      <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a> 
+		      sur l'algèbre linéaire
+		      [<a href="http://www.youtube.com/watch?v=PsWi-Mgxftc&feature=relmfu">1</a>] 
+		      [<a href="http://www.youtube.com/watch?v=gdToHE-oCxQ&feature=relmfu">2</a>] 
+		      [<a href="http://www.youtube.com/watch?v=9zOZCVj-0Kg&feature=relmfu">3</a>] 
+		      [<a href="http://www.youtube.com/watch?v=w3wyOBSLf8s&feature=relmfu">4</a>] 
+		      [<a href="http://www.youtube.com/watch?v=qI_2jC4vK3g&feature=relmfu">5</a>] 
+
+		    <li> Présentation <a href="http://videolectures.net/mlss2010_lawrence_mlfcs/"><i>What is Machine Learning</i></a> 
+		      de <a href="http://staffwww.dcs.shef.ac.uk/people/N.Lawrence/">Neil Lawrence</a>
+		    <li> Présentation <a href="http://videolectures.net/mlss09uk_murray_mcmc/"><i>Markov Chain Monte Carlo</i></a> 
+		      de <a href="http://homepages.inf.ed.ac.uk/imurray2/">Iain Murray</a>
+		  </ul>
+		</td> 
+
+	      <tr bgcolor="#EEE">
+		<td>LU 08/09</td> 
+		<td>
+		  <b><font face="Copperplate,georgia,Verdana">Réseau de neurones à propagation avant</font></b><br>
+          <br>
+	      <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr>
+              <td width="400px"><b>- Capsules vidéo -</b></td>
+              <td width="50px" align="right"><b>Diapositives</b></td>
+            </tr>
+           <td>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=SGZ6BttHMPw"><i>Artificial neuron</i></a> (7:50) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=tCHIkgWZLOQ"><i>Activation function</i></a> (5:56) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=iT5P4z6Fzj8"><i>Capacity of single neuron</i></a> (8:05) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=apPiZd-qnZ8"><i>Multilayer neural network</i></a> (13:11) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=O4I7dQC4VtU"><i>Capacity of neural network</i></a> (8:56) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=cuJ4IC5_pGs"><i>Biological inspiration</i></a> (14:21) 
+           </td>
+           <td align="right">
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/1_01_artificial_neuron.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/1_02_activation_function.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/1_03_capacity_of_single_neuron.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/1_04_multilayer_neural_network.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/1_05_capacity_of_neural_network.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/1_06_biological_inspiration.pdf">pdf</a>]
+           </td>
+          </table>
+          <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr><td>
+              <b>- Lecture obligatoire -</b>
+		      <ul>
+		        <li> <a href="http://www.iro.umontreal.ca/~lisa/publications2/index.php/attachments/single/205"><i>Quadratic Polynomials Learn Better Image Features</i></a> de <a href="http://people.fas.harvard.edu/~bergstra/">James Bergstra</a>, <a href="http://brainlogging.wordpress.com/">Guillaume Desjardins</a>, Pascal Lamblin et <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a>
+		      </ul>
+              </td></tr>
+          </table><br>
+		  <b>- Lectures suggérées -</b>
+		  <ul> 
+		    <li> Autre article développant le lien entre avec les réseaux de neurones biologiques pour développer de nouveaux réseaux artificiels, et proposant l'utilisation
+		      de la fonction d'activation <i>rectified linear function</i> :
+		    <ul id="contenucours">
+		      <li> <a href="http://jmlr.csail.mit.edu/proceedings/papers/v15/glorot11a/glorot11a.pdf"><i>Deep Sparse Rectier Neural Networks</i></a> de Xavier Glorot, <a href="https://www.hds.utc.fr/~bordesan/dokuwiki/doku.php">Antoine Bordes</a> et <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a>
+		    </ul> Article proposant la fonction d'activation <i>maxout</i> :
+		    <ul id="contenucours">
+		      <li> <a href="http://arxiv.org/pdf/1302.4389v4.pdf"><i>Maxout Networks</i></a> de
+			de <a href="http://www-etud.iro.umontreal.ca/~goodfeli/">Ian Goodfellow</a>,
+			<a href="http://aaroncourville.wordpress.com/">Aaron Courville</a>
+			et <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a> 
+                    </ul>
+		  </ul>
+		</td>
+	      </tr>
+	      
+	      <tr>
+		<td>LU 15/09</td> 
+		<td><b><font face="Copperplate,georgia,Verdana">Rétropropagation des gradients et optimisation</font></b><br>
+          <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr>
+              <td width="400px"><b>- Capsules vidéo -</b></td>
+              <td width="50px" align="right"><b>Diapositives</b></td>
+            </tr>
+           <td>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=5adNQvSlF50"><i>Empirical risk minimization</i></a> (10:28) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=PpFTODTztsU"><i>Loss function</i></a> (4:49) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=1N837i4s1T8"><i>Output layer gradient</i></a> (12:03) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=xFhM_Kwqw48"><i>Hidden layer gradient</i></a> (15:15) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=tf9p1xQbWNM"><i>Activation function derivative</i></a> (4:37) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=p5tL2JqCRDo"><i>Parameter gradient</i></a> (6:26) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=_KoWTD8T45Q"><i>Backpropagation</i></a> (15:07) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=JfkbyODyujw"><i>Regularization</i></a> (13:15) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=sLfogkzFNfc"><i>Parameter initialization</i></a> (6:10) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Fs-raHUnF2M"><i>Model selection</i></a> (13:48) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Bver7Ttgb9M"><i>Optimization</i></a> (23:40)
+           </td>
+           <td align="right">
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/2_01_empirical_risk_minimization.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/2_02_loss_function.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/2_03_output_layer_gradient.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/2_04_hidden_layer_gradient.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/2_05_activation_function_derivative.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/2_06_parameter_gradient.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/2_07_backpropagation.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/2_08_regularization.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/2_09_parameter_initialization.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/2_10_model_selection.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/2_11_optimization.pdf">pdf</a>]
+           </td>
+          </table> <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr><td>
+		  <b>- Lecture obligatoire -</b>
+		  <ul>
+		    <li> Section 3 de <a href="http://arxiv.org/pdf/1206.5533v1.pdf"><i>Practical Recommendations for Gradient-Based Training of Deep
+			      Architectures</i></a> de <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a> 
+		  </ul>
+              </td></tr>
+          </table><br>
+		  <b>- Lectures suggérées -</b>
+		  <ul>
+		    <li> Articles discutant plusieurs trucs pour entraîner des réeaux de neurones artificiels:
+		      <ul id="contenucours">
+			<li><a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf"><i>Efficient BackProp</i></a> de <a href="http://yann.lecun.com/">Yann LeCun</a>, <a href="http://leon.bottou.org/">Léon Bottou</a>, <a href="http://www.willamette.edu/~gorr/">Geneviève Orr</a> et <a href="http://www.ml.tu-berlin.de/menue/mitglieder/klaus-robert_mueller/">Klaus-Robert Müller</a>
+			<li> <a href="http://arxiv.org/pdf/1206.5533v1.pdf"><i>Practical Recommendations for Gradient-Based Training of Deep
+			      Architectures</i></a> de <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a> 
+			<li> <a href="http://cilvr.cs.nyu.edu/diglib/lsml/bottou-sgd-tricks-2012.pdf"><i>Stochastic Gradient Descent Tricks</i></a> de <a href="http://leon.bottou.org/">Léon Bottou</a>
+		      </ul>
+		    <li> Articles explorant des techniques d'optimisation plus sophistiquées pour entraîner des réseaux de neurones:
+		      <ul id="contenucours">
+			<li> <a href="http://arxiv.org/pdf/1212.5701.pdf">ADADELTA: An Adaptive Learning Rate Method</a> de <a href="http://www.matthewzeiler.com/">Matthew D. Zeiler</a>
+			<li> <a href="http://www.cs.toronto.edu/~jmartens/docs/Deep_HessianFree.pdf "><i>Deep learning via Hessian-free optimization</i></a> de <a href="http://www.cs.toronto.edu/~jmartens/research.html">James Martens</a>
+			<li> <a href="http://www.bcl.hamilton.ie/~barak/papers/nc-hessian.pdf"><i>Fast Exact Multiplication by the Hessian</i></a> de <a href="http://www.bcl.hamilton.ie/~barak/">Barak Pearlmutter</a>
+			<li> <a href="http://nicolas.le-roux.name/publications/LeRoux08_tonga.pdf">Topmoumoute online natural gradient algorithm</a> de <a href="http://nicolas.le-roux.name/">Nicolas Le Roux</a>, Pierre-Antoine Manzagol et <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a>
+		      </ul>
+		    <li> Notes générales sur l'optimisation sur de gros jeux de données (un excellent résumé de plusieurs méthodes):
+		      <ul id="contenucours">
+			<li> <a href="http://www.di.ens.fr/~mschmidt/Documents/bigN.pdf"><i>Notes on Big-n Problems</i></a> de <a href="http://www.di.ens.fr/~mschmidt/">Mark Schmidt</a>
+		      </ul>
+		  </ul><br>
+		  <b>- Matériel multimédia suggéré -</b>
+		  <ul>
+		    <li> Vidéos du cours <i>Machine Learning</i> de 
+		      <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a> 
+		      sur l'entraînement de réseaux de neurones 
+		      [<a href="http://www.youtube.com/watch?v=keQ1kNIU96Y&feature=relmfu">1</a>] 
+		      [<a href="http://www.youtube.com/watch?v=wmfpS5fKFeY&feature=relmfu">2</a>] 
+		      [<a href="http://www.youtube.com/watch?v=b0mv1sJvRp0">3</a>] 
+		      [<a href="http://www.youtube.com/watch?v=12a9fsLyFes&feature=relmfu">4</a>] 
+		      [<a href="http://www.youtube.com/watch?v=feEj-T2Ceg4&feature=relmfu">5</a>] 
+		      [<a href="http://www.youtube.com/watch?feature=endscreen&NR=1&v=I_TeNU-nUQs">6</a>] 
+		      [<a href="http://www.youtube.com/watch?v=VwwB6xcx8Wg&feature=relmfu">7</a>] 
+		  </ul>
+		</td> 
+
+	      <tr bgcolor="#EEE">
+		<td>LU 22/09</td> 
+		<td>
+		  <b><font face="Copperplate,georgia,Verdana">Champs markoviens conditionnels (<i>Conditional Random Fields</i>) - inférence </font></b><br>
+          <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr>
+              <td width="400px"><b>- Capsules vidéo -</b></td>
+              <td width="50px" align="right"><b>Diapositives</b></td>
+            </tr>
+           <td>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=GF3iSJkgPbA"><i>Motivation</i></a> (5:19) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=PGBlyKtfB74"><i>Linear chain CRF</i></a> (9:58) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=G4lnHc2M1CA"><i>Context window</i></a> (12:47) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=fGdXkVv1qNQ"><i>Computing the partition function</i></a> (24:34) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=hjkwp-eDwt8"><i>Computing marginals</i></a> (9:08) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=pQJvX9U-MyE"><i>Performing classification</i></a> (18:32) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=uXV2an9TdJY"><i>Factors, sufficient statistics and linear CRF</i></a> (11:37) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=ZYUnyyVgtyA"><i>Markov network</i></a> (11:37) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Q5GTCHVsHXY"><i>Factor graph</i></a> (6:28) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=-z5lKPHcumo"><i>Belief propagation</i></a> (24:48) <br>
+           </td>
+           <td align="right">
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/3_01_motivation.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/3_02_linear_chain_crf.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/3_03_context_window.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/3_04_computing_partition_function.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/3_05_computing_marginals.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/3_06_performing_classification.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/3_07_factors_sufficient_statistics_linear_crf.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/3_08_markov_network.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/3_09_factor_graph.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/3_10_belief_propagation.pdf">pdf</a>]<br>
+           </td>
+          </table> <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr><td>
+		  <b>- Lecture obligatoire -</b>
+		  <ul>
+		    <li> Sections 2 &agrave; 2.2 et section 3.3 de <a href="http://www.nowozin.net/sebastian/papers/nowozin2011structured-tutorial.pdf"><i>Structured Learning and
+            Prediction in Computer Vision</i></a> de <a href="http://www.nowozin.net/sebastian/">Sebastian Nowozin</a> et <a href="http://pub.ist.ac.at/~chl/">Christoph Lampert</a>
+            <li> Pour en savoir plus sur le Lagrangien: sections 5.1.1 à 5.1.5 du livre 
+            <a href="http://www.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf"><i>Convex Optimization</i></a>
+            de <a href="http://www.stanford.edu/~boyd/">Stephen Boyd</a> et 
+            <a href="http://www.ee.ucla.edu/~vandenbe/">Lieven Vandenberghe</a>
+          </ul>
+		  </ul>
+              </td></tr>
+          </table><br>
+		  <b>- Lectures suggérées -</b>
+		  <ul>
+		    <li> Pages 1 à 42 du tutoriel <a href="http://arxiv.org/pdf/1011.4088v1.pdf">An Introduction to Conditional Random Fields</a> de <a href="http://homepages.inf.ed.ac.uk/csutton/">Charles Sutton</a> et <a href="http://people.cs.umass.edu/~mccallum/">Andrew McCallum</a>
+		    <li> Section 8.3 et 8.4 du
+		    livre <a href="http://research.microsoft.com/en-us/um/people/cmbishop/prml/Bishop-PRML-sample.pdf"><i>Pattern
+		    Recognition and Machine Learning</i></a> de
+		      <a href="http://research.microsoft.com/en-us/um/people/cmbishop/">Christopher M. Bishop</a>
+		    <li> Section 8.1 et 8.2 du
+		    livre <a href="http://research.microsoft.com/en-us/um/people/cmbishop/prml/Bishop-PRML-sample.pdf"><i>Pattern
+		    Recognition and Machine Learning</i></a> 
+		  </ul><br>
+		  <b>- Matériel multimédia suggéré -</b>
+		  <ul>
+		    <li> Vidéos du cours <i>Probabilistic Graphical Models</i> de Stanford sur les champs markoviens conditionnels:
+		      <ul>
+			<li> <a href="http://www.youtube.com/watch?v=5R5ixMmKQzg&feature=relmfu">facteurs</a> (<i>factors</i>)
+			<li> champs/réseaux markoviens (<i>Markov networks</i>) [<a href="http://www.youtube.com/watch?v=SH1K4RtX9uQ">1</a] [<a href="http://www.youtube.com/watch?v=kFcjl3A9QuA&feature=relmfu">2</a>] [<a href="http://www.youtube.com/watch?v=giQPlyhlMDU&feature=relmfu">3</a>] 
+			<li> <a href="http://www.youtube.com/watch?v=2BXoj778YU8&feature=results_main&playnext=1&list=PL50E6E80E8525B59C">champs markoviens conditionnels</a> (<i>conditional random fields</i>)
+			<li> paramétrisation des facteurs [<a href="http://www.youtube.com/watch?v=oLJHOZmAxn0&feature=relmfu">1</a>] [<a href="http://www.youtube.com/watch?v=yRnmTveoFjs&feature=relmfu">2</a>]
+			<li> <i>belief propagation</i>/<i>sum product</i> [<a href="http://www.youtube.com/watch?v=ASsKAaHlhCU&feature=relmfu">1</a>] [<a href="http://www.youtube.com/watch?v=gaiZ0N_gPoY&feature=relmfu">2</a>] [<a href="http://www.youtube.com/watch?v=6k7o3-UzUM0&feature=relmfu">3</a>] [<a href="http://www.youtube.com/watch?v=XcUEUZtRLqc&feature=relmfu">4</a>] [<a href="http://www.youtube.com/watch?v=bk8jBNFWZ0I&feature=relmfu">5</a>]
+			  <li> <i>max product</i> [<a href="http://www.youtube.com/watch?v=CH1bCDe6k88&feature=relmfu">1</a>] [<a href="http://www.youtube.com/watch?v=OLb6w9h4ll0&feature=relmfu">2</a>]
+		      </ul>
+		    <li> <a href="http://videolectures.net/cikm08_elkan_llmacrf/">Tutoriel</a> de <a href="http://cseweb.ucsd.edu/~elkan/">Charles Elkan</a>
+		  </ul>
+		  
+		</td> 
+		
+	      </tr>
+	      
+	      <tr>
+		<td>LU 29/09</td> 
+		<td><b><font face="Copperplate,georgia,Verdana">Champs markoviens conditionnels (<i>Conditional Random Fields</i>) - apprentissage</font></b><br>
+          <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr>
+              <td width="400px"><b>- Capsules vidéo -</b></td>
+              <td width="50px" align="right"><b>Diapositives</b></td>
+            </tr>
+           <td>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=6dpGB60Q1Ts"><i>Loss function</i></a> (5:45) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=fU2W7KRoS2U"><i>Unary log-factor gradient</i></a> (13:29) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=1W2lkcGV2Zo"><i>Pairwise log-factor gradient</i></a> (5:54) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=MD4mY3Zj5E4"><i>Discriminative vs. generative learning</i></a> (6:44) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=aMi2xnYEwbc"><i>Maximum-entropy Markov model</i></a> (8:46) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=jdlJfM707MM"><i>Hidden Markov model</i></a> (4:17) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=QY9k7tJistU"><i>General conditional random field</i></a> (6:30) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=ltRT1m7vaBU"><i>Pseudolikelihood</i></a> (5:11) <br>
+           </td>
+           <td align="right">
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/4_01_loss_function.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/4_02_unary_log-factor_gradient.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/4_03_pairwise_log-factor_gradient.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/4_04_discriminative_vs_generative.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/4_05_maximum-entropy_markov_model.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/4_06_hidden_markov_model.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/4_07_general_crf.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/4_08_pseudolikelihood.pdf">pdf</a>]<br>
+           </td>
+          </table> <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr><td>
+		  <b>- Lecture obligatoire -</b>
+		  <ul>
+		    <li> Pages 134 &agrave; 140 et 152 &agrave; 156 de <a href="http://www.nowozin.net/sebastian/papers/nowozin2011structured-tutorial.pdf"><i>Structured Learning and
+            Prediction in Computer Vision</i></a> de <a href="http://www.nowozin.net/sebastian/">Sebastian Nowozin</a> et <a href="http://pub.ist.ac.at/~chl/">Christoph Lampert</a> 
+		  </ul>
+              </td></tr>
+          </table><br>
+
+            <li>
+          </ul>
+		  <b>- Lectures suggérées -</b>
+		  <ul>
+		    <li> Articles discutant des variantes non-linéaires (avec neurones cachés) des champs markoviens conditionnels:
+		      <ul id="contenucours">
+			<li> <a href="http://homes.cs.washington.edu/~lfb/paper/nips09b.pdf"><i>Conditional Neural Fields</i></a> de <a href="http://people.csail.mit.edu/jpeng/">Jian Peng</a>, <a href="http://www.cs.washington.edu/homes/lfb/">Liefeng Bo</a> et <a href="http://ttic.uchicago.edu/~jinbo/">Jinbo Xu</a>
+			<li> <a href="http://publications.idiap.ch/downloads/papers/2010/Do_AISTATS_2010.pdf"><i>Neural conditional random fields</i></a> de Trinh-Minh-Tri Do et <a href="http://www-connex.lip6.fr/~artieres/Home/pmwiki.php">Thierry Artière</a>
+		      </ul>
+		    <li> Article précurseur des champs markoviens conditionnels:
+		      <ul  id="contenucours">
+			<li> <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf"><i>Gradient-Based Learning Applied to Document Recognition</i></a> de <a href="http://yann.lecun.com/">Yann LeCun</a>, <a href="http://leon.bottou.org/">Léon Bottou</a>, <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a> and <a href="http://www2.research.att.com/~haffner/">Patrick Haffner</a>
+		      </ul>
+		    <li> Articles sur des modèles alternatifs aux champs markoviens conditionnels:
+		      <ul  id="contenucours">
+			<li> <b><i>Structured Perceptron:</i></b> <a href="http://acl.ldc.upenn.edu/W/W02/W02-1001.pdf"><i>Discriminative Training Methods for Hidden Markov Models: Theory and Experiments with Perceptron Algorithms</i></a> de <a href="http://www.cs.columbia.edu/~mcollins/">Michael Collins</a>
+			<li> <b><i>Structured SVM:</i></b> <a href="http://www.ri.cmu.edu/pub_files/pub4/ratliff_nathan_2007_3/ratliff_nathan_2007_3.pdf"><i>(Online) Subgradient Methods for Structured Prediction</i></a> de Nathan Ratliff, <a href="http://www.ri.cmu.edu/person.html?person_id=689">Andrew Bagnell</a> et <a href="http://martin.zinkevich.org/">Martin Zinkevich</a> [<a href="http://videolectures.net/cmulls08_ratliff_ssmmt/">video</a>]
+		      </ul>
+            <li> Article décrivant diverses approches pour tenir compte de la fonction d'erreur selon laquelle le modèle est évalué:
+              <ul  id="contenucours">
+                <li> <a href="http://arxiv.org/pdf/1107.1805v1.pdf"><i>Loss-sensitive Training of Probabilistic Conditional Random Fields </i></a>  de <a href="http://www.cs.toronto.edu/~mvolkovs/">Maksims Volkovs</a>,  <a href="http://info.usherbrooke.ca/hlarochelle/">Hugo Larochelle</a> et <a href="http://www.cs.toronto.edu/~zemel/">Rich Zemel</a>
+              </ul>
+		  </ul><br>
+		  <b>- Matériel multimédia suggéré -</b>
+		  <ul>
+		    <li> Vidéo du cours <i>Probabilistic Graphical Models</i> de Stanford sur l'entraînement de champs markoviens conditionnels [<a href="http://www.youtube.com/watch?v=Yr3YmGTXLT4&feature=relmfu">1</a>] [<a href="http://www.youtube.com/watch?v=A4-nPUW81qU">2</a>] [<a href="http://www.youtube.com/watch?v=EqQNyiQ5fFs&feature=relmfu">3</a>]
+		    <li> Présentation <a href="http://videolectures.net/iiia06_pereira_slm/"><i>Structured Linear Models</i></a> de <a href="http://www.cis.upenn.edu/~pereira/">Fernando Pereira</a>
+		  </ul>
+
+	      <tr bgcolor="#EEE">
+		<td>LU 06/10</td> 
+		<td><b><font face="Copperplate,georgia,Verdana">Machine de Boltzmann restreintes <br>(<i>Restricted Boltzmann Machines</i>)</font></b><br>
+          <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr>
+              <td width="400px"><b>- Capsules vidéo -</b></td>
+              <td width="50px" align="right"><b>Diapositives</b></td>
+            </tr>
+           <td>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=p4Vh_zMw-HQ"><i>Definition</i></a> (12:17) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=lekCh_i32iE"><i>Inference</i></a> (18:33) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=e0Ts_7Y6hZU"><i>Free energy</i></a> (12:54) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=MD8qXWucJBY"><i>Contrastive divergence</i></a> (13:34) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=wMb7cads0go"><i>Contrastive divergence (parameter update)</i></a> (11:10) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=S0kFFiHzR8M"><i>Persistent CD</i></a> (7:36) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=n26NdEtma8U"><i>Example</i></a> (8:15) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=iPuqoQih9xk"><i>Extensions</i></a> (9:19) <br>
+           </td>
+           <td align="right">
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/5_01_definition.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/5_02_inference.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/5_03_free_energy.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/5_04_contrastive_divergence.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/5_05_contrastive_divergence_parameter_update.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/5_06_persistent_CD.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/5_07_example.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/5_08_extensions.pdf">pdf</a>]<br>
+           </td>
+          </table> <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr><td>
+		  <b>- Lecture obligatoire -</b>
+		  <ul>
+			<li> <a href="http://people.cs.umass.edu/~marlin/research/papers/aistats2010-paper.pdf"><i>Inductive Principles for Restricted Boltzmann Machine Learning</i></a> de
+			  <a href="http://people.cs.umass.edu/~marlin/">Benjamin
+			    Marlin</a>, <a href="http://www.cs.toronto.edu/~kswersky/">Kevin
+			    Swersky</a>, <a href="http://www.cs.ubc.ca/~bochen/Dave_Chens_Homepage.html">Bo Chen</a>
+			  et <a href="http://www.cs.ubc.ca/~nando/">Nando de Freitas</a>
+		  </ul>
+              </td></tr>
+          </table><br>
+		  <b>- Lectures suggérées -</b>
+		  <ul>
+		    <li> Autre article évaluant diff&eacute;rentes approches pour entraîner un modèle avec constante de normalisation:
+		      <ul id="contenucours">
+			<li> <a href="http://jmlr.csail.mit.edu/proceedings/papers/v9/gutmann10a/gutmann10a.pdf"><i>Noise-contrastive estimation: A new estimation principle for
+			      unnormalized statistical models</i></a>
+			  de <a href="https://sites.google.com/site/michaelgutmann/">Michael Gutmann</a>
+			  et <a href="http://www.cs.helsinki.fi/u/ahyvarin/">Aapo Hyvärinen</a>
+		      </ul>
+		    <li> Articles sur différentes extensions de la machine de Boltzmann restreinte:
+		      <ul  id="contenucours">
+			<li> <a href="http://info.usherbrooke.ca/hlarochelle/publications/icml-2008-discriminative-rbm.pdf"><i>Classification using Discriminative Restricted Boltzmann Machines</i></a> de <a href="http://info.usherbrooke.ca/hlarochelle/">Hugo Larochelle</a> et <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a> [<a href="http://videolectures.net/icml08_larochelle_cud/">video</a>]
+			<li> <a href="http://www.cs.toronto.edu/~rfm/pubs/factored.pdf"><i>Learning to Represent Spatial Transformations with Factored Higher-Order Boltzmann Machines</i></a> 
+			  de <a href="http://www.cs.toronto.edu/~rfm/">Roland Memisevic</a> et <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey Hinton</a>
+			<li> <a href="http://www.cs.toronto.edu/~ranzato/publications/ranzato_aistats2010.pdf"><i>Factored 3-Way Restricted Boltzmann Machines for Modeling Natural Images</i></a> 
+			  de <a href="http://www.cs.toronto.edu/~ranzato/">Marc'Aurelio Ranzato</a>, 
+			  <a href="http://www.cs.toronto.edu/~kriz/">Alex Krizhevsky</a> et 
+			  <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey Hinton</a> [<a href="http://videolectures.net/aistats2010_ranzato_f3wr/">video</a>]
+			<li> <a href="http://web.eecs.umich.edu/~honglak/nips07-sparseDBN.pdf"><i>Sparse deep belief net model for visual area V2</i></a> 
+			  de <a href="http://web.eecs.umich.edu/~honglak/">Honglak Lee</a>, <a href="http://math.nyu.edu/~chaitu/">Chaitanya Ekanadham</a> 
+			  et <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a>
+			<li> <a href="http://www.cs.toronto.edu/~hinton/absps/reluICML.pdf"><i>Rectified Linear Units Improve Restricted Boltzmann Machines</i></a> de
+			  <a href="http://www.cs.toronto.edu/~vnair/">Vinod Nair</a> et <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey Hinton</a> 
+			<li> <a href="http://www.csri.utoronto.ca/~hinton/absps/nips00-ywt.pdf"><i>Rate-coded Restricted Boltzmann Machines for Face Recognition</i></a> de
+			  <a href="http://www.gatsby.ucl.ac.uk/~ywteh/">Yee Whye Teh</a> et <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey Hinton</a> 
+			<li> <a href="http://www.icml-2011.org/papers/591_icmlpaper.pdf"><i>
+			      Unsupervised Models of Images by Spike-and-Slab RBMs</i></a>
+			  de <a href="http://aaroncourville.wordpress.com/">Aaron Courville</a>,
+			  <a href="http://people.fas.harvard.edu/~bergstra/">James Bergstra</a>
+			  et <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a> [<a href="http://techtalks.tv/talks/unsupervised-models-of-images-by-spike-and-slab-rbms/54326/">video</a>]
+		      </ul>
+		    <li> Articles sur des techniques avancées d'échantillonnage:
+		      <ul id="contenucours">
+			<li> Section 30.1 du livre <a href="http://www.cs.toronto.edu/~mackay/itprnn/book.pdf"><i>Information Theory, Inference, and Learning Algorithms</i></a> de <a href="http://www.inference.phy.cam.ac.uk/mackay/">David MacKay</a>
+			<li> <a href="http://www.utstat.toronto.edu/~rsalakhu/papers/trans.pdf"><i>Learning in Markov Random Fields using
+			      Tempered Transitions</i></a> de <a href="http://www.utstat.toronto.edu/~rsalakhu">Ruslan Salakhutdinov</a>
+			<li> <a href="http://jmlr.csail.mit.edu/proceedings/papers/v9/desjardins10a/desjardins10a.pdf"><i>Parallel Tempering for Training of Restricted Boltzmann Machines</i></a> de
+			  <a href="http://brainlogging.wordpress.com/">Guillaume Desjardins</a>, <a href="http://aaroncourville.wordpress.com/">Aaron Courville</a>, 
+			  <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a>, <a href="http://www.iro.umontreal.ca/~vincentp/">Pascal Vincent</a>
+			  et <a href="http://www.iro.umontreal.ca/~delallea/">Olivier Delalleau</a>
+			<li> <a href="http://www.utstat.toronto.edu/~rsalakhu/papers/adapt.pdf"><i>Learning Deep Boltzmann Machines using Adaptive MCMC</i></a> 
+			  de <a href="http://www.utstat.toronto.edu/~rsalakhu">Ruslan Salakhutdinov</a>
+		      </ul>
+		  </ul><br>
+		  <b>- Matériel multimédia suggéré -</b>
+		  <ul>
+		    <li> Présentation <a href="http://videolectures.net/nips09_hinton_dlmi/"><i>Deep Learning with Multiplicative Interactions</i></a> 
+		      de <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey Hinton</a> sur plusieurs variantes de machine
+		      de Boltzmann restreintes
+		  </ul>
+
+		</td>
+	      </tr>
+	      
+	      <tr>
+		<td>LU 13/10</td> 
+		<td>Semaine libre</td> 
+	      </tr>
+	      
+	      <tr bgcolor="#EEE">
+		<td>LU 20/10</td> 
+		<td><b><font face="Copperplate,georgia,Verdana">Autoencodeurs</font></b><br>
+          <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr>
+              <td width="400px"><b>- Capsules vidéo -</b></td>
+              <td width="50px" align="right"><b>Diapositives</b></td>
+            </tr>
+           <td>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=FzS3tMl4Nsc"><i>Definition</i></a> (6:15) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=xTU79Zs4XKY"><i>Loss function</i></a> (11:52) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=6DO_jVbDP3I"><i>Example</i></a> (2:54) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=xq-I0Rl8mt0"><i>Linea autoencoder</i></a> (19:47) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=5rLgoM2Pkso"><i>Undercomplete vs. overcomplete hidden layer</i></a> (5:36) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=t2NQ_c5BFOc"><i>Denoising autoencoder</i></a> (14:16) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=79sYlJ8Cvlc"><i>Contractive autoencoder</i></a> (12:08) <br>
+           </td>
+           <td align="right">
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/6_01_definition.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/6_02_loss_function.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/6_03_example.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/6_04_linear_autoencoder.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/6_05_undercomplete_vs_overcomplete_hidden_layer.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/6_06_denoising_autoencoder.pdf">pdf</a>]<br>
+            [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/6_07_contractive_autoencoder.pdf">pdf</a>]<br>
+           </td>
+          </table> <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr><td>
+		  <b>- Lecture obligatoire -</b>
+		  <ul>
+            <li> <a href="http://www.iro.umontreal.ca/~vincentp/Publications/DenoisingScoreMatching_NeuralComp2011.pdf"><i>A Connection Between Score Matching and
+            Denoising Autoencoders</i></a> de <a href="http://www.iro.umontreal.ca/~vincentp/">Pascal Vincent</a>
+		  </ul>
+              </td></tr>
+          </table><br>
+		  <b>- Lectures suggérées -</b>
+		  <ul>
+		    <li> Article théorique démontrant qu'une couche non-linéaire n'est pas nécessaire pour obtenir la meilleure erreur de reconstruction:
+		      <ul id="contenucours">
+			<li> <a href="http://publications.idiap.ch/downloads/reports/2000/rr00-16.pdf"><i>Auto-Association by Multilayer Perceptrons and Singular Value Decomposition</i></a> de <a href="http://people.idiap.ch/bourlard">Hervé Bourlard</a> et Yves Kamp
+		      </ul>
+		    <li> Articles sur différentes extensions d'autoencodeurs:
+		      <ul id="contenucours">
+			<li> <a href="http://info.usherbrooke.ca/hlarochelle/publications/aistats_2009_robust_interdependent.pdf"><i>Deep Learning using Robust Interdependent Codes</i></a> de <a href="http://info.usherbrooke.ca/hlarochelle/">Hugo Larochelle</a>, <a href="http://www.dumitru.ca/">Dumitru Erhan</a> et <a href="http://www.iro.umontreal.ca/~vincentp/">Pascal Vincent</a>
+			<li> <a href="http://www.cs.toronto.edu/~ranzato/publications/ranzato-icml08.pdf"><i>Semi-supervised Learning of Compact Document Representations with Deep Networks</i></a> 
+			  de <a href="http://www.cs.toronto.edu/~ranzato/">Marc'Aurelio Ranzato</a> 
+			  et <a href="http://research.microsoft.com/en-us/um/people/szummer/">Martin Szummer</a> [<a href="http://videolectures.net/icml08_szummer_sslcdr/">video</a>]
+			<li> <a href="http://www.iro.umontreal.ca/~lisa/pointeurs/ICML2011_embeddings.pdf"><i>Large-Scale Learning of Embeddings with Reconstruction Sampling</i></a> 
+			  de <a href="http://ynd.github.com/">Yann Dauphin</a>, Xavier Glorot et 
+			  <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a> [<a href="http://techtalks.tv/talks/54424/">video</a>]
+			<li> <a href="http://info.usherbrooke.ca/hlarochelle/publications/aistats_2012.pdf"><i>On Nonparametric Guidance for Learning Autoencoder Representations</i></a> de
+			  <a href="http://www.cs.toronto.edu/~jasper/">Jasper Snoek</a>, <a href="http://people.seas.harvard.edu/~rpa/">Ryan Adams</a> et <a href="http://info.usherbrooke.ca/hlarochelle/">Hugo Larochelle</a>
+			<li> <a href="http://www.cs.toronto.edu/~rfm/pubs/rae.pdf">Gradient-based learning of higher-order image features</a> 
+			  de <a href="http://www.cs.toronto.edu/~rfm/">Roland Memisevic</a>
+		      </ul>
+		    <li> Articles sur des versions probabilisites / génératives d'autoencodeurs:
+		      <ul id="contenucours">
+			<li> <a href="http://arxiv.org/pdf/1312.6114.pdf"><i>Auto-Encoding Variational Bayes</i></a> de <a href="http://dpkingma.com/">Diederik P. Kingma</a> et <a href="http://www.ics.uci.edu/~welling/">Max Welling</a>
+			<li> <a href="http://info.usherbrooke.ca/hlarochelle/publications/aistats2011_nade.pdf">
+			    <i>The Neural Autoregressive Distribution Estimator</i></a> de
+			  <a href="http://info.usherbrooke.ca/hlarochelle/">Hugo Larochelle</a> et
+			  <a href="http://homepages.inf.ed.ac.uk/imurray2/">Iain Murray</a> [<a href="http://videolectures.net/aistats2011_larochelle_neural/">video</a>]
+		      </ul>
+		  </ul>
+		  </td>
+	      </tr>
+	      
+	      <tr>
+		<td>LU 27/10</td> 
+		<td><b><font face="Copperplate,georgia,Verdana">Réseaux profonds (<i>Deep learning</i>)</font></b><br>
+          <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr>
+              <td width="400px"><b>- Capsules vidéo -</b></td>
+              <td width="50px" align="right"><b>Diapositives</b></td>
+            </tr>
+           <td>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=vXMpKYRhpmI"><i>Motivation</i></a> (15:12) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=YoiUlN_77LU"><i>Difficulty of training</i></a> (8:24) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Oq38pINmddk"><i>Unsupervised pre-training</i></a> (12:52) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=SXnG-lQ7RJo"><i>Example</i></a> (12:41) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=UcKPdAM8cnI"><i>Dropout</i></a> (11:18) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=z5ZYm_wJ37c"><i>Deep autoencoder</i></a> (7:34) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=vkb6AWYXZ5I"><i>Deep belief network</i></a> (13:22) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=pStDscJh2Wo"><i>Variational bound</i></a> (14:03) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=35MUlYCColk"><i>DBN pre-training</i></a> (20:00) 
+           </td>
+           <td align="right">
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/7_01_motivation.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/7_02_difficulty_of_training.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/7_03_unsupervised_pretraining.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/7_04_example.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/7_05_dropout.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/7_06_deep_autoencoder.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/7_07_deep_belief_network.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/7_08_variational_bound.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/7_09_dbn_pretraining.pdf">pdf</a>]
+           </td>
+          </table> <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr><td>
+		  <b>- Lecture obligatoire -</b>
+		  <ul>
+			<li> <a href="http://www.utstat.toronto.edu/~rsalakhu/papers/dbm.pdf"><i>Deep Boltzmann Machines</i></a>
+			  de <a href="http://www.utstat.toronto.edu/~rsalakhu">Ruslan Salakhutdinov</a> et
+			  <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey Hinton</a> [<a href="http://videolectures.net/nipsworkshops09_salakhutdinov_ldbm/">video</a>]
+		  </ul>
+              </td></tr>
+          </table><br>
+		  <b>- Lectures suggérées -</b>
+		  <ul>
+            <li> Article sur les <i>deep belief networks</i>:
+		      <ul id="contenucours">
+              	<li> <a href="http://www.cs.toronto.edu/~hinton/absps/ncfast.pdf"><i>A Fast Learning Algorithm for Deep Belief Nets</i></a> de <a href="http://www.cs.toronto.edu/~hinton">Geoffrey Hinton</a>, Simon Osindero et <a href="http://www.gatsby.ucl.ac.uk/~ywteh/">Yee Whye Teh</a>
+		      </ul>
+            <li> Article sur les autoencodeurs profonds:
+		      <ul id="contenucours">
+		        <li> <a href="http://www.cs.toronto.edu/~hinton/science.pdf"><i>Reducing the dimensionality of data with neural networks</i></a> 
+		      de <a href="http://www.cs.toronto.edu/~hinton">Geoffrey Hinton</a> 
+		      et <a href="http://www.utstat.toronto.edu/~rsalakhu/">Ruslan Salakhutdinov</a>                
+              </ul>
+		    <li> Article détaillé sur les réseaux profonds:
+		      <ul id="contenucours">
+			<li> <a href="http://www.iro.umontreal.ca/~bengioy/papers/ftml_book.pdf">Learning Deep Architectures for AI</a> 
+			  de <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a>
+              </ul>
+		    <li> Évaluations expérimentales de l'apprentissage de réseaux profonds:
+		      <ul id="contenucours">
+			<li> <a href="http://info.usherbrooke.ca/hlarochelle/publications/deep-nets-icml-07.pdf"><i>An Empirical Evaluation of Deep Architectures on Problems with Many Factors of Variation</i></a>
+			  de <a href="http://info.usherbrooke.ca/hlarochelle/">Hugo Larochelle</a>, 
+			  <a href="http://www.dumitru.ca/">Dumitru Erhan</a>, 
+			  <a href="http://aaroncourville.wordpress.com/">Aaron Courville</a>,
+			  <a href="http://people.fas.harvard.edu/~bergstra/">James Bergstra</a>
+			  et <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a>
+            <li> <a href="http://info.usherbrooke.ca/hlarochelle/publications/jmlr-larochelle09a.pdf"><i>Exploring Strategies for Training Deep Neural Networks</i></a>
+		      de <a href="http://info.usherbrooke.ca/hlarochelle/">Hugo Larochelle</a>, 
+		      <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a>, Jérôme Louradour et Pascal Lamblin
+			<li> <a href="http://jmlr.csail.mit.edu/papers/volume11/erhan10a/erhan10a.pdf"><i>Why Does Unsupervised Pre-training Help Deep Learning?</i></a> 
+			  de <a href="http://www.dumitru.ca/">Dumitru Erhan</a>, 
+			  <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a>,
+			  <a href="http://aaroncourville.wordpress.com/">Aaron Courville</a>,
+			  Pierre-Antoine Manzagol, <a href="http://www.iro.umontreal.ca/~vincentp/">Pascal Vincent</a> et <a href="http://bengio.abracadoudou.com/">Samy Bengio</a>
+		      </ul>
+		    <li> Diverses alternatives pour l'apprentissage non-supervisé vorace 
+		      des couches cachées d'une réseau profond:
+		      <ul id="contenucours">
+			<li> <a href="http://www.thespermwhale.com/jaseweston/papers/deep_embed.pdf"><i>Deep Learning via Semi-Supervised Embedding</i></a> 
+			  de <a href="http://www.thespermwhale.com/jaseweston/">Jason Weston</a>, 
+			  Frédéric Ratle et <a href="http://ronan.collobert.com/">Ronan Collobert</a> 
+			  [<a href="http://videolectures.net/icml09_weston_dlss/">video</a>]
+			<li> <a href="http://www.thespermwhale.com/jaseweston/papers/embedvideo.pdf"><i>Deep Learning from Temporal Coherence in Video</i></a> de 
+			  <a href="http://www.cs.illinois.edu/homes/hmobahi2/">Hossein Mobahi</a>,
+			  <a href="http://www.thespermwhale.com/jaseweston/">Jason Weston</a> et
+			  <a href="http://ronan.collobert.com/">Ronan Collobert</a>
+			<li> <a href="http://cseweb.ucsd.edu/~saul/papers/nips09_kernel.pdf"><i>Kernel Methods for Deep Learning</i></a> 
+			  de <a href="http://cseweb.ucsd.edu/~yoc002/">Youngmin Cho</a> 
+			  et <a href="http://cseweb.ucsd.edu/~saul/">Lawrence Saul</a>
+			<li> <a href="http://books.nips.cc/papers/files/nips22/NIPS2009_0933.pdf"><i>
+			      Slow, Decorrelated Features for Pretraining Complex Cell-like Networks</i></a>
+			  de <a href="http://people.fas.harvard.edu/~bergstra">James Bergstra</a>
+			  et <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a>
+		      </ul>
+		    <li> Régularisation de type <i>dropout</i>:
+		      <ul id="contenucours">
+			<li> <a href="http://arxiv.org/pdf/1207.0580.pdf"><i>Improving neural networks by preventing co-adaptation of feature detectors</i></a> 
+			  de <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey Hinton</a>, <a href="http://www.cs.toronto.edu/~nitish/">Nitish Srivastava</a>, 
+              <a href="http://www.cs.toronto.edu/~kriz/">Alex Krizhevsky</a>,
+              <a href="http://www.cs.utoronto.ca/~ilya">Ilya Sutskever</a> et
+              <a href="http://www.utstat.toronto.edu/~rsalakhu">Ruslan Salakhutdinov</a>
+			<li> <a href="http://cs.nyu.edu/~wanli/dropc/dropc.pdf"><i>Regularization of Neural Networks using DropConnect</i></a> 
+			  de <a href="http://cs.nyu.edu/~wanli/">Li Wan</a>, <a href="http://www.matthewzeiler.com/">Matthew Zeiler</a>, <a href="http://cs.nyu.edu/~zsx/">Sixin Zhang</a>,
+              <a href="http://yann.lecun.com/">Yann LeCun</a> et <a href="http://cs.nyu.edu/~fergus/pmwiki/pmwiki.php">Rob Fergus</a>
+            <li> <a href="http://arxiv.org/pdf/1302.4389v4.pdf"><i>Maxout Networks</i></a> de
+              de <a href="http://www-etud.iro.umontreal.ca/~goodfeli/">Ian Goodfellow</a>,
+			  <a href="http://aaroncourville.wordpress.com/">Aaron Courville</a>
+			  et <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a> 
+			<li> <a href="http://papers.nips.cc/paper/5032-adaptive-dropout-for-training-deep-neural-networks.pdf"><i>Adaptive dropout for training deep neural networks</i></a> 
+			  de Lei Jimmy Ba et <a href="http://www.psi.toronto.edu/~frey/">Brendan Frey</a>
+		      </ul>
+		    <li> Articles analysant théoriquement le <i>dropout</i>:
+		      <ul id="contenucours">
+			<li> <a href="http://papers.nips.cc/paper/4878-understanding-dropout.pdf"><i>Understanding Dropout</i></a> 
+			  de <a href="http://www.igb.uci.edu/~pfbaldi/">Pierre Baldi</a> et <a href="http://www.ics.uci.edu/~pjsadows/">Peter Sadowski</a>
+			<li> <a href="http://papers.nips.cc/paper/4882-dropout-training-as-adaptive-regularization.pdf"><i>Dropout Training as Adaptive Regularization</i></a> 
+			  de <a href="http://web.stanford.edu/~swager/research.html">Stefan Wager</a>, <a href="http://nlp.stanford.edu/~sidaw/home/">Sida Wang</a> et <a href="http://cs.stanford.edu/~pliang/">Percy Liang</a>
+		      </ul>
+		    <li> Un autre type de réseaux de neurones profonds, qui n'est pas <i>feed-forward</i>/déterministe:
+		      <ul id="contenucours">
+			<li> <a href="http://www.cs.toronto.edu/~rsalakhu/papers/sfnn.pdf"><i>Learning Stochastic Feedforward Neural Networks</i></a> 
+			  de <a href="http://www.cs.toronto.edu/~tang/">Yichuan Tang</a> et <a href="http://www.utstat.toronto.edu/~rsalakhu">Ruslan Salakhutdinov</a>
+			<li> <a href="http://cs.stanford.edu/~jngiam/papers/NgiamChenKohNg2011.pdf"><i>Learning Deep Energy Models</i></a>
+			  de <a href="http://cs.stanford.edu/~jngiam/">Jiquan Ngiam</a>, 
+			  <a href="http://cs.stanford.edu/~zhenghao/">Zhenghao Chen</a>, 
+			  <a href="http://cs.stanford.edu/~pangwei/">Pang Wei Koh</a> 
+			  et <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a> [<a href="http://techtalks.tv/talks/learning-deep-energy-models/54325/">video</a>]
+		      </ul>
+		  </ul><br>
+		      
+		  <b>- Matériel multimédia suggéré -</b>
+		  <ul>
+		    <li> Présentation <a href="http://videolectures.net/okt09_bengio_ldhr/"><i>Learning Deep Hierarchies of Representations</i></a> 
+		      de <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a>, donnée à Google
+		    <li> Tutoriel <a href="http://videolectures.net/mlss09uk_hinton_dbn/"><i>Deep Belief Nets</i></a> 
+		      de <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey Hinton</a> 
+		      
+		  </ul>
+		  </td>
+	      </tr>
+	      
+	      <tr  bgcolor="#EEE">
+		<td>LU 03/11</td> 
+		<td><b><font face="Copperplate,georgia,Verdana">Codage parcimonieux (<i>Sparse coding</i>)</font></b><br>
+          <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr>
+              <td width="400px"><b>- Capsules vidéo -</b></td>
+              <td width="50px" align="right"><b>Diapositives</b></td>
+            </tr>
+           <td>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=7a0_iEruGoM"><i>Definition</i></a> (12:05) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=L6qhzWWtqQs"><i>Inference (ISTA algorithm)</i></a> (12:36) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=bhqNSjJ_A20"><i>Dictionary update - projected gradient descent</i></a> (5:04) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=UMdNfhgPKTc"><i>Dictionary update - block-coordinate descent</i></a> (13:10) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=PzNMff7cYjM"><i>Dictionary learning algorithm</i></a> (5:31) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=IePxTepLvQc"><i>Online dictionary learning algorithm</i></a> (9:05) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=eUiwhV1QcQ4"><i>ZCA preprocessing</i></a> (8:39) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=FL81zSjAEEg"><i>Feature extraction</i></a> (10:43) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=MdomgSiL86Q"><i>Relationship wiht V1</i></a> (5:46) 
+           </td>
+           <td align="right">
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/8_01_definition.pdf">pdf</a>]<br>             
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/8_02_inference_ISTA_algorithm.pdf">pdf</a>]<br>             
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/8_03_dictionary_update_projected_gradient_descent.pdf">pdf</a>]<br>             
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/8_04_dictionary_update_block-coordinate_descent.pdf">pdf</a>]<br>             
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/8_05_dictionary_learning_algorithm.pdf">pdf</a>]<br>             
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/8_06_online_dictionary_learning_algorithm.pdf">pdf</a>]<br>             
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/8_07_ZCA_preprocessing.pdf">pdf</a>]<br>             
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/8_08_feature_extraction.pdf">pdf</a>]<br>             
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/8_09_relationship_with_V1.pdf">pdf</a>]
+           </td>
+          </table> <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr><td>
+		  <b>- Lecture obligatoire -</b>
+		  <ul>
+		    <li> Article 
+		      <a href="http://www.cs.stanford.edu/people/ang//papers/icml07-selftaughtlearning.pdf"><i>Self-taught Learning: Transfer Learning from Unlabeled Data</i></a>
+		      de <a href="http://ai.stanford.edu/~rajatr/">Rajat Raina</a>,
+		      <a href="http://www.stanford.edu/~ajbattle/">Alexis Battle</a>,
+		      <a href="http://web.eecs.umich.edu/~honglak/">Honglak Lee</a>,
+		      <a href="http://www.stanford.edu/~bpacker/">Benjamin Packer</a> et
+		      <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a>
+		  </ul>
+              </td></tr>
+          </table><br>
+		  <b>- Lectures suggérées -</b>
+		  <ul>
+		    <li> D'autres algorithmes apprenant une représentation parcinomieuse:
+		      <ul id="contenucours">
+			<li> <a href="http://arxiv.org/pdf/1010.3467.pdf"><i>Fast Inference in Sparse Coding Algorithms
+			      with Applications to Object Recognition</i></a> 
+			  de <a href="http://koray.kavukcuoglu.org/">Koray Kavukcuoglu</a>,
+			  <a href="http://www.cs.toronto.edu/~ranzato/">Marc'Aurelio Ranzato</a> et
+			  <a href="http://yann.lecun.com/">Yann LeCun</a>
+			<li> <i>Independent Component Analysis (ICA)</i>: <a href="http://www.cs.helsinki.fi/u/ahyvarin/papers/NN00new.pdf"><i>
+			      Independent Component Analysis: Algorithms and Applications</i></a>
+			  de  <a href="http://www.cs.helsinki.fi/u/ahyvarin/">Aapo Hyvärinen</a> et
+			  <a href="http://users.ics.aalto.fi/oja/">Erkki Oja</a>
+			<li> <i>Reconstruction ICA</i>: 
+			  <a href="http://ai.stanford.edu/~quocle/LeKarpenkoNgiamNg.pdf">
+			    <i>ICA with Reconstruction Cost for Efficient
+			      Overcomplete Feature Learning</i></a> de 
+			  <a href="http://ai.stanford.edu/~quocle/">Quoc Le</a>,
+			  Alexandre Karpenko,
+			  <a href="http://cs.stanford.edu/~jngiam/">Jiquan Ngiam</a>
+			  et <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a>
+			<li> <a href="http://research2.fit.edu/ice/sites/default/files/aharon_elad_bruckstein_2006_0.pdf"><i>K-SVD: An Algorithm for Designing Overcomplete
+			      Dictionaries for Sparse Representation</i></a> de
+			  <a href="http://www.cs.technion.ac.il/~michalo/">Michal Aharon</a>
+			  <a href="http://www.cs.technion.ac.il/~elad/">Michael Elad</a>
+			  et <a href="http://www.cs.technion.ac.il/~freddy/">Alfred Bruckstein</a>
+			<li> <a href="http://arxiv.org/pdf/1206.6407.pdf">
+			    <i>Large-Scale Feature Learning With Spike-and-Slab Sparse Coding</i></a>
+			  de <a href="http://www-etud.iro.umontreal.ca/~goodfeli/">Ian Goodfellow</a>,
+              <a href="www-etud.iro.umontreal.ca/~ardefar/">David Warde-Farley</a>,
+              <a href="http://www-etud.iro.umontreal.ca/~mirzamom/">Mehdi Mirza</a>,
+			  <a href="http://aaroncourville.wordpress.com/">Aaron Courville</a>
+			  et <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a> 
+		      </ul>
+		    <li> Variantes de codage parcimonieux:
+		      <ul id="contenucours">
+			<li> <a href="http://ai.stanford.edu/~rajatr/papers/expsc_ijcai09.pdf"><i>Exponential Family Sparse Coding with Applications to Self-taught Learning</i></a>
+			  de <a href="http://web.eecs.umich.edu/~honglak/">Honglak Lee</a>, 
+			  <a href="http://ai.stanford.edu/~rajatr/">Rajat Raina</a>, 
+			  <a href="http://cs.stanford.edu/people/teichman/">Alex Teichman</a> et
+			  <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a>
+			<li> <a href="http://www.di.ens.fr/~jenatton/paper/HierarchicalDictionaryLearningICML2010.pdf"><i>Proximal Methods for Sparse Hierarchical Dictionary Learning</i></a>
+			  de <a href="http://www.di.ens.fr/~jenatton/">Rodolphe Jenatton</a>,
+			  <a href="http://www.di.ens.fr/~mairal/">Julien Mairal</a>,
+			  <a href="http://www.di.ens.fr/~obozinski/">Guillaume Obozinski</a> et
+			  <a href="http://www.di.ens.fr/~fbach/">Francis Bach</a>
+		      </ul>
+		    <li> Apprentissage en ligne de codage parcimonieux:
+		      <ul id="contenucours">
+			<li> <a href="http://www.di.ens.fr/sierra/pdfs/icml09.pdf"><i>Online Dictionary Learning for Sparse Coding</i></a> de 
+			  <a href="http://www.di.ens.fr/~mairal/">Julien Mairal</a>,
+			  <a href="http://www.di.ens.fr/~fbach/">Francis Bach</a>,
+			  <a href="http://www.di.ens.fr/~ponce/">Jean Ponce</a> et
+			  <a href="http://www.ece.umn.edu/~guille/">Guillermo Sapiro</a> [<a href="http://videolectures.net/icml09_mairal_odlsc/">video</a>]
+		      </ul>
+            <li> Technique pour accélérer l'inférence d'une représentation parcimonieuse:
+		      <ul id="contenucours">
+		    <li> <a href="http://www.cs.nyu.edu/~kgregor/gregor-icml-10.pdf">
+			<i>Learning Fast Approximations of Sparse Coding</i></a> 
+		      de <a href="http://www.cs.nyu.edu/~kgregor">Karol Gregor</a> et <a href="http://yann.lecun.com/">Yann LeCun</a>
+              </ul>
+		  </ul><br>
+		  <b>- Matériel multimédia suggéré -</b>
+		  <ul>
+		    <li> Tutoriel <a href="http://videolectures.net/nips09_bach_smm/">
+			<i>Sparse Methods for Machine Learning: Theory and Algorithms Francis Bach</i></a>
+		      de <a href="http://www.di.ens.fr/~fbach/">Francis Bach</a><br>
+		      (couvre l'estimation parcimonieuse en général, pas seulement le codage parcimonieux)
+		  </ul>
+		  </td>
+		</td> 
+	      </tr>
+	      
+	      <tr>
+		<td>LU 10/11</td> 
+		<td><b><font face="Copperplate,georgia,Verdana">Vision par ordinateur avec réseaux de neurones</font></b><br>
+          <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr>
+              <td width="400px"><b>- Capsules vidéo -</b></td>
+              <td width="50px" align="right"><b>Diapositives</b></td>
+            </tr>
+           <td>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=rxKrCa4bg1I"><i>Motivation</i></a> (5:25) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=vLf3KVe2Z1k"><i>Local connectivity</i></a> (4:20) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=aAT1t9p7ShM"><i>Parameter sharing</i></a> (11:32) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Y7TMwqAWEdo"><i>Discrete convolution</i></a> (15:27) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=I-JKxcpbRT4"><i>Pooling and subsampling</i></a> (8:11) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=cDdpwAIsuD8"><i>Convolutional network</i></a> (13:58) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=eU83LSM3xnk"><i>Object recognition</i></a> (8:00) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Gk8VvSL3IMk"><i>Example</i></a> (14:20) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=Km1Q5VcSKAg"><i>Data set expansion</i></a> (7:32) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=y0SISi_T6s8"><i>Convolutional RBM</i></a> (10:46) 
+           </td>
+           <td align="right">
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/9_01.motivation.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/9_02_local_connectivity.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/9_03_parameter_sharing.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/9_04_discrete_convolution.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/9_05_pooling_and_subsampling.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/9_06_convolutional_network.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/9_07_object_recognition.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/9_08_example.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/9_09_data_set_expansion.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/9_10_convolutional_rbm.pdf">pdf</a>]
+           </td>
+          </table> <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr><td>
+		  <b>- Lecture obligatoire -</b>
+		  <ul>
+		    <li> Article <a href="http://www.cs.utoronto.ca/~ilya/pubs/2012/imgnet.pdf"><i>ImageNet Classification with Deep Convolutional
+            Neural Networks</i></a> de <a href="http://www.cs.toronto.edu/~kriz/">Alex Krizhevsky</a>, <a href="http://www.cs.utoronto.ca/~ilya">Ilya Sutskever</a>,
+            et <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey Hinton</a> 
+		  </ul>
+              </td></tr>
+          </table><br>
+		  <b>- Lectures suggérées -</b>
+		  <ul>
+            <li> Évaluation de bonnes pratiques dans l'utilisation de réseaux à convolution:
+		      <ul id="contenucours">
+                <li> <a href="http://cs.nyu.edu/~koray/publis/jarrett-iccv-09.pdf">
+			<i>What is the Best Multi-Stage Architecture for Object Recognition?</i></a>
+		      de Kevin Jarrett, 
+		      <a href="http://koray.kavukcuoglu.org/">Koray Kavukcuoglu</a>,
+		      <a href="http://www.cs.toronto.edu/~ranzato/">Marc'Aurelio Ranzato</a> et
+		      <a href="http://yann.lecun.com/">Yann LeCun</a>
+                <li> <a href="http://research.microsoft.com/en-us/um/people/jplatt/ICDAR03.pdf"><i>
+			  Best Practices for Convolutional Neural Networks 
+			  Applied to Visual Document Analysis</i></a>
+		      de Patrice Simard, 
+		      Dave Steinkraus et
+		      <a href="http://research.microsoft.com/en-us/people/jplatt/">John Platt</a>
+              </ul>
+            <li> Version convolutionnelle de la machine de Boltzmann restreinte:
+              <ul id="contenucours">
+                <li>
+              <a href="http://web.eecs.umich.edu/~honglak/icml09-ConvolutionalDeepBeliefNetworks.pdf">
+			<i>Convolutional Deep Belief Networks for Scalable Unsupervised Learning of Hierarchical Representations</i></a>
+		      <a href="http://web.eecs.umich.edu/~honglak/">Honglak Lee</a>, 
+		      <a href="http://people.csail.mit.edu/rgrosse/">Roger Grosse</a>,
+		      <a href="http://www.cs.princeton.edu/~rajeshr/">Rajesh Ranganath</a>
+		      et <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a> [<a href="http://videolectures.net/icml09_lee_cdb/">video</a>]
+              </ul>
+		    <li> Résumé de la neurophysionomie du cortex visuel:
+		      <ul id="contenucours">
+			<li> Section 2.3 de la 
+			  <a href="http://people.fas.harvard.edu/~bergstra/files/pub/11_These.pdf">thèse</a> 
+			  de <a href="http://people.fas.harvard.edu/~bergstra/">James Bergstra</a>
+		      </ul>
+		    <li> Analyse de l'utilisation de filtres aléatoires:
+		      <ul id="contenucours">
+			<li> <a href="http://www.stanford.edu/~asaxe/papers/Saxe%20et%20al.%20-%202011%20-%20On%20Random%20Weights%20and%20Unsupervised%20Feature%20Learning.pdf">
+			    <i>On random weights and unsupervised feature learning
+			      </i></a>
+			  de <a href="http://www.stanford.edu/~asaxe/">Andrew Saxe</a>, 
+			  <a href="http://cs.stanford.edu/~pangwei/">Pang Wei Koh</a>,
+			  <a href="http://cs.stanford.edu/~zhenghao/">Zhenghao Chen</a>,
+			  Maneesh Bhand, Bipin Suresh 
+			  et <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a> [<a href="http://techtalks.tv/talks/54303/">video</a>]
+		      </ul>
+
+		    <li> Une autre méthode de <i>pooling</i>
+		      <ul id="contenucours">
+			<li> <a href="http://www.matthewzeiler.com/pubs/iclr2013/iclr2013.pdf">
+			    <i>Stochastic Pooling for Regularization of Deep Convolutional Neural Networks</i></a>
+			  de <a href="http://www.matthewzeiler.com/">Matthew Zeiler</a>
+			  et <a href="http://cs.nyu.edu/~fergus/pmwiki/pmwiki.php">Rob Fergus</a>
+		      </ul>
+		    </li>
+		    <li> Différentes applications de vision par ordinateur:
+		      <ul id="contenucours">
+			<li> <a href="http://yann.lecun.com/exdb/publis/pdf/farabet-icml-12.pdf">
+			    <i>Scene Parsing with Multiscale Feature Learning, Purity Trees, and Optimal Covers</i></a>
+			  de <a href="http://www.clement.farabet.net/">Clément Farabet</a>,
+			  <a href="http://cs.nyu.edu/~ccouprie/">Camille Couprie</a>,
+			  <a href="http://www.najman.org/">Laurent Najman</a> et
+			  <a href="http://yann.lecun.com/">Yann LeCun</a>
+			<li> <a href="http://www.idsia.ch/~juergen/nips2009.pdf"><i>
+			      Offine Handwriting Recognition with
+			      Multidimensional Recurrent Neural Networks</i></a>
+			  de <a href="http://www6.in.tum.de/Main/Graves">Alex Graves</a>
+			  et <a href="http://www.idsia.ch/~juergen/">Jürgen Schmidhuber</a>
+		      </ul>
+		    <li> D'autres approches convolutionnelles:
+		      <ul id="contenucours">
+			<li> <a href="http://www.stanford.edu/~acoates/papers/coatesleeng_aistats_2011.pdf">
+			    <i>An Analysis of Single-Layer Networks in Unsupervised Feature Learning</i></a>
+			  de <a href="http://www.stanford.edu/~acoates/">Adam Coates</a>,
+			  <a href="http://web.eecs.umich.edu/~honglak/">Honglak Lee</a>,
+			  <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a>
+			<li> <a href="http://www.stanford.edu/~acoates/papers/coatesng_icml_2011.pdf"><i>
+			      The Importance of Encoding Versus Training with Sparse Coding and Vector Quantization</i></a>
+			  de <a href="http://www.stanford.edu/~acoates/">Adam Coates</a>
+			  <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a> [<a href="http://techtalks.tv/talks/the-importance-of-encoding-versus-training-with-sparse-coding-and-vector-quantization/54301/">video</a>]
+			<li> <a href="http://web.eecs.umich.edu/~honglak/icml12-invariantFeatureLearning.pdf">
+			    <i>Learning Invariant Representations with Local Transformations</i></a>
+			  de Kihyuk Sohn et <a href="http://web.eecs.umich.edu/~honglak/">Honglak Lee</a>
+			  [<a href="http://techtalks.tv/talks/57420/">video</a>]
+			<li> <a href="http://www.matthewzeiler.com/pubs/iccv2011/iccv2011.pdf">
+			    <i>Adaptive Deconvolutional Networks for Mid and High Level Feature Learning</i></a>
+			  de <a href="http://www.matthewzeiler.com/">Matthew Zeiler</a>,
+			  <a href="http://www.uoguelph.ca/~gwtaylor/">Graham Taylor</a> et
+			  <a href="http://cs.nyu.edu/~fergus/pmwiki/pmwiki.php">Rob Fergus</a>
+		      </ul>
+		  </ul><br>
+		  <b>- Matériel multimédia suggéré -</b>
+		  <ul>
+		    <li> Présentation <a href="http://videolectures.net/mlss09us_lecun_lfh/">
+			<i>Learning Feature Hierarchies</i></a> de <a href="http://yann.lecun.com/">Yann LeCun</a>
+		  </ul>
+		  </td>
+		</td> 
+	      </tr>
+	      
+	      <tr bgcolor="#EEE">
+		<td>LU 17/11</td> 
+		<td><b><font face="Copperplate,georgia,Verdana">Traitement automatique de la langue avec réseaux de neurones</font></b><br>
+          <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr>
+              <td width="400px"><b>- Capsules vidéo -</b></td>
+              <td width="50px" align="right"><b>Diapositives</b></td>
+            </tr>
+           <td>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=OzZIOiMVUyM"><i>Motivation</i></a> (2:16) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=jcrhYEYwO9k"><i>Preprocessing</i></a> (9:46) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=iZ3e_cifP7Y"><i>One-hot encoding</i></a> (7:31) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=PKszi8iogak"><i>Word representations</i></a> (10:30) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=iGmHnICXDss"><i>Language modeling</i></a> (9:23) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=FoDz01QNSiY"><i>Neural network language model</i></a> (16:08) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=B95LTf2rVWM"><i>Hierarchical output layer</i></a> (13:51) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=pCLIo4Z-PsM"><i>Word tagging</i></a> (10:48) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=6jCDUQ-e-fY"><i>Convolutional network</i></a> (16:44) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=ciNBQupWsAc"><i>Multitask learning</i></a> (16:03) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=AqEF2HIMjYA"><i>Recursive network</i></a> (5:50) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=gPNPINa7PaM"><i>Merging representations</i></a> (3:40) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=NJozqoejJnA"><i>Tree inference</i></a> (16:51) <br>
+            &#8194;&#8226; <a href="http://www.youtube.com/watch?v=oRxgRHJztPI"><i>Recursive network training</i></a> (13:29) 
+           </td>
+           <td align="right">
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/10_01_motivation.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/10_02_preprocessing.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/10_03_one-hot_encoding.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/10_04_word_representations.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/10_05_language_modeling.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/10_06_neural_network_language_model.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/10_07_hierarchical_output_layer.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/10_08_word_tagging.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/10_09_convolutional_network.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/10_10_multitask_learning.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/10_11_recursive_network.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/10_12_merging_representations.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/10_13_tree_inference.pdf">pdf</a>]<br>
+             [<a href="http://info.usherbrooke.ca/hlarochelle/ift725/10_14_recursive_network_training.pdf">pdf</a>]
+           </td>
+          </table> <br>
+          <table id="roundedtable" bgcolor="#CCC" cellspacing="0">
+            <tr><td>
+		  <b>- Lecture obligatoire -</b>
+		  <ul>
+		    <li> Article <a href="http://www.gatsby.ucl.ac.uk/~amnih/papers/ncelm.pdf"><i>A fast and simple algorithm for training neural probabilistic
+            language models</i></a> de <a href="http://www.gatsby.ucl.ac.uk/~amnih/">Andriy Mnih</a> et <a href="http://www.stats.ox.ac.uk/~teh/">Yee Whye Teh</a>
+		  </ul>
+              </td></tr>
+          </table><br>
+		  <b>- Lectures suggérées -</b>
+		  <ul>
+		    <li> Articles sur la modélisation du language avec réseaux de neurones:
+		      <ul id="contenucours">
+		        <li> Article Scholarpedia <a href="http://www.scholarpedia.org/article/Neural_net_language_models">
+			        <i>Neural net language models</i></a>
+		          de <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a> 
+		    <li> <a href="http://www.iro.umontreal.ca/~lisa/pointeurs/hierarchical-nnlm-aistats05.pdf">
+			<i>Hierarchical Probabilistic Neural Network Language Model</i></a>
+		      de Frédéric Morin et 
+		      <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a> 
+
+			<li> <a href="http://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf">
+			    <i>Recurrent neural network based language model</i></a>
+			  de <a href="http://www.fit.vutbr.cz/~imikolov/rnnlm/">Tomas Mikolov</a>,
+			  <a href="http://www.fit.vutbr.cz/~karafiat/">Martin Karafiat</a>,
+			  <a href="http://www.fit.vutbr.cz/~burget/">Lukas Burget</a>,
+			  <a href="http://www.fit.vutbr.cz/~cernocky/"Jan Cernocky</a> et
+			  <a href="http://old-site.clsp.jhu.edu/~sanjeev/">Sanjeev Khudanpur</a>
+			<li> <a href="http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf">
+			    <i>Generating Text with Recurrent Neural Network</i></a>
+			  de <a href="http://www.cs.utoronto.ca/~ilya">Ilya Sutskever</a>,
+			  <a href="http://www.cs.toronto.edu/~jmartens/">James Martens</a> et
+			  <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey Hinton</a> [<a href="http://techtalks.tv/talks/54425/">video</a>] [<a href="http://www.cs.utoronto.ca/~ilya/rnn.html">demo</a>]
+			<li> <a href="ftp://tlp.limsi.fr/public/emnlp05.pdf"><i> 
+			      Training Neural Network Language Models
+			      On Very Large Corpora</i></a>
+			  de <a href="http://www-lium.univ-lemans.fr/~schwenk/">Holger Schwenk</a>
+			  et <a href="http://www.limsi.fr/~gauvain/">Jean-Luc Gauvain</a>
+			<li> <a href="http://aclweb.org/anthology-new/N/N12/N12-1005.pdf">
+			    <i>Continuous Space Translation Models with Neural Networks</i></a>
+			  de <a href="http://perso.limsi.fr/Individu/lehaison/wiki/doku.php">Le Hai Son</a>,
+			  <a href="http://perso.limsi.fr/allauzen/wiki/index.php/Accueil">Alexandre Allauzen</a>
+			  et <a href="http://perso.limsi.fr/Individu/yvon/mysite/mysite.php">François Yvon</a>
+		      </ul>
+		    <li> Modélisation de documents avec réseaux de neurones:
+		      <ul id="contenucours">
+			<li> <a href="http://www.utstat.toronto.edu/~rsalakhu/papers/semantic_final.pdf">
+			    <i>Semantic hashing</i></a>
+			  de <a href="http://www.utstat.toronto.edu/~rsalakhu">Ruslan Salakhutdinov</a>
+			  et <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey Hinton</a>
+			<li> <a href="http://books.nips.cc/papers/files/nips22/NIPS2009_0817.pdf">
+			    <i>Replicated Softmax: an Undirected Topic Model</i></a>
+			  de <a href="http://www.utstat.toronto.edu/~rsalakhu">Ruslan Salakhutdinov</a>
+			  et <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey Hinton</a>			  
+              <li> <a href="http://info.usherbrooke.ca/hlarochelle/publications/nips_2012_camera_ready.pdf"><i>A Neural Autoregressive Topic Model</i></a>
+                de <a href="http://info.usherbrooke.ca/hlarochelle/index_en.html">Hugo Larochelle</a> et Stanislas Lauly.
+		      </ul>
+		    <li> Autre article sur l'utilisation de réseaux à convolution en traitement de la langue:
+		      <ul id="contenucours">
+			<li> <a href="http://nal.co/papers/Kalchbrenner_DCNN_ACL14">
+			    <i>A Convolutional Neural Network for Modelling Sentences</i></a>
+			  de <a href="http://www.cs.ox.ac.uk/people/nal.kalchbrenner/">Nal Kalchbrenner</a>,
+			  <a href="http://www.cs.ox.ac.uk/people/edward.grefenstette/">Edward Grefenstette</a>
+			  et <a href="http://www.cs.ox.ac.uk/people/phil.blunsom/">Phil Blunsom</a>
+		      </ul>
+		    </li>
+		    <li> D'autres articles sur l'étiquetage de mots basée sur un réseau de neurones:
+		      <ul id="contenucours">
+			<li> <a href="http://ronan.collobert.com/pub/matos/2011_nlp_jmlr.pdf">
+			    <i>Natural Language Processing (Almost) from Scratch</i></a>
+			  de <a href="http://ronan.collobert.com/">Ronan Collobert</a>,
+			  <a href="http://www.thespermwhale.com/jaseweston/">Jason Weston</a>,
+			  <a href="http://leon.bottou.org/">Léon Bottou</a>,
+			  Michael Karlen,
+			  <a href="http://koray.kavukcuoglu.org/">Koray Kavukcuoglu</a>,
+			  <a href="http://paul.rutgers.edu/~pkuksa/">Pavel Kuksa</a>
+			  [<a href="http://research.microsoft.com/apps/video/default.aspx?id=115867">video</a>]
+			<li> <a href="http://ronan.collobert.com/pub/matos/2011_parsing_aistats.pdf">
+			    <i>Deep Learning for Efficient Discriminative Parsing</i></a>
+			  de <a href="http://ronan.collobert.com/">Ronan Collobert</a> 
+			  [<a href="http://videolectures.net/aistats2011_collobert_deep/">video</a>]
+		      </ul>
+		    <li> D'autres algorithmes d'apprentissage efficaces pour données textuelles:
+		      <ul id="contenucours">
+			<li> <a href="http://www.iro.umontreal.ca/~lisa/pointeurs/submit_aistats2003.pdf">
+			    <i>Quick Training of Probabilistic Neural Nets by Importance Sampling</i></a>
+			  de <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a>
+			  et Jean-Sébastien Senécal
+			<li> <a href="http://www.gatsby.ucl.ac.uk/~amnih/papers/hlbl_final.pdf"><i>
+			      A Scalable Hierarchical Distributed Language Model</i></a>
+			  de <a href="http://www.gatsby.ucl.ac.uk/~amnih">Andriy Mnih</a>
+			  et <a href="http://www.cs.toronto.edu/~hinton/">Geoffrey Hinton</a>
+			<li> <a href="http://www.gatsby.ucl.ac.uk/~amnih/papers/ncelm.pdf">
+			    <i>A fast and simple algorithm for training neural probabilistic language models</i></a>
+			  de <a href="http://www.gatsby.ucl.ac.uk/~amnih">Andriy Mnih</a>
+			  et <a href="http://www.gatsby.ucl.ac.uk/~ywteh/">Yee Whye Teh</a>
+			<li> <a href="http://info.usherbrooke.ca/hlarochelle/publications/wrrbm_icml2012.pdf">
+			    <i>Training Restricted Boltzmann Machines on Word Observations</i></a>
+			  de <a href="http://www.cs.toronto.edu/~gdahl/">George Dahl</a>
+			  <a href="http://people.seas.harvard.edu/~rpa/">Ryan Adams</a> 
+			  et <a href="http://info.usherbrooke.ca/hlarochelle/">Hugo Larochelle</a>
+			<li> <a href="http://www.iro.umontreal.ca/~lisa/pointeurs/ICML2011_embeddings.pdf">
+			    <i>Large-Scale Learning of Embeddings with Reconstruction Sampling</i></a> 
+			  de <a href="http://ynd.github.com/">Yann Dauphin</a>, Xavier Glorot et 
+			  <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a> [<a href="http://techtalks.tv/talks/54424/">video</a>]
+		      </ul>
+		    <li> Apprentissage de représentation des mots:
+		      <ul id="contenucours">
+			<li> <a href="http://www.iro.umontreal.ca/~lisa/pointeurs/turian-wordrepresentations-acl10.pdf">
+			    <i>Word representations: A simple and general method for semi-supervised learning</i></a>
+			  de <a href="http://www-etud.iro.umontreal.ca/~turian/">Joseph Turian</a>,
+			  <a href="http://lev-arye.com/">Lev Ratinov</a>
+			  et <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a>
+			<li> <a href="http://www.pdhillon.com/nips11dhillon.pdf">
+			    <i>Multi-View Learning of Word Embeddings via CCA</i></a>
+			  de <a href="http://www.pdhillon.com/">Paramveer Dhillon</a>,
+			  <a href="http://gosset.wharton.upenn.edu/~foster/index.pl">Dean Foster</a>
+			  et <a href="http://www.cis.upenn.edu/~ungar/">Lyle Ungar</a>
+			<li> <a href="https://www.hds.utc.fr/~bordesan/dokuwiki/lib/exe/fetch.php?id=en%3Apubli&cache=cache&media=en:bordes12aistats.pdf"><i>Joint Learning of Words and Meaning Representations for Open-Text Semantic Parsing</i></a>
+			  de <a href="https://www.hds.utc.fr/~bordesan/dokuwiki/doku.php">Antoine Bordes</a>,
+			  Xavier Glorot,
+			  <a href="http://www.thespermwhale.com/jaseweston/">Jason Weston</a>
+			  et <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a>
+			<li> <a href="http://www.socher.org/uploads/Main/HuangSocherManning_ACL2012.pdf"><i>
+			      Improving Word Representations via Global Context
+			      and Multiple Word Prototypes</i></a>
+			  de <a href="http://ai.stanford.edu/~ehhuang/">Eric Huang</a>, 
+			  <a href="http://www.socher.org/">Richard Socher</a>, 
+			  <a href="http://nlp.stanford.edu/~manning/">Christopher Manning</a>
+			  et <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a>			  
+		      </ul>
+		    <li> Articles sur le <i>recursive neural network</i>:
+		      <ul id="contenucours">
+		    <li> <a href="http://nlp.stanford.edu/pubs/SocherLinNgManning_ICML2011.pdf">
+			<i>Parsing Natural Scenes and Natural Language with Recursive Neural Networks</i></a>
+		      de <a href="http://www.socher.org/">Richard Socher</a>, 
+		      Jeffrey Pennington, 
+		      <a href="http://ai.stanford.edu/~ehhuang/">Eric Huang</a>, 
+		      <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a> et
+		      <a href="http://nlp.stanford.edu/~manning/">Christopher Manning</a>
+		      [<a href="http://techtalks.tv/talks/54422/">video</a>]
+			<li> <a href="http://www.socher.org/uploads/Main/SocherPenningtonHuangNgManning_EMNLP2011.pdf">
+			    <i>Semi-Supervised Recursive Autoencoders for Predicting Sentiment Distributions</i></a>
+			  de <a href="http://www.socher.org/">Richard Socher</a>, 
+			  Jeffrey Pennington, 
+			  <a href="http://ai.stanford.edu/~ehhuang/">Eric Huang</a>, 
+			  <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a> et
+			  <a href="http://nlp.stanford.edu/~manning/">Christopher Manning</a>
+			<li> <a href="http://www.socher.org/uploads/Main/SocherHuangPenningtonNgManning_NIPS2011.pdf">
+			    <i>Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection</i></a>
+			  de <a href="http://www.socher.org/">Richard Socher</a>, 
+			  <a href="http://ai.stanford.edu/~ehhuang/">Eric Huang</a>, 
+			  Jeffrey Pennington, 
+			  <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a> et
+			  <a href="http://nlp.stanford.edu/~manning/">Christopher Manning</a>
+			<li> <a href="http://www.socher.org/uploads/Main/SocherHuvalManningNg_EMNLP2012.pdf">
+			    <i>Semantic Compositionality through Recursive Matrix-Vector Spaces</i></a>
+			  de <a href="http://www.socher.org/">Richard Socher</a>, 
+			  Brody Huval,
+			  <a href="http://nlp.stanford.edu/~manning/">Christopher Manning</a>
+			  et <a href="http://ai.stanford.edu/~ang/">Andrew Ng</a>			  
+		      </ul>
+		  </ul><br>
+		  <b>- Matériel multimédia suggéré -</b>
+		  <ul>
+		    <li> Tutoriel <a href="http://videolectures.net/nips09_collobert_weston_dlnl/">
+			<i>Deep Learning in Natural Language Processing</i></a> 
+		      de <a href="http://ronan.collobert.com/">Ronan Collobert</a>
+		      et <a href="http://www.thespermwhale.com/jaseweston/">Jason Weston</a>
+		    <li> Tutoriel <a href="http://www.youtube.com/watch?v=IF5tGEgRCTQ&list=PL4617D0E28A5781B0">
+			<i>Deep Learning for NLP (without Magic)</i></a> de
+		      <a href="http://www.socher.org/">Richard Socher</a>, 
+		      <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua Bengio</a> et
+		      <a href="http://nlp.stanford.edu/~manning/">Christopher Manning</a>
+		  </ul>
+		  </td>
+		</td> 
+	      </tr>
+	      
+	      <tr>
+		<td>LU 24/11</td> 
+		<td><b>Présentations orales</b></td> 
+	      </tr>
+	      
+	      <tr bgcolor="#EEE">
+		<td>LU 01/12</td> 
+		<td><b>Présentations orales</b></td> 
+	      </tr>
+	      
+	    </table>
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

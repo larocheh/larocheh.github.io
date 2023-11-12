@@ -1,0 +1,128 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold,italic"
+          type="text/css" />
+    <link rel="stylesheet" href="css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+      <div id="header-text">
+      Hugo Larochelle
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="index_en.html" accesskey="H" class="active"><em>H</em>ome</a></li>
+	      
+	      <li><a href="publications_en.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="university_en.html" accesskey="u"><em>U</em>niversity</a></li>
+
+	      <li><a href="links_en.html" accesskey="l"><em>L</em>inks</a></li>
+
+	    </ul>
+        </div>
+	  </div>
+	  
+	  <div id="sidebar">
+	    <h2>Research projects</h2>
+
+	    <table id="nav" cellpadding="0" cellspacing="10" >
+	      <tr><td><a href="projects_attention.html">Attention-based computer vision</a></td></tr>
+	      <tr><td><a href="projects_deep_learning.html">Deep learning</a></td></tr>
+	      <tr><td class="active"><a href="projects_classrbm.html">Restricted Boltzmann machines for classification</a></td></tr>
+	      <tr><td><a href="projects_struct_output.html">Learning algorithms for structured output prediction</a></td></tr>
+	      <tr><td><a href="projects_nade.html">Neural autoregressive models</a></td></tr>
+	    </table>
+
+	  </div>
+	  
+	  <!--
+	  <div id="sidebarright">
+	  </div>
+	  -->
+
+	  <div id="contentnorightbar">
+	    <h2>Restricted Boltzmann machines for classification</h2>
+	    
+	    <center>
+	    <img src="images/classrbm.jpg" WIDTH=300>
+	    </center><br> While restricted Boltzmann machines have
+	    been mostly used for unsupervised learning of useful
+	    latent representations, it is actually possible to use
+	    them as supervised, black-box models in their own right
+	    and not rely on any other classification algorithm to
+	    perform classification.
+
+	    This is
+	    what <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html">Yoshua
+	    Bengio</a> and I demonstrated
+	    in <a href="publications/icml-2008-discriminative-rbm.pdf">Classification
+	    using Discriminative Restricted Boltzmann Machines</a>. We
+	    designed supervised and semi-supervised algorithms that
+	    would allow this classification RBM to reach state of the
+	    art performance. Along with Michael Mandel and Razvan
+	    Pascanu, we further extended these algorithms to the
+	    contexts of very high dimensional inputs and of multiple
+	    related tasks,
+	    in <a href="publications/larochelle12a.pdf">Learning
+	    Algorithms for the Classiffcation Restricted Boltzmann
+	    Machine</a>.
+	    
+	    <br><br>
+	    When trained to classify documents into
+	    topics, it even discovered an appropriate notion of
+	    similarity between related topics, as shown by the
+	    block structure in the figure below (white = similar, hence
+	    we see that computer-related topics are grouped together,
+	    as well as politics-related topics).
+	    <br><br>
+
+	    <center>
+	    <img src="images/20newsgroup_classes_similarity.jpg" WIDTH=500>
+	    </center><br>
+	    In <a href="publications/class_set_rbms_uai.pdf">Classification
+	    of Sets using Restricted Boltzmann Machines</a>, Jérôme
+	    Louradour and I further generalized the classification RBM
+	    so that it could be applied to problems where the input
+	    corresponds to a set of objects, as opposed to a single
+	    object.  This variant could then be successfully applied to the
+	    problem of automatic mail classification, where a piece of
+	    mail, corresponding to several separate documents
+	    (letter, check, form, etc.), must be assigned to the right 
+	    department in a large organization.<br><br>
+
+	    <h3>References</h3>
+	    <br>
+	    <ul>
+	      <li> <b> Learning Algorithms for the Classiffcation Restricted Boltzmann Machine [<a href="publications/larochelle12a.pdf" target=_top>pdf</a>]</b><br>
+		Hugo Larochelle, Michael Mandel, Razvan Pascanu and Yoshua Bengio,<br>
+		<i>Journal of Machine Learning Research</i>, 13(Mar): 643--669, 2012<br><br>		
+	      <li> <b> Classification of Sets using Restricted Boltzmann Machines [<a href="publications/class_set_rbms_uai.pdf" target=_top>pdf</a>] [<a href="publications/class_set_rbms_additional_material.pdf" target=_top>supp</a>] [<a href="http://arxiv.org/abs/1103.4896" target=_top>arxiv</a>]</b><br>
+		Jérôme Louradour and Hugo Larochelle,<br>
+		<i>Uncertainty in Artificial Intelligence</i>, 2011<br><br>
+	      <li> <b>Classification using Discriminative Restricted Boltzmann Machines [<a href="publications/icml-2008-discriminative-rbm.pdf" target=_top>pdf</a>] [<a href="http://videolectures.net/icml08_larochelle_cud/">talk</a>]</b><br>
+		Hugo Larochelle and Yoshua Bengio,<br>
+		<i> International Conference on Machine Learning proceedings</i>, 2008<br><br>		
+	    </ul>
+
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="../../css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	<div id="header">
+      <div id="header-text">
+	    Hugo Larochelle
+	  <!-- <h1 id="header-right"></h1>-->
+	    <ul id="nav">
+	      
+	      <li><a href="../../index_fr.html" accesskey="a"><em>A</em>ccueil</a></li>
+	      
+	      <li><a href="../../publications_fr.html" accesskey="p"><em>P</em>ublications</a></li>
+
+	      <li><a href="../../university_fr.html" accesskey="u" class="active"><em>U</em>niversité</a></li>
+
+	      <li><a href="../../links_fr.html" accesskey="l"><em>L</em>iens</a></li>
+
+	    </ul>
+	  </div>
+	  </div>
+	  <div id="sidebar">
+	    <h2>IFT 615 <small>(Été 2013)</small></h2>
+	    <table id="nav" cellpadding="0" cellspacing="8" width="120" >
+	      <tr><td  class="active"><a href="description.html">Description</a></td></tr>
+	      <tr><td><a href="contenu.html">Contenu</a></td></tr>
+	      <tr><td><a href="evaluations.html">Évaluations</a></td></tr>
+	    </table>
+	    <h2>Annonces</h2>
+	    <b>[14/08/2013]</b><br>
+	    Notes du final et du cours disponibles.
+	    <br><br>
+        <!--
+	    <b>[16/08/2012]</b><br>
+	    Notes du final et du cours disponibles.
+	    <br><br>
+	    <b>[09/08/2012]</b><br>
+	    Notes du devoir 4 disponibles.
+	    <br><br>
+	    <b>[20/07/2012]</b><br>
+	    Notes du devoir 3 disponibles.
+	    <br><br>
+	    <b>[12/07/2012]</b><br>
+	    Énnoncé du devoir 4 disponible.
+	    <br><br>
+	    <b>[14/06/2012]</b><br>
+	    Énnoncé du devoir 3 disponible.
+	    <br><br>
+	    <b>[23/06/2012]</b><br>
+	    Notes de l'intra disponibles.
+	    <br><br>
+	    <b>[19/06/2012]</b><br>
+	    Notes du devoir 2 disponibles.
+	    <br><br>
+	    <b>[11/06/2012]</b><br>
+	    Date de l'<b>examen final</b> annoncée: <br>
+	    VE 10/08/2012, 9h00-12h00, <br>au D3-2037.
+	    <br><br>
+	    <b>[04/06/2012]</b><br>
+	    Notes du devoir 1 disponibles.
+	    <br><br>
+	    <b>[29/05/2012]</b><br>
+	    Énnoncé du devoir 2 disponible.
+	    <br><br>
+	    <b>[25/05/2012]</b><br>
+	    <b>Séance de cours spéciale</b>: <br>
+	    VE 08/06/2012, 10h30-12h20,<br> D4-2022.
+	    <br><br>
+        -->
+	    <b>[05/08/2012]</b><br>
+	    Notes du devoir 4 disponibles.
+	    <br><br>
+	    <b>[01/08/2013]</b><br>
+	    <b>Séance de cours spéciale</b>: <br>
+	    LU 05/08/2013, 16h30-17h20,<br> D3-2037.
+	    <br><br>
+	    <b>[18/07/2013]</b><br>
+	    Notes du devoir 3 disponibles.
+	    <br><br>
+	    <b>[27/06/2013]</b><br>
+	    Date de l'<b>examen final</b> annoncée: <br>
+	    VE 13/08/2013, 9h00-12h00, <br>au D3-2037.
+	    <br><br>
+	    <b>[27/06/2013]</b><br>
+	    Notes de l'intra disponibles.
+	    <br><br>
+	    <b>[18/06/2013]</b><br>
+	    Notes du devoir 2 disponibles.
+	    <br><br>
+	    <b>[12/06/2013]</b><br>
+	    Date de l'<b>examen intra modifiée!</b> <br>
+	    MA 18/06/2013, 13h30-15h20,<br> D3-2039.
+	    <br><br>
+	    <b>[06/06/2013]</b><br>
+	    Notes du devoir 1 disponibles.
+	    <br><br>
+	    <b>[29/04/2013]</b><br>
+	    Bienvenue au cours IFT 615!
+	  </div>
+	  
+	  <!--
+	  <div id="sidebarright">
+	  </div>
+	  -->
+
+	  <div id="contentnorightbar">
+	    <h2> IFT 615 - Intelligence artificielle </h2>
+	    
+	    <b>Professeur:</b> Hugo Larochelle<br>
+	    <b>Auxiliaire d'enseignement:</b> <a href="http://pages.usherbrooke.ca/mcote5/accueil.html">Marc-Alexandre Côté</a><br>
+	    <br>
+	    <b>Horaire:</b> MA 10h30-12h20, JE 11h30-12h20 <br>
+	    <b>Locaux:</b> D4-1017 (MA) et D3-2037 (JE)<br>
+	    <b>Séance spéciale:</b> VE 15h30-17h20 au D4-1017, 3 mai<br>
+	    <br>
+	    <b>Disponibilités hors cours:</b> LU 12h30-13h30 au D4-1024-1<br>
+	    <b>Livre recommandé:</b> <a href="http://aima.cs.berkeley.edu/">Artificial Intelligence: A Modern Approach</a>, de Russell et Norvig<br>
+	    <b>Préalables:</b>
+	    <a href="http://www.usherbrooke.ca/fiches-cours/ift436">IFT 436</a>
+	    et
+	    (<a href="http://www.usherbrooke.ca/fiches-cours/stt389">STT 289</a>
+	    ou <a href="http://www.usherbrooke.ca/fiches-cours/stt418">STT 418</a>)<br>
+		
+		<br>
+		
+		Le cours <b>IFT 615 - Intelligence artificielle</b>
+		se veut une introduction aux principes de base en
+		intelligence artificielle (IA). L'IA est une
+		discpline étudiant le développement de systèmes
+		informatiques capables de reproduire des
+		comportements intelligents. Elle se découpe en
+		plusieurs champs d'étude, dont les principaux seront
+		abordés:
+		<ul>
+		  <li> Agents intelligents
+		  <li> Recherche heuristique, locale et pour jeux à deux adversaires
+		  <li> Satisfaction de contraintes
+		  <li> Logique
+		  <li> Raisonnement probabiliste
+		  <li> Apprentissage automatique
+		  <li> Apprentissage par renforcement
+		  <li> Traitement automatique de la langue
+		  <li> Vision par ordinateur
+		  <li> Robotique
+		</ul>
+        <br>
+
+		Pour plus de détails, consulter l'onglet <b>Contenu</b> (menu de gauche) ou le <a href="plan_de_cours_et_plagiat.pdf">plan de cours</a>. 
+		La fiche signalétique du cours est accessible <a href="http://www.usherbrooke.ca/fiches-cours/ift615">ici</a>.
+		<br><br>
+
+		L'évaluation consistera en un examen intra (20%), un
+		examen final (40%) et quatre devoirs (40% au total). 
+		Les devoirs contiendrons pour l'essentiel des questions
+		de programmation dans le langage
+		<a href="http://docs.python.org/release/2.6.5/tutorial/index.html">Python</a>.
+		<br><br> 
+
+		Le livre de référence (fortement recommandé) pour le cours
+		est <a href="http://aima.cs.berkeley.edu/">Artificial
+		Intelligence: A Modern Approach</a> de Steward Russell
+		et Peter Norvig. Des copies ont été commandées à la
+		COOP de l'université.  Une copie est également en
+		réserve à
+		la <a href="http://www.usherbrooke.ca/biblio/infogen/bibliotheques/bibliotheque-des-sciences-et-de-genie/">bibliothèque
+		des sciences et de génie</a>, ainsi qu'une version
+		française du livre.
+        
+        <br><br><br><br><br><br><br><br>
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>

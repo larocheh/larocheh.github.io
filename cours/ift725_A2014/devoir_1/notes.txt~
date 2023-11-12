@@ -1,0 +1,31 @@
+Matricule	Devoir 1	Explication
+14161836	13.5   Mauvais intervalle de confiance (entre autre, n n'est pas bon) [-0.5]
+14174074	13.5   Ne doit pas montrer les performances sur l'ensemble de test [-0.5]
+14148950	14     
+10107234	13.25  bprop n'inclut pas la régularisation (mais apparaît dans update) [-0.25], mauvais intervalle de confiance (n'inclut même pas l'erreur de classification) [-0.5]
+06879023	9      training_loss n'inclut pas la régularisation [-0.5], test calcule la précision et non l'erreur [-0.5] pas de rapport [-4]
+14077535	13.75  Decrease constant mal implémenté (utilise une mise à jour récursive) [-0.25]
+13168332	14     
+14148996	13.5   Mauvais intervalle de confiance [-0.5]
+14172183	14     
+14166779	14     
+14151179	14     
+12089027	12.75  Mauvais intervalle de confiance [-0.5], montre les performances de test dans le tableau [-0.5], bprop n'inclut pas la régularisation [-0.25]
+14171497	13.5   Mauvais intervalle de confiance [-0.5]
+10085891	13.5   Erreur de test n'est pas donnée [-0.5]
+07130268	12.75  Bprop n'inclut pas la régularisation (mais apparaît dans update) [-0.25], Pas d'erreur de test ni d'intervalle de confiance [-1]
+14161916	13.9   Format non respecté (marges plus grandes) -0.1
+10078694	12.75  bprop n'inclut pas la régularisation (mais apparaît dans update) [-0.25], mauvais intervalle de confiance (inclut même pas l'erreur de classification!) [-0.5], tableau montre les erreurs de test [-0.5]
+14172192	13     bprop n'inclut pas la régularisation (mais apparaît dans update) [-0.25], mauvaise mise à jour du decrease constant (utilise une mise à jour récursive) [-0.25], mauvais intervalle de confiance [-0.5]
+14172218	14     
+14029286	12.75  Decrease constant mal implémenté (utilise une mise à jour récursive) [-0.5], ne rapporte pas l'erreur de test du meilleur modèle (donc l'intervalle de confiance n'est pas complet) [-1]
+14126947	12.5   Mauvais intervalle de confiance [-0.5], donne 2 erreurs de test [-0.5], intervalle de confiance mauvais [-0.5]
+14172227	13     Montre erreur test dans le tableau [-0.5], pas d'intervalle de confiance [-0.5]
+14080362	12.75  Montre erreur de test dans le tableau [-0.5], pas d'intervalle de confiance [-0.5], decrease constant mal implémenté (utilise une mise à jour récursive)  [-0.25]
+14127223	13.5   Manque intervalle de confiance [-0.5]
+14029810	0      Pas de remise
+14134493	13     Decrease constant mal implémenté (utilise une mise à jour récursive) [-0.25], pas de mise à jour de la couche de sortie [-0.25], mauvais intervalle de confiance [-0.5]
+14172236	14     
+14161961	14     
+14149003	14     
+Moyenne		12.83275862	

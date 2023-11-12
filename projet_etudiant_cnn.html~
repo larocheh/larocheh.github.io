@@ -1,0 +1,68 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <title>Hugo Larochelle</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="css/2.css" type="text/css" media="screen,projection" />
+
+  </head>
+  
+  <body>
+
+    <div id="wrapper">
+      <div id="innerwrapper">
+
+	  <div id="contentnobars">
+
+	    <h2>Projet: Reconnaissance d'Objets avec Réseaux de Neurones à Convolution </h2>
+
+	    <center>
+	      <img src="images/convolution-network-schema.png" WIDTH=700 STYLE="border:none; background:#fff; padding:1.0px;">
+	    </center><br>
+
+	    <h3>Responsable</h3>
+	    <a href="http://www.dmi.usherb.ca/~larocheh/index_fr.html">Hugo Larochelle</a><br><br>
+
+	    <h3>Description</h3>
+
+	    Les réseaux de neurones à convolution forment une
+	    excellente approche d'apprentissage automatique pour la
+	    reconnaissance et détection d'objet. Google utilise
+	    d'ailleurs une telle approche afin de détecter les visages
+	    et plaques d'immatriculations dans les images de son
+	    service Google Streetview.<br><br>
+
+	    L'objectif de ce projet est d'implémenter un système de
+	    reconnaissance d'objet basé sur un réseau de neurones à
+	    convolution. Ce projet nécessitera:
+	    <ul>
+	      <li> le développement de diverses variantes de réseaux à convolution
+	      <li> l'implémentation d'une plateforme flexible pour
+	      l'acquisition d'images étiquetées, e.g. à l'aide d'une
+	      webcam
+	      <li> la mise en place et l'exécution d'un protocole d'expérimentation valide
+	      <li> l'intégration d'un support pour le calcul sur une carte graphique (optionnel)
+	    </ul>
+	    
+	    L'implémentation se fera en Python/C++ et devra être intégrée à une librairie existante d'apprentissage automatique, développée par Hugo Larochelle.<br><br>
+	    
+	  <h3>Références sur internet</h3> 
+
+	  Article de <i>The Economist</i> sur les réseaux à convolution: <a href="http://www.economist.com/node/17305316">http://www.economist.com/node/17305316</a><br>
+
+	  Tutoriel sur les réseaux à convolution à l'aide de la librairie Theano: <a href="http://deeplearning.net/tutorial/lenet.html">http://deeplearning.net/tutorial/lenet.html</a><br><br>
+	  
+	  <h3>Contact</h3>
+	  hugo.larochelle [at] usherbrooke.ca
+
+	  </div>
+	  
+	  <div id="footer">
+	  </div>
+	  
+	</div>
+      </div>
+
+
+    </body>
+  </html>
